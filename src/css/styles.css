@@ -1612,7 +1612,7 @@ textarea {
 
 .powers-table-header {
     display: grid;
-    grid-template-columns: 1fr 80px 100px 2fr 80px;
+    grid-template-columns: 150px 120px 60px 1fr 80px;
     gap: 10px;
     padding: 10px 15px;
     background: var(--bg-tertiary);
@@ -1624,11 +1624,16 @@ textarea {
 
 .power-row {
     display: grid;
-    grid-template-columns: 1fr 80px 100px 2fr 80px;
+    grid-template-columns: 150px 120px 60px 1fr 80px;
     gap: 10px;
     padding: 10px 15px;
     border-bottom: 1px solid var(--border-color);
     align-items: center;
+}
+
+.power-dn {
+    font-size: 12px;
+    color: var(--text-muted);
 }
 
 .power-row:last-child {

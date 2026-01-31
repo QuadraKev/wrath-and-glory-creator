@@ -54,6 +54,11 @@ const PowersTab = {
                 <button class="discipline-btn ${this.currentDiscipline === 'telekinesis' ? 'active' : ''}" data-discipline="telekinesis">Telekinesis</button>
                 <button class="discipline-btn ${this.currentDiscipline === 'telepathy' ? 'active' : ''}" data-discipline="telepathy">Telepathy</button>
                 <button class="discipline-btn ${this.currentDiscipline === 'maleficarum' ? 'active' : ''}" data-discipline="maleficarum">Maleficarum</button>
+                <button class="discipline-btn ${this.currentDiscipline === 'runes of battle' ? 'active' : ''}" data-discipline="runes of battle">Runes of Battle</button>
+                <button class="discipline-btn ${this.currentDiscipline === 'runes of fate' ? 'active' : ''}" data-discipline="runes of fate">Runes of Fate</button>
+                <button class="discipline-btn ${this.currentDiscipline === 'runes of fortune' ? 'active' : ''}" data-discipline="runes of fortune">Runes of Fortune</button>
+                <button class="discipline-btn ${this.currentDiscipline === 'bonesinging' ? 'active' : ''}" data-discipline="bonesinging">Bonesinging</button>
+                <button class="discipline-btn ${this.currentDiscipline === 'phantasmancy' ? 'active' : ''}" data-discipline="phantasmancy">Phantasmancy</button>
             </div>
 
             <div class="powers-controls">
@@ -135,8 +140,8 @@ const PowersTab = {
             // Check if already owned
             if (character.psychicPowers.includes(p.id)) return false;
 
-            // Check discipline
-            if (p.discipline !== this.currentDiscipline) return false;
+            // Check discipline (case-insensitive)
+            if (p.discipline.toLowerCase() !== this.currentDiscipline.toLowerCase()) return false;
 
             // Check search query
             if (this.searchQuery) {
@@ -153,8 +158,8 @@ const PowersTab = {
         container.innerHTML = `
             <div class="powers-table-header">
                 <span>Name</span>
+                <span>DN</span>
                 <span>Cost</span>
-                <span>Discipline</span>
                 <span>Effect</span>
                 <span>Learn</span>
             </div>
@@ -169,8 +174,8 @@ const PowersTab = {
             row.className = 'power-row';
             row.innerHTML = `
                 <span class="power-name">${power.name}</span>
+                <span class="power-dn">${power.dn || '-'}</span>
                 <span class="power-cost">${power.cost || 0}</span>
-                <span class="power-discipline">${this.formatDiscipline(power.discipline)}</span>
                 <span class="power-effect">${power.effect || ''}</span>
                 <button class="btn-add" data-id="${power.id}" ${!canAdd ? 'disabled' : ''}>ADD</button>
             `;
@@ -194,16 +199,22 @@ const PowersTab = {
 
     formatDiscipline(discipline) {
         const names = {
-            minor: 'Minor',
-            universal: 'Universal',
-            biomancy: 'Biomancy',
-            divination: 'Divination',
-            pyromancy: 'Pyromancy',
-            telekinesis: 'Telekinesis',
-            telepathy: 'Telepathy',
-            maleficarum: 'Maleficarum'
+            'minor': 'Minor',
+            'universal': 'Universal',
+            'biomancy': 'Biomancy',
+            'divination': 'Divination',
+            'pyromancy': 'Pyromancy',
+            'telekinesis': 'Telekinesis',
+            'telepathy': 'Telepathy',
+            'maleficarum': 'Maleficarum',
+            'runes of battle': 'Runes of Battle',
+            'runes of fate': 'Runes of Fate',
+            'runes of fortune': 'Runes of Fortune',
+            'bonesinging': 'Bonesinging',
+            'phantasmancy': 'Phantasmancy'
         };
-        return names[discipline] || discipline;
+        const key = discipline ? discipline.toLowerCase() : '';
+        return names[key] || discipline;
     },
 
     refresh() {
