@@ -89,7 +89,7 @@
     "prerequisites": {
       "skills": {"leadership": 2, "survival": 2}
     },
-    "effect": "Tame a BEAST that is not an Adversary at your Tier. It follows commands and takes its own Initiative slot. If you're attacked while it's within half its Speed, it can redirect the attack to itself on a DN 5 Initiative Test.",
+    "effect": "Choose any Threat with the BEAST Keyword that is not an Adversary at your Tier. You have tamed a single creature of that type. It follows you and attempts actions in combat as you command, taking its own slot in the Initiative Order like an Agent. It does not interact with Wrath or Ruin, unless another ability indicates otherwise. If you suffer an attack whilst the creature is within half its Speed of you, it may take a DN 5 Initiative Test as a Reflexive Action. If it succeeds, the attack is redirected onto the creature. Slain creatures may be replaced for free the next time you visit the replacement creature's habitat, or a location where it is raised in captivity.",
     "flavor": "You have forged a bond with a creature of the wild, a faithful companion that will fight and die by your side.",
     "source": "aeldari"
   },
@@ -468,7 +468,7 @@
     "prerequisites": {
       "keywords": ["CHAOS"]
     },
-    "effect": "You gain +2 Corruption. You gain a minion, a lesser daemon spawned from the Warp using the Brimstone Horror profile with 1 in all Attributes and only Scholar (5) and Stealth (8) Skills. To get it to take action, you must succeed at an Opposed Persuasion or Intimidation Test.",
+    "effect": "You gain +2 Corruption. You gain a minion, a lesser daemon spawned from the Warp. It uses the Brimstone Horror profile (see p.349), but has a 1 in all Attributes. Its only Skills are Scholar (5) and Stealth (8). The daemon is fickle. To get it to take action, you must first succeed at an Opposed Persuasion or Intimidation Test. Once persuaded, the daemon goes to extreme measures to accomplish whatever task you set, to the best of its limited abilities. At the GM's discretion, if the minion sees you act against the interests of the Warp, the familiar immediately turns on you until it's destroyed or convinced of its mistake. If the familiar is slain, you must spend a Wrath Point to summon it again — which is time-consuming and requires the GM's permission.",
     "flavor": "A minor daemon has attached itself to you, whispering secrets and performing minor tasks—for a price paid in corruption.",
     "source": "core"
   },
@@ -535,7 +535,7 @@
     "prerequisites": {
       "skills": {"weaponSkill": 5}
     },
-    "effect": "Whenever an enemy targets you with a melee attack, after they complete their attack, you may make a single melee attack against that enemy. You may Counter Attack up to Rank times per Round.",
+    "effect": "You can use this Talent whenever an enemy targets you with a melee attack. After the enemy has completed their attack, you may make a single melee attack against that enemy. This is treated as your Reflexive Action, but you may Counter Attack up to Rank times per Round. You may not apply any other Talents, Abilities, or combat options to a Counter Attack. If you Counter Attack, you cannot take any Move Actions on your next turn.",
     "flavor": "Every enemy attack creates an opening. You have trained to exploit these moments with lethal precision.",
     "source": "core"
   },
@@ -592,7 +592,7 @@
     "prerequisites": {
       "species": ["human"]
     },
-    "effect": "Even when terrified, you can summon the courage to mount a ferocious attack. Whenever you are required to make a Fear Test, you may choose to instantly Charge the source of Fear and make a single melee attack.",
+    "effect": "Whenever you are required to make a Fear Test, you may choose to instantly Charge the source of Fear, if you are able to, and make a single melee attack. Make the Fear Test after this attack resolves if the target is still alive. If you are in combat after the Fear Test resolves, you sacrifice your first Turn.",
     "flavor": "Fear drives lesser warriors to flee. You channel that terror into a desperate, furious assault.",
     "source": "core"
   },
@@ -629,7 +629,7 @@
     "prerequisites": {
       "attributes": {"intellect": 3}
     },
-    "effect": "As a Simple Action, make an Intellect-based Skill Test to recall or notice something about a target. If you pass, you gain +Rank bonus dice to any Test made against that target that utilises this information.",
+    "effect": "As a Simple Action, you may use this Talent to make an Intellect-based Skill Test to recall or notice something about a target. The target can be anything, from a mag-locked door with a cantankerous machine spirit to an inscrutable Planetary Governor. If you pass the Test, the GM may give you information based on the Skill you used to make the Test. You also gain +Rank bonus dice to any Test made against that target that utilises this information. You may give this bonus to an ally if you communicate what you have learned.",
     "flavor": "Your keen mind picks up on details others miss, turning observation into tactical advantage.",
     "source": "core"
   },
@@ -703,7 +703,7 @@
     "prerequisites": {
       "skills": {"leadership": 4}
     },
-    "effect": "You have gathered a number of followers (Double Rank +2) that will do whatever you ask. Whenever you are hit by an attack, a devotee may make a DN5 Initiative Test to take the hit instead.",
+    "effect": "Through reputation or assignment, you have gathered a number of followers that will do whatever you ask. If you are attacked, they intervene. Your devotees are a Mob of any Troop level Threat. A number of devotees equal to Double Rank +2 have decided to follow you. You may use the stats presented in Chapter 14 for each devotee, or use the following rules: Devotee Attributes are equal to 1 + Double Rank; Devotee Skills are equal to 1 + Double Rank; A devotee's Attributes and Skills cannot be higher than your own. Whenever you are hit by any form of attack, any of your devotees may make a DN5 Initiative Test as a Reflexive Action. If they succeed, the attack kills the devotee instead of hitting you. Slain devotees may be replaced for free with new devotees the next time you visit a major encampment or city. If you take this Talent more than once, you gain more devotees of the same type you already possess. If you already have followers from an archetype ability, this Talent provides additional followers of that type instead.",
     "flavor": "Your charisma and cause have attracted a band of loyal followers willing to die for you.",
     "source": "core"
   },
@@ -712,7 +712,7 @@
     "name": "Die Hard",
     "cost": 20,
     "prerequisites": {},
-    "effect": "You're hard to kill. When you suffer more Wounds than your Maximum Wounds, you are not Dying. Roll once on the Memorable Injuries table and heal 1 Wound.",
+    "effect": "You're hard to kill. When you suffer more Wounds than your Maximum Wounds, you are not Dying. Roll once on the Memorable Injuries table and heal 1 Wound. You may not use this Talent again until you complete a Regroup.",
     "flavor": "Wounds that would kill a lesser being only make you angrier. You refuse to die until your work is done.",
     "source": "core"
   },
@@ -811,7 +811,7 @@
     "name": "Dual Wield",
     "cost": 20,
     "prerequisites": {},
-    "effect": "When you wield one weapon in each hand the DN penalty for Multi-Attack is reduced by 2. Each weapon must have the Pistol Trait or be a one-handed melee weapon.",
+    "effect": "When you wield one weapon in each hand the DN penalty for using the Multi-Attack option is reduced by 2. Each weapon must have the Pistol Trait or be a one-handed melee weapon. You may also use a different weapon you are wielding for each of your Multi-Attacks, rolling damage separately for each weapon.",
     "flavor": "You have trained to fight with a weapon in each hand, striking from multiple angles simultaneously.",
     "source": "core"
   },
@@ -823,7 +823,7 @@
       "attributes": {"willpower": 3},
       "keywords": ["IMPERIUM"]
     },
-    "effect": "When you suffer more Wounds than your Max Wounds, you may take your next Turn normally; you begin Dying at the end of that Turn. You may take your next Turn immediately.",
+    "effect": "Whenever you suffer more Wounds than your Max Wounds, you can use this Talent. You may take your next Turn normally; you begin Dying at the end of that Turn. You may choose to take your next Turn immediately after activating this Talent, potentially interrupting an enemy's Turn. If you roll a Complication on any Test, you take a Traumatic Wound.",
     "flavor": "Your devotion to duty is so absolute that even death cannot stop you from completing your final task.",
     "source": "core"
   },
@@ -1003,7 +1003,7 @@
     "prerequisites": {
       "keywords": ["IMPERIUM"]
     },
-    "effect": "At the start of each day, inflict Wounds to yourself equal to your Tier through self-flagellation. As long as you are wounded this way, you gain +Rank bonus dice to Determination and Conviction rolls and may become Frenzied as a Combat Action.",
+    "effect": "At the start of each day, you must spend 20 minutes (Terran standard) in prayer, and inflict Wounds to yourself equal to your Tier through self-flagellation. You may not roll Determination against these Wounds or allow them to be healed by any method other than through a Respite. As long as you are wounded in this way, you gain +Rank bonus dice to your Determination and Conviction rolls and may choose to become Frenzied (p.199) as a Combat Action. If you also have the Frenzy Talent, you may become Frenzied as a Simple Action. If you fail to flagellate yourself, you are overcome with shame and take a +2 DN penalty to all Tests until you flagellate again.",
     "flavor": "Through pain, you find purity. Your self-inflicted wounds are offerings to the Emperor, strengthening your faith.",
     "source": "core"
   },
@@ -1225,7 +1225,7 @@
     "prerequisites": {
       "keywords": ["DRUKHARI"]
     },
-    "effect": "Roll Determination against Mortal Wounds. No DN penalties for being Wounded unless over Double Rank Wounds. When Dying, you don't fall Prone and can act normally.",
+    "effect": "You may roll Determination against attacks that deal Mortal Wounds. You do not suffer DN penalties for being Wounded, unless you have suffered more than Double Rank Wounds. When you are Dying, you do not fall Prone, and suffer no limits on the Actions you can take, unless you suffer Traumatic Injuries equal to or greater than your Rank.",
     "flavor": "Pain is an old friend to the Drukhari. You have learned to embrace it, drawing strength from agony.",
     "source": "aeldari"
   },
@@ -1239,17 +1239,6 @@
     "effect": "You gain +1 Faith. You may make an inspirational statement or prayer as a Combat Action. Spend 1 Faith to restore 1d3 + Double Rank Shock to you and all allies with the IMPERIUM keyword within 15 + Double Rank metres.",
     "flavor": "Your words of faith restore the spirits of the faithful, turning despair into renewed determination.",
     "isFaithTalent": true,
-    "source": "core"
-  },
-  {
-    "id": "intimidating_presence",
-    "name": "Intimidating Presence",
-    "cost": 20,
-    "prerequisites": {
-      "attributes": {"willpower": 3}
-    },
-    "effect": "Your mere presence is enough to unnerve others. You gain +Double Rank bonus dice to Intimidation Tests.",
-    "flavor": "There is something about you that makes others uneasy. Perhaps it's your eyes, or the way you carry yourself.",
     "source": "core"
   },
   {
@@ -1270,7 +1259,7 @@
     "prerequisites": {
       "other": "Rating 1+ in: Ballistic Skill, Medicae, Pilot, Scholar, Survival, Tech, or Weapon Skill"
     },
-    "effect": "During any social encounter you can make a Skill Test using your Jargon Skill. If you succeed and the target shares your knowledge, they become more friendly. If they don't share your knowledge, they are distracted for up to 20 minutes.",
+    "effect": "When you take this Talent, you must pick which of your Skills it applies to from the list in the Requirements section above. During any social encounter you can make a Skill Test using your Jargon Skill. The DN is determined by the GM based on how friendly the target is to you. If you fail, everyone around you ignores your incoherent babbling. If you succeed and the target is interested or trained in the Skill, they are likely to become more friendly to you (see p.168). If the target doesn't share your knowledge and slang, they stand stupefied whilst you babble — they are distracted, unable to get away from your conversation for up to 20 minutes (Terran standard).",
     "flavor": "You speak the specialized language of your profession, forming instant bonds with fellow practitioners.",
     "requiresChoice": true,
     "choiceType": "skill",
@@ -1332,7 +1321,7 @@
     "prerequisites": {
       "keywords": ["DRUKHARI"]
     },
-    "effect": "As a Simple Action, enhance a weapon with Inflict (Poisoned). It gains +Double Rank ED until reloaded.",
+    "effect": "As a Simple Action, you may enhance the toxins of a weapon you handle that has the Inflict (Poisoned) Trait. The weapon gains +Double Rank ED until it is next reloaded.",
     "flavor": "You have learned the poisoner's art from the Lhamaean sisterhood, coating your weapons with virulent toxins.",
     "source": "aeldari"
   },
@@ -1352,7 +1341,7 @@
     "name": "Lip Reader",
     "cost": 20,
     "prerequisites": {},
-    "effect": "You can read lips with uncanny accuracy. You gain +Double Rank bonus dice to Awareness Tests to understand what someone is saying by watching their lips.",
+    "effect": "You have learnt how to read lips. The GM may call for an Awareness (Int) Test to read lips successfully depending on the environment, the speaker's Species, and the language spoken. The default DN is 3 and may be modified as the GM sees fit.",
     "flavor": "Distance and silence are no barrier to your understanding. You can discern words from movement alone.",
     "source": "core"
   },
@@ -1479,7 +1468,7 @@
       "keywords": ["ADEPTA SORORITAS", "ADEPTUS MINISTORUM"],
       "keywordsAny": true
     },
-    "effect": "You gain +1 Faith. As a Simple Action, spend 1 Faith to recite last rites. Select one IMPERIUM character within hearing range. The target removes Prone if they have it. For 24 hours, the target doesn't suffer Prone when Dying, isn't restricted on Actions while Dying, or subject to Exhausted.",
+    "effect": "You gain +1 Faith. As a Simple Action, you may spend 1 Faith to recite last rites. Select one IMPERIUM character within hearing range. The target removes the Prone Condition if they have it. For the next 24 hours, the target doesn't suffer the Prone Condition when they are Dying, aren't restricted on Actions they can perform while Dying, or subject to the Exhausted Condition. The effect of those Conditions on Shock, Wounds, and Traumatic Injuries still apply as normal.",
     "flavor": "Your sacred rites prepare the dying for their final moments, granting them the strength to act even as death claims them.",
     "isFaithTalent": true,
     "source": "redacted2"
@@ -1609,7 +1598,7 @@
     "name": "Old Reliable",
     "cost": 10,
     "prerequisites": {},
-    "effect": "When you use a weapon with the LAS Keyword and the Reliable Trait, rolling a 1 on the Wrath Die does not trigger a Complication. Whenever you use an effect that would expend Las Ammo, roll a Wrath Die. If you roll an Exalted Icon, you do not expend that Las Ammo.",
+    "effect": "When you use a weapon with the LAS Keyword and the Reliable Trait, rolling a 1 on the Wrath Die does not trigger a Complication. This effect does not apply when you are Dying. Additionally, whenever you use an effect that would expend Las Ammo, roll a Wrath Die. If you roll an Exalted Icon, you do not expend that Las Ammo.",
     "flavor": "Your lasweapon has been with you through countless battles. You know its every quirk and capability.",
     "source": "redacted2"
   },
@@ -1757,7 +1746,7 @@
     "prerequisites": {
       "skills": {"tech": 2}
     },
-    "effect": "When you requisition Wargear you can reduce the Value by Double Rank (minimum 1). The item cannot be used until you repair it with an 8-hour Tech Test (DN = original Value + Rarity).",
+    "effect": "When you requisition Wargear you can choose to reduce the Value by Double Rank to a minimum of 1 (Rarity is unaffected). However, if you do so, the item cannot be used until you repair it. By default, this requires 8 hours of work and a successful Tech (Int) Test, with a DN equal to the Wargear's original Value + Rarity. Shifts can be used to halve the repair time. If you do not have the ADEPTUS MECHANICUS Keyword, this activity is considered illegal, a violation of both Lex Imperialis and the Treaty of Mars.",
     "flavor": "You have a talent for salvaging damaged equipment that others would discard.",
     "source": "redacted2"
   },
@@ -2142,7 +2131,7 @@
     "prerequisites": {
       "skills": {"stealth": 2}
     },
-    "effect": "You gain +Rank to your Stealth Score whenever you are perfectly still. You lose this benefit when moving silently. While using this ability, you can only whisper or use vox.",
+    "effect": "You gain +Rank to your Stealth Score whenever you are perfectly still. You lose this benefit when moving silently. While using this ability, you can only whisper or use vox, potentially allowing you to Help allies. As soon as you undertake any other action, the bonus is subtracted from your Stealth Score and can't be restored until you generate a new Stealth Score.",
     "flavor": "When you freeze, you become nearly invisible, blending perfectly with your surroundings.",
     "source": "redacted2"
   },
@@ -2582,29 +2571,5 @@
     "flavor": "You have proven yourself worthy of the Battle Companies, the core of the Chapter's fighting strength.",
     "isAscension": true,
     "source": "voa"
-  },
-  {
-    "id": "hip_shooting",
-    "name": "Hip Shooting",
-    "cost": 20,
-    "prerequisites": {
-      "skills": {"ballisticSkill": 3}
-    },
-    "effect": "You can fire from the hip with uncanny accuracy. You may make a ranged attack as part of a Run action, but suffer +2 DN penalty.",
-    "flavor": "You can fire accurately while sprinting, laying down fire even at full speed.",
-    "source": "core"
-  },
-  {
-    "id": "weapon_specialist",
-    "name": "Weapon Specialist",
-    "cost": 20,
-    "prerequisites": {},
-    "effect": "Choose a specific weapon type. You gain +Rank bonus dice to attack Tests with that weapon type.",
-    "flavor": "Through long practice, you have become especially skilled with one particular type of weapon.",
-    "requiresChoice": true,
-    "choiceType": "freeform",
-    "choiceLabel": "Weapon Type",
-    "choiceDescription": "Choose a specific weapon type to specialize in",
-    "source": "core"
   }
 ]
