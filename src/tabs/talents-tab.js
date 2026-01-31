@@ -293,6 +293,11 @@ const TalentsTab = {
                 }
             }
 
+            // Build flavor text (displayed under effect, escaped to prevent glossary enhancement)
+            const flavorHtml = talent.flavor
+                ? `<div class="selected-talent-flavor">${talent.flavor}</div>`
+                : '';
+
             const item = document.createElement('div');
             item.className = 'selected-talent';
             item.innerHTML = `
@@ -300,7 +305,8 @@ const TalentsTab = {
                     <span class="selected-talent-name">${displayName}</span>
                     <button class="btn-remove" data-id="${talentId}">REMOVE</button>
                 </div>
-                <div class="selected-talent-desc">${talent.effect || ''}</div>
+                <div class="selected-talent-effect">${talent.effect || ''}</div>
+                ${flavorHtml}
             `;
 
             item.querySelector('.btn-remove').addEventListener('click', () => {
@@ -308,8 +314,8 @@ const TalentsTab = {
                 this.render();
             });
 
-            // Enhance descriptions with glossary terms
-            Glossary.enhanceElement(item.querySelector('.selected-talent-desc'));
+            // Enhance effect text with glossary terms (not flavor text)
+            Glossary.enhanceElement(item.querySelector('.selected-talent-effect'));
 
             container.appendChild(item);
         }
@@ -393,10 +399,17 @@ const TalentsTab = {
                 <button class="btn-add" data-id="${talent.id}" ${!canAdd ? 'disabled' : ''}>ADD</button>
             `;
 
-            // Create the expandable description row
+            // Create the expandable description row with effect and flavor text
+            const flavorHtml = talent.flavor
+                ? `<div class="talent-desc-flavor">${talent.flavor}</div>`
+                : '';
+
             const descRow = document.createElement('div');
             descRow.className = 'talent-desc-row hidden';
-            descRow.innerHTML = `<div class="talent-desc-content">${talent.effect || 'No description available.'}</div>`;
+            descRow.innerHTML = `
+                <div class="talent-desc-effect">${talent.effect || 'No description available.'}</div>
+                ${flavorHtml}
+            `;
 
             // Add click handler for expand/collapse
             const expandBtn = row.querySelector('.talent-expand');
@@ -427,8 +440,8 @@ const TalentsTab = {
                 }
             });
 
-            // Enhance description with glossary terms
-            Glossary.enhanceElement(descRow.querySelector('.talent-desc-content'));
+            // Enhance effect text with glossary terms (not flavor text)
+            Glossary.enhanceElement(descRow.querySelector('.talent-desc-effect'));
 
             rowWrapper.appendChild(row);
             rowWrapper.appendChild(descRow);

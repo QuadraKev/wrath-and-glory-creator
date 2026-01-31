@@ -860,9 +860,18 @@ textarea {
     color: white;
 }
 
-.selected-talent-desc {
+.selected-talent-effect {
     font-size: 13px;
     color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 4px;
+}
+
+.selected-talent-flavor {
+    font-size: 12px;
+    font-style: italic;
+    color: var(--text-muted);
+    line-height: 1.4;
 }
 
 .talents-controls {
@@ -940,7 +949,7 @@ textarea {
     display: none;
 }
 
-.talent-desc-content {
+.talent-desc-effect {
     font-size: 13px;
     color: var(--text-secondary);
     line-height: 1.5;
@@ -948,6 +957,15 @@ textarea {
     background: var(--bg-card);
     border-radius: var(--radius-sm);
     border-left: 3px solid var(--accent-gold);
+    margin-bottom: 8px;
+}
+
+.talent-desc-flavor {
+    font-size: 12px;
+    font-style: italic;
+    color: var(--text-muted);
+    line-height: 1.4;
+    padding: 0 15px;
 }
 
 .talent-name {
