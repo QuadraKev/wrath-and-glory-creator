@@ -1,0 +1,989 @@
+[
+  {
+    "id": "human",
+    "name": "Human",
+    "description": "The uncounted trillions of Humans are the most numerous and widespread Species in the galaxy. Their fathomless multitudes are spread across a million worlds with endless variety in mind and body.",
+    "cost": 0,
+    "speed": 6,
+    "size": "Average",
+    "baseAttributes": {},
+    "baseSkills": {},
+    "attributeMaximums": {
+      "strength": 8,
+      "toughness": 8,
+      "agility": 8,
+      "initiative": 8,
+      "willpower": 8,
+      "intellect": 8,
+      "fellowship": 8
+    },
+    "woundBonus": 0,
+    "abilities": [],
+    "keywords": ["IMPERIUM"],
+    "source": "core"
+  },
+  {
+    "id": "astartes",
+    "name": "Adeptus Astartes",
+    "description": "The Emperor's Angels of Death were all once mortal men. All have undergone incredible trials and Gene-Seed implantation to become something more: transhuman demigods created for war who know no fear.",
+    "cost": 160,
+    "speed": 7,
+    "size": "Average",
+    "baseAttributes": {
+      "strength": 4,
+      "toughness": 4,
+      "agility": 4,
+      "initiative": 4,
+      "willpower": 3,
+      "intellect": 3
+    },
+    "baseSkills": {
+      "athletics": 3,
+      "awareness": 3,
+      "ballisticSkill": 3,
+      "stealth": 3,
+      "weaponSkill": 3
+    },
+    "attributeMaximums": {
+      "strength": 10,
+      "toughness": 10,
+      "agility": 9,
+      "initiative": 9,
+      "willpower": 10,
+      "intellect": 10,
+      "fellowship": 8
+    },
+    "woundBonus": 0,
+    "abilities": [
+      {
+        "name": "Defender of Humanity",
+        "effect": "Add +Rank Icons to any successful attack against a Mob."
+      },
+      {
+        "name": "Honour the Chapter",
+        "effect": "You are subject to the orders of your chapter master, and must honour the beliefs and traditions of your chapter. Your Resolve increases by +1."
+      },
+      {
+        "name": "Space Marine Implants",
+        "effect": "You are immune to the Bleeding Condition. You gain +1 bonus dice to any test related to one of the 19 implants if the GM agrees it is appropriate."
+      }
+    ],
+    "keywords": ["IMPERIUM", "ADEPTUS ASTARTES"],
+    "source": "core",
+    "subOptions": {
+      "type": "chapter",
+      "label": "Chapter",
+      "required": true,
+      "addKeyword": true,
+      "options": [
+        {
+          "id": "blood_angels",
+          "name": "Blood Angels",
+          "keyword": "BLOOD ANGELS",
+          "abilities": [
+            {
+              "name": "Savage Echoes",
+              "flavor": "Masters of assault combat, Blood Angels are driven by a furious desire to avenge their fallen Primarch.",
+              "effect": "You may reroll Double Rank dice once per melee attack Test."
+            },
+            {
+              "name": "The Red Thirst",
+              "flavor": "The dark flaw of the Chapter is a secret well kept — they harbour a destructive yearning, a battle fury, and an almost insatiable blood-hunger.",
+              "effect": "Whenever you are in melee combat and see blood, you must make a DN 3 Willpower Test. If you fail, you are Frenzied."
+            }
+          ]
+        },
+        {
+          "id": "dark_angels",
+          "name": "Dark Angels",
+          "keyword": "DARK ANGELS",
+          "abilities": [
+            {
+              "name": "Grim Resolve",
+              "flavor": "The Dark Angels do not flinch; all are trained to form impassable firing lines.",
+              "effect": "You may reroll Double Rank dice once per ranged attack Test when you Aim."
+            },
+            {
+              "name": "The Unforgiven",
+              "flavor": "The secret that plagues this taciturn Chapter plagues their every social interaction.",
+              "effect": "You suffer a +2 DN penalty to any social Tests made against anyone outside of your Chapter."
+            }
+          ]
+        },
+        {
+          "id": "imperial_fists",
+          "name": "Imperial Fists",
+          "keyword": "IMPERIAL FISTS",
+          "abilities": [
+            {
+              "name": "Siege Masters",
+              "flavor": "Inheriting their Primarch Rogal Dorn's patient determination, every Imperial Fist is an expert in siegecraft, defensive warfare, and strategies to counter fortified foes.",
+              "effect": "You may reroll Double Rank dice once per attack against a building, fortification, or enemy in cover. You may also add +Rank bonus dice whenever you make a Test related to architectural engineering."
+            },
+            {
+              "name": "Gene-seed Flaw",
+              "flavor": "Though proven resistant to mutation and deviance, the Imperial Fists gene-seed inhibits two of the Space Marine implants.",
+              "effect": "You are missing implant 12: Sus-an Membrane, and implant 17: Betcher's Gland."
+            }
+          ]
+        },
+        {
+          "id": "iron_hands",
+          "name": "Iron Hands",
+          "keyword": "IRON HANDS",
+          "abilities": [
+            {
+              "name": "The Flesh Is Weak",
+              "flavor": "Iron Hands draw strength and surety by purging weakness from their forms.",
+              "effect": "Choose one Augmetic Enhancement. You do not suffer the penalties of being Wounded. You gain +1 bonus die to Willpower Tests for every augmetic you have."
+            },
+            {
+              "name": "Ruthless Logic",
+              "flavor": "Suppressing all emotion and developing an unfeeling logic, their meticulous and apathetic nature make them cold allies to all but the Adeptus Mechanicus.",
+              "effect": "You suffer a +2 DN penalty to Fellowship-based Tests made against a target that does not have the IRON HANDS or ADEPTUS MECHANICUS Keywords."
+            }
+          ]
+        },
+        {
+          "id": "raven_guard",
+          "name": "Raven Guard",
+          "keyword": "RAVEN GUARD",
+          "abilities": [
+            {
+              "name": "Master of Shadows",
+              "flavor": "The Raven Guard are practiced in silent, unseen strikes regardless of conditions or equipment.",
+              "effect": "You may reroll Rank dice once per Stealth (A) Test. Running, using a Jump Pack, or similar circumstances do not affect your Stealth (A) Tests."
+            },
+            {
+              "name": "Dark Heritage",
+              "flavor": "Ghostly pale with dark, haunting eyes, the Raven Guard gene-seed has slight deficiencies that make them unnerving to behold with dwindling numbers.",
+              "effect": "You are missing implant 16: Mucranoid, and implant 17: Betcher's Gland. You suffer a +1 DN penalty to any Fellowship-based Test made against any target that could be frightened of your appearance."
+            }
+          ]
+        },
+        {
+          "id": "salamanders",
+          "name": "Salamanders",
+          "keyword": "SALAMANDERS",
+          "abilities": [
+            {
+              "name": "Promethean Cult",
+              "flavor": "Forged in fire, Salamanders are masters of purging flame and blazing weapons.",
+              "effect": "You may reroll Rank dice once per attack Test made using a weapon with the FIRE or MELTA Keywords. You may reroll Double Rank dice once each time you roll Determination against damage from a source with the FIRE or MELTA Keyword."
+            },
+            {
+              "name": "Infernal Inheritance",
+              "flavor": "A Salamander's eyes glow like red-hot forges and their skin is stained coal black. Their Chapter instills a deep altruism in every Astartes, each keenly feeling the pain of every fallen ally.",
+              "effect": "Whenever an ally within 30 metres of you is killed, the GM gains +1 Ruin. You suffer a +2 DN penalty to any Fellowship-based Test made against any target that could be frightened of your appearance."
+            }
+          ]
+        },
+        {
+          "id": "space_wolves",
+          "name": "Space Wolves",
+          "keyword": "SPACE WOLVES",
+          "abilities": [
+            {
+              "name": "Hunters Unleashed",
+              "flavor": "The Chapter's kinship with wolves extends to enhanced senses and an almost feral fighting style replete with savage grace.",
+              "effect": "You have the Acute Sense Talent and the Dual Wield Talent."
+            },
+            {
+              "name": "Savage Within",
+              "flavor": "Headstrong in their pursuit of valour, Space Wolves do not back down from death in glorious melee combat.",
+              "effect": "You cannot Fall Back."
+            }
+          ]
+        },
+        {
+          "id": "ultramarines",
+          "name": "Ultramarines",
+          "keyword": "ULTRAMARINES",
+          "abilities": [
+            {
+              "name": "Tactical Versatility",
+              "flavor": "Exemplars of the Codex Astartes, the Ultramarines wage war with the utmost flexibility, able to turn any situation to their advantage.",
+              "effect": "You may Shift for Glory twice as part of a Test."
+            },
+            {
+              "name": "Pride of Ultramar",
+              "flavor": "The Imperium looks to the Ultramarines as paragons of the virtues of Astartes, and each strives to excel that reputation; strong in body, but restrained in mind, a tactical and clear-headed protector of Humanity.",
+              "effect": "You start each session with 1 Wrath Point instead of 2."
+            }
+          ]
+        },
+        {
+          "id": "white_scars",
+          "name": "White Scars",
+          "keyword": "WHITE SCARS",
+          "abilities": [
+            {
+              "name": "Lightning Assault",
+              "flavor": "Favouring fast-attack bikes to achieve their famed agile strikes, White Scars are proficient at attacking at speeds that would be otherwise unwieldy.",
+              "effect": "You may reroll Double Rank dice once each time you make a Pilot (A) Test. You triple your Speed when you Charge."
+            },
+            {
+              "name": "Ritual Scarring",
+              "flavor": "Inductees to the chapter mark the flesh of their faces deeply with their blades.",
+              "effect": "You suffer a +1 DN penalty to any Fellowship-based Test made against any target that could be frightened of your appearance."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "primaris",
+    "name": "Primaris Astartes",
+    "description": "The Primaris Space Marines represent the next step in the evolution of the Emperor's Angels of Death. Created using new gene-seed technology, they are taller, stronger, and more resilient than their firstborn brothers.",
+    "cost": 198,
+    "speed": 7,
+    "size": "Average",
+    "baseAttributes": {
+      "strength": 5,
+      "toughness": 5,
+      "agility": 4,
+      "initiative": 4,
+      "willpower": 3,
+      "intellect": 3
+    },
+    "baseSkills": {
+      "athletics": 3,
+      "awareness": 3,
+      "ballisticSkill": 4,
+      "stealth": 3,
+      "weaponSkill": 3
+    },
+    "attributeMaximums": {
+      "strength": 12,
+      "toughness": 12,
+      "agility": 9,
+      "initiative": 9,
+      "willpower": 10,
+      "intellect": 10,
+      "fellowship": 8
+    },
+    "woundBonus": 3,
+    "abilities": [
+      {
+        "name": "Defender of Humanity",
+        "effect": "Add +Rank Icons to any successful attack against a Mob."
+      },
+      {
+        "name": "Honour the Chapter (Primaris)",
+        "effect": "You are subject to the orders of your chapter master, and must honour the beliefs and traditions of your chapter. Your Resolve increases by +1. As a Primaris, you ignore any impurities in your Chapter Gene-Seed, and also gain +3 Wounds."
+      },
+      {
+        "name": "Space Marine Implants",
+        "effect": "You are immune to the Bleeding Condition. You gain +1 bonus dice to any test related to one of the 22 implants if the GM agrees it is appropriate."
+      }
+    ],
+    "keywords": ["IMPERIUM", "ADEPTUS ASTARTES", "PRIMARIS"],
+    "source": "core",
+    "subOptions": {
+      "type": "chapter",
+      "label": "Chapter",
+      "required": true,
+      "addKeyword": true,
+      "options": [
+        {
+          "id": "blood_angels",
+          "name": "Blood Angels",
+          "keyword": "BLOOD ANGELS",
+          "abilities": [
+            {
+              "name": "Savage Echoes",
+              "flavor": "Masters of assault combat, Blood Angels are driven by a furious desire to avenge their fallen Primarch.",
+              "effect": "You may reroll Double Rank dice once per melee attack Test."
+            },
+            {
+              "name": "The Red Thirst",
+              "flavor": "The dark flaw of the Chapter is a secret well kept — they harbour a destructive yearning, a battle fury, and an almost insatiable blood-hunger.",
+              "effect": "Whenever you are in melee combat and see blood, you must make a DN 3 Willpower Test. If you fail, you are Frenzied."
+            }
+          ]
+        },
+        {
+          "id": "dark_angels",
+          "name": "Dark Angels",
+          "keyword": "DARK ANGELS",
+          "abilities": [
+            {
+              "name": "Grim Resolve",
+              "flavor": "The Dark Angels do not flinch; all are trained to form impassable firing lines.",
+              "effect": "You may reroll Double Rank dice once per ranged attack Test when you Aim."
+            },
+            {
+              "name": "The Unforgiven",
+              "flavor": "The secret that plagues this taciturn Chapter plagues their every social interaction.",
+              "effect": "You suffer a +2 DN penalty to any social Tests made against anyone outside of your Chapter."
+            }
+          ]
+        },
+        {
+          "id": "imperial_fists",
+          "name": "Imperial Fists",
+          "keyword": "IMPERIAL FISTS",
+          "abilities": [
+            {
+              "name": "Siege Masters",
+              "flavor": "Inheriting their Primarch Rogal Dorn's patient determination, every Imperial Fist is an expert in siegecraft, defensive warfare, and strategies to counter fortified foes.",
+              "effect": "You may reroll Double Rank dice once per attack against a building, fortification, or enemy in cover. You may also add +Rank bonus dice whenever you make a Test related to architectural engineering."
+            },
+            {
+              "name": "Gene-seed Flaw",
+              "flavor": "Though proven resistant to mutation and deviance, the Imperial Fists gene-seed inhibits two of the Space Marine implants.",
+              "effect": "You are missing implant 12: Sus-an Membrane, and implant 17: Betcher's Gland."
+            }
+          ]
+        },
+        {
+          "id": "iron_hands",
+          "name": "Iron Hands",
+          "keyword": "IRON HANDS",
+          "abilities": [
+            {
+              "name": "The Flesh Is Weak",
+              "flavor": "Iron Hands draw strength and surety by purging weakness from their forms.",
+              "effect": "Choose one Augmetic Enhancement. You do not suffer the penalties of being Wounded. You gain +1 bonus die to Willpower Tests for every augmetic you have."
+            },
+            {
+              "name": "Ruthless Logic",
+              "flavor": "Suppressing all emotion and developing an unfeeling logic, their meticulous and apathetic nature make them cold allies to all but the Adeptus Mechanicus.",
+              "effect": "You suffer a +2 DN penalty to Fellowship-based Tests made against a target that does not have the IRON HANDS or ADEPTUS MECHANICUS Keywords."
+            }
+          ]
+        },
+        {
+          "id": "raven_guard",
+          "name": "Raven Guard",
+          "keyword": "RAVEN GUARD",
+          "abilities": [
+            {
+              "name": "Master of Shadows",
+              "flavor": "The Raven Guard are practiced in silent, unseen strikes regardless of conditions or equipment.",
+              "effect": "You may reroll Rank dice once per Stealth (A) Test. Running, using a Jump Pack, or similar circumstances do not affect your Stealth (A) Tests."
+            },
+            {
+              "name": "Dark Heritage",
+              "flavor": "Ghostly pale with dark, haunting eyes, the Raven Guard gene-seed has slight deficiencies that make them unnerving to behold with dwindling numbers.",
+              "effect": "You are missing implant 16: Mucranoid, and implant 17: Betcher's Gland. You suffer a +1 DN penalty to any Fellowship-based Test made against any target that could be frightened of your appearance."
+            }
+          ]
+        },
+        {
+          "id": "salamanders",
+          "name": "Salamanders",
+          "keyword": "SALAMANDERS",
+          "abilities": [
+            {
+              "name": "Promethean Cult",
+              "flavor": "Forged in fire, Salamanders are masters of purging flame and blazing weapons.",
+              "effect": "You may reroll Rank dice once per attack Test made using a weapon with the FIRE or MELTA Keywords. You may reroll Double Rank dice once each time you roll Determination against damage from a source with the FIRE or MELTA Keyword."
+            },
+            {
+              "name": "Infernal Inheritance",
+              "flavor": "A Salamander's eyes glow like red-hot forges and their skin is stained coal black. Their Chapter instills a deep altruism in every Astartes, each keenly feeling the pain of every fallen ally.",
+              "effect": "Whenever an ally within 30 metres of you is killed, the GM gains +1 Ruin. You suffer a +2 DN penalty to any Fellowship-based Test made against any target that could be frightened of your appearance."
+            }
+          ]
+        },
+        {
+          "id": "space_wolves",
+          "name": "Space Wolves",
+          "keyword": "SPACE WOLVES",
+          "abilities": [
+            {
+              "name": "Hunters Unleashed",
+              "flavor": "The Chapter's kinship with wolves extends to enhanced senses and an almost feral fighting style replete with savage grace.",
+              "effect": "You have the Acute Sense Talent and the Dual Wield Talent."
+            },
+            {
+              "name": "Savage Within",
+              "flavor": "Headstrong in their pursuit of valour, Space Wolves do not back down from death in glorious melee combat.",
+              "effect": "You cannot Fall Back."
+            }
+          ]
+        },
+        {
+          "id": "ultramarines",
+          "name": "Ultramarines",
+          "keyword": "ULTRAMARINES",
+          "abilities": [
+            {
+              "name": "Tactical Versatility",
+              "flavor": "Exemplars of the Codex Astartes, the Ultramarines wage war with the utmost flexibility, able to turn any situation to their advantage.",
+              "effect": "You may Shift for Glory twice as part of a Test."
+            },
+            {
+              "name": "Pride of Ultramar",
+              "flavor": "The Imperium looks to the Ultramarines as paragons of the virtues of Astartes, and each strives to excel that reputation; strong in body, but restrained in mind, a tactical and clear-headed protector of Humanity.",
+              "effect": "You start each session with 1 Wrath Point instead of 2."
+            }
+          ]
+        },
+        {
+          "id": "white_scars",
+          "name": "White Scars",
+          "keyword": "WHITE SCARS",
+          "abilities": [
+            {
+              "name": "Lightning Assault",
+              "flavor": "Favouring fast-attack bikes to achieve their famed agile strikes, White Scars are proficient at attacking at speeds that would be otherwise unwieldy.",
+              "effect": "You may reroll Double Rank dice once each time you make a Pilot (A) Test. You triple your Speed when you Charge."
+            },
+            {
+              "name": "Ritual Scarring",
+              "flavor": "Inductees to the chapter mark the flesh of their faces deeply with their blades.",
+              "effect": "You suffer a +1 DN penalty to any Fellowship-based Test made against any target that could be frightened of your appearance."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "aeldari",
+    "name": "Aeldari",
+    "description": "The Aeldari are an ancient race whose empire once spanned the galaxy. Now they dwell on craftworlds, following strict paths of discipline to guard against the predations of the Chaos God Slaanesh.",
+    "cost": 10,
+    "speed": 8,
+    "size": "Average",
+    "baseAttributes": {
+      "agility": 3
+    },
+    "baseSkills": {},
+    "attributeMaximums": {
+      "strength": 8,
+      "toughness": 7,
+      "agility": 12,
+      "initiative": 12,
+      "willpower": 12,
+      "intellect": 10,
+      "fellowship": 6
+    },
+    "woundBonus": 0,
+    "abilities": [
+      {
+        "name": "Intense Emotion",
+        "effect": "+1 DN to all Resolve Tests. If you fail a Willpower-based Test in a scene involving emotion, the GM gains +1 Ruin."
+      },
+      {
+        "name": "Psychosensitive",
+        "effect": "You may choose to take the PSYKER Keyword."
+      }
+    ],
+    "keywords": ["AELDARI"],
+    "source": "core",
+    "subOptions": {
+      "type": "path",
+      "label": "Asuryani Path",
+      "required": true,
+      "addKeyword": false,
+      "options": [
+        {
+          "id": "path_of_awakening",
+          "name": "Path of Awakening",
+          "effect": "+Rank bonus dice to Awareness Tests.",
+          "bonuses": { "skills": { "awareness": "rank" } }
+        },
+        {
+          "id": "path_of_the_artisan",
+          "name": "Path of the Artisan",
+          "effect": "+Double Rank to AELDARI Scholar Tests.",
+          "bonuses": { "conditionalSkills": { "scholar": { "condition": "AELDARI", "bonus": "doubleRank" } } }
+        },
+        {
+          "id": "path_of_the_bonesinger",
+          "name": "Path of the Bonesinger",
+          "effect": "+Double Rank to AELDARI Tech Tests.",
+          "bonuses": { "conditionalSkills": { "tech": { "condition": "AELDARI", "bonus": "doubleRank" } } }
+        },
+        {
+          "id": "path_of_the_dreamer",
+          "name": "Path of the Dreamer",
+          "effect": "+Rank bonus dice to Corruption Tests."
+        },
+        {
+          "id": "path_of_the_healer",
+          "name": "Path of the Healer",
+          "effect": "+Double Rank to AELDARI Medicae Tests.",
+          "bonuses": { "conditionalSkills": { "medicae": { "condition": "AELDARI", "bonus": "doubleRank" } } }
+        },
+        {
+          "id": "path_of_the_mariner",
+          "name": "Path of the Mariner",
+          "effect": "+Double Rank to AELDARI Pilot Tests.",
+          "bonuses": { "conditionalSkills": { "pilot": { "condition": "AELDARI", "bonus": "doubleRank" } } }
+        },
+        {
+          "id": "path_of_the_mourner",
+          "name": "Path of the Mourner",
+          "effect": "+Rank Maximum Shock.",
+          "bonuses": { "maxShock": "rank" }
+        },
+        {
+          "id": "path_of_service",
+          "name": "Path of Service",
+          "effect": "+Double Rank to AELDARI Insight Tests.",
+          "bonuses": { "conditionalSkills": { "insight": { "condition": "AELDARI", "bonus": "doubleRank" } } }
+        }
+      ]
+    }
+  },
+  {
+    "id": "aeldari_psychosensitive",
+    "name": "Aeldari (Psychosensitive)",
+    "description": "Some Aeldari are particularly psychosensitive, manifesting strong psychic abilities as well as following one of the traditional Asuryani paths. These individuals often become seers or warlocks.",
+    "cost": 10,
+    "speed": 8,
+    "size": "Average",
+    "baseAttributes": {
+      "agility": 3
+    },
+    "baseSkills": {},
+    "attributeMaximums": {
+      "strength": 8,
+      "toughness": 7,
+      "agility": 12,
+      "initiative": 12,
+      "willpower": 12,
+      "intellect": 10,
+      "fellowship": 6
+    },
+    "woundBonus": 0,
+    "abilities": [
+      {
+        "name": "Intense Emotion",
+        "effect": "+1 DN to all Resolve Tests. If you fail a Willpower-based Test in a scene involving emotion, the GM gains +1 Ruin."
+      },
+      {
+        "name": "Psychosensitive",
+        "effect": "You have the PSYKER Keyword."
+      }
+    ],
+    "keywords": ["AELDARI", "PSYKER"],
+    "source": "core",
+    "subOptions": [
+      {
+        "type": "path",
+        "label": "Asuryani Path",
+        "required": true,
+        "addKeyword": false,
+        "options": [
+          {
+            "id": "path_of_awakening",
+            "name": "Path of Awakening",
+            "effect": "+Rank bonus dice to Awareness Tests.",
+            "bonuses": { "skills": { "awareness": "rank" } }
+          },
+          {
+            "id": "path_of_the_artisan",
+            "name": "Path of the Artisan",
+            "effect": "+Double Rank to AELDARI Scholar Tests.",
+            "bonuses": { "conditionalSkills": { "scholar": { "condition": "AELDARI", "bonus": "doubleRank" } } }
+          },
+          {
+            "id": "path_of_the_bonesinger",
+            "name": "Path of the Bonesinger",
+            "effect": "+Double Rank to AELDARI Tech Tests.",
+            "bonuses": { "conditionalSkills": { "tech": { "condition": "AELDARI", "bonus": "doubleRank" } } }
+          },
+          {
+            "id": "path_of_the_dreamer",
+            "name": "Path of the Dreamer",
+            "effect": "+Rank bonus dice to Corruption Tests."
+          },
+          {
+            "id": "path_of_the_healer",
+            "name": "Path of the Healer",
+            "effect": "+Double Rank to AELDARI Medicae Tests.",
+            "bonuses": { "conditionalSkills": { "medicae": { "condition": "AELDARI", "bonus": "doubleRank" } } }
+          },
+          {
+            "id": "path_of_the_mariner",
+            "name": "Path of the Mariner",
+            "effect": "+Double Rank to AELDARI Pilot Tests.",
+            "bonuses": { "conditionalSkills": { "pilot": { "condition": "AELDARI", "bonus": "doubleRank" } } }
+          },
+          {
+            "id": "path_of_the_mourner",
+            "name": "Path of the Mourner",
+            "effect": "+Rank Maximum Shock.",
+            "bonuses": { "maxShock": "rank" }
+          },
+          {
+            "id": "path_of_service",
+            "name": "Path of Service",
+            "effect": "+Double Rank to AELDARI Insight Tests.",
+            "bonuses": { "conditionalSkills": { "insight": { "condition": "AELDARI", "bonus": "doubleRank" } } }
+          }
+        ]
+      },
+      {
+        "type": "discipline",
+        "label": "Psychic Discipline",
+        "required": true,
+        "addKeyword": false,
+        "options": [
+          {
+            "id": "runes_of_battle",
+            "name": "Runes of Battle",
+            "effect": "The combat disciplines of Aeldari Warlocks."
+          },
+          {
+            "id": "runes_of_fate",
+            "name": "Runes of Fate",
+            "effect": "The farseer's art of seeing and shaping destiny."
+          },
+          {
+            "id": "runes_of_fortune",
+            "name": "Runes of Fortune",
+            "effect": "Powers of luck, protection, and psychic mastery."
+          },
+          {
+            "id": "bonesinging",
+            "name": "Bonesinging",
+            "effect": "The art of shaping wraithbone."
+          },
+          {
+            "id": "phantasmancy",
+            "name": "Phantasmancy",
+            "effect": "The shadow disciplines of Harlequin Shadowseers."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ork",
+    "name": "Ork",
+    "description": "Orks are brutal, warlike aliens that live for battle. Their muscular, green-skinned bodies are incredibly resilient, and their savage minds are focused entirely on fighting.",
+    "cost": 20,
+    "speed": 6,
+    "size": "Average",
+    "baseAttributes": {
+      "strength": 3,
+      "toughness": 3
+    },
+    "baseSkills": {},
+    "attributeMaximums": {
+      "strength": 10,
+      "toughness": 10,
+      "agility": 7,
+      "initiative": 7,
+      "willpower": 8,
+      "intellect": 7,
+      "fellowship": 7
+    },
+    "woundBonus": 0,
+    "abilities": [
+      {
+        "name": "Orky",
+        "effect": "+1 bonus dice to Intimidation Tests."
+      },
+      {
+        "name": "Bigger is Better",
+        "effect": "You calculate Influence using Strength instead of Fellowship."
+      }
+    ],
+    "keywords": ["ORK"],
+    "source": "core",
+    "subOptions": {
+      "type": "clan",
+      "label": "Clan",
+      "required": true,
+      "addKeyword": true,
+      "options": [
+        {
+          "id": "bad_moons",
+          "name": "Bad Moons",
+          "keyword": "BAD MOONS",
+          "effect": "Growing the Teef that are Orkish currency faster than any other Clan, the Bad Moons are the wealthiest, and thus have the best food and flashiest weaponry — traits they are incredibly proud of. Gain +1 Wealth at the end of every session."
+        },
+        {
+          "id": "blood_axes",
+          "name": "Blood Axes",
+          "keyword": "BLOOD AXES",
+          "effect": "Considered 'un-Orky' by other Clans, the Blood Axes use unorthodox 'taktiks' like planning, strategy, and even trading with the Imperium to get better Wargear. +Rank bonus dice to Leadership (Wil) and Stealth (A) Tests."
+        },
+        {
+          "id": "deathskulls",
+          "name": "Deathskulls",
+          "keyword": "DEATHSKULLS",
+          "effect": "Scheming scavengers, the Deathskulls steal, loot, or scrounge whatever they can. Known to hoard, they 'trade' and customise gear more frequently than other Clans. +Rank bonus dice to Tech (Int) and Influence Tests."
+        },
+        {
+          "id": "evil_sunz",
+          "name": "Evil Sunz",
+          "keyword": "EVIL SUNZ",
+          "effect": "Obsessed with speed, Evil Sunz revel in the roar of engines, the smell of burning promethium, and the feeling of going as fast as possible. You gain +1 Speed, and +Rank bonus dice to all Tests whenever you are in a vehicle moving at top speed."
+        },
+        {
+          "id": "goffs",
+          "name": "Goffs",
+          "keyword": "GOFFS",
+          "effect": "Massive and multitudinous, Goffs example typical Ork warfare; all tough, large, loutish brutes looking for any excuse to charge headlong into battle in as big a mob as possible. +Rank bonus dice to melee attack Tests when you Charge."
+        },
+        {
+          "id": "snakebites",
+          "name": "Snakebites",
+          "keyword": "SNAKEBITES",
+          "effect": "Deliberately primitive, the tribal Snakebites prefer their thick skin to crafted armour, proud of their ability to live off the land. +Double Rank bonus dice to Survival (Wil) Tests."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ogryn",
+    "name": "Ogryn",
+    "description": "Standing larger even than the Adeptus Astartes with gargantuan, overly-muscled frames, Ogryns are a mutant subspecies of Humanity. Thought to be a result of adaptation to harsh, high-gravity worlds, Ogryns are incredibly strong, highly resilient, and instinctively violent.",
+    "cost": 76,
+    "speed": 6,
+    "size": "Large",
+    "baseAttributes": {
+      "strength": 5,
+      "toughness": 5
+    },
+    "baseSkills": {
+      "survival": 2
+    },
+    "attributeMaximums": {
+      "strength": 12,
+      "toughness": 12,
+      "agility": 7,
+      "initiative": 4,
+      "willpower": 8,
+      "intellect": 1,
+      "fellowship": 4
+    },
+    "woundBonus": 0,
+    "abilities": [
+      {
+        "name": "Avalanche of Muscle",
+        "effect": "When you Charge you gain an additional +Rank Bonus Dice to your melee attack Test."
+      },
+      {
+        "name": "Claustrophobic",
+        "effect": "Whenever you enter an enclosed area you must make a Fear Test (default DN 2). Additionally, whenever you roll a Complication in an enclosed space, the GM can spend 1 Ruin to force you to repeat this Fear Test."
+      },
+      {
+        "name": "Simple Loyalty",
+        "effect": "Whenever an ally with the IMPERIUM Keyword makes a Leadership Test targeting an Ogryn they gain Bonus Dice equal to the Ogryn's Rank."
+      }
+    ],
+    "keywords": ["IMPERIUM", "ABHUMAN"],
+    "source": "fspg"
+  },
+  {
+    "id": "ratling",
+    "name": "Ratling",
+    "description": "Diminutive, dextrous, and duplicitous, Ratlings are a mutant subspecies of Humanity. They have well established places in Imperial society as sharpshooters and skilled stealth experts.",
+    "cost": 30,
+    "speed": 5,
+    "size": "Small",
+    "baseAttributes": {
+      "agility": 2,
+      "fellowship": 2
+    },
+    "baseSkills": {
+      "awareness": 2,
+      "ballisticSkill": 1,
+      "cunning": 1,
+      "deception": 2,
+      "stealth": 2
+    },
+    "attributeMaximums": {
+      "strength": 6,
+      "toughness": 6,
+      "agility": 10,
+      "initiative": 10,
+      "willpower": 8,
+      "intellect": 8,
+      "fellowship": 10
+    },
+    "woundBonus": 0,
+    "abilities": [
+      {
+        "name": "Gourmand",
+        "effect": "+Double Rank Bonus Dice to any Test made to prepare food. Prepared food can be used during a Regroup to recover +Rank Shock."
+      }
+    ],
+    "keywords": ["IMPERIUM", "ABHUMAN"],
+    "source": "fspg"
+  },
+  {
+    "id": "kroot",
+    "name": "Kroot",
+    "description": "Strange and savage xenos hailing from the fringes of the galaxy, the inscrutable Kroot are known for serving many Species as mercenaries. Their primitive warrior culture is intertwined with a unique quirk of their biology — the Kroot devour the corpses of their defeated foes and absorb their genetic traits.",
+    "cost": 22,
+    "speed": 7,
+    "size": "Average",
+    "baseAttributes": {},
+    "baseSkills": {
+      "athletics": 1,
+      "awareness": 1,
+      "stealth": 2,
+      "survival": 2,
+      "weaponSkill": 2
+    },
+    "attributeMaximums": {
+      "strength": 12,
+      "toughness": 12,
+      "agility": 12,
+      "initiative": 12,
+      "willpower": 10,
+      "intellect": 6,
+      "fellowship": 6
+    },
+    "woundBonus": 0,
+    "abilities": [
+      {
+        "name": "Kroot Mutations",
+        "effect": "You have a number of Kroot Mutations equal to your Tier, and may gain additional Kroot Mutations as part of Ascension."
+      },
+      {
+        "name": "Kroot Language",
+        "effect": "Whenever a Kroot makes a Test to understand a spoken language, they gain +Rank Bonus Dice."
+      }
+    ],
+    "keywords": ["KROOT"],
+    "source": "fspg",
+    "subOptions": {
+      "type": "mutation",
+      "label": "Kroot Mutation",
+      "required": true,
+      "countByTier": true,
+      "addKeyword": false,
+      "options": [
+        {
+          "id": "maneater",
+          "name": "Maneater",
+          "effect": "+1 to your lowest Attribute (choose if tied)."
+        },
+        {
+          "id": "astartes_eater",
+          "name": "Astartes Eater",
+          "effect": "+2 to any Attribute.",
+          "restricted": true
+        },
+        {
+          "id": "aeldari_eater",
+          "name": "Aeldari Eater",
+          "effect": "+1 to Agility or Willpower."
+        },
+        {
+          "id": "ork_eater",
+          "name": "Ork Eater",
+          "effect": "+1 to Strength or Toughness."
+        },
+        {
+          "id": "armoured_hide",
+          "name": "Armoured Hide",
+          "effect": "+Rank to Base Resilience.",
+          "bonuses": { "resilience": "rank" }
+        },
+        {
+          "id": "bioluminescence",
+          "name": "Bioluminescence",
+          "effect": "You can glow at will, providing illumination in a 5m radius."
+        },
+        {
+          "id": "camouflage",
+          "name": "Camouflage",
+          "effect": "You gain +2 bonus dice to Stealth Tests.",
+          "bonuses": { "skills": { "stealth": 2 } }
+        },
+        {
+          "id": "facultative_bipedalism",
+          "name": "Facultative Bipedalism",
+          "effect": "Sprint at 2x normal Speed. +Double Rank to Athletics Tests for jumping or climbing."
+        },
+        {
+          "id": "hypersensitive_quills",
+          "name": "Hypersensitive Quills",
+          "effect": "You gain the Auspex ability to detect hidden creatures and objects within 30m."
+        },
+        {
+          "id": "wings",
+          "name": "Wings",
+          "effect": "You can Fly at Speed 7."
+        },
+        {
+          "id": "weaponised_biology",
+          "name": "Weaponised Biology",
+          "effect": "Your unarmed strikes gain +1 ED and the Rending (1) trait."
+        }
+      ]
+    }
+  },
+  {
+    "id": "drukhari",
+    "name": "Drukhari",
+    "description": "The Drukhari refused to turn from the sinister obsessions and sadistic practices that destroyed the Aeldari empire, and now launch brutal raids for captives whose suffering replenishes their own withering souls.",
+    "cost": 10,
+    "speed": 8,
+    "size": "Average",
+    "baseAttributes": {
+      "agility": 3
+    },
+    "baseSkills": {},
+    "attributeMaximums": {
+      "strength": 8,
+      "toughness": 8,
+      "agility": 12,
+      "initiative": 12,
+      "willpower": 10,
+      "intellect": 10,
+      "fellowship": 6
+    },
+    "woundBonus": 0,
+    "abilities": [
+      {
+        "name": "Intense Emotion",
+        "effect": "+1 DN to all Resolve Tests. If you fail a Willpower-based Test in a scene involving emotion, the GM gains +1 Ruin."
+      },
+      {
+        "name": "Night Vision",
+        "effect": "You do not suffer vision penalties for low-light or darkness."
+      },
+      {
+        "name": "Soul Debt",
+        "effect": "Make a DN Tier+1 Corruption Test at the end of any session in which you did not inflict Wounds on an unwilling creature. You never make Corruption Tests for inflicting pain. Drukhari with the ASURYANI, HARLEQUIN, or YNNARI Keyword lose this ability."
+      }
+    ],
+    "keywords": ["AELDARI", "DRUKHARI"],
+    "source": "aeldari"
+  },
+  {
+    "id": "wraith_construct",
+    "name": "Wraith Construct",
+    "description": "In death, the souls of fallen Aeldari are held in spirit stones. Some are chosen in time of need to live once more as mighty Wraith Constructs, animating towering wraithbone bodies to wage war from beyond the grave.",
+    "cost": 90,
+    "speed": 5,
+    "size": "Large",
+    "baseAttributes": {
+      "strength": 5,
+      "toughness": 6
+    },
+    "baseSkills": {},
+    "attributeMaximums": {
+      "strength": 12,
+      "toughness": 12,
+      "agility": 8,
+      "initiative": 8,
+      "willpower": 12,
+      "intellect": 10,
+      "fellowship": 4
+    },
+    "woundBonus": 0,
+    "abilities": [
+      {
+        "name": "Wraithbone Form",
+        "effect": "Wraith Constructs are immune to the Blinded, Bleeding, and Poisoned Conditions, and cannot Suffocate. They cannot wear armour, but always count as having an Armour Rating (AR) of 5."
+      }
+    ],
+    "keywords": ["AELDARI", "WRAITH CONSTRUCT"],
+    "source": "aeldari"
+  }
+]

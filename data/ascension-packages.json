@@ -1,0 +1,103 @@
+[
+  {
+    "id": "back_from_the_brink",
+    "name": "Back From The Brink",
+    "description": "You are dead. Or that's what everyone thinks. Whatever horrible fate befell you didn't quite end your life, and any limbs you may have lost have been replaced by augmetics.",
+    "cost": "10 x new Tier",
+    "costMultiplier": 10,
+    "prerequisites": {
+      "story": "Must have near-death experience"
+    },
+    "benefits": [
+      "Roll on Memorable Injury table twice",
+      "Roll on Traumatic Injury table twice",
+      "Replace lost body parts with augmetics"
+    ],
+    "keywordsGained": ["[ANY] (Faction of rescuers)"],
+    "influenceModifier": 0,
+    "source": "core"
+  },
+  {
+    "id": "demanding_patron",
+    "name": "Demanding Patron",
+    "description": "Your exploits have caught the attention of someone powerful who will sponsor your future deeds, though they have demands in return.",
+    "cost": "10 x new Tier",
+    "costMultiplier": 10,
+    "prerequisites": {
+      "skills": {"persuasion": 3}
+    },
+    "benefits": [
+      "Choose: 1 item of Rare Wargear (value 3 + new Tier)",
+      "OR: 2 Wealth",
+      "OR: +2 Influence per Tier Ascended"
+    ],
+    "keywordsGained": ["[ANY] (Patron's Faction)"],
+    "influenceModifier": 2,
+    "source": "core"
+  },
+  {
+    "id": "dauntless_reputation",
+    "name": "Dauntless Reputation",
+    "description": "With a single glorious act of extraordinary merit, you gained tremendous reputation. Word of your exploits has spread, and you have gained both notoriety and disciples.",
+    "cost": "30 x new Tier",
+    "costMultiplier": 30,
+    "prerequisites": {},
+    "benefits": [
+      "Gain the Devotees Talent (no Leadership prerequisite)",
+      "A tremendous reputation with a Faction",
+      "A nemesis"
+    ],
+    "keywordsGained": ["[ANY]"],
+    "influenceModifier": 2,
+    "source": "core"
+  },
+  {
+    "id": "perfidious_wretch",
+    "name": "Perfidious Wretch",
+    "description": "You betrayed your allies to gain favour with another Faction. You may have been seduced by promises of power or material wealth.",
+    "cost": "5 x new Tier",
+    "costMultiplier": 5,
+    "prerequisites": {
+      "skills": {"cunning": 3}
+    },
+    "benefits": [
+      "3 Wealth",
+      "1 item of Wargear (value 3 + new Tier, Rare or lower)"
+    ],
+    "keywordsGained": ["Gain [ANY], remove betrayed Keyword"],
+    "influenceModifier": -2,
+    "source": "core"
+  },
+  {
+    "id": "psychic_revelations",
+    "name": "Psychic Revelations",
+    "description": "You are now a Psyker. Whether a spontaneous manifestation, development of latent abilities, or through unbidden exposure to Warp abnormalities.",
+    "cost": "10 x new Tier",
+    "costMultiplier": 10,
+    "prerequisites": {},
+    "benefits": [
+      "Gain the Smite psychic power and Universal Psychic Powers",
+      "One Minor Psychic Power per Tier Ascended",
+      "May purchase psychic powers from one Discipline"
+    ],
+    "keywordsGained": ["PSYKER"],
+    "influenceModifier": 1,
+    "source": "core"
+  },
+  {
+    "id": "stay_the_course",
+    "name": "Stay The Course",
+    "description": "You are a veteran of your position, excelling far above your peers. Though not promoted, you have been recognised and rewarded.",
+    "cost": "10 x new Tier",
+    "costMultiplier": 10,
+    "prerequisites": {},
+    "benefits": [
+      "Roll on Memorable Injury table (or gain 3 Corruption instead)",
+      "Choose: 2 items of Rare Wargear (value 3 + new Tier)",
+      "OR: 1 item of Very Rare Wargear (value 3 + new Tier)"
+    ],
+    "keywordsGained": [],
+    "influenceModifier": 1,
+    "source": "core"
+  }
+]

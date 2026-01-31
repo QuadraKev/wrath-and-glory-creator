@@ -1,0 +1,36 @@
+{
+  "name": "wrath-and-glory-creator",
+  "version": "1.0.0",
+  "description": "Character Creator for Wrath and Glory TTRPG",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^40.0.0",
+    "electron-builder": "^26.5.0"
+  },
+  "build": {
+    "appId": "com.wng.character-creator",
+    "productName": "Wrath and Glory Character Creator",
+    "win": {
+      "target": "portable",
+      "icon": "icon.ico"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*",
+      "data/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "characters",
+        "to": "characters"
+      }
+    ]
+  }
+}

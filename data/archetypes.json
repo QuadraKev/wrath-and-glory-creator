@@ -1,0 +1,2613 @@
+[
+  {
+    "id": "sister_hospitaller",
+    "name": "Sister Hospitaller",
+    "description": "A battlefield healer of both mind and soul. You ministrate to the injured with great Medicae expertise and inspire the pious with your cavernous well of faith.",
+    "tier": 1,
+    "species": ["human"],
+    "cost": 24,
+    "faction": "Adepta Sororitas",
+    "keywords": ["IMPERIUM", "ADEPTUS MINISTORUM", "ADEPTA SORORITAS", "[ORDER]"],
+    "attributeBonus": {
+      "willpower": 3,
+      "intellect": 3
+    },
+    "skillBonus": {
+      "medicae": 1,
+      "scholar": 1
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Loyal Compassion",
+        "description": "+Double Rank bonus dice whenever you make a Medicae (Int) Test on a character with the IMPERIUM Keyword."
+      }
+    ],
+    "startingWargear": ["sororitas_power_armour", "chirurgeons_tools", "chain_bayonet", "laspistol", "sororitas_vestments", "rule_of_sororitas"],
+    "source": "core"
+  },
+  {
+    "id": "ministorum_priest",
+    "name": "Ministorum Priest",
+    "description": "You preach and enforce the Imperial Cult. You lead the faithful to execute His will, inflaming faithful hearts with your impassioned oration.",
+    "tier": 1,
+    "species": ["human"],
+    "cost": 12,
+    "faction": "Adeptus Ministorum",
+    "keywords": ["IMPERIUM", "ADEPTUS MINISTORUM"],
+    "attributeBonus": {
+      "willpower": 3
+    },
+    "skillBonus": {
+      "scholar": 1
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Fiery Invective",
+        "description": "You can preach the word of the Imperial Creed as a Free Action once per combat. You and all allies with the IMPERIUM Keyword heal 1d3+Rank Shock."
+      }
+    ],
+    "startingWargear": ["chainsword", "laspistol", "rosarius", "knife", "ministorum_robes", "missionary_kit"],
+    "source": "core"
+  },
+  {
+    "id": "imperial_guardsman",
+    "name": "Imperial Guardsman",
+    "description": "A footsoldier in the galaxy's greatest army. You are one of billions of raw recruits trained to stand and fire against the monstrous enemies of humanity.",
+    "tier": 1,
+    "species": ["human"],
+    "cost": 6,
+    "faction": "Astra Militarum",
+    "keywords": ["IMPERIUM", "ASTRA MILITARUM", "[REGIMENT]"],
+    "attributeBonus": {},
+    "skillBonus": {
+      "ballisticSkill": 2
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Look Out, Sir!",
+        "description": "You have been drilled in sacrificing yourself to save your allies. Once per combat, you may take a Reflexive Action to move up to half your Speed to get in the way of any attack that hit an ally. The attacker then rolls against your Resilience instead of your ally's, and may deal Wounds to you. Your Resilience increases by +Rank for the purpose of calculating this damage."
+      }
+    ],
+    "startingWargear": ["flak_armour", "lasgun", "knife", "mess_kit", "grooming_kit", "uplifting_primer", "ration_packs"],
+    "source": "core"
+  },
+  {
+    "id": "inquisitorial_acolyte",
+    "name": "Inquisitorial Acolyte",
+    "description": "Conscripted to aid an Inquisitor, you identify and destroy threats to the Imperium.",
+    "tier": 1,
+    "species": ["human"],
+    "cost": 6,
+    "faction": "Inquisition",
+    "keywords": ["IMPERIUM", "INQUISITION", "[ANY]", "[ORDO]"],
+    "attributeBonus": {},
+    "skillBonus": {
+      "choice": 2
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Inquisitorial Decree",
+        "description": "You can invoke the name of your Inquisitor to gain +Rank bonus dice to any social Skill test when interacting with an individual with the IMPERIUM Keyword. You can only use this ability once per scene."
+      }
+    ],
+    "startingWargear": ["flak_armour", "symbol_of_authority"],
+    "wargearChoices": "Any two IMPERIUM weapons with a Value of 5 or less and a Rarity of Uncommon or lower",
+    "source": "core"
+  },
+  {
+    "id": "inquisitorial_sage",
+    "name": "Inquisitorial Sage",
+    "description": "You are a bureaucratic savant, an expert at sourcing and judiciously applying knowledge to serve the Imperium and your own ends.",
+    "tier": 1,
+    "species": ["human"],
+    "cost": 16,
+    "faction": "Inquisition",
+    "keywords": ["ADEPTUS ADMINISTRATUM", "IMPERIUM", "INQUISITION", "[ORDO]"],
+    "attributeBonus": {
+      "intellect": 3
+    },
+    "skillBonus": {
+      "scholar": 2
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "Administratum Records",
+        "description": "You are particularly adept at navigating the Imperium's colossal bureaucracy. You gain +Rank bonus dice whenever you make a Test to gather information from Imperial sources, typically on Influence or Investigation (Int) tests."
+      }
+    ],
+    "startingWargear": ["administratum_robes", "laspistol", "knife", "auto_quill", "data_slate", "ancient_scrolls"],
+    "source": "core"
+  },
+  {
+    "id": "ganger",
+    "name": "Ganger",
+    "description": "A member of the Imperial underclass, your life is rife with violence and hardship. Your identity is tied to a territorial gang, a brutal reflection of lower hive life.",
+    "tier": 1,
+    "species": ["human"],
+    "cost": 2,
+    "faction": "Scum",
+    "keywords": ["SCUM", "[ANY]"],
+    "attributeBonus": {},
+    "skillBonus": {
+      "cunning": 1
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "Scrounger",
+        "description": "Your life with less has made you adept at finding spares and supplies in the most unlikely of places. You gain +Rank bonus dice to Cunning (Fel) Tests. Once per session you may make an Influence or Cunning Test to acquire an item, representing something you have prepared in advance."
+      }
+    ],
+    "startingWargear": ["bedroll", "canteen", "gang_colours"],
+    "wargearChoices": "A Knife or a Sword, and a Laspistol or Autopistol or Hand Cannon or Stubber",
+    "source": "core"
+  },
+  {
+    "id": "corsair",
+    "name": "Corsair",
+    "description": "A space pirate, a self-imposed exile of your Species, you raid and fight for coin, and to experience the full spectrum of sensation and emotion.",
+    "tier": 1,
+    "species": ["aeldari"],
+    "cost": 6,
+    "faction": "Aeldari",
+    "keywords": ["AELDARI", "ANHRATHE", "[COTERIE]"],
+    "attributeBonus": {
+      "agility": 3
+    },
+    "skillBonus": {
+      "athletics": 2
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Dancing on the Blade's Edge",
+        "description": "You throw yourself into danger with reckless abandon to hide your ancestral fears. You gain +Rank bonus dice whenever you make or resist an Athletics (S) or Persuasion (Fel) Interaction Attack. You suffer a +1 DN penalty to Fear Tests."
+      }
+    ],
+    "startingWargear": ["corsair_armour", "shuriken_pistol", "lasblaster", "spirit_stone", "plasma_grenades", "void_suit"],
+    "source": "core"
+  },
+  {
+    "id": "ork_boy",
+    "name": "Ork Boy",
+    "description": "A hulking, brutish creature who lives only to fight. You are a loutish, anarchic bruiser born for battle.",
+    "tier": 1,
+    "species": ["ork"],
+    "cost": 6,
+    "faction": "Ork",
+    "keywords": ["ORK", "[CLAN]"],
+    "attributeBonus": {
+      "strength": 3,
+      "toughness": 3
+    },
+    "skillBonus": {
+      "weaponSkill": 2
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Get Stuck In",
+        "description": "You gain +Rank bonus dice to melee attacks for every ally engaged with the same target as you."
+      }
+    ],
+    "startingWargear": ["shoota", "slugga", "choppa", "ripped_clothes"],
+    "source": "core"
+  },
+  {
+    "id": "sister_of_battle",
+    "name": "Sister of Battle",
+    "description": "An unwavering warrior of righteous determination, you are a warrior monk, raising battle hymns as you zealously destroy the Emperor's foes.",
+    "tier": 2,
+    "species": ["human"],
+    "cost": 64,
+    "faction": "Adepta Sororitas",
+    "keywords": ["IMPERIUM", "ADEPTUS MINISTORUM", "ADEPTA SORORITAS", "[ORDER]"],
+    "attributeBonus": {
+      "strength": 3,
+      "toughness": 3,
+      "agility": 3,
+      "willpower": 3
+    },
+    "skillBonus": {
+      "ballisticSkill": 2,
+      "scholar": 1,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "Purity of Faith",
+        "description": "You and any allies within 15 metres gain +Double Rank bonus dice to Corruption Tests. You gain +Double Rank bonus dice to any Test to resist the effects of a Psychic Power."
+      }
+    ],
+    "startingWargear": ["sororitas_power_armour", "chaplet_ecclesiasticus", "sororitas_vestments", "writing_kit", "rule_of_sororitas"],
+    "wargearChoices": "A Boltgun or a Bolt Pistol and a Chainsword",
+    "source": "core"
+  },
+  {
+    "id": "sanctioned_psyker",
+    "name": "Sanctioned Psyker",
+    "description": "A mutant capable of channelling the Warp to manipulate reality.",
+    "tier": 2,
+    "species": ["human"],
+    "cost": 32,
+    "faction": "Adeptus Astra Telepathica",
+    "keywords": ["IMPERIUM", "ADEPTUS ASTRA TELEPATHICA", "PSYKER", "SCHOLASTIA PSYKANA"],
+    "attributeBonus": {
+      "willpower": 4
+    },
+    "skillBonus": {
+      "psychicMastery": 1
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Psyker",
+        "description": "You have the PSYKER Keyword, and are a Psyker. You know the Universal Psyker Abilities, 1 Minor Psychic Power and the Smite psychic power. You may purchase additional psychic powers, following the rules in Chapter 11."
+      }
+    ],
+    "startingWargear": ["laspistol", "force_stave", "psykana_mercy_blade", "mess_kit", "blanket", "grooming_kit", "ration_packs"],
+    "isPsyker": true,
+    "source": "core"
+  },
+  {
+    "id": "skitarius",
+    "name": "Skitarius",
+    "description": "A soldier more of steel than sinew, you are a member of the standing army of the Adeptus Mechanicus.",
+    "tier": 2,
+    "species": ["human"],
+    "cost": 28,
+    "faction": "Adeptus Mechanicus",
+    "keywords": ["IMPERIUM", "ADEPTUS MECHANICUS", "SKITARII", "[FORGE WORLD]"],
+    "attributeBonus": {
+      "toughness": 3
+    },
+    "skillBonus": {
+      "ballisticSkill": 2,
+      "tech": 1
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Blessed Redundancy",
+        "description": "You have been rebuilt with redundant organs and systems. You do not suffer any effects from the Bleeding Condition, and gain +Rank additional Wounds."
+      }
+    ],
+    "startingWargear": ["skitarii_war_plate", "arc_maul", "radium_pistol", "combi_tool"],
+    "source": "core"
+  },
+  {
+    "id": "tempestus_scion",
+    "name": "Tempestus Scion",
+    "description": "An elite stormtrooper of the Astra Militarum, you have been trained from childhood for high-risk operations.",
+    "tier": 2,
+    "species": ["human"],
+    "cost": 52,
+    "faction": "Astra Militarum",
+    "keywords": ["IMPERIUM", "ASTRA MILITARUM", "MILITARUM TEMPESTUS"],
+    "attributeBonus": {
+      "strength": 3,
+      "toughness": 3,
+      "agility": 3
+    },
+    "skillBonus": {
+      "athletics": 1,
+      "awareness": 1,
+      "ballisticSkill": 2,
+      "stealth": 1,
+      "survival": 1,
+      "weaponSkill": 1
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Special Operations",
+        "description": "When you spend a Glory to Seize the Initiative or for a narrative benefit related to your training, you can spend 1 Glory to give an ally with the IMPERIUM Keyword a half-action instead of having to spend 2 Glory."
+      }
+    ],
+    "startingWargear": ["carapace_armour", "hot_shot_lasgun", "hot_shot_laspistol", "knife", "frag_grenades", "krak_grenades", "grav_chute"],
+    "source": "core"
+  },
+  {
+    "id": "rogue_trader",
+    "name": "Rogue Trader",
+    "description": "A licensed privateer of the Imperium, you ply the stars in search of profit, glory, and adventure.",
+    "tier": 2,
+    "species": ["human"],
+    "cost": 36,
+    "faction": "Rogue Trader Dynasties",
+    "keywords": ["IMPERIUM", "ROGUE TRADER", "[DYNASTY]"],
+    "attributeBonus": {
+      "fellowship": 3
+    },
+    "skillBonus": {
+      "awareness": 1,
+      "cunning": 1,
+      "deception": 1,
+      "insight": 1,
+      "leadership": 1,
+      "persuasion": 1
+    },
+    "influenceModifier": 2,
+    "abilities": [
+      {
+        "name": "Warrant of Trade",
+        "description": "You wield the authority of an ancient Warrant of Trade. You gain +Double Rank to Influence and Persuasion Tests when dealing with Imperial citizens. Once per session, you may use your Warrant to avoid punishment for a crime within the Imperium."
+      }
+    ],
+    "startingWargear": ["flak_coat", "bolt_pistol", "power_sword", "fine_clothing", "warrant_of_trade"],
+    "source": "core"
+  },
+  {
+    "id": "scavvy",
+    "name": "Scavvy",
+    "description": "A wretched outcast living on the fringes of Imperial society, you survive through cunning and desperation.",
+    "tier": 2,
+    "species": ["human"],
+    "cost": 16,
+    "faction": "Scum",
+    "keywords": ["SCUM", "[ANY]"],
+    "attributeBonus": {
+      "toughness": 2
+    },
+    "skillBonus": {
+      "survival": 1
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Wretched Resilience",
+        "description": "You have adapted to survive in the harshest conditions. You gain +Rank bonus dice to Tests to resist disease, poison, or environmental hazards. You may consume rotten or contaminated food without ill effect."
+      }
+    ],
+    "startingWargear": ["tattered_robes", "autopistol", "knife", "survival_kit"],
+    "source": "core"
+  },
+  {
+    "id": "space_marine_scout",
+    "name": "Space Marine Scout",
+    "description": "A neophyte Space Marine still undergoing transformation, you infiltrate enemy lines and eliminate threats with precision.",
+    "tier": 2,
+    "species": ["astartes"],
+    "cost": 10,
+    "faction": "Adeptus Astartes",
+    "keywords": ["IMPERIUM", "ADEPTUS ASTARTES", "[CHAPTER]"],
+    "attributeBonus": {
+      "strength": 4,
+      "toughness": 4,
+      "agility": 4,
+      "initiative": 4,
+      "willpower": 3,
+      "intellect": 3
+    },
+    "skillBonus": {
+      "athletics": 3,
+      "awareness": 3,
+      "ballisticSkill": 3,
+      "stealth": 3,
+      "weaponSkill": 3
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "Use the Terrain",
+        "description": "You gain +Rank to any Stealth (A) Test when there is some form of terrain to hide behind."
+      }
+    ],
+    "startingWargear": ["scout_armour", "astartes_combat_knife", { "id": "frag_grenades", "qty": 3 }, "vox_bead"],
+    "wargearChoices": "A Boltgun or a Bolt Pistol and Chainsword or an Astartes Shotgun or an Astartes Sniper Rifle and Cameleoline Cloak",
+    "source": "core"
+  },
+  {
+    "id": "ranger",
+    "name": "Ranger",
+    "description": "Embracing the path of the Outcast, you stealthily travel the galaxy in search of new experiences, eliminating threats to your Craftworld from afar.",
+    "tier": 2,
+    "species": ["aeldari"],
+    "cost": 24,
+    "faction": "Aeldari",
+    "keywords": ["AELDARI", "ASURYANI"],
+    "attributeBonus": {
+      "agility": 3
+    },
+    "skillBonus": {
+      "ballisticSkill": 2,
+      "stealth": 1,
+      "survival": 2
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "From the Shadows",
+        "description": "You are adept at exploiting any form of concealment. Whenever a Vision Penalty or Cover impose a penalty on someone trying to attack or detect you, the penalty is increased by +Rank DN."
+      }
+    ],
+    "startingWargear": ["cameleoline_cloak", "aeldari_mesh_armour", "ranger_long_rifle", "shuriken_pistol", "knife", "spirit_stone", "bedroll", "blanket", "magnocular_scope"],
+    "source": "core"
+  },
+  {
+    "id": "kommando",
+    "name": "Kommando",
+    "description": "An extraordinary example of your Species, you employ cunning, stealth, and self-discipline to accomplish acts of underhanded brutality.",
+    "tier": 2,
+    "species": ["ork"],
+    "cost": 34,
+    "faction": "Ork",
+    "keywords": ["ORK", "[CLAN]"],
+    "attributeBonus": {
+      "strength": 3,
+      "toughness": 3,
+      "agility": 3
+    },
+    "skillBonus": {
+      "stealth": 2,
+      "survival": 1,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Kunnin' Plan",
+        "description": "You and any of your allies with the ORK Keyword within 15 metres gain +Rank bonus dice to Stealth (A) Tests."
+      }
+    ],
+    "startingWargear": ["shoota", "slugga", "choppa", { "id": "stikkbombs", "qty": 3 }, "survival_kit"],
+    "source": "core"
+  },
+  {
+    "id": "tech_priest",
+    "name": "Tech-Priest",
+    "description": "A high-ranking member of the Adeptus Mechanicus, technology and religion are as one to you, and you are truly devout.",
+    "tier": 3,
+    "species": ["human"],
+    "cost": 44,
+    "faction": "Adeptus Mechanicus",
+    "keywords": ["IMPERIUM", "ADEPTUS MECHANICUS", "CULT MECHANICUS", "[FORGE WORLD]"],
+    "attributeBonus": {
+      "intellect": 3
+    },
+    "skillBonus": {
+      "scholar": 1,
+      "tech": 3
+    },
+    "influenceModifier": 2,
+    "abilities": [
+      {
+        "name": "Rite of Repair",
+        "description": "You receive +Double Rank to Tech (Int) Tests to repair damaged machinery. All Tech (Int) Tests you make take half the standard time."
+      }
+    ],
+    "startingWargear": ["omnissian_axe", "laspistol", "mechadendrite", "augmetics", "combi_tool", "light_power_armour", "omnissian_sigil"],
+    "source": "core"
+  },
+  {
+    "id": "crusader",
+    "name": "Crusader",
+    "description": "A warrior-monk of the Ecclesiarchy, worship to the Emperor and single combat against His foes are as one to you.",
+    "tier": 3,
+    "species": ["human"],
+    "cost": 54,
+    "faction": "Adeptus Ministorum",
+    "keywords": ["IMPERIUM", "ADEPTUS MINISTORUM"],
+    "attributeBonus": {
+      "initiative": 3,
+      "willpower": 3
+    },
+    "skillBonus": {
+      "scholar": 1,
+      "weaponSkill": 3
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Armour of Faith",
+        "description": "Your faith is a shield against harm. You gain +Rank Resilience. Additionally, you may spend a Wrath Point to ignore the effects of a single hit for one round."
+      }
+    ],
+    "startingWargear": ["power_sword", "storm_shield", "carapace_armour", "rosarius"],
+    "source": "core"
+  },
+  {
+    "id": "imperial_commissar",
+    "name": "Imperial Commissar",
+    "description": "A political officer of the Astra Militarum, you maintain morale and discipline through inspiration and fear.",
+    "tier": 3,
+    "species": ["human"],
+    "cost": 76,
+    "faction": "Astra Militarum",
+    "keywords": ["IMPERIUM", "ASTRA MILITARUM", "OFFICIO PREFECTUS"],
+    "attributeBonus": {
+      "strength": 3,
+      "toughness": 3,
+      "willpower": 4
+    },
+    "skillBonus": {
+      "ballisticSkill": 2,
+      "intimidation": 2,
+      "leadership": 2,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 2,
+    "abilities": [
+      {
+        "name": "Summary Execution",
+        "description": "You can execute a subordinate with the IMPERIUM Keyword as a Full Action. All allies who witness this execution within 15 metres regain Shock equal to Double your Rank and gain +Rank bonus dice on their next Test. If you execute an enemy, allies gain these benefits but also +1 Glory to the party."
+      }
+    ],
+    "startingWargear": ["bolt_pistol", "chainsword", "carapace_armour", "commissar_greatcoat"],
+    "source": "core"
+  },
+  {
+    "id": "desperado",
+    "name": "Desperado",
+    "description": "A dangerous outlaw skilled in deception and violence, you operate outside the law for profit or survival.",
+    "tier": 3,
+    "species": ["human"],
+    "cost": 52,
+    "faction": "Scum",
+    "keywords": ["SCUM", "[ANY]"],
+    "attributeBonus": {
+      "agility": 3,
+      "intellect": 2
+    },
+    "skillBonus": {
+      "awareness": 2,
+      "cunning": 2,
+      "investigation": 2
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "Dirty Tricks",
+        "description": "You gain +Double Rank bonus dice to Cunning Tests to set up ambushes or traps. Once per session, you may automatically succeed on a Stealth or Deception Test against a single target."
+      }
+    ],
+    "startingWargear": ["flak_coat", "autopistol", "chainsword", "knife", "disguise_kit"],
+    "source": "core"
+  },
+  {
+    "id": "tactical_space_marine",
+    "name": "Tactical Space Marine",
+    "description": "A fully-fledged battle-brother of the Adeptus Astartes, you are a versatile warrior capable of adapting to any battlefield situation.",
+    "tier": 3,
+    "species": ["astartes"],
+    "cost": 117,
+    "faction": "Adeptus Astartes",
+    "keywords": ["IMPERIUM", "ADEPTUS ASTARTES", "[CHAPTER]"],
+    "attributeBonus": {
+      "strength": 4,
+      "toughness": 5,
+      "agility": 5,
+      "initiative": 5,
+      "willpower": 3,
+      "intellect": 3
+    },
+    "skillBonus": {
+      "athletics": 3,
+      "awareness": 3,
+      "ballisticSkill": 5,
+      "leadership": 1,
+      "scholar": 1,
+      "stealth": 3,
+      "survival": 1,
+      "weaponSkill": 4
+    },
+    "influenceModifier": 2,
+    "abilities": [
+      {
+        "name": "Tactical Versatility",
+        "description": "Your training has prepared you for any circumstance. When you make a Critical Hit you may roll twice on the Critical Hit Table and choose either result."
+      }
+    ],
+    "startingWargear": ["aquila_power_armour", "boltgun", "bolt_pistol", "astartes_combat_knife", { "id": "frag_grenades", "qty": 3 }, { "id": "krak_grenades", "qty": 3 }],
+    "source": "core"
+  },
+  {
+    "id": "warlock",
+    "name": "Warlock",
+    "description": "Harnessing eldritch power and aspect warrior training, you are an aggressive battle Psyker driven to war.",
+    "tier": 3,
+    "species": ["aeldari"],
+    "cost": 46,
+    "faction": "Aeldari",
+    "keywords": ["AELDARI", "ASURYANI", "PSYKER", "[CRAFTWORLD]"],
+    "attributeBonus": {
+      "agility": 3,
+      "willpower": 4
+    },
+    "skillBonus": {
+      "psychicMastery": 2
+    },
+    "influenceModifier": 2,
+    "abilities": [
+      {
+        "name": "Runes of Battle",
+        "description": "You have the PSYKER Keyword, and are a Psyker. You know the Universal Psyker Abilities, the Smite psychic power, a single Runes of Battle power of your choice, and may learn other powers as described in Chapter 11."
+      }
+    ],
+    "startingWargear": ["rune_armour", "witchblade", "shuriken_pistol", "wraithbone_runes", "spirit_stone"],
+    "isPsyker": true,
+    "source": "core"
+  },
+  {
+    "id": "ork_nob",
+    "name": "Ork Nob",
+    "description": "Larger and stronger than most Orks, your uncanny size and brawn earn a natural place violently ruling over other Boyz.",
+    "tier": 3,
+    "species": ["ork"],
+    "cost": 36,
+    "faction": "Ork",
+    "keywords": ["ORK", "[CLAN]"],
+    "attributeBonus": {
+      "strength": 4,
+      "toughness": 3
+    },
+    "skillBonus": {
+      "intimidation": 2
+    },
+    "influenceModifier": 2,
+    "abilities": [
+      {
+        "name": "The Green Tide",
+        "description": "You command a mob of Boyz equal to your Rank x3. If any of your Boyz die, they can be replaced between sessions at the GM's discretion."
+      }
+    ],
+    "startingWargear": ["eavy_armour", "kustom_slugga", "kustom_choppa"],
+    "source": "core"
+  },
+  {
+    "id": "inquisitor",
+    "name": "Inquisitor",
+    "description": "Most powerful of the Emperor's agents, you have been bestowed unlimited authority to aid in your relentless hunt of Humanity's greatest enemies.",
+    "tier": 4,
+    "species": ["human"],
+    "cost": 110,
+    "faction": "Inquisition",
+    "keywords": ["IMPERIUM", "INQUISITION", "[ORDO]", "[ANY]"],
+    "attributeBonus": {
+      "intellect": 4,
+      "willpower": 4
+    },
+    "skillBonus": {
+      "choice1": 4,
+      "choice2": 4
+    },
+    "influenceModifier": 4,
+    "abilities": [
+      {
+        "name": "Unchecked Authority",
+        "description": "You have supreme authority to maintain the security of the Imperium. You gain +Double Rank bonus dice whenever you make a social Skill Test against a character with the IMPERIUM Keyword."
+      }
+    ],
+    "startingWargear": ["inquisitorial_rosette"],
+    "wargearChoices": "Any two weapons with a Value of 7 or less and a Rarity of Very Rare or lower, and Flak Coat or Carapace Armour or Ignatus Power Armour or Light Power Armour",
+    "source": "core"
+  },
+  {
+    "id": "primaris_intercessor",
+    "name": "Primaris Intercessor",
+    "description": "You are a new breed of Astartes, a focused super soldier possessing power beyond even the Space Marines.",
+    "tier": 4,
+    "species": ["primaris"],
+    "cost": 102,
+    "faction": "Adeptus Astartes",
+    "keywords": ["ADEPTUS ASTARTES", "IMPERIUM", "PRIMARIS", "[CHAPTER]"],
+    "attributeBonus": {
+      "strength": 5,
+      "toughness": 6,
+      "agility": 5,
+      "initiative": 5,
+      "willpower": 3,
+      "intellect": 3
+    },
+    "skillBonus": {
+      "athletics": 3,
+      "awareness": 3,
+      "ballisticSkill": 6,
+      "stealth": 3,
+      "weaponSkill": 3
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "Intercessor Focus",
+        "description": "You gain +Double Rank bonus dice to any Ballistic Skill (A) Tests to fire a ranged weapon with the PRIMARIS Keyword."
+      }
+    ],
+    "startingWargear": ["mark_x_tacticus_armour", "bolt_rifle", "heavy_bolt_pistol", "astartes_combat_knife", { "id": "frag_grenades", "qty": 3 }, { "id": "krak_grenades", "qty": 3 }, "ballistic_autoreliquary"],
+    "source": "core"
+  },
+  {
+    "id": "death_cult_assassin",
+    "name": "Death Cult Assassin",
+    "description": "An extremist zealot who worships through ritual slaughter. You depend upon your swift movement and honed reflexes to avoid harm.",
+    "tier": 2,
+    "species": ["human"],
+    "cost": 36,
+    "faction": "Adeptus Ministorum",
+    "keywords": ["IMPERIUM", "ADEPTUS MINISTORUM"],
+    "attributeBonus": {
+      "agility": 4
+    },
+    "skillBonus": {
+      "weaponSkill": 2
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "Glancing Blow",
+        "description": "You may use your Agility instead of your Toughness when you roll Determination against Damage from attacks, and may roll Determination against Mortal Wounds. You cannot use this ability if you are immobilised in some way, such as through the Restrained Condition."
+      }
+    ],
+    "startingWargear": ["death_cult_power_blade", "death_cult_power_blade", "bodyglove", "knife", "laspistol", { "id": "stimm", "qty": 3 }],
+    "source": "core"
+  },
+  {
+    "id": "sister_repentia",
+    "name": "Sister Repentia",
+    "description": "A fallen Sister of Battle seeking redemption through martyrdom. You crave redemption or martyrdom, fighting harder when closest to death.",
+    "tier": 2,
+    "species": ["human"],
+    "cost": 70,
+    "faction": "Adepta Sororitas",
+    "keywords": ["IMPERIUM", "ADEPTUS MINISTORUM", "ADEPTA SORORITAS", "[ORDER]"],
+    "attributeBonus": {
+      "strength": 3,
+      "toughness": 3,
+      "agility": 3,
+      "willpower": 3
+    },
+    "skillBonus": {
+      "ballisticSkill": 2,
+      "scholar": 1,
+      "weaponSkill": 3
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Solace in Anguish",
+        "description": "You ignore DN penalties for being Wounded, and instead gain +Rank Bonus Dice to all melee Attack Tests whilst Wounded. When you are Dying, this bonus applies for all Tests — you do not fall Prone, and are not restricted in which actions you can take. You gain +Double Rank bonus dice to any Test to resist the effects of a Psychic Power."
+      }
+    ],
+    "startingWargear": ["eviscerator", "rags", { "id": "purity_seal", "qty": 2 }, "chaplet_ecclesiasticus", "rule_of_sororitas"],
+    "source": "fspg"
+  },
+  {
+    "id": "dialogus",
+    "name": "Sister Dialogus",
+    "description": "A master of written and spoken language, recording your companions' speeches and interesting discoveries for later recital.",
+    "tier": 3,
+    "species": ["human"],
+    "cost": 146,
+    "faction": "Adepta Sororitas",
+    "keywords": ["IMPERIUM", "ADEPTUS MINISTORUM", "ADEPTA SORORITAS", "[ORDER]"],
+    "attributeBonus": {
+      "strength": 3,
+      "toughness": 3,
+      "agility": 3,
+      "willpower": 4,
+      "intellect": 4
+    },
+    "skillBonus": {
+      "ballisticSkill": 2,
+      "investigation": 3,
+      "leadership": 2,
+      "persuasion": 2,
+      "scholar": 4,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 2,
+    "abilities": [
+      {
+        "name": "Polyglot Superior",
+        "description": "When you speak aloud another person's words (for example, translating xenos text, distributing an officer's orders, repeating another agent's inspiring oration, reciting scripture), gain +Rank Bonus Dice to any corresponding Test. Half any DN penalties for interacting with an unfamiliar species or culture."
+      }
+    ],
+    "startingWargear": ["sororitas_power_armour", "bolt_pistol", "dialogus_staff", "laud_hailer", "chaplet_ecclesiasticus", "rule_of_sororitas"],
+    "source": "fspg"
+  },
+  {
+    "id": "imagifier",
+    "name": "Sister Imagifier",
+    "description": "A bearer of sacred relics who inspires the faithful with the deeds of martyrs and saints.",
+    "tier": 3,
+    "species": ["human"],
+    "cost": 146,
+    "faction": "Adepta Sororitas",
+    "keywords": ["IMPERIUM", "ADEPTUS MINISTORUM", "ADEPTA SORORITAS", "[ORDER]"],
+    "attributeBonus": {
+      "strength": 3,
+      "toughness": 3,
+      "agility": 3,
+      "willpower": 4,
+      "fellowship": 4
+    },
+    "skillBonus": {
+      "ballisticSkill": 2,
+      "intimidation": 2,
+      "leadership": 4,
+      "persuasion": 3,
+      "scholar": 2,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 2,
+    "abilities": [
+      {
+        "name": "Litany of Deeds",
+        "description": "When you carry or are adjacent to your Simulacrum Imperialis, you and any allies faithful to the Imperial Cult within hearing distance gain +1 Strength. In addition, as a Combat Action, you can plant your Simulacrum in place. Until you next move, you and any allies faithful to the Imperial Cult within 5m gain +Rank Determination."
+      }
+    ],
+    "startingWargear": ["sororitas_power_armour", "bolt_pistol", "boltgun", "frag_grenades", "krak_grenades", "chaplet_ecclesiasticus", "simulacrum_imperialis", "rule_of_sororitas"],
+    "source": "fspg"
+  },
+  {
+    "id": "seraphim",
+    "name": "Seraphim",
+    "description": "A jump pack-equipped assault specialist who descends upon enemies like an avenging angel.",
+    "tier": 3,
+    "species": ["human"],
+    "cost": 118,
+    "faction": "Adepta Sororitas",
+    "keywords": ["IMPERIUM", "ADEPTUS MINISTORUM", "ADEPTA SORORITAS", "[ORDER]"],
+    "attributeBonus": {
+      "strength": 3,
+      "toughness": 3,
+      "agility": 4,
+      "willpower": 3,
+      "intellect": 3
+    },
+    "skillBonus": {
+      "ballisticSkill": 3,
+      "pilot": 3,
+      "scholar": 1,
+      "weaponSkill": 3
+    },
+    "influenceModifier": 2,
+    "abilities": [
+      {
+        "name": "Angelic Presence",
+        "description": "You and any allies within 15m faithful to the Imperial Cult gain +Rank Bonus Dice to Resolve Tests. In addition, when you use a jump pack to move away from Engagement, enemies cannot make Reflexive Attacks against you."
+      }
+    ],
+    "startingWargear": ["sororitas_power_armour", "jump_pack", "frag_grenades", "krak_grenades", "chaplet_ecclesiasticus", "rule_of_sororitas"],
+    "wargearChoices": "2 Bolt Pistols or 2 Hand Flamers or 2 Inferno Pistols",
+    "source": "fspg"
+  },
+  {
+    "id": "canoness",
+    "name": "Canoness",
+    "description": "A commander of the Adepta Sororitas, you are an inspiring warleader and walking miracle.",
+    "tier": 4,
+    "species": ["human"],
+    "cost": 249,
+    "faction": "Adepta Sororitas",
+    "keywords": ["IMPERIUM", "ADEPTUS MINISTORUM", "ADEPTA SORORITAS", "[ORDER]"],
+    "attributeBonus": {
+      "strength": 3,
+      "toughness": 4,
+      "agility": 4,
+      "initiative": 4,
+      "willpower": 6,
+      "intellect": 3,
+      "fellowship": 4
+    },
+    "skillBonus": {
+      "ballisticSkill": 3,
+      "leadership": 4,
+      "scholar": 4,
+      "weaponSkill": 3
+    },
+    "influenceModifier": 3,
+    "abilities": [
+      {
+        "name": "Lead the Righteous",
+        "description": "You gain +Rank Faith. Whenever you deal a Wound, you may spend 1 Faith to gain +1 Glory as a Free Action."
+      }
+    ],
+    "startingWargear": ["sororitas_power_armour", "rosarius", "chaplet_ecclesiasticus", "sororitas_vestments", "rule_of_sororitas"],
+    "wargearChoices": "A Condemnor Boltgun, or a Boltgun with the Combi Weapon upgrade combined with a Flamer, Meltagun or Plasma Gun. A Blessed Blade or a Chainsword or an Eviscerator or a Power Sword. A Bolt Pistol or a Plasma Pistol or an Inferno Pistol. A Brazier of Holy Fire or a Null Rod.",
+    "source": "fspg"
+  },
+  {
+    "id": "tech_adept",
+    "name": "Tech-Adept",
+    "description": "A technical operator in service of the Priesthood of Mars, skilled at navigating and maintaining technology.",
+    "tier": 1,
+    "species": ["human"],
+    "cost": 22,
+    "faction": "Adeptus Mechanicus",
+    "keywords": ["IMPERIUM", "ADEPTUS MECHANICUS", "[FORGE WORLD]"],
+    "attributeBonus": {
+      "intellect": 2
+    },
+    "skillBonus": {
+      "scholar": 2,
+      "tech": 3
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Admin Access",
+        "description": "Your purpose is to commune with Machine Spirits and catalogue their wisdom, to further the Quest for Knowledge. When you commune with a Machine Spirit as part of a Test, you gain Icons equal to your Rank."
+      }
+    ],
+    "startingWargear": ["laspistol", "adept_robes", "combi_tool", "data_slate", "sacred_machine_oil"],
+    "source": "fspg"
+  },
+  {
+    "id": "sicarian_infiltrator",
+    "name": "Sicarian Infiltrator",
+    "description": "A cyber-augmented assassin who disrupts enemies with neurostatic fields.",
+    "tier": 3,
+    "species": ["human"],
+    "cost": 76,
+    "faction": "Adeptus Mechanicus",
+    "keywords": ["IMPERIUM", "ADEPTUS MECHANICUS", "[FORGE WORLD]"],
+    "attributeBonus": {
+      "toughness": 3,
+      "agility": 3,
+      "intellect": 2
+    },
+    "skillBonus": {
+      "ballisticSkill": 4,
+      "intimidation": 2,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Neurostatic Aura",
+        "description": "You are immune to Bleeding. As a Combat Action, you may choose a number up to your Rank, and inflict that many Hindered Conditions on all characters within 10m that don't have this ability or null-code audio inputs."
+      }
+    ],
+    "startingWargear": ["sicarian_battle_armour", "augmetic_legs", "infiltrator_headpiece"],
+    "wargearChoices": "Flechette Blaster and Taser Goad or Stubcarbine and Power Sword",
+    "source": "fspg"
+  },
+  {
+    "id": "sicarian_ruststalker",
+    "name": "Sicarian Ruststalker",
+    "description": "A hunter-killer operative delivering a hail of transonic blows until finding the perfect armour-shredding frequency.",
+    "tier": 3,
+    "species": ["human"],
+    "cost": 76,
+    "faction": "Adeptus Mechanicus",
+    "keywords": ["IMPERIUM", "ADEPTUS MECHANICUS", "[FORGE WORLD]"],
+    "attributeBonus": {
+      "toughness": 3,
+      "agility": 3,
+      "initiative": 2
+    },
+    "skillBonus": {
+      "athletics": 2,
+      "stealth": 2,
+      "weaponSkill": 4
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Transonic Assassin",
+        "description": "You are immune to Bleeding. In addition, you gain +Rank bonus dice when Charging or making All-Out Attacks whilst wielding a weapon with the TRANSONIC Keyword."
+      }
+    ],
+    "startingWargear": ["sicarian_battle_armour", "augmetic_legs"],
+    "wargearChoices": "2 Transonic Blades or a Transonic Razor and a Chordclaw",
+    "source": "fspg"
+  },
+  {
+    "id": "tech_priest_dominus",
+    "name": "Tech-Priest Dominus",
+    "description": "A high-ranking Tech-Priest who automatically interfaces with nearby technology.",
+    "tier": 4,
+    "species": ["human"],
+    "cost": 113,
+    "faction": "Adeptus Mechanicus",
+    "keywords": ["IMPERIUM", "ADEPTUS MECHANICUS", "[FORGE WORLD]"],
+    "attributeBonus": {
+      "intellect": 5
+    },
+    "skillBonus": {
+      "ballisticSkill": 2,
+      "scholar": 2,
+      "tech": 5,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 2,
+    "abilities": [
+      {
+        "name": "Lord of the Machine Cult",
+        "description": "You are unbound by the tethers of your biological form, automatically interfacing with nearby technology. As a Simple Action, you can Help all allies within 10m that have the ADEPTUS MECHANICUS Keyword, or are utilising equipment with a Machine Spirit (including guns and non-basic melee weapons), granting +Rank Bonus Dice to their Tests."
+      }
+    ],
+    "startingWargear": ["omnissian_axe", "light_power_armour", "refractor_field", "mechadendrite", "combi_tool", "symbol_of_authority", "sacred_machine_oil"],
+    "wargearChoices": "Volkite Blaster or Eradication Ray. Macrostubber or Phosphor Serpenta. Any 3 Augmetics.",
+    "source": "fspg"
+  },
+  {
+    "id": "confessor",
+    "name": "Confessor",
+    "description": "A spiritual guide who extracts confessions and administers penance to the faithful.",
+    "tier": 2,
+    "species": ["human"],
+    "cost": 90,
+    "faction": "Adeptus Ministorum",
+    "keywords": ["IMPERIUM", "ADEPTUS MINISTORUM"],
+    "attributeBonus": {
+      "willpower": 4,
+      "intellect": 3
+    },
+    "skillBonus": {
+      "insight": 2,
+      "intimidation": 2,
+      "medicae": 3,
+      "scholar": 4,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "Spiritual Administration",
+        "description": "When you Test to discover the sins of another character (by coercion, investigation, or instinct), gain +Rank Bonus Dice. In addition, during a Regroup, you can choose one character faithful to the Imperial Cult to regain all Shock."
+      }
+    ],
+    "startingWargear": ["ministorum_robes", "rosarius", "missionary_kit", "power_maul", "laspistol", "excruciator"],
+    "source": "fspg"
+  },
+  {
+    "id": "ratling_sniper",
+    "name": "Ratling Sniper",
+    "description": "A diminutive abhuman sharpshooter known for exceptional marksmanship and stealth.",
+    "tier": 1,
+    "species": ["ratling"],
+    "cost": 24,
+    "faction": "Astra Militarum",
+    "keywords": ["IMPERIUM", "ASTRA MILITARUM", "[REGIMENT]", "ABHUMAN", "MILITARUM AUXILLA"],
+    "attributeBonus": {
+      "toughness": 2,
+      "agility": 2,
+      "fellowship": 2
+    },
+    "skillBonus": {
+      "awareness": 2,
+      "ballisticSkill": 3,
+      "cunning": 2,
+      "deception": 2,
+      "stealth": 3
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Shoot Sharp and Scarper",
+        "description": "When using a weapon with the Sniper Weapon Trait, increase the weapon's Sniper rating by +Rank. In addition, when you make a successful ranged Attack Test, you may immediately move up to your Speed as a Reflexive Action."
+      }
+    ],
+    "startingWargear": ["flak_armour", "knife", "ration_packs"],
+    "wargearChoices": "Ratling Rifle or Long Las",
+    "source": "fspg"
+  },
+  {
+    "id": "ogryn_warrior",
+    "name": "Ogryn Warrior",
+    "description": "A massive abhuman shock trooper whose approach to combat is simple, direct, and expends plenty of ammunition.",
+    "tier": 2,
+    "species": ["ogryn"],
+    "cost": 22,
+    "faction": "Astra Militarum",
+    "keywords": ["IMPERIUM", "ASTRA MILITARUM", "MILITARUM AUXILLA", "[REGIMENT]", "ABHUMAN"],
+    "attributeBonus": {
+      "strength": 5,
+      "toughness": 5,
+      "willpower": 2
+    },
+    "skillBonus": {
+      "ballisticSkill": 1,
+      "survival": 2,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Let It Rip",
+        "description": "When you Charge and have a ranged weapon, you can fire it wildly as a Free Action. This is treated as a Salvo Option that awards Bonus Dice to your Melee Attack Test equal to your weapon's Salvo rating."
+      }
+    ],
+    "startingWargear": ["flak_armour", "ripper_gun", "frag_bombs"],
+    "source": "fspg"
+  },
+  {
+    "id": "bullgryn",
+    "name": "Bullgryn",
+    "description": "A walking wall of heavy armour and close-assault weaponry, first into battle with an army of comrades sheltering behind you.",
+    "tier": 3,
+    "species": ["ogryn"],
+    "cost": 96,
+    "faction": "Astra Militarum",
+    "keywords": ["IMPERIUM", "ASTRA MILITARUM", "MILITARUM AUXILLA", "[REGIMENT]", "ABHUMAN"],
+    "attributeBonus": {
+      "strength": 6,
+      "toughness": 6,
+      "agility": 2,
+      "initiative": 2,
+      "willpower": 2
+    },
+    "skillBonus": {
+      "athletics": 2,
+      "ballisticSkill": 2,
+      "survival": 2,
+      "weaponSkill": 3
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Shieldwall",
+        "description": "You provide your allies with a mobile defence line formed of carapace, tank tracks and Abhuman muscle. If an attack is made against an ally within 3m, that ally can add your Shield's Armour Rating to their Armour Rating."
+      }
+    ],
+    "startingWargear": ["bullgryn_plate", { "id": "frag_bombs", "qty": 3 }],
+    "wargearChoices": "A Slabshield and Grenadier Gauntlet or a Bullgryn Maul and Brute Shield",
+    "source": "fspg"
+  },
+  {
+    "id": "lexmechanic",
+    "name": "Lexmechanic",
+    "description": "A walking source of information and calculation, devising mathematical solutions for any problems you encounter.",
+    "tier": 2,
+    "species": ["human"],
+    "cost": 44,
+    "faction": "Inquisition",
+    "keywords": ["IMPERIUM", "INQUISITION", "[ORDO]", "ADEPTUS MECHANICUS", "[FORGE WORLD]"],
+    "attributeBonus": {
+      "intellect": 3
+    },
+    "skillBonus": {
+      "scholar": 3,
+      "tech": 3
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "Statistical Certainty",
+        "description": "The assistance you provide your allies comes with the benefit of exacting mathematical analysis, to remove all possibility of ill-fortune or doubt. When you Help an ally, you may reduce the amount of Bonus Dice you provide by an amount equal up to your Rank. For every die removed, your ally gains an extra Icon on their Test result."
+      }
+    ],
+    "startingWargear": ["laspistol", "adept_robes", "auspex", "auto_quill", "combi_tool", "data_slate", "sacred_machine_oil", "symbol_of_authority"],
+    "source": "fspg"
+  },
+  {
+    "id": "interrogator",
+    "name": "Interrogator",
+    "description": "An apprentice Inquisitor, beginning your training by learning to coerce information from unwilling subjects.",
+    "tier": 2,
+    "species": ["human"],
+    "cost": 64,
+    "faction": "Inquisition",
+    "keywords": ["IMPERIUM", "INQUISITION", "[ORDO]", "[ANY]"],
+    "attributeBonus": {
+      "willpower": 3,
+      "intellect": 4
+    },
+    "skillBonus": {
+      "insight": 2,
+      "medicae": 3,
+      "scholar": 1,
+      "tech": 1,
+      "weaponSkill": 1
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "Extract the Truth",
+        "description": "To earn an Inquisitorial Rosette, the first skill you must master is to lay bare the sinful hearts of Human and xenos. When you succeed on a Test to acquire information from an individual, you gain free Shifts equal to your Rank."
+      }
+    ],
+    "startingWargear": ["symbol_of_authority", "excruciator", "neural_whip"],
+    "wargearChoices": "Any three pieces of Wargear with the IMPERIUM Keyword of a rarity of Rare or less",
+    "source": "fspg"
+  },
+  {
+    "id": "kroot_mercenary",
+    "name": "Kroot Mercenary",
+    "description": "A carnivorous xenos warrior who scours the galaxy seeking strong prey to consume, working as a mercenary to fund your travels.",
+    "tier": 1,
+    "species": ["kroot"],
+    "cost": 40,
+    "faction": "Kroot",
+    "keywords": ["KROOT"],
+    "attributeBonus": {
+      "strength": 3,
+      "toughness": 2,
+      "agility": 3,
+      "initiative": 2
+    },
+    "skillBonus": {
+      "athletics": 1,
+      "awareness": 1,
+      "stealth": 2,
+      "survival": 3,
+      "weaponSkill": 3
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Adaptive Loyalty",
+        "description": "You gain the [ANY] Keyword, which should be substituted for the Faction that currently commands your allegiance. At the GM's discretion, you may swap this Keyword out for a different one when your loyalties shift in play."
+      }
+    ],
+    "startingWargear": ["kroot_rifle", "kroot_armour"],
+    "source": "fspg"
+  },
+  {
+    "id": "astartes_apothecary",
+    "name": "Astartes Apothecary",
+    "description": "An expert combat medic specialising in treating the superhuman physiology of your battle-brothers.",
+    "tier": 4,
+    "species": ["astartes"],
+    "cost": 197,
+    "faction": "Adeptus Astartes",
+    "keywords": ["IMPERIUM", "ADEPTUS ASTARTES", "[CHAPTER]"],
+    "attributeBonus": {
+      "strength": 5,
+      "toughness": 5,
+      "agility": 5,
+      "initiative": 5,
+      "willpower": 4,
+      "intellect": 5
+    },
+    "skillBonus": {
+      "athletics": 3,
+      "awareness": 3,
+      "ballisticSkill": 5,
+      "leadership": 1,
+      "medicae": 5,
+      "scholar": 1,
+      "stealth": 3,
+      "survival": 1,
+      "weaponSkill": 5
+    },
+    "influenceModifier": 2,
+    "abilities": [
+      {
+        "name": "Prime Helix",
+        "description": "Your duty to your injured battle brothers is second only to your duty to the fallen. When you succeed on a Medicae Test to heal a target's Wounds, they recover +Rank additional Wounds."
+      }
+    ],
+    "startingWargear": ["aquila_power_armour", "bolt_pistol", "chainsword", { "id": "frag_grenades", "qty": 3 }, { "id": "krak_grenades", "qty": 3 }, "narthecium", "reductor"],
+    "source": "fspg"
+  },
+  {
+    "id": "astartes_chaplain",
+    "name": "Astartes Chaplain",
+    "description": "The mouthpiece of your Chapter's spiritual beliefs, tending to the psychological well-being of your comrades.",
+    "tier": 4,
+    "species": ["astartes"],
+    "cost": 232,
+    "faction": "Adeptus Astartes",
+    "keywords": ["IMPERIUM", "ADEPTUS ASTARTES", "[CHAPTER]"],
+    "attributeBonus": {
+      "strength": 5,
+      "toughness": 5,
+      "agility": 5,
+      "initiative": 5,
+      "willpower": 5,
+      "intellect": 3,
+      "fellowship": 5
+    },
+    "skillBonus": {
+      "athletics": 3,
+      "awareness": 3,
+      "ballisticSkill": 5,
+      "insight": 3,
+      "leadership": 3,
+      "scholar": 4,
+      "stealth": 3,
+      "survival": 1,
+      "weaponSkill": 5
+    },
+    "influenceModifier": 2,
+    "abilities": [
+      {
+        "name": "Chapter Cult",
+        "description": "You gain 1 Faith, and can purchase Faith Talents available to characters with the ADEPTUS MINISTORUM Keyword. As a Combat Action, you may spend 1 Faith to give an ally within hearing distance your [CHAPTER] Keyword for the rest of the scene. Any allies within 5xRank metres who share your [CHAPTER] Keyword gain +Rank to Resolve Tests."
+      }
+    ],
+    "startingWargear": ["aquila_power_armour", "skull_helm", "crozius_arcanum", "bolt_pistol", "rosarius", { "id": "frag_grenades", "qty": 3 }, { "id": "krak_grenades", "qty": 3 }],
+    "source": "fspg"
+  },
+  {
+    "id": "astartes_librarian",
+    "name": "Astartes Librarian",
+    "description": "A battle-psyker of the Adeptus Astartes, a terrifying combination of inhuman might and Warp-endowed power.",
+    "tier": 4,
+    "species": ["astartes"],
+    "cost": 199,
+    "faction": "Adeptus Astartes",
+    "keywords": ["IMPERIUM", "ADEPTUS ASTARTES", "[CHAPTER]", "PSYKER"],
+    "attributeBonus": {
+      "strength": 5,
+      "toughness": 5,
+      "agility": 5,
+      "initiative": 5,
+      "willpower": 6,
+      "intellect": 3
+    },
+    "skillBonus": {
+      "athletics": 3,
+      "awareness": 3,
+      "ballisticSkill": 5,
+      "psychicMastery": 4,
+      "scholar": 2,
+      "stealth": 3,
+      "survival": 1,
+      "weaponSkill": 5
+    },
+    "influenceModifier": 2,
+    "abilities": [
+      {
+        "name": "Librarius Discipline",
+        "description": "You have the PSYKER Keyword, and are a psyker. You know the Universal Psyker Abilities and the Smite psychic power. You know the Librarius Discipline and one power from that Discipline of your choice, and may choose one other Psychic Discipline to learn powers from."
+      }
+    ],
+    "startingWargear": ["aquila_power_armour", "psychic_hood", "bolt_pistol", "force_stave", { "id": "frag_grenades", "qty": 3 }, { "id": "krak_grenades", "qty": 3 }],
+    "isPsyker": true,
+    "source": "fspg"
+  },
+  {
+    "id": "primaris_reiver",
+    "name": "Primaris Reiver",
+    "description": "An infiltrator, saboteur and guerilla fighter, unleashing your full Primaris strength in carefully coordinated terror attacks.",
+    "tier": 4,
+    "species": ["primaris"],
+    "cost": 90,
+    "faction": "Adeptus Astartes",
+    "keywords": ["IMPERIUM", "ADEPTUS ASTARTES", "PRIMARIS", "[CHAPTER]"],
+    "attributeBonus": {
+      "strength": 5,
+      "toughness": 5,
+      "agility": 4,
+      "initiative": 5,
+      "willpower": 5,
+      "intellect": 3
+    },
+    "skillBonus": {
+      "athletics": 3,
+      "awareness": 3,
+      "ballisticSkill": 4,
+      "intimidation": 3,
+      "stealth": 3,
+      "weaponSkill": 4
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "Terror Tactics",
+        "description": "When your Stealth Score is reduced to 0 or you Ambush a Threat, you can choose for all enemies who can see or hear you to take a Terror Test, with a DN equal to 1 + Rank."
+      }
+    ],
+    "startingWargear": ["mark_x_phobos_armour", "bolt_carbine", "heavy_bolt_pistol", "astartes_combat_knife", { "id": "frag_grenades", "qty": 3 }, { "id": "krak_grenades", "qty": 3 }, { "id": "shock_grenades", "qty": 3 }, "grav_chute"],
+    "source": "fspg"
+  },
+  {
+    "id": "first_company_veteran",
+    "name": "1st Company Veteran",
+    "description": "Honoured and revered by your fellow battle-brothers, you have earned the right to be counted among the ranks of the prestigious 1st Company.",
+    "tier": 4,
+    "species": ["astartes"],
+    "cost": 220,
+    "faction": "Adeptus Astartes",
+    "keywords": ["IMPERIUM", "ADEPTUS ASTARTES", "[CHAPTER]"],
+    "attributeBonus": {
+      "strength": 5,
+      "toughness": 5,
+      "agility": 6,
+      "initiative": 6,
+      "willpower": 3,
+      "intellect": 3
+    },
+    "skillBonus": {
+      "athletics": 4,
+      "awareness": 4,
+      "ballisticSkill": 6,
+      "leadership": 2,
+      "scholar": 2,
+      "stealth": 4,
+      "survival": 2,
+      "weaponSkill": 5
+    },
+    "influenceModifier": 4,
+    "abilities": [
+      {
+        "name": "Veteran of the Endless War",
+        "description": "Your experience across hundreds of worlds, spanning centuries of bloodshed, have made you an unrelenting weapon of the Emperor. When you make a Critical Hit, you may swap the dice values in the d66 roll (a 34, becomes a 43). You may ignore the first critical hit you suffer in each game session."
+      }
+    ],
+    "startingWargear": ["aquila_power_armour", "bolt_pistol", "boltgun", "chainsword", { "id": "frag_grenades", "qty": 3 }, { "id": "krak_grenades", "qty": 3 }],
+    "wargearChoices": "Power Fist or Power Sword or Plasma Pistol or Storm Bolter",
+    "source": "voa"
+  },
+  {
+    "id": "eliminator",
+    "name": "Eliminator",
+    "description": "You are a dedicated marksman, patient and ruthless, eliminating high-value targets or delivering pinpoint, accurate fire support.",
+    "tier": 4,
+    "species": ["primaris"],
+    "cost": 88,
+    "faction": "Adeptus Astartes",
+    "keywords": ["IMPERIUM", "ADEPTUS ASTARTES", "PRIMARIS", "[CHAPTER]"],
+    "attributeBonus": {
+      "strength": 5,
+      "toughness": 5,
+      "agility": 4,
+      "initiative": 5,
+      "willpower": 5,
+      "intellect": 3
+    },
+    "skillBonus": {
+      "athletics": 3,
+      "awareness": 3,
+      "ballisticSkill": 5,
+      "stealth": 3,
+      "weaponSkill": 4
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "Emperor's Judgement",
+        "description": "When using a ranged weapon and aiming, a 6 on the Wrath die on a successful attack either inflicts a further 1d3 Mortal Wounds, or allows you to make a free Movement action once the attack is finished."
+      }
+    ],
+    "startingWargear": ["mark_x_phobos_armour", "bolt_sniper_rifle", "bolt_pistol", "cameleoline_cloak", { "id": "frag_grenades", "qty": 3 }, { "id": "krak_grenades", "qty": 3 }],
+    "source": "voa"
+  },
+  {
+    "id": "incursor",
+    "name": "Incursor",
+    "description": "A shock assault specialist, you sow fear, confusion and death among the ranks of the enemy with precision Bolter fire and brutal melee attacks.",
+    "tier": 4,
+    "species": ["primaris"],
+    "cost": 99,
+    "faction": "Adeptus Astartes",
+    "keywords": ["IMPERIUM", "ADEPTUS ASTARTES", "PRIMARIS", "[CHAPTER]"],
+    "attributeBonus": {
+      "strength": 5,
+      "toughness": 5,
+      "agility": 4,
+      "initiative": 5,
+      "willpower": 4,
+      "intellect": 4
+    },
+    "skillBonus": {
+      "athletics": 3,
+      "awareness": 3,
+      "ballisticSkill": 4,
+      "stealth": 3,
+      "survival": 2,
+      "tech": 4,
+      "weaponSkill": 4
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "Explosive Fury",
+        "description": "When making attacks with grenades, you gain +Rank bonus extra damage to successful attacks. When placing explosives, you may make a DN 3 Tech Test, and add +Rank bonus to both Damage and AP to the attack."
+      }
+    ],
+    "startingWargear": ["mark_x_phobos_armour", "occulus_bolt_carbine", "bolt_pistol", "astartes_combat_knife", "astartes_combat_knife", { "id": "frag_grenades", "qty": 3 }, { "id": "krak_grenades", "qty": 3 }, { "id": "smoke_grenades", "qty": 3 }, "haywire_mine"],
+    "source": "voa"
+  },
+  {
+    "id": "terminator",
+    "name": "Terminator",
+    "description": "Encased in the Chapter's most ancient and revered armour, you are a walking bulwark against which the enemies of the Imperium shatter and break.",
+    "tier": 5,
+    "species": ["astartes", "primaris"],
+    "cost": 205,
+    "faction": "Adeptus Astartes",
+    "keywords": ["IMPERIUM", "ADEPTUS ASTARTES", "[CHAPTER]"],
+    "attributeBonus": {
+      "strength": 5,
+      "toughness": 5,
+      "agility": 5,
+      "initiative": 5,
+      "willpower": 5,
+      "intellect": 4,
+      "fellowship": 4
+    },
+    "skillBonus": {
+      "athletics": 4,
+      "awareness": 4,
+      "ballisticSkill": 5,
+      "leadership": 4,
+      "weaponSkill": 5
+    },
+    "influenceModifier": 4,
+    "abilities": [
+      {
+        "name": "Inspiring Bulwark",
+        "description": "Encased in the Chapter's most honoured and revered armour, your resilience on the battlefield acts as a source of inspiration to your battle-brothers. Once per combat round you may spend a point of Glory to ignore all damage from one successful attack made against you. Allies who witness this feat add +Double Rank bonus dice to their Resolve Test for the remainder of that round."
+      }
+    ],
+    "startingWargear": ["tactical_dreadnought_armour", "power_fist", "storm_bolter"],
+    "wargearChoices": "Chainfist or Power Sword; Assault Cannon or Heavy Flamer; Thunder Hammer and Storm Shield or two Lightning Claws",
+    "source": "voa"
+  },
+  {
+    "id": "techmarine",
+    "name": "Techmarine",
+    "description": "Wielding terrifying mechadendrites and servo-arms, you embody the Omnissiah's gifts to the Chapter.",
+    "tier": 4,
+    "species": ["astartes"],
+    "cost": 197,
+    "faction": "Adeptus Astartes",
+    "keywords": ["IMPERIUM", "ADEPTUS MECHANICUS", "ADEPTUS ASTARTES", "[CHAPTER]"],
+    "attributeBonus": {
+      "strength": 5,
+      "toughness": 5,
+      "agility": 5,
+      "initiative": 5,
+      "willpower": 4,
+      "intellect": 5
+    },
+    "skillBonus": {
+      "athletics": 3,
+      "awareness": 3,
+      "ballisticSkill": 5,
+      "leadership": 1,
+      "scholar": 1,
+      "stealth": 3,
+      "survival": 1,
+      "tech": 5,
+      "weaponSkill": 5
+    },
+    "influenceModifier": 2,
+    "abilities": [
+      {
+        "name": "Blessings of the Omnissiah",
+        "description": "You are a warrior of the Omnissiah. When you succeed on a Tech (Int) Test to repair a weapon or vehicle, you gain +Rank bonus dice to the test. When you commune with a machine spirit as part of a test, you instead gain Icons equal to your rank."
+      }
+    ],
+    "startingWargear": ["artificer_power_armour", "servo_harness", "omnissian_axe", "plasma_pistol", { "id": "frag_grenades", "qty": 3 }, { "id": "krak_grenades", "qty": 3 }, "combi_tool", "sacred_machine_oil"],
+    "source": "voa"
+  },
+  {
+    "id": "primaris_lieutenant",
+    "name": "Primaris Lieutenant",
+    "description": "An honourable and veteran warrior, you lead your battle-brothers to war in the Chapter and the Emperor's name.",
+    "tier": 5,
+    "species": ["primaris"],
+    "cost": 177,
+    "faction": "Adeptus Astartes",
+    "keywords": ["IMPERIUM", "ADEPTUS ASTARTES", "PRIMARIS", "[CHAPTER]"],
+    "attributeBonus": {
+      "strength": 5,
+      "toughness": 5,
+      "agility": 5,
+      "initiative": 5,
+      "willpower": 5,
+      "intellect": 4,
+      "fellowship": 4
+    },
+    "skillBonus": {
+      "athletics": 4,
+      "awareness": 4,
+      "ballisticSkill": 5,
+      "leadership": 4,
+      "weaponSkill": 5
+    },
+    "influenceModifier": 4,
+    "abilities": [
+      {
+        "name": "Tactical Master",
+        "description": "In each combat round, if you spend a point of Glory, all allies within 10 metres gain your Rank bonus as Extra Damage dice, and ranged weapons these allies carry without the HEAVY Trait gain the ASSAULT Trait."
+      }
+    ],
+    "startingWargear": ["mark_x_tacticus_armour", "bolt_rifle", "bolt_pistol", "power_sword", { "id": "frag_grenades", "qty": 3 }, { "id": "krak_grenades", "qty": 3 }],
+    "source": "voa"
+  },
+  {
+    "id": "bladeguard_veteran",
+    "name": "Bladeguard Veteran",
+    "description": "As a Veteran Space Marine, you have already distinguished yourself among your brethren and now wield ancient relics in your defence of Gilead.",
+    "tier": 5,
+    "species": ["primaris"],
+    "cost": 173,
+    "faction": "Adeptus Astartes",
+    "keywords": ["IMPERIUM", "ADEPTUS ASTARTES", "PRIMARIS", "[CHAPTER]"],
+    "attributeBonus": {
+      "strength": 5,
+      "toughness": 5,
+      "agility": 5,
+      "initiative": 6,
+      "willpower": 5,
+      "intellect": 4,
+      "fellowship": 2
+    },
+    "skillBonus": {
+      "athletics": 4,
+      "awareness": 4,
+      "ballisticSkill": 5,
+      "leadership": 3,
+      "weaponSkill": 5
+    },
+    "influenceModifier": 3,
+    "abilities": [
+      {
+        "name": "Sword Master",
+        "description": "In each combat round, as a Free Action, you may spend a point of Glory to either add +Rank bonus dice to your melee attack Test or add +Rank bonus dice to your Resilience."
+      }
+    ],
+    "startingWargear": ["mark_x_tacticus_armour", "heavy_bolt_pistol", "master_crafted_power_sword", "storm_shield", { "id": "frag_grenades", "qty": 3 }, { "id": "krak_grenades", "qty": 3 }, { "id": "smoke_grenades", "qty": 3 }],
+    "source": "voa"
+  },
+  {
+    "id": "company_ancient",
+    "name": "Company Ancient",
+    "description": "A veteran of the 1st Company, you were personally chosen to carry forth an ancient banner of the Chapter, inspiring those around you.",
+    "tier": 5,
+    "species": ["primaris"],
+    "cost": 143,
+    "faction": "Adeptus Astartes",
+    "keywords": ["IMPERIUM", "ADEPTUS ASTARTES", "PRIMARIS", "[CHAPTER]"],
+    "attributeBonus": {
+      "strength": 5,
+      "toughness": 5,
+      "agility": 5,
+      "initiative": 5,
+      "willpower": 5,
+      "intellect": 3,
+      "fellowship": 3
+    },
+    "skillBonus": {
+      "athletics": 4,
+      "awareness": 4,
+      "ballisticSkill": 5,
+      "leadership": 2,
+      "weaponSkill": 5
+    },
+    "influenceModifier": 4,
+    "abilities": [
+      {
+        "name": "Glory of the Emperor",
+        "description": "Allies within 50 metres that can see you restore Shock equal to the number of successes you achieved on a DN 4 Leadership Test."
+      }
+    ],
+    "startingWargear": ["mark_x_tacticus_armour", "bolt_rifle", "bolt_pistol", "power_sword", "company_standard", { "id": "frag_grenades", "qty": 3 }, { "id": "krak_grenades", "qty": 3 }],
+    "source": "voa"
+  },
+  {
+    "id": "guardian",
+    "name": "Guardian",
+    "description": "You have been called from civilian pursuits to don your war mask and defend your people.",
+    "tier": 2,
+    "species": ["aeldari"],
+    "cost": 32,
+    "faction": "Asuryani",
+    "keywords": ["AELDARI", "ASURYANI", "[CRAFTWORLD]"],
+    "attributeBonus": {
+      "agility": 3,
+      "initiative": 3
+    },
+    "skillBonus": {
+      "ballisticSkill": 2,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Martial Citizenry",
+        "description": "You are drilled in using basic Asuryani weaponry. When attacking whilst in cover, gain +Rank to the Rending rating of any SHURIKEN weapons. When attacking an enemy in cover, gain +Rank ED on any melee attacks."
+      }
+    ],
+    "startingWargear": ["aeldari_mesh_armour", "shuriken_catapult", "guardian_chainsword", { "id": "plasma_grenades", "qty": 3 }, "war_mask", "spirit_stone"],
+    "wargearChoices": "Shuriken Catapult or Shuriken Pistol and Guardian Chainsword",
+    "source": "aeldari"
+  },
+  {
+    "id": "dark_reaper",
+    "name": "Dark Reaper",
+    "description": "You are a foreboding wielder of heavy weaponry, reaping formations of soldiers in a barrage of explosive missiles.",
+    "tier": 3,
+    "species": ["aeldari"],
+    "cost": 60,
+    "faction": "Asuryani",
+    "keywords": ["AELDARI", "ASURYANI", "ASPECT WARRIOR", "[CRAFTWORLD]"],
+    "attributeBonus": {
+      "agility": 3,
+      "initiative": 3,
+      "willpower": 2
+    },
+    "skillBonus": {
+      "athletics": 2,
+      "ballisticSkill": 3,
+      "intimidation": 1,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "Inescapable Accuracy",
+        "description": "Your targeting systems and uncanny precision make it impossible for your victims to hide. When making a ranged attack, you may reduce the total DN penalties you suffer due to Long Range, Vision Penalties, and the target's Cover by an amount equal to your Rank. When you Brace a Heavy Weapon, you may Aim as a Free Action."
+      }
+    ],
+    "startingWargear": ["reaper_armour", "reaper_launcher", "war_mask", "spirit_stone"],
+    "source": "aeldari"
+  },
+  {
+    "id": "dire_avenger",
+    "name": "Dire Avenger",
+    "description": "You are a student of the first Aspect Warrior Temple, exemplifying retribution, valour, and relentless firing discipline.",
+    "tier": 3,
+    "species": ["aeldari"],
+    "cost": 64,
+    "faction": "Asuryani",
+    "keywords": ["AELDARI", "ASURYANI", "ASPECT WARRIOR", "[CRAFTWORLD]"],
+    "attributeBonus": {
+      "agility": 3,
+      "initiative": 3,
+      "willpower": 3
+    },
+    "skillBonus": {
+      "athletics": 2,
+      "ballisticSkill": 3,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 2,
+    "abilities": [
+      {
+        "name": "Defence Tactics",
+        "description": "You advance, take cover, and complete your objectives without ever interrupting rate of fire. You may make a ranged attack with a SHURIKEN weapon as a Free Action, but cannot do so in the same Turn you use Combat Actions to make another ranged, melee, or Interaction Attack. You can use this ability up to Rank times per combat, and never more than once per Turn."
+      }
+    ],
+    "startingWargear": ["aspect_armour", "avenger_shuriken_catapult", { "id": "plasma_grenades", "qty": 3 }, "war_mask", "spirit_stone"],
+    "source": "aeldari"
+  },
+  {
+    "id": "fire_dragon",
+    "name": "Fire Dragon",
+    "description": "You are a tank-hunter and fortification-leveller, applying the focused fury of concentrated fire.",
+    "tier": 3,
+    "species": ["aeldari"],
+    "cost": 62,
+    "faction": "Asuryani",
+    "keywords": ["AELDARI", "ASURYANI", "ASPECT WARRIOR", "[CRAFTWORLD]"],
+    "attributeBonus": {
+      "toughness": 2,
+      "agility": 3,
+      "initiative": 3,
+      "willpower": 2
+    },
+    "skillBonus": {
+      "athletics": 2,
+      "ballisticSkill": 3,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "Assured Destruction",
+        "description": "With intense heat, you boil your targets from the inside out. You may activate the Melta Trait of any weapons you wield at Medium and Long Range (not just Short Range), and gain +Double Rank ED when making attacks with those weapons."
+      }
+    ],
+    "startingWargear": ["heavy_aspect_armour", "dragon_fusion_gun", "fusion_charges", "war_mask", "spirit_stone"],
+    "source": "aeldari"
+  },
+  {
+    "id": "howling_banshee",
+    "name": "Howling Banshee",
+    "description": "You are a quicksilver melee combatant, leaping into every assault with an ear-splitting howl.",
+    "tier": 3,
+    "species": ["aeldari"],
+    "cost": 80,
+    "faction": "Asuryani",
+    "keywords": ["AELDARI", "ASURYANI", "ASPECT WARRIOR", "[CRAFTWORLD]"],
+    "attributeBonus": {
+      "agility": 3,
+      "initiative": 4,
+      "willpower": 2
+    },
+    "skillBonus": {
+      "athletics": 2,
+      "stealth": 1,
+      "weaponSkill": 3
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "Whirling Death",
+        "description": "You are a shock assault specialist, delivering such a devastating first strike that your enemies are left reeling. You gain +Double Rank bonus dice on melee attacks and Interaction Attacks made as part of a Charge."
+      }
+    ],
+    "startingWargear": ["aspect_armour", "banshee_blade", "howling_banshee_mask", "shuriken_pistol", "spirit_stone"],
+    "source": "aeldari"
+  },
+  {
+    "id": "striking_scorpion",
+    "name": "Striking Scorpion",
+    "description": "You employ stealth to infiltrate enemy positions before attacking in a roar of spinning blades.",
+    "tier": 3,
+    "species": ["aeldari"],
+    "cost": 74,
+    "faction": "Asuryani",
+    "keywords": ["AELDARI", "ASURYANI", "ASPECT WARRIOR", "[CRAFTWORLD]"],
+    "attributeBonus": {
+      "strength": 2,
+      "agility": 3,
+      "initiative": 3,
+      "willpower": 2
+    },
+    "skillBonus": {
+      "athletics": 2,
+      "ballisticSkill": 2,
+      "stealth": 3,
+      "weaponSkill": 3
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "Stalking Shadow",
+        "description": "You temper your lust to kill by silently hunting your prey first. You gain +Double Rank bonus dice and +Double Rank ED when making a Surprise Attack (in addition to the usual +2 bonus dice and +2 ED)."
+      }
+    ],
+    "startingWargear": ["heavy_aspect_armour", "scorpion_chainsword", "mandiblaster", "shuriken_pistol", "war_mask", "spirit_stone"],
+    "source": "aeldari"
+  },
+  {
+    "id": "swooping_hawk",
+    "name": "Swooping Hawk",
+    "description": "You effortlessly soar across the battlefield on wings formed of vibrating feather plates and gravitic lifters.",
+    "tier": 3,
+    "species": ["aeldari"],
+    "cost": 76,
+    "faction": "Asuryani",
+    "keywords": ["AELDARI", "ASURYANI", "ASPECT WARRIOR", "[CRAFTWORLD]"],
+    "attributeBonus": {
+      "agility": 3,
+      "initiative": 3,
+      "willpower": 2
+    },
+    "skillBonus": {
+      "athletics": 2,
+      "awareness": 2,
+      "ballisticSkill": 3,
+      "pilot": 3,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "Skyleap",
+        "description": "You employ hit-and-run manoeuvres to frustrate your enemies. You do not provoke Reflexive Attacks when you move out of Engagement. You also gain +Double Rank bonus dice on Pinning Attacks."
+      }
+    ],
+    "startingWargear": ["aspect_armour", "lasblaster", "swooping_hawk_wings", "grenade_pack", "war_mask", "spirit_stone"],
+    "source": "aeldari"
+  },
+  {
+    "id": "warp_spider",
+    "name": "Warp Spider",
+    "description": "You risk short leaps through the Warp to outmanoeuvre your enemies before shredding them with razor-sharp monofilament wire.",
+    "tier": 3,
+    "species": ["aeldari"],
+    "cost": 76,
+    "faction": "Asuryani",
+    "keywords": ["AELDARI", "ASURYANI", "ASPECT WARRIOR", "[CRAFTWORLD]"],
+    "attributeBonus": {
+      "agility": 3,
+      "initiative": 3,
+      "willpower": 2
+    },
+    "skillBonus": {
+      "athletics": 2,
+      "ballisticSkill": 3,
+      "deception": 2,
+      "pilot": 3,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "Flickerjump",
+        "description": "You appear just long enough to weave a deadly web before disappearing from sight. When an enemy enters Engagement with you whilst you are Unengaged, you may move up to your Speed as a Reflexive Action. You can use this ability up to Rank times per combat."
+      }
+    ],
+    "startingWargear": ["heavy_aspect_armour", "death_spinner", "warp_spider_jump_generator", "war_mask", "spirit_stone"],
+    "source": "aeldari"
+  },
+  {
+    "id": "wraithguard",
+    "name": "Wraithguard",
+    "description": "Your undying soul is transplanted into an imposing wraithbone shell so you can continue to fight from beyond death.",
+    "tier": 4,
+    "species": ["wraith_construct"],
+    "cost": 74,
+    "faction": "Asuryani",
+    "keywords": ["AELDARI", "ASURYANI", "WRAITH CONSTRUCT", "[CRAFTWORLD]"],
+    "attributeBonus": {
+      "strength": 5,
+      "toughness": 6,
+      "willpower": 4
+    },
+    "skillBonus": {
+      "ballisticSkill": 3,
+      "weaponSkill": 3
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "War Construct",
+        "description": "Your new body weathers the strains of battle better than any living creature could. Any ranged weapons you wield without the Heavy Trait gain the Pistol Trait. When wielding two melee weapons, you reduce the DN penalty for making Multi-Attacks by 2. You gain +Rank Determination."
+      }
+    ],
+    "startingWargear": ["spirit_stone", "wraithcannon"],
+    "wargearChoices": "Wraithcannon or two Ghostswords",
+    "source": "aeldari"
+  },
+  {
+    "id": "autarch",
+    "name": "Autarch",
+    "description": "Your experience training at multiple Aspect Warrior Temples has prepared you to become the ultimate battlefield general.",
+    "tier": 5,
+    "species": ["aeldari"],
+    "cost": 206,
+    "faction": "Asuryani",
+    "keywords": ["AELDARI", "ASURYANI", "[CRAFTWORLD]"],
+    "attributeBonus": {
+      "agility": 4,
+      "initiative": 4,
+      "willpower": 5,
+      "intellect": 5,
+      "fellowship": 3
+    },
+    "skillBonus": {
+      "athletics": 2,
+      "awareness": 2,
+      "ballisticSkill": 3,
+      "leadership": 4,
+      "weaponSkill": 3
+    },
+    "influenceModifier": 3,
+    "abilities": [
+      {
+        "name": "Superlative Strategist",
+        "description": "When you, or any allies within communication range, spend Glory to increase their dice pool, they gain +Rank bonus dice (in addition to bonus dice equal to the Glory spent). You may make Leadership Tests to remove the Fear, Terror, or Pinned Conditions as a Simple Action."
+      }
+    ],
+    "startingWargear": ["heavy_aspect_armour", "forceshield", "back_banner", "war_mask", "spirit_stone"],
+    "wargearChoices": "Death Spinner or Dragon Fusion Gun or Reaper Launcher or Shuriken Pistol; Banshee Blade or Scorpion Chainsword or Star Glaive; Fusion Charges or Howling Banshee Mask or Mandiblasters or Swooping Hawk Wings or Warp Spider Jump Generator or Plasma Grenades",
+    "source": "aeldari"
+  },
+  {
+    "id": "farseer",
+    "name": "Farseer",
+    "description": "You channel psychic powers that reveal the myriad paths of the future, using your foreknowledge to shape the destiny of entire species.",
+    "tier": 5,
+    "species": ["aeldari"],
+    "cost": 157,
+    "faction": "Asuryani",
+    "keywords": ["AELDARI", "ASURYANI", "PSYKER", "[CRAFTWORLD]"],
+    "attributeBonus": {
+      "agility": 3,
+      "initiative": 3,
+      "willpower": 6,
+      "intellect": 4
+    },
+    "skillBonus": {
+      "leadership": 2,
+      "psychicMastery": 4,
+      "scholar": 2
+    },
+    "influenceModifier": 3,
+    "abilities": [
+      {
+        "name": "The Witch Path",
+        "description": "You are a supremely powerful Psyker, specialising in manipulation of the future. You know the Universal Psyker Abilities and the Smite psychic power. You may choose two powers you know from any of the following Disciplines: Divination, Runes of Fate, Runes of Fortune."
+      }
+    ],
+    "startingWargear": ["rune_armour", "ghosthelm", "wraithbone_runes", "shuriken_pistol", "spirit_stone"],
+    "wargearChoices": "Witchblade or Singing Spear",
+    "isPsyker": true,
+    "source": "aeldari"
+  },
+  {
+    "id": "kabalite_warrior",
+    "name": "Kabalite Warrior",
+    "description": "You are the beating heart of your Kabal's fighting strength, a murderous, power-hungry killer with dark ambitions.",
+    "tier": 2,
+    "species": ["drukhari"],
+    "cost": 32,
+    "faction": "Drukhari",
+    "keywords": ["AELDARI", "DRUKHARI", "[KABAL]"],
+    "attributeBonus": {
+      "agility": 3,
+      "initiative": 3
+    },
+    "skillBonus": {
+      "ballisticSkill": 2,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "Prey on the Weak",
+        "description": "Your mind is focused by the scent of fear and suffering. You gain +Rank bonus dice on attack Tests against enemies that have suffered Wounds, or Mobs of Troops that have suffered casualties."
+      }
+    ],
+    "startingWargear": ["kabalite_armour", "splinter_rifle", "knife", "hook_and_chains"],
+    "source": "aeldari"
+  },
+  {
+    "id": "wych",
+    "name": "Wych",
+    "description": "You are a lightning-fast slayer and gladiatorial performer, renowned in the Dark City for your murderous arts.",
+    "tier": 2,
+    "species": ["drukhari"],
+    "cost": 52,
+    "faction": "Drukhari",
+    "keywords": ["AELDARI", "DRUKHARI", "[WYCH CULT]"],
+    "attributeBonus": {
+      "agility": 4,
+      "initiative": 4
+    },
+    "skillBonus": {
+      "athletics": 2,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 1,
+    "abilities": [
+      {
+        "name": "Lightning Dodge",
+        "description": "You run circles around your enemy and take them apart one slice at a time. When wearing no armour besides a Wychsuit, you gain +Rank Defence against melee attacks."
+      }
+    ],
+    "startingWargear": ["wychsuit", "hekatarii_blade", "splinter_pistol", "plasma_grenades", "combat_drugs"],
+    "source": "aeldari"
+  },
+  {
+    "id": "hellion",
+    "name": "Hellion",
+    "description": "You are an adrenaline junkie and anarchist street racer, tearing across the galaxy atop a personal skyboard.",
+    "tier": 2,
+    "species": ["drukhari"],
+    "cost": 26,
+    "faction": "Drukhari",
+    "keywords": ["AELDARI", "DRUKHARI", "[WYCH CULT]"],
+    "attributeBonus": {
+      "agility": 3,
+      "initiative": 3
+    },
+    "skillBonus": {
+      "pilot": 2
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Hit and Run",
+        "description": "You revel in the confusion of swift attacks, striking fast before sweeping away from victims who fall prey to your skyboard or hellglaive. You do not provoke Reflexive Attacks when you move out of Engagement. You gain +Rank bonus dice on any Pilot (A) Tests related to the operation of your Skyboard."
+      }
+    ],
+    "startingWargear": ["wychsuit", "hellglaive", "skyboard", "combat_drugs"],
+    "source": "aeldari"
+  },
+  {
+    "id": "beastmaster",
+    "name": "Beastmaster",
+    "description": "You capture and command the deadliest animals in the galaxy, showcasing their lethal characteristics in the amphitheatres of Commorragh.",
+    "tier": 3,
+    "species": ["drukhari"],
+    "cost": 90,
+    "faction": "Drukhari",
+    "keywords": ["AELDARI", "DRUKHARI", "[WYCH CULT]"],
+    "attributeBonus": {
+      "agility": 4,
+      "initiative": 4,
+      "willpower": 3
+    },
+    "skillBonus": {
+      "athletics": 2,
+      "leadership": 2,
+      "pilot": 2,
+      "survival": 2,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 2,
+    "abilities": [
+      {
+        "name": "Beast Handler",
+        "description": "You command respect from wild animals, cowing them into obedience. You gain +Double Rank bonus dice on all social Skill Tests against a creature with the BEAST Keyword. When you consent, allied BEAST creatures in communication range can spend your Wrath Points as their own."
+      }
+    ],
+    "startingWargear": ["wychsuit", "agoniser", "beastmaster_mask", "skyboard", "combat_drugs"],
+    "source": "aeldari"
+  },
+  {
+    "id": "incubus",
+    "name": "Incubus",
+    "description": "You are the formidable disciple of an elite warrior creed, and mercenary bodyguard to the paranoid rulers of the Dark City.",
+    "tier": 3,
+    "species": ["drukhari"],
+    "cost": 74,
+    "faction": "Drukhari",
+    "keywords": ["AELDARI", "DRUKHARI", "BLADES FOR HIRE"],
+    "attributeBonus": {
+      "agility": 3,
+      "initiative": 4,
+      "willpower": 2
+    },
+    "skillBonus": {
+      "athletics": 2,
+      "ballisticSkill": 2,
+      "intimidation": 2,
+      "weaponSkill": 3
+    },
+    "influenceModifier": 2,
+    "abilities": [
+      {
+        "name": "Lethal Precision",
+        "description": "You train tirelessly to master the perfect killing strike. When you inflict a Critical Hit on a melee attack, you inflict +Double Rank Mortal Wounds."
+      }
+    ],
+    "startingWargear": ["incubus_warsuit", "klaive", "tormentor"],
+    "source": "aeldari"
+  },
+  {
+    "id": "mandrake",
+    "name": "Mandrake",
+    "description": "You exist simultaneously in reality and a cursed otherworld, not entirely corporeal, driven by your own malevolent instincts.",
+    "tier": 3,
+    "species": ["drukhari"],
+    "cost": 82,
+    "faction": "Drukhari",
+    "keywords": ["AELDARI", "DRUKHARI", "BLADES FOR HIRE"],
+    "attributeBonus": {
+      "strength": 2,
+      "agility": 4,
+      "initiative": 3
+    },
+    "skillBonus": {
+      "athletics": 2,
+      "ballisticSkill": 2,
+      "stealth": 4,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Shadow Creature",
+        "description": "You are not a creature of flesh and blood, instead dwelling in a liminal state between realities. When you are not wearing armour, you gain +Rank Resilience, and can roll Determination against attacks that inflict Mortal Wounds. You always count as being in heavy fog, with all corresponding vision penalties. When you move, you ignore all obstacles between your start and end point, so long as you move from one shadow to another."
+      }
+    ],
+    "startingWargear": ["glimmersteel_blade", "cloak_of_skin", "hook_and_chains"],
+    "source": "aeldari"
+  },
+  {
+    "id": "scourge",
+    "name": "Scourge",
+    "description": "You have undergone surgery adapting your body for flight, and deliver messages across the Dark City for the rich and powerful.",
+    "tier": 3,
+    "species": ["drukhari"],
+    "cost": 60,
+    "faction": "Drukhari",
+    "keywords": ["AELDARI", "DRUKHARI", "BLADES FOR HIRE"],
+    "attributeBonus": {
+      "agility": 3,
+      "initiative": 3
+    },
+    "skillBonus": {
+      "athletics": 3,
+      "awareness": 2,
+      "ballisticSkill": 2,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 2,
+    "abilities": [
+      {
+        "name": "Winged Strike",
+        "description": "You are grafted with wings that allow you to fly at double your normal Speed. More complicated aerial manoeuvres may require an Athletics (S) Test, with +Double Rank bonus dice. In addition, you can spend Shifts on a successful ranged attack Test to inflict the Pinned Condition on the target."
+      }
+    ],
+    "startingWargear": ["ghostplate_armour", "shardcarbine", "plasma_grenades"],
+    "source": "aeldari"
+  },
+  {
+    "id": "archon",
+    "name": "Archon",
+    "description": "You are the master of a warrior Kabal, seeking bounties in realspace that will expand your territory in Commorragh.",
+    "tier": 5,
+    "species": ["drukhari"],
+    "cost": 182,
+    "faction": "Drukhari",
+    "keywords": ["AELDARI", "DRUKHARI", "[KABAL]"],
+    "attributeBonus": {
+      "agility": 4,
+      "initiative": 4,
+      "willpower": 4,
+      "intellect": 3
+    },
+    "skillBonus": {
+      "athletics": 2,
+      "awareness": 2,
+      "ballisticSkill": 3,
+      "cunning": 2,
+      "intimidation": 4,
+      "leadership": 4,
+      "weaponSkill": 3
+    },
+    "influenceModifier": 4,
+    "abilities": [
+      {
+        "name": "Overlord",
+        "description": "You drive your underlings toward success by threatening them with the consequences of failure. As a Simple Action, you may spend 1 Wrath to provide yourself and all allies +Rank bonus dice to the next Test they make this encounter in your presence. In addition, you may spend 1 Glory to gain 1 Wrath Point as a Free Action, up to Rank times per session."
+      }
+    ],
+    "startingWargear": ["kabalite_armour", "shadowfield", "huskblade", "splinter_pistol", "trophy_rack"],
+    "source": "aeldari"
+  },
+  {
+    "id": "haemonculus",
+    "name": "Haemonculus",
+    "description": "You are a twisted genius committed to violating the laws of nature and transcending the limits of flesh.",
+    "tier": 5,
+    "species": ["drukhari"],
+    "cost": 165,
+    "faction": "Drukhari",
+    "keywords": ["AELDARI", "DRUKHARI", "[COVEN]"],
+    "attributeBonus": {
+      "toughness": 3,
+      "agility": 3,
+      "initiative": 3,
+      "intellect": 5
+    },
+    "skillBonus": {
+      "ballisticSkill": 2,
+      "intimidation": 3,
+      "medicae": 4,
+      "scholar": 4,
+      "tech": 2,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 4,
+    "abilities": [
+      {
+        "name": "Master of Pain",
+        "description": "You have inflicted such violations upon your own flesh that enemy attacks are barely cause for concern. You gain +Rank Resilience. In addition, when you heal another creature's Wounds, you can choose to heal additional Wounds by inflicting an equal amount of Shock on the patient, up to Double Rank."
+      }
+    ],
+    "startingWargear": ["mesh_implants", "haemonculus_tools", "scissorhand", "stinger_pistol", "ichor_injector"],
+    "source": "aeldari"
+  },
+  {
+    "id": "succubus",
+    "name": "Succubus",
+    "description": "You are the leader of a Wych Cult, a gladiatorial bloodletter celebrated for murderous skill and an undisputed master of personal combat.",
+    "tier": 5,
+    "species": ["drukhari"],
+    "cost": 154,
+    "faction": "Drukhari",
+    "keywords": ["AELDARI", "DRUKHARI", "[WYCH CULT]"],
+    "attributeBonus": {
+      "agility": 5,
+      "initiative": 5,
+      "willpower": 2,
+      "fellowship": 2
+    },
+    "skillBonus": {
+      "athletics": 4,
+      "leadership": 2,
+      "weaponSkill": 4
+    },
+    "influenceModifier": 3,
+    "abilities": [
+      {
+        "name": "Bride of Death",
+        "description": "You shock your fellow warriors into greater acts of spectacular slaughter. Once per Turn as a Free Action, you may spend 1 Wrath to provide yourself and all allies in communication range +Rank ED on any melee attacks made until the start of your next Turn. When wearing no armour besides a Wychsuit, you gain +Rank Defence against ranged attacks."
+      }
+    ],
+    "startingWargear": ["wychsuit", "archite_glaive", "agoniser", "combat_drugs"],
+    "source": "aeldari"
+  },
+  {
+    "id": "troupe_player",
+    "name": "Troupe Player",
+    "description": "You are a warrior-artist, a performer in a Harlequin Troupe, mastering the dance of death in honour of the Laughing God.",
+    "tier": 3,
+    "species": ["aeldari", "drukhari"],
+    "cost": 84,
+    "faction": "Harlequin",
+    "keywords": ["AELDARI", "HARLEQUIN", "[MASQUE]"],
+    "attributeBonus": {
+      "agility": 4,
+      "initiative": 4,
+      "willpower": 2
+    },
+    "skillBonus": {
+      "athletics": 3,
+      "ballisticSkill": 2,
+      "weaponSkill": 3
+    },
+    "influenceModifier": 2,
+    "abilities": [
+      {
+        "name": "War Dancer",
+        "description": "You fight best as part of a chorus, the strikes of your allies blurring into your own as a storm of blades. You gain +Double Rank bonus dice on melee attacks against an enemy engaged with an ally."
+      }
+    ],
+    "startingWargear": ["holo_suit", "flip_belt", "shuriken_pistol", "plasma_grenades", "false_face"],
+    "wargearChoices": "Harlequin's Blade or Harlequin's Caress or Harlequin's Embrace or Harlequin's Kiss",
+    "source": "aeldari"
+  },
+  {
+    "id": "death_jester",
+    "name": "Death Jester",
+    "description": "You are a ranged-support specialist with a dark sense of humour, embodying the role of Death by wearing the bones of your predecessor.",
+    "tier": 4,
+    "species": ["aeldari", "drukhari"],
+    "cost": 166,
+    "faction": "Harlequin",
+    "keywords": ["AELDARI", "HARLEQUIN", "[MASQUE]"],
+    "attributeBonus": {
+      "strength": 4,
+      "agility": 5,
+      "initiative": 5,
+      "willpower": 4
+    },
+    "skillBonus": {
+      "athletics": 2,
+      "ballisticSkill": 3,
+      "intimidation": 2,
+      "weaponSkill": 3
+    },
+    "influenceModifier": 2,
+    "abilities": [
+      {
+        "name": "Death Is Not Enough",
+        "description": "You delight in brutal volleys of firepower that demoralise and terrify your enemies. When you succeed on a ranged attack, any targets of the attack must make a Fear Test, with a DN of 1 + Double Rank. If none of your targets survived the attack, you can choose another character who witnessed the attack to make the Fear Test instead."
+      }
+    ],
+    "startingWargear": ["holo_suit", "flip_belt", "rictus_mask", "shrieker_cannon"],
+    "source": "aeldari"
+  },
+  {
+    "id": "shadowseer",
+    "name": "Shadowseer",
+    "description": "You are a sanity-warping, illusion-conjuring performance-psyker, guiding your Troupe according to Fate's fickle whims.",
+    "tier": 5,
+    "species": ["aeldari", "drukhari"],
+    "cost": 267,
+    "faction": "Harlequin",
+    "keywords": ["AELDARI", "HARLEQUIN", "PSYKER", "[MASQUE]"],
+    "attributeBonus": {
+      "strength": 2,
+      "toughness": 2,
+      "agility": 5,
+      "initiative": 5,
+      "willpower": 6,
+      "intellect": 4,
+      "fellowship": 2
+    },
+    "skillBonus": {
+      "athletics": 3,
+      "awareness": 3,
+      "ballisticSkill": 3,
+      "deception": 3,
+      "psychicMastery": 4,
+      "weaponSkill": 3
+    },
+    "influenceModifier": 2,
+    "abilities": [
+      {
+        "name": "Phantasmancer",
+        "description": "You know the Universal Psyker Abilities and the Smite psychic power. You may choose two powers you know from any of the following Disciplines: Divination, Phantasmancy, Telepathy."
+      }
+    ],
+    "startingWargear": ["holo_suit", "flip_belt", "mirror_mask", "miststave", "hallucinogen_grenade_launcher"],
+    "wargearChoices": "Shuriken Pistol or Neuro Disruptor",
+    "isPsyker": true,
+    "source": "aeldari"
+  },
+  {
+    "id": "troupe_master",
+    "name": "Troupe Master",
+    "description": "You are the director, general, high priest, and lead performer of your Troupe, an exemplar of Cegorach's teachings.",
+    "tier": 5,
+    "species": ["aeldari", "drukhari"],
+    "cost": 243,
+    "faction": "Harlequin",
+    "keywords": ["AELDARI", "HARLEQUIN", "[MASQUE]"],
+    "attributeBonus": {
+      "strength": 2,
+      "toughness": 2,
+      "agility": 5,
+      "initiative": 5,
+      "willpower": 5,
+      "intellect": 4,
+      "fellowship": 3
+    },
+    "skillBonus": {
+      "athletics": 3,
+      "awareness": 2,
+      "ballisticSkill": 4,
+      "leadership": 3,
+      "weaponSkill": 4
+    },
+    "influenceModifier": 3,
+    "abilities": [
+      {
+        "name": "Choreographer of War",
+        "description": "When you, or any allies within communication range, spend Glory to increase damage, they inflict +Rank damage (in addition to +1 damage per Glory spent). In addition, you may Seize the Initiative without spending Glory, up to Rank times per combat."
+      }
+    ],
+    "startingWargear": ["holo_suit", "flip_belt", "false_face", "plasma_grenades"],
+    "wargearChoices": "Aeldari Power Sword or Harlequin's Caress or Harlequin's Embrace or Harlequin's Kiss; Fusion Pistol or Neuro Disruptor or Shuriken Pistol",
+    "source": "aeldari"
+  },
+  {
+    "id": "voidreaver",
+    "name": "Voidreaver",
+    "description": "You are a recent recruit to the Corsair fleet, looking to make a name for yourself and enjoy the bounty from the raids you join.",
+    "tier": 2,
+    "species": ["aeldari", "drukhari"],
+    "cost": 34,
+    "faction": "Anhrathe",
+    "keywords": ["AELDARI", "ANHRATHE", "[COTERIE]"],
+    "attributeBonus": {
+      "agility": 3
+    },
+    "skillBonus": {
+      "athletics": 2,
+      "ballisticSkill": 2,
+      "pilot": 2,
+      "weaponSkill": 2
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Raiders of the Void",
+        "description": "You are a raider, experienced at operating in the vacuum of space. You gain +Rank bonus dice to melee or ranged attacks when you Seize the Initiative. You gain a further +1 die bonus if this ability is used when fighting in zero gravity."
+      }
+    ],
+    "startingWargear": ["corsair_armour", "shuriken_rifle", "plasma_grenades", "void_suit", "spirit_stone"],
+    "wargearChoices": "Shuriken Rifle or Shuriken Pistol and Void Sabre",
+    "source": "aeldari"
+  },
+  {
+    "id": "soul_weaver",
+    "name": "Soul Weaver & Way Seeker",
+    "description": "You are a powerful Psyker, wielding devastating energies while guarding the souls of the fallen.",
+    "tier": 2,
+    "species": ["aeldari", "drukhari"],
+    "cost": 54,
+    "faction": "Anhrathe",
+    "keywords": ["AELDARI", "ANHRATHE", "PSYKER", "[COTERIE]"],
+    "attributeBonus": {
+      "agility": 3,
+      "willpower": 4
+    },
+    "skillBonus": {
+      "athletics": 1,
+      "ballisticSkill": 1,
+      "pilot": 1,
+      "psychicMastery": 2,
+      "weaponSkill": 1
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Void Dreamer",
+        "description": "You have the PSYKER Keyword, and are a Psyker. You know the Universal Psyker Abilities and the Smite psychic power."
+      }
+    ],
+    "startingWargear": ["wraithbone_runes", "shuriken_pistol", "spirit_stone", "ritual_tools"],
+    "wargearChoices": "Shuriken Pistol and Corsair Sabre or Witchstaff",
+    "isPsyker": true,
+    "source": "aeldari"
+  },
+  {
+    "id": "voidscarred",
+    "name": "Voidscarred",
+    "description": "As one of the Voidscarred, you relish the thrill of the hunt and collect trinkets and trophies to sate your ego.",
+    "tier": 3,
+    "species": ["aeldari", "drukhari"],
+    "cost": 84,
+    "faction": "Anhrathe",
+    "keywords": ["AELDARI", "ANHRATHE", "[COTERIE]"],
+    "attributeBonus": {
+      "toughness": 2,
+      "agility": 4,
+      "initiative": 3,
+      "willpower": 2
+    },
+    "skillBonus": {
+      "athletics": 2,
+      "ballisticSkill": 2,
+      "pilot": 3,
+      "weaponSkill": 3
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Wrath of the Stars",
+        "description": "Your training has prepared you for any battlefield. When you make a Critical Hit you may roll twice on the Critical Hit table and choose either result."
+      }
+    ],
+    "startingWargear": ["corsair_armour", "shuriken_rifle", { "id": "plasma_grenades", "qty": 3 }, "void_suit", "spirit_stone"],
+    "wargearChoices": "Shuriken Rifle or Shuriken Pistol and Void Sabre",
+    "source": "aeldari"
+  },
+  {
+    "id": "felarch",
+    "name": "Felarch",
+    "description": "You are a veteran Corsair, inspiring those in your command and cutting through enemy resistance.",
+    "tier": 3,
+    "species": ["aeldari", "drukhari"],
+    "cost": 134,
+    "faction": "Anhrathe",
+    "keywords": ["AELDARI", "ANHRATHE", "[COTERIE]"],
+    "attributeBonus": {
+      "toughness": 2,
+      "agility": 4,
+      "initiative": 4,
+      "willpower": 2,
+      "fellowship": 2
+    },
+    "skillBonus": {
+      "athletics": 3,
+      "awareness": 3,
+      "ballisticSkill": 3,
+      "leadership": 3,
+      "pilot": 3,
+      "weaponSkill": 3
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Captain of the Stars",
+        "description": "You and any allies within 20 metres of you that can see you may add +Double Rank bonus dice to Resolve Tests. You add +Double Rank bonus dice to any Intimidation (Wil) Tests, including Interaction Attacks."
+      }
+    ],
+    "startingWargear": ["corsair_armour", "shuriken_rifle", { "id": "plasma_grenades", "qty": 3 }, "void_suit", "spirit_stone"],
+    "wargearChoices": "Shuriken Rifle or Shuriken Pistol and Master-Crafted Void Sabre",
+    "source": "aeldari"
+  },
+  {
+    "id": "corsair_prince",
+    "name": "Corsair Prince",
+    "description": "You are the leader of a Corsair fleet, known equally as both a brilliant strategist and ruthless mercenary.",
+    "tier": 4,
+    "species": ["aeldari", "drukhari"],
+    "cost": 200,
+    "faction": "Anhrathe",
+    "keywords": ["AELDARI", "ANHRATHE", "[COTERIE]"],
+    "attributeBonus": {
+      "strength": 2,
+      "toughness": 2,
+      "agility": 4,
+      "initiative": 4,
+      "willpower": 3,
+      "intellect": 2,
+      "fellowship": 2
+    },
+    "skillBonus": {
+      "athletics": 3,
+      "awareness": 3,
+      "ballisticSkill": 3,
+      "cunning": 3,
+      "intimidation": 2,
+      "leadership": 4,
+      "pilot": 4,
+      "weaponSkill": 4
+    },
+    "influenceModifier": 0,
+    "abilities": [
+      {
+        "name": "Lord of the Galaxy",
+        "description": "You gain +Double Rank bonus dice to social Skill Tests when interacting with a character with the AELDARI or DRUKHARI Keywords. You gain +Double Rank bonus to all Cunning Tests when commanding ANHRATHE characters and units."
+      }
+    ],
+    "startingWargear": ["corsair_armour", "mist_shield", "shuriken_pistol", "master_crafted_void_sabre", "plasma_grenades", "spirit_stone"],
+    "source": "aeldari"
+  }
+]

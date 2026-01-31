@@ -1,0 +1,218 @@
+[
+  {
+    "id": "ammo_drum",
+    "name": "Ammo Drum",
+    "type": "magazine",
+    "description": "A large drum of ammunition replacing the typical magazine.",
+    "effect": "You can carry one additional Ammo.",
+    "value": 3,
+    "rarity": "Common",
+    "keywords": ["IMPERIUM", "SCUM"],
+    "restrictions": {
+      "weaponType": "ranged"
+    },
+    "source": "core"
+  },
+  {
+    "id": "autoloader",
+    "name": "Autoloader",
+    "type": "magazine",
+    "description": "A miracle of the Machine God, pressing an Autoloader's activation rune triggers a mechanism that automatically reloads your weapon.",
+    "effect": "You can Reload your weapon as a Free Action.",
+    "value": 5,
+    "rarity": "Rare",
+    "keywords": ["IMPERIUM"],
+    "restrictions": {
+      "weaponType": "ranged"
+    },
+    "source": "core"
+  },
+  {
+    "id": "bayonet_lug",
+    "name": "Bayonet Lug",
+    "type": "melee_attachment",
+    "description": "A simple device that allows you to mount a blade on a firearm.",
+    "effect": "You can use this weapon as a Knife.",
+    "value": 1,
+    "rarity": "Common",
+    "keywords": ["ANY"],
+    "restrictions": {
+      "weaponType": "ranged"
+    },
+    "source": "core"
+  },
+  {
+    "id": "chain_bayonet",
+    "name": "Chain Bayonet",
+    "type": "melee_attachment",
+    "description": "A whirring, rending bayonet mechanically attached to a firearm.",
+    "effect": "You can use this weapon as a Chain Bayonet.",
+    "value": 4,
+    "rarity": "Rare",
+    "keywords": ["IMPERIUM", "CHAOS"],
+    "restrictions": {
+      "weaponType": "ranged"
+    },
+    "source": "core"
+  },
+  {
+    "id": "combi_weapon",
+    "name": "Combi Weapon",
+    "type": "special",
+    "description": "Whether hastily welded together or meticulously linked during the forging process, two ranged weapons are combined into one versatile death bringer.",
+    "effect": "A combi-weapon may be fired as either or both of its component weapons each round. Firing both component weapons is treated as a Multi-Attack. You must own the two ranged weapons you want to combine.",
+    "value": 6,
+    "rarity": "Rare",
+    "keywords": ["IMPERIUM", "CHAOS", "ORK", "SCUM"],
+    "restrictions": {
+      "weaponType": "ranged",
+      "excludeTraits": ["Heavy"],
+      "requiresSecondWeapon": true
+    },
+    "source": "core"
+  },
+  {
+    "id": "distinction",
+    "name": "Distinction",
+    "type": "cosmetic",
+    "description": "Some weapons garner infamy as deadly tools of destruction, while others simply look the part. Through custom paint jobs, grizzly additions, or a storied history, a weapon with distinction can speak a thousand words without uttering a sound.",
+    "effect": "+1 bonus die to Intimidation (Wil) Tests when you brandish this weapon. Distinction does not count toward a weapon's maximum number of upgrades.",
+    "value": 5,
+    "rarity": "Uncommon",
+    "keywords": ["ANY"],
+    "restrictions": {},
+    "doesNotCountTowardLimit": true,
+    "source": "core"
+  },
+  {
+    "id": "duelling_grip",
+    "name": "Duelling Grip",
+    "type": "grip",
+    "description": "Finely crafted for a specific user, duelling grips are highly sought after alterations that grant finer control and accuracy, aiming to eliminate the gap between warrior and weapon.",
+    "effect": "+1 bonus die on Attack Tests using this weapon.",
+    "value": 3,
+    "rarity": "Uncommon",
+    "keywords": ["ANY"],
+    "restrictions": {
+      "requireOneOf": ["pistol", "one_handed_melee"]
+    },
+    "source": "core"
+  },
+  {
+    "id": "gene_grip",
+    "name": "Gene-Grip Bio-Verator",
+    "type": "grip",
+    "description": "Popular among law enforcement and paranoid gunslingers, these custom grips check the bio-signature of the wielder every time they are held, ensuring that only authorised personnel can activate the weapon.",
+    "effect": "Any mechanisms your weapon has (triggers, chain engines, etc.) will not activate for anyone but you.",
+    "value": 5,
+    "rarity": "Rare",
+    "keywords": ["IMPERIUM"],
+    "restrictions": {},
+    "source": "core"
+  },
+  {
+    "id": "mastercrafted",
+    "name": "Mastercrafted",
+    "type": "quality",
+    "description": "Some weapons are simply made better; forged from high quality materials or by unparalleled artisans.",
+    "effect": "The weapon gains the Reliable Trait. You gain +2 bonus dice to any Attack Test made with this weapon.",
+    "value": 7,
+    "rarity": "Very Rare",
+    "keywords": ["ANY"],
+    "restrictions": {},
+    "addsTraits": ["Reliable"],
+    "bonusDice": 2,
+    "source": "core"
+  },
+  {
+    "id": "megathoule_accelerator",
+    "name": "Megathoule Accelerator (Lucius Pattern)",
+    "type": "power",
+    "description": "Based on a design used by the Death Korps of Krieg, this upgrade drastically increases a Las weapon's rate of fire. Extensive additional heat-sink rings along the length of the barrel aim to prevent overheating.",
+    "effect": "The weapon gains +2 Damage. The weapon loses the Reliable Trait.",
+    "value": 6,
+    "rarity": "Very Rare",
+    "keywords": ["IMPERIUM", "ASTRA MILITARUM"],
+    "restrictions": {
+      "requireKeywords": ["LAS"]
+    },
+    "bonusDamage": 2,
+    "removesTraits": ["Reliable"],
+    "source": "core"
+  },
+  {
+    "id": "magnocular_scope",
+    "name": "Magnocular Scope",
+    "type": "scope",
+    "description": "This advanced arrangement of lenses and prisms functions as both a rangefinder and visual aid, and can be easily attached and detached from most firearms.",
+    "effect": "Awareness (Int) Tests made with a Magnocular Scope suffer no penalties due to distance. When attached to a weapon, all Range penalties are reduced by -2.",
+    "value": 2,
+    "rarity": "Uncommon",
+    "keywords": ["ANY"],
+    "restrictions": {
+      "weaponType": "ranged"
+    },
+    "source": "core"
+  },
+  {
+    "id": "percussive_muzzle_brake",
+    "name": "Percussive Muzzle Brake",
+    "type": "barrel",
+    "description": "These recoil absorbing muzzle brakes help the wielder keep targets in their sights while firing on full-auto.",
+    "effect": "The weapon gains +1 Salvo.",
+    "value": 3,
+    "rarity": "Uncommon",
+    "keywords": ["ANY"],
+    "restrictions": {
+      "weaponType": "ranged",
+      "excludeTraits": ["Heavy"]
+    },
+    "bonusSalvo": 1,
+    "source": "core"
+  },
+  {
+    "id": "preysense_sight",
+    "name": "Preysense Sight",
+    "type": "scope",
+    "description": "Preysense sights utilise precision thermal optics, allowing the wearer to see targets in low light or even total darkness.",
+    "effect": "This weapon upgrade allows the wielder to detect targets via ambient heat, even in total darkness.",
+    "value": 6,
+    "rarity": "Rare",
+    "keywords": ["IMPERIUM", "SCUM", "ANY"],
+    "restrictions": {
+      "weaponType": "ranged"
+    },
+    "source": "core"
+  },
+  {
+    "id": "red_dot_sight",
+    "name": "Red-Dot Sight",
+    "type": "scope",
+    "description": "An integrated low-power laser emitter that highlights the weapon's target with a tell-tale crimson dot. Often this light is the last thing a target notices before their death.",
+    "effect": "+1 bonus die to ranged attacks made with this weapon.",
+    "value": 5,
+    "rarity": "Uncommon",
+    "keywords": ["IMPERIUM", "SCUM"],
+    "restrictions": {
+      "weaponType": "ranged"
+    },
+    "bonusDice": 1,
+    "source": "core"
+  },
+  {
+    "id": "silencer",
+    "name": "Silencer",
+    "type": "barrel",
+    "description": "This barrel extension is specifically designed to conceal muzzle flash and muffle the sound of gunfire.",
+    "effect": "The weapon gains the Silent Trait.",
+    "value": 3,
+    "rarity": "Uncommon",
+    "keywords": ["IMPERIUM", "SCUM", "ANY"],
+    "restrictions": {
+      "weaponType": "ranged",
+      "requireKeywords": ["BOLT", "PROJECTILE"]
+    },
+    "addsTraits": ["Silent"],
+    "source": "core"
+  }
+]

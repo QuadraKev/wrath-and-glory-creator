@@ -1,0 +1,165 @@
+TALENTS REQUIRING CHOICES - Testing Reference
+=============================================
+
+This file lists all talents that require the player to make a choice when purchasing.
+Use this to test that all choice-based talents work correctly.
+
+PREDEFINED OPTIONS (dropdown selection)
+---------------------------------------
+
+1. Acute Sense
+   - Choice Type: sense
+   - Options: Sight, Hearing, Smell, Taste, Touch
+
+2. Devastator (Space Marine talent)
+   - Choice Type: weapon
+   - Options: Heavy Bolter, Heavy Flamer, Lascannon, Missile Launcher, Multi-Melta, Plasma Cannon
+
+3. Hatred
+   - Choice Type: keyword
+   - Options: (any keyword - shows as text input)
+
+4. Know Thy Enemy
+   - Choice Type: skill
+   - Options: Awareness, Insight, Investigation, Scholar
+   - Prerequisite: Rating 3+ in chosen skill
+
+5. Jargon
+   - Choice Type: skill
+   - Options: Ballistic Skill, Medicae, Pilot, Scholar, Survival, Tech, Weapon Skill
+   - Prerequisite: Rating 1+ in chosen skill
+
+6. Mark of Chaos
+   - Choice Type: chaos_god
+   - Options: Nurgle, Khorne, Slaanesh, Tzeentch, Undedicated
+
+7. Special Weapon (Astra Militarum)
+   - Choice Type: weapon
+   - Options: Combat Shotgun, Plasma Gun, Meltagun, Long Las, Flamer, Grenade Launcher, Hot-Shot Volley Gun
+
+8. Simultaneous Strike
+   - Choice Type: skill
+   - Options: Ballistic Skill, Weapon Skill
+   - Prerequisite: Rating 4+ in chosen skill
+
+9. Superior Presence
+   - Choice Type: skill
+   - Options: Athletics, Deception, Intimidation, Persuasion, Tech
+   - Prerequisite: Rating 4+ in chosen skill
+
+10. Unyielding
+    - Choice Type: attribute
+    - Options: Strength, Toughness, Agility, Initiative, Willpower, Intellect, Fellowship
+    - Prerequisite: Rating 5+ in chosen attribute
+
+11. Will to Live
+    - Choice Type: trait
+    - Options: Conviction, Defence, Resilience, Resolve, Shock, Determination, Speed, Wounds
+
+
+DYNAMIC OPTIONS (based on character state)
+------------------------------------------
+
+12. Trademark Weapon
+    - Choice Type: weapon_owned
+    - Options: Shows weapons the character currently owns
+    - TEST: Add some weapons to character, then try to purchase this talent
+
+13. Psychic Discipline Mastery
+    - Choice Type: discipline
+    - Options: Shows psychic disciplines where character has 2+ powers
+    - TEST: Add 2+ powers from same discipline, then try to purchase
+
+14. Stalwart
+    - Choice Type: skill_any
+    - Options: Shows all skills with rating 4+
+    - Prerequisite: Any Skill at 4+
+
+
+FREEFORM TEXT INPUT
+-------------------
+
+15. Artisan
+    - Choice Type: freeform
+    - Label: Performance Type
+    - Example: choral singing, organ playing, hagiographic recital, ritual dance
+
+16. Augmetics
+    - Choice Type: augmetics (treated as freeform)
+    - Label: Augmetic Selection
+    - Note: Choose two Rare or lower, or one Very Rare augmetic
+
+17. Climate Adaptation
+    - Choice Type: freeform
+    - Label: Environmental Hazard
+    - Example: suffocation, extreme heat, extreme cold, radiation, poisons
+
+18. Forbidden Knowledge
+    - Choice Type: freeform
+    - Label: Forbidden Subject
+    - Example: daemons, heretical beliefs, a specific alien species
+
+19. Highly Educated
+    - Choice Type: keyword
+    - Label: Lore Subject
+    - Example: a faction, species, or esoteric subject
+
+20. Labourer
+    - Choice Type: freeform
+    - Label: Labour Type
+    - Example: construction, forge labour, mining, agri-farming
+
+21. Master of Path
+    - Choice Type: freeform
+    - Label: Aeldari Path
+    - Note: Must already be on chosen Path
+
+22. Tradesman
+    - Choice Type: freeform
+    - Label: Craft Type
+    - Example: carpentry, cartography, jewellery, masonry, painting
+
+23. Weapon Specialist
+    - Choice Type: freeform
+    - Label: Weapon Type
+    - Note: Choose a specific weapon type to specialize in
+
+
+TESTING CHECKLIST
+-----------------
+
+[ ] Acute Sense - Select each sense option
+[ ] Trademark Weapon - Requires weapons to be equipped first
+[ ] Psychic Discipline Mastery - Requires 2+ powers in discipline
+[ ] Stalwart - Requires skill at 4+
+[ ] Unyielding - Requires attribute at 5+
+[ ] Simultaneous Strike - Requires BS or WS at 4+
+[ ] Freeform talents - Verify text input saves correctly
+[ ] Choice appears in talent name after purchase
+[ ] Character sheet displays choice correctly
+
+
+CHARACTER SHEET WEAPON BONUSES
+------------------------------
+
+Trademark Weapon:
+- When purchased, choose one of your weapons
+- On Character Sheet: Weapon shows ED with bonus, e.g., "1 + 4 (Trademark Weapon)"
+- Bonus is +Double Rank ED (Rank 1 = +2 ED, Rank 2 = +4 ED, etc.)
+- TEST: Buy Trademark Weapon, select a weapon, check Character Sheet ED column
+
+Simultaneous Strike:
+- When purchased, choose Weapon Skill (melee) or Ballistic Skill (pistols)
+- On Character Sheet: "In Hand" column appears for compatible weapons
+- Check 2 weapons to mark them as dual-wielded
+- ED shows bonus from secondary weapon: "1 + 3 (Simul. Strike)"
+- Bonus is half of secondary weapon's BASE damage (rounded up)
+- Example: Death Cult Power Blade (base 5) gives +3 ED (5/2 = 2.5 rounded up)
+- TEST (Melee): Buy Simultaneous Strike (Weapon Skill), have 2 one-handed melee
+        weapons, check both, verify ED bonuses appear
+- TEST (Pistols): Buy Simultaneous Strike (Ballistic Skill), have 2 pistols,
+        check both, verify ED bonuses appear
+
+Talent Choice Display:
+- All talents with choices show "Chosen: [option]" at the start of description
+- Talent name also shows choice in parentheses, e.g., "Acute Sense (Sight)"
