@@ -1203,6 +1203,22 @@ const CharacterSheetTab = {
             }
         }
 
+        // Promethium Proficiency: +Rank ED for weapons with Inflict (On Fire) trait
+        if (State.hasTalent('promethium_proficiency')) {
+            if (hasTrait('Inflict') && weaponTraits.some(t => t.toLowerCase().includes('on fire') || t.toLowerCase().includes('fire'))) {
+                edBonuses.push({ value: rank, source: 'Promethium Prof.' });
+            }
+        }
+
+        // Absolute Incineration: +Rank ED and AP for MELTA weapons (at Short Range)
+        // Note: This shows the potential bonus; actual bonus only applies at Short Range
+        if (State.hasTalent('absolute_incineration')) {
+            if (hasTrait('Melta') || hasKeyword('MELTA')) {
+                edBonuses.push({ value: rank, source: 'Abs. Incin. (Short)' });
+                apBonuses.push({ value: rank, source: 'Abs. Incin. (Short)' });
+            }
+        }
+
         // === AP TALENTS ===
 
         // Honed to Lethality: +Rank AP for POWER FIELD weapons
@@ -1233,6 +1249,28 @@ const CharacterSheetTab = {
             // Dark saedath gives AP bonus on melee
             if (entry && entry.choice === 'Dark' && weapon.type === 'melee') {
                 apBonuses.push({ value: rank, source: 'Saedath (Dark)' });
+            }
+        }
+
+        // Assault Doctrine: +Rank AP on melee or Pistol weapons
+        if (State.hasTalent('assault_doctrine')) {
+            if (weapon.type === 'melee' || hasTrait('Pistol')) {
+                apBonuses.push({ value: rank, source: 'Assault Doctrine' });
+            }
+        }
+
+        // Devastator Doctrine: +Rank AP on the chosen heavy weapon
+        if (State.hasTalent('devastator_doctrine')) {
+            const entry = State.getTalentEntry('devastator_doctrine');
+            if (entry && entry.choice && weapon.name === entry.choice) {
+                apBonuses.push({ value: rank, source: 'Devastator Doctrine' });
+            }
+        }
+
+        // Disciple of the Holy Trinity: +Rank Damage with BOLT, FIRE, or MELTA weapons
+        if (State.hasTalent('disciple_of_holy_trinity')) {
+            if (hasKeyword('BOLT') || hasKeyword('FIRE') || hasKeyword('MELTA')) {
+                damageBonuses.push({ value: rank, source: 'Holy Trinity' });
             }
         }
 

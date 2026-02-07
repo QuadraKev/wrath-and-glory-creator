@@ -5,14 +5,20 @@
     "type": "melee",
     "category": "Low-Tech",
     "description": "From a grox butcher's chopper to an assassin's stiletto, any number of small bladed weapons can qualify as a 'Knife'. This includes any blades that may be affixed to a weapon as a bayonet.",
-    "damage": {"base": 2, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 2,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 2,
     "ap": 0,
     "range": "Thrown S x 4",
     "traits": [],
     "value": 2,
     "rarity": "Common",
-    "keywords": ["BLADE"],
+    "keywords": [
+      "BLADE"
+    ],
     "source": "core"
   },
   {
@@ -21,14 +27,21 @@
     "type": "melee",
     "category": "Low-Tech",
     "description": "Sanctioned Psykers are provided with a sharp blade, a last resort for those whose powers go beyond their control. Should the unfortunate face the tragedy of imminent daemonic possession, the blade offers them a last, merciful escape. A Psykana Mercy Blade has the same profile as a Knife, but has AP -1 and the ADEPTUS ASTRA TELEPATHICA Keyword.",
-    "damage": {"base": 2, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 2,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -1,
     "range": "Thrown S x 4",
     "traits": [],
     "value": 2,
     "rarity": "Uncommon",
-    "keywords": ["BLADE", "ADEPTUS ASTRA TELEPATHICA"],
+    "keywords": [
+      "BLADE",
+      "ADEPTUS ASTRA TELEPATHICA"
+    ],
     "source": "core"
   },
   {
@@ -37,13 +50,21 @@
     "type": "melee",
     "category": "Low-Tech",
     "description": "As ancient and varied as the Imperium of Man itself, Swords of all shapes and sizes can be found throughout the war-torn universe.",
-    "damage": {"base": 3, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 3,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 3,
     "ap": 0,
-    "traits": ["Parry"],
+    "traits": [
+      "Parry"
+    ],
     "value": 3,
     "rarity": "Common",
-    "keywords": ["BLADE"],
+    "keywords": [
+      "BLADE"
+    ],
     "source": "core"
   },
   {
@@ -52,13 +73,25 @@
     "type": "melee",
     "category": "Chain",
     "description": "Despite their brutal appearance and distinctive rasping roar, Chainswords require training to be most effective. A duel between two trained Chainsword wielders is a sight to behold, as they alter the speed and direction of the spinning teeth to counter, parry, and ultimately overcome their opponent with savage grace.",
-    "damage": {"base": 5, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 5,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 4,
     "ap": 0,
-    "traits": ["Brutal", "Parry"],
+    "traits": [
+      "Brutal",
+      "Parry"
+    ],
     "value": 4,
     "rarity": "Uncommon",
-    "keywords": ["CHAIN", "AELDARI", "IMPERIUM", "CHAOS"],
+    "keywords": [
+      "CHAIN",
+      "AELDARI",
+      "IMPERIUM",
+      "CHAOS"
+    ],
     "source": "core"
   },
   {
@@ -67,13 +100,22 @@
     "type": "melee",
     "category": "Power",
     "description": "Rare weapons reserved for heroes of renown and officers of great endeavour, the energy arcing along the edge of a Power Sword is both a warning and a challenge to all who stand against its bearer.",
-    "damage": {"base": 5, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 5,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 4,
     "ap": -3,
-    "traits": ["Parry"],
+    "traits": [
+      "Parry"
+    ],
     "value": 6,
     "rarity": "Rare",
-    "keywords": ["IMPERIUM", "POWER FIELD"],
+    "keywords": [
+      "IMPERIUM",
+      "POWER FIELD"
+    ],
     "source": "core"
   },
   {
@@ -82,13 +124,23 @@
     "type": "melee",
     "category": "Power",
     "description": "These matched pairs of slender Power Blades are wielded by Death Cult Assassins. Each is perfectly balanced for speed and precision, allowing the wielder to strike with blinding swiftness.",
-    "damage": {"base": 5, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 5,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 4,
     "ap": -2,
-    "traits": ["Parry"],
+    "traits": [
+      "Parry"
+    ],
     "value": 6,
     "rarity": "Very Rare",
-    "keywords": ["IMPERIUM", "ADEPTUS MINISTORUM", "POWER FIELD"],
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MINISTORUM",
+      "POWER FIELD"
+    ],
     "source": "core"
   },
   {
@@ -97,13 +149,22 @@
     "type": "melee",
     "category": "Power",
     "description": "Similar in design and function to a Power Sword, the Power Axe trades the finesse of a blade for the heavy, bone-crushing impact of an axe head. The disruption field that wreathes the head allows it to cleave through armour and bone alike.",
-    "damage": {"base": 6, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 6,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -3,
-    "traits": ["Unwieldy (1)"],
+    "traits": [
+      "Unwieldy (1)"
+    ],
     "value": 6,
     "rarity": "Very Rare",
-    "keywords": ["IMPERIUM", "POWER FIELD"],
+    "keywords": [
+      "IMPERIUM",
+      "POWER FIELD"
+    ],
     "source": "core"
   },
   {
@@ -112,13 +173,24 @@
     "type": "melee",
     "category": "Force",
     "description": "Though many Force weapons take on a similar form to their mundane counterparts, the Force Stave is designed specifically to work as a psychic conduit. When wielded by a psyker, the stave becomes an extension of their will, crackling with warp energy.",
-    "damage": {"base": 5, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 5,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -1,
-    "traits": ["Force", "Two-Handed"],
+    "traits": [
+      "Force",
+      "Two-Handed"
+    ],
     "value": 6,
     "rarity": "Very Rare",
-    "keywords": ["IMPERIUM", "PSYKER", "FORCE"],
+    "keywords": [
+      "IMPERIUM",
+      "PSYKER",
+      "FORCE"
+    ],
     "source": "core"
   },
   {
@@ -127,13 +199,22 @@
     "type": "melee",
     "category": "Ork",
     "description": "A Choppa is usually little more than a chunk of metal with an edge hacked and filed into one side. Orks wield these brutal weapons with enthusiasm, making up for any lack of craftsmanship with sheer ferocity.",
-    "damage": {"base": 5, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 5,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "traits": ["Brutal", "Waaagh!"],
+    "traits": [
+      "Brutal",
+      "Waaagh!"
+    ],
     "value": 2,
     "rarity": "Common",
-    "keywords": ["ORK"],
+    "keywords": [
+      "ORK"
+    ],
     "source": "core"
   },
   {
@@ -142,13 +223,22 @@
     "type": "melee",
     "category": "Ork",
     "description": "A Kustom Choppa has been worked over by a Mekboy, strengthened and sharpened until it is deadlier than its more common counterparts. Some feature power fields, buzzing teeth, or other 'improvements'.",
-    "damage": {"base": 6, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 6,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -1,
-    "traits": ["Brutal", "Waaagh!"],
+    "traits": [
+      "Brutal",
+      "Waaagh!"
+    ],
     "value": 4,
     "rarity": "Rare",
-    "keywords": ["ORK"],
+    "keywords": [
+      "ORK"
+    ],
     "source": "core"
   },
   {
@@ -157,13 +247,24 @@
     "type": "melee",
     "category": "Aeldari",
     "description": "A Witchblade is a masterwork of Aeldari craftsmanship — a blade that resonates with the psychic power of its wielder. In the hands of a psyker, the blade's edge becomes impossibly sharp, slicing through armour as though it were gossamer.",
-    "damage": {"base": 5, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 5,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -2,
-    "traits": ["Force", "Parry"],
+    "traits": [
+      "Force",
+      "Parry"
+    ],
     "value": 6,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "PSYKER", "FORCE"],
+    "keywords": [
+      "AELDARI",
+      "PSYKER",
+      "FORCE"
+    ],
     "source": "core"
   },
   {
@@ -172,13 +273,22 @@
     "type": "melee",
     "category": "Power",
     "description": "More a symbol of office than a weapon, the Omnissian Axe is nonetheless a potent tool of war. These two-handed power axes are wielded by Tech-Priests as both sacred icons of the Machine God and as formidable weapons.",
-    "damage": {"base": 6, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 6,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -2,
-    "traits": ["Two-Handed"],
+    "traits": [
+      "Two-Handed"
+    ],
     "value": 6,
     "rarity": "Very Rare",
-    "keywords": ["ADEPTUS MECHANICUS", "POWER FIELD"],
+    "keywords": [
+      "ADEPTUS MECHANICUS",
+      "POWER FIELD"
+    ],
     "source": "core"
   },
   {
@@ -187,13 +297,22 @@
     "type": "melee",
     "category": "Chain",
     "description": "Mounted beneath the barrel of a ranged weapon, a Chain Bayonet allows its user to make devastating close-range attacks. The roaring teeth tear through flesh and light armour with equal ease.",
-    "damage": {"base": 4, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 4,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "traits": ["Rending (1)"],
+    "traits": [
+      "Rending (1)"
+    ],
     "value": 3,
     "rarity": "Uncommon",
-    "keywords": ["IMPERIUM", "CHAIN"],
+    "keywords": [
+      "IMPERIUM",
+      "CHAIN"
+    ],
     "source": "core"
   },
   {
@@ -202,13 +321,22 @@
     "type": "melee",
     "category": "Arc",
     "description": "Favoured by Skitarii Alpha units, the Arc Maul discharges a powerful electrical shock upon impact. The crackling energy is particularly effective against machinery and armoured targets.",
-    "damage": {"base": 5, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 5,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 1,
     "ap": -1,
-    "traits": ["Arc (2)"],
+    "traits": [
+      "Arc (2)"
+    ],
     "value": 5,
     "rarity": "Rare",
-    "keywords": ["ADEPTUS MECHANICUS", "ARC"],
+    "keywords": [
+      "ADEPTUS MECHANICUS",
+      "ARC"
+    ],
     "source": "core"
   },
   {
@@ -217,13 +345,21 @@
     "type": "melee",
     "category": "Low-Tech",
     "description": "This large, exceptionally sharp blade is carried by many Space Marines as part of their standard issue armament. Similar in size to a regular Human's short sword, this knife has a monomolecular edge that never dulls and always cuts true.",
-    "damage": {"base": 4, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 4,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "traits": ["Reliable"],
+    "traits": [
+      "Reliable"
+    ],
     "value": 3,
     "rarity": "Rare",
-    "keywords": ["ADEPTUS ASTARTES"],
+    "keywords": [
+      "ADEPTUS ASTARTES"
+    ],
     "source": "core"
   },
   {
@@ -232,15 +368,29 @@
     "type": "ranged",
     "category": "Las",
     "description": "Small, easy to handle and reliable, Laspistols are the go-to sidearm for countless souls. The snapping retort of the humble Laspistol can be heard echoing across the battlefields and back alleys of the Imperium, often serving as the final holdout for the great and small.",
-    "damage": {"base": 7, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 7,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 6, "medium": 12, "long": 18},
+    "range": {
+      "short": 6,
+      "medium": 12,
+      "long": 18
+    },
     "salvo": 1,
-    "traits": ["Pistol", "Reliable"],
+    "traits": [
+      "Pistol",
+      "Reliable"
+    ],
     "value": 3,
     "rarity": "Common",
-    "keywords": ["LAS", "IMPERIUM"],
+    "keywords": [
+      "LAS",
+      "IMPERIUM"
+    ],
     "source": "core"
   },
   {
@@ -249,15 +399,29 @@
     "type": "ranged",
     "category": "Las",
     "description": "Lasguns are the most widely manufactured and modified of Humanity's weapons. While the standard issue Mars Pattern Lasgun can be found all across the Imperium, near countless other patterns exist. Despite their unique eccentricities, all of these doughty rifles share a common ancestry.",
-    "damage": {"base": 7, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 7,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 12, "medium": 24, "long": 36},
+    "range": {
+      "short": 12,
+      "medium": 24,
+      "long": 36
+    },
     "salvo": 2,
-    "traits": ["Rapid Fire (1)", "Reliable"],
+    "traits": [
+      "Rapid Fire (1)",
+      "Reliable"
+    ],
     "value": 3,
     "rarity": "Common",
-    "keywords": ["LAS", "IMPERIUM"],
+    "keywords": [
+      "LAS",
+      "IMPERIUM"
+    ],
     "source": "core"
   },
   {
@@ -266,15 +430,29 @@
     "type": "ranged",
     "category": "Las",
     "description": "Favoured by elite forces who value penetrating power over volume of fire, the Hot-Shot Lasgun trades ammunition capacity for increased damage output. The searing beams can punch through armour that would stop a regular lasgun shot.",
-    "damage": {"base": 9, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 9,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -2,
-    "range": {"short": 10, "medium": 18, "long": 36},
+    "range": {
+      "short": 10,
+      "medium": 18,
+      "long": 36
+    },
     "salvo": 1,
-    "traits": ["Rapid Fire (1)"],
+    "traits": [
+      "Rapid Fire (1)"
+    ],
     "value": 5,
     "rarity": "Rare",
-    "keywords": ["IMPERIUM", "MILITARUM TEMPESTUS", "LAS"],
+    "keywords": [
+      "IMPERIUM",
+      "MILITARUM TEMPESTUS",
+      "LAS"
+    ],
     "source": "core"
   },
   {
@@ -283,15 +461,29 @@
     "type": "ranged",
     "category": "Las",
     "description": "A smaller, more compact version of the Hot-Shot Lasgun, favoured by officers and specialists who need a sidearm with genuine stopping power. Though limited in range, its armour-piercing capabilities make it a valued backup weapon.",
-    "damage": {"base": 8, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 8,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -2,
-    "range": {"short": 8, "medium": 16, "long": 24},
+    "range": {
+      "short": 8,
+      "medium": 16,
+      "long": 24
+    },
     "salvo": 1,
-    "traits": ["Pistol"],
+    "traits": [
+      "Pistol"
+    ],
     "value": 4,
     "rarity": "Rare",
-    "keywords": ["IMPERIUM", "MILITARUM TEMPESTUS", "LAS"],
+    "keywords": [
+      "IMPERIUM",
+      "MILITARUM TEMPESTUS",
+      "LAS"
+    ],
     "source": "core"
   },
   {
@@ -300,15 +492,27 @@
     "type": "ranged",
     "category": "Solid Projectile",
     "description": "From cheap, mass-produced revolvers to sophisticated automatic pistols, Autopistols are a common sight throughout the galaxy. They fire solid slugs propelled by chemical propellants, and are valued for their simplicity and reliability.",
-    "damage": {"base": 7, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 7,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 6, "medium": 12, "long": 24},
+    "range": {
+      "short": 6,
+      "medium": 12,
+      "long": 24
+    },
     "salvo": 2,
-    "traits": ["Pistol"],
+    "traits": [
+      "Pistol"
+    ],
     "value": 2,
     "rarity": "Common",
-    "keywords": ["PROJECTILE"],
+    "keywords": [
+      "PROJECTILE"
+    ],
     "source": "core"
   },
   {
@@ -317,15 +521,27 @@
     "type": "ranged",
     "category": "Solid Projectile",
     "description": "The Autogun is a solid projectile weapon that fires metal slugs from a high-capacity magazine. Though lacking the stopping power of more advanced weapons, Autoguns are cheap to produce and easy to maintain.",
-    "damage": {"base": 7, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 7,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 12, "medium": 24, "long": 48},
+    "range": {
+      "short": 12,
+      "medium": 24,
+      "long": 48
+    },
     "salvo": 3,
-    "traits": ["Rapid Fire (2)"],
+    "traits": [
+      "Rapid Fire (2)"
+    ],
     "value": 3,
     "rarity": "Common",
-    "keywords": ["PROJECTILE"],
+    "keywords": [
+      "PROJECTILE"
+    ],
     "source": "core"
   },
   {
@@ -334,15 +550,29 @@
     "type": "ranged",
     "category": "Bolt",
     "description": "All the shock and awe of a fully fledged bolt weapon within a compact casing. Assault specialists facing off against dangerous foes or officers looking to make a fearsome statement favour these powerful and compact weapons.",
-    "damage": {"base": 10, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 10,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": -1,
-    "range": {"short": 6, "medium": 12, "long": 24},
+    "range": {
+      "short": 6,
+      "medium": 12,
+      "long": 24
+    },
     "salvo": 1,
-    "traits": ["Pistol", "Brutal"],
+    "traits": [
+      "Pistol",
+      "Brutal"
+    ],
     "value": 5,
     "rarity": "Rare",
-    "keywords": ["IMPERIUM", "BOLT"],
+    "keywords": [
+      "IMPERIUM",
+      "BOLT"
+    ],
     "source": "core"
   },
   {
@@ -351,15 +581,29 @@
     "type": "ranged",
     "category": "Bolt",
     "description": "Though cumbersome in the hands of lesser mortals, Boltguns — sometimes simply called 'Bolters' — were built for Astartes. These all-purpose rifles are extensions of a Space Marine's body.",
-    "damage": {"base": 10, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 10,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": -1,
-    "range": {"short": 12, "medium": 24, "long": 48},
+    "range": {
+      "short": 12,
+      "medium": 24,
+      "long": 48
+    },
     "salvo": 1,
-    "traits": ["Rapid Fire (1)", "Brutal"],
+    "traits": [
+      "Rapid Fire (1)",
+      "Brutal"
+    ],
     "value": 5,
     "rarity": "Rare",
-    "keywords": ["IMPERIUM", "BOLT"],
+    "keywords": [
+      "IMPERIUM",
+      "BOLT"
+    ],
     "source": "core"
   },
   {
@@ -368,15 +612,29 @@
     "type": "ranged",
     "category": "Bolt",
     "description": "Wielded by Primaris Marines and other elite warriors, the Heavy Bolt Pistol fires larger, more powerful rounds than its predecessor. The increased calibre delivers devastating impact at close range.",
-    "damage": {"base": 12, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 12,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -1,
-    "range": {"short": 6, "medium": 12, "long": 24},
+    "range": {
+      "short": 6,
+      "medium": 12,
+      "long": 24
+    },
     "salvo": 1,
-    "traits": ["Pistol", "Brutal"],
+    "traits": [
+      "Pistol",
+      "Brutal"
+    ],
     "value": 6,
     "rarity": "Very Rare",
-    "keywords": ["PRIMARIS", "BOLT"],
+    "keywords": [
+      "PRIMARIS",
+      "BOLT"
+    ],
     "source": "core"
   },
   {
@@ -385,15 +643,29 @@
     "type": "ranged",
     "category": "Bolt",
     "description": "The standard weapon of Primaris Intercessors, the Bolt Rifle combines extended range with the brutal stopping power of bolt weaponry. Each round is a miniature rocket that detonates within its target.",
-    "damage": {"base": 12, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 12,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -1,
-    "range": {"short": 15, "medium": 30, "long": 60},
+    "range": {
+      "short": 15,
+      "medium": 30,
+      "long": 60
+    },
     "salvo": 1,
-    "traits": ["Rapid Fire (1)", "Brutal"],
+    "traits": [
+      "Rapid Fire (1)",
+      "Brutal"
+    ],
     "value": 6,
     "rarity": "Very Rare",
-    "keywords": ["PRIMARIS", "BOLT"],
+    "keywords": [
+      "PRIMARIS",
+      "BOLT"
+    ],
     "source": "core"
   },
   {
@@ -402,15 +674,28 @@
     "type": "ranged",
     "category": "Ork",
     "description": "Shootas are large, loud, and inaccurate weapons that make up for their lack of precision with volume of fire. The signature weapon of Ork Boyz, a Shoota spits out a hail of large-calibre rounds.",
-    "damage": {"base": 8, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 8,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 10, "medium": 18, "long": 36},
+    "range": {
+      "short": 10,
+      "medium": 18,
+      "long": 36
+    },
     "salvo": 3,
-    "traits": ["Assault", "Waaagh!"],
+    "traits": [
+      "Assault",
+      "Waaagh!"
+    ],
     "value": 3,
     "rarity": "Common",
-    "keywords": ["ORK"],
+    "keywords": [
+      "ORK"
+    ],
     "source": "core"
   },
   {
@@ -419,15 +704,28 @@
     "type": "ranged",
     "category": "Ork",
     "description": "A Slugga is a simple, brutish weapon that fires solid ammunition using primitive chemical propellants. Orks favour Sluggas for their satisfying bang and the intimidating size of the rounds they fire.",
-    "damage": {"base": 8, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 8,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 6, "medium": 12, "long": 24},
+    "range": {
+      "short": 6,
+      "medium": 12,
+      "long": 24
+    },
     "salvo": 1,
-    "traits": ["Pistol", "Waaagh!"],
+    "traits": [
+      "Pistol",
+      "Waaagh!"
+    ],
     "value": 2,
     "rarity": "Common",
-    "keywords": ["ORK"],
+    "keywords": [
+      "ORK"
+    ],
     "source": "core"
   },
   {
@@ -436,15 +734,28 @@
     "type": "ranged",
     "category": "Ork",
     "description": "A Kustom Slugga has been modified by a Mekboy with bigger barrels, more dakka, and whatever other 'improvements' the Ork deemed necessary. The result is louder, shootier, and more likely to blow up in your face.",
-    "damage": {"base": 10, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 10,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -1,
-    "range": {"short": 6, "medium": 12, "long": 24},
+    "range": {
+      "short": 6,
+      "medium": 12,
+      "long": 24
+    },
     "salvo": 2,
-    "traits": ["Pistol", "Waaagh!"],
+    "traits": [
+      "Pistol",
+      "Waaagh!"
+    ],
     "value": 5,
     "rarity": "Rare",
-    "keywords": ["ORK"],
+    "keywords": [
+      "ORK"
+    ],
     "source": "core"
   },
   {
@@ -453,15 +764,29 @@
     "type": "ranged",
     "category": "Aeldari",
     "description": "Shuriken Pistols fire volleys of razor-sharp monomolecular discs capable of slicing through flesh and armour alike. Though small, these elegant weapons are deadly in skilled hands.",
-    "damage": {"base": 8, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 8,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 6, "medium": 12, "long": 24},
+    "range": {
+      "short": 6,
+      "medium": 12,
+      "long": 24
+    },
     "salvo": 2,
-    "traits": ["Pistol", "Rending (2)"],
+    "traits": [
+      "Pistol",
+      "Rending (2)"
+    ],
     "value": 4,
     "rarity": "Rare",
-    "keywords": ["AELDARI", "SHURIKEN"],
+    "keywords": [
+      "AELDARI",
+      "SHURIKEN"
+    ],
     "source": "core"
   },
   {
@@ -470,15 +795,29 @@
     "type": "ranged",
     "category": "Aeldari",
     "description": "The Shuriken Catapult is the primary weapon of Aeldari Guardians, firing a stream of crystalline shuriken that can slice through armour with ease. The weapon uses a gravitic accelerator to launch its deadly projectiles.",
-    "damage": {"base": 9, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 9,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 10, "medium": 18, "long": 36},
+    "range": {
+      "short": 10,
+      "medium": 18,
+      "long": 36
+    },
     "salvo": 3,
-    "traits": ["Assault", "Rending (2)"],
+    "traits": [
+      "Assault",
+      "Rending (2)"
+    ],
     "value": 5,
     "rarity": "Rare",
-    "keywords": ["AELDARI", "SHURIKEN"],
+    "keywords": [
+      "AELDARI",
+      "SHURIKEN"
+    ],
     "source": "core"
   },
   {
@@ -487,15 +826,28 @@
     "type": "ranged",
     "category": "Aeldari",
     "description": "Lasblasters are lightweight laser weapons used by Aeldari Corsairs and other light infantry. Though less powerful than shuriken weapons, they offer superior range and are easier to maintain.",
-    "damage": {"base": 8, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 8,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 12, "medium": 24, "long": 48},
+    "range": {
+      "short": 12,
+      "medium": 24,
+      "long": 48
+    },
     "salvo": 2,
-    "traits": ["Assault"],
+    "traits": [
+      "Assault"
+    ],
     "value": 4,
     "rarity": "Rare",
-    "keywords": ["AELDARI", "LAS"],
+    "keywords": [
+      "AELDARI",
+      "LAS"
+    ],
     "source": "core"
   },
   {
@@ -504,15 +856,28 @@
     "type": "ranged",
     "category": "Aeldari",
     "description": "Used by Aeldari Rangers who have chosen to walk the Path of the Outcast, these long-barrelled rifles fire a single, devastatingly accurate shot. The weapon is designed for patient hunters who prefer to kill from afar.",
-    "damage": {"base": 10, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 10,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -2,
-    "range": {"short": 20, "medium": 40, "long": 80},
+    "range": {
+      "short": 20,
+      "medium": 40,
+      "long": 80
+    },
     "salvo": 1,
-    "traits": ["Sniper (2)"],
+    "traits": [
+      "Sniper (2)"
+    ],
     "value": 6,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "RANGER"],
+    "keywords": [
+      "AELDARI",
+      "RANGER"
+    ],
     "source": "core"
   },
   {
@@ -521,15 +886,29 @@
     "type": "ranged",
     "category": "Rad",
     "description": "Radium weapons fire solid shells laced with radioactive isotopes. Even a near miss can prove fatal as the radiation poisons the target over time. The weapons are as dangerous to their wielders as their targets.",
-    "damage": {"base": 7, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 7,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 6, "medium": 12, "long": 24},
+    "range": {
+      "short": 6,
+      "medium": 12,
+      "long": 24
+    },
     "salvo": 1,
-    "traits": ["Pistol", "Rad (3)"],
+    "traits": [
+      "Pistol",
+      "Rad (3)"
+    ],
     "value": 4,
     "rarity": "Rare",
-    "keywords": ["ADEPTUS MECHANICUS", "RAD"],
+    "keywords": [
+      "ADEPTUS MECHANICUS",
+      "RAD"
+    ],
     "source": "core"
   },
   {
@@ -538,15 +917,27 @@
     "type": "ranged",
     "category": "Solid Projectile",
     "description": "Hand Cannons are oversized pistols that fire heavy-calibre rounds with tremendous stopping power. Though the recoil can be punishing for untrained users, the damage they deal is devastating.",
-    "damage": {"base": 9, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 9,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -1,
-    "range": {"short": 6, "medium": 12, "long": 24},
+    "range": {
+      "short": 6,
+      "medium": 12,
+      "long": 24
+    },
     "salvo": 1,
-    "traits": ["Pistol"],
+    "traits": [
+      "Pistol"
+    ],
     "value": 3,
     "rarity": "Uncommon",
-    "keywords": ["PROJECTILE"],
+    "keywords": [
+      "PROJECTILE"
+    ],
     "source": "core"
   },
   {
@@ -555,15 +946,27 @@
     "type": "ranged",
     "category": "Solid Projectile",
     "description": "Stub weapons are among the most basic solid projectile firearms. Simple, cheap, and easy to maintain, Stubbers are common sidearms for civilians, gangers, and others who lack access to military-grade hardware.",
-    "damage": {"base": 7, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 7,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 8, "medium": 16, "long": 32},
+    "range": {
+      "short": 8,
+      "medium": 16,
+      "long": 32
+    },
     "salvo": 2,
-    "traits": ["Pistol"],
+    "traits": [
+      "Pistol"
+    ],
     "value": 2,
     "rarity": "Common",
-    "keywords": ["PROJECTILE"],
+    "keywords": [
+      "PROJECTILE"
+    ],
     "source": "core"
   },
   {
@@ -572,15 +975,30 @@
     "type": "ranged",
     "category": "Aeldari",
     "description": "A larger, more powerful version of the standard shuriken catapult, the Avenger variant is used exclusively by Dire Avengers. Its extended barrel and enhanced firing mechanism deliver a deadlier stream of monomolecular discs.",
-    "damage": {"base": 10, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 10,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 10, "medium": 18, "long": 36},
+    "range": {
+      "short": 10,
+      "medium": 18,
+      "long": 36
+    },
     "salvo": 3,
-    "traits": ["Assault", "Rending (3)"],
+    "traits": [
+      "Assault",
+      "Rending (3)"
+    ],
     "value": 6,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "ASURYANI", "SHURIKEN"],
+    "keywords": [
+      "AELDARI",
+      "ASURYANI",
+      "SHURIKEN"
+    ],
     "source": "aeldari"
   },
   {
@@ -589,15 +1007,30 @@
     "type": "ranged",
     "category": "Aeldari",
     "description": "A precision variant of shuriken weaponry, the Shuriken Rifle trades the rapid-fire capability of the catapult for extended range and improved accuracy, making it ideal for marksmen.",
-    "damage": {"base": 10, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 10,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 12, "medium": 24, "long": 36},
+    "range": {
+      "short": 12,
+      "medium": 24,
+      "long": 36
+    },
     "salvo": 2,
-    "traits": ["Rapid Fire (2)", "Rending (3)"],
+    "traits": [
+      "Rapid Fire (2)",
+      "Rending (3)"
+    ],
     "value": 5,
     "rarity": "Uncommon",
-    "keywords": ["AELDARI", "ASURYANI", "SHURIKEN"],
+    "keywords": [
+      "AELDARI",
+      "ASURYANI",
+      "SHURIKEN"
+    ],
     "source": "aeldari"
   },
   {
@@ -606,15 +1039,31 @@
     "type": "ranged",
     "category": "Monofilament",
     "description": "Death Spinners project a cloud of monofilament wire that wraps around victims and slices them to ribbons. Used by Warp Spiders, these terrifying weapons leave nothing but bloody remains.",
-    "damage": {"base": 14, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 14,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": -2,
-    "range": {"short": 6, "medium": 12, "long": 18},
+    "range": {
+      "short": 6,
+      "medium": 12,
+      "long": 18
+    },
     "salvo": 0,
-    "traits": ["Assault", "Blast (6)"],
+    "traits": [
+      "Assault",
+      "Blast (6)"
+    ],
     "value": 8,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "ASPECT WARRIOR", "ASURYANI", "MONOFILAMENT"],
+    "keywords": [
+      "AELDARI",
+      "ASPECT WARRIOR",
+      "ASURYANI",
+      "MONOFILAMENT"
+    ],
     "source": "aeldari"
   },
   {
@@ -623,15 +1072,31 @@
     "type": "ranged",
     "category": "Melta",
     "description": "These short-ranged but devastatingly powerful weapons are wielded by Fire Dragons. The fusion gun fires a superheated blast capable of melting through the thickest armour in an instant.",
-    "damage": {"base": 16, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 16,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 4,
     "ap": -4,
-    "range": {"short": 6, "medium": 12, "long": 18},
+    "range": {
+      "short": 6,
+      "medium": 12,
+      "long": 18
+    },
     "salvo": 1,
-    "traits": ["Assault", "Melta"],
+    "traits": [
+      "Assault",
+      "Melta"
+    ],
     "value": 8,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "ASPECT WARRIOR", "ASURYANI", "MELTA"],
+    "keywords": [
+      "AELDARI",
+      "ASPECT WARRIOR",
+      "ASURYANI",
+      "MELTA"
+    ],
     "source": "aeldari"
   },
   {
@@ -640,15 +1105,30 @@
     "type": "ranged",
     "category": "Aeldari",
     "description": "A heavy missile launcher used by Dark Reapers, the Reaper Launcher fires armour-piercing missiles with unerring accuracy. Each shot is guided by the Aspect Warrior's supernatural aim.",
-    "damage": {"base": 16, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 16,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 6,
     "ap": -5,
-    "range": {"short": 24, "medium": 48, "long": 72},
+    "range": {
+      "short": 24,
+      "medium": 48,
+      "long": 72
+    },
     "salvo": 0,
-    "traits": ["Heavy (4)"],
+    "traits": [
+      "Heavy (4)"
+    ],
     "value": 8,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "ASPECT WARRIOR", "ASURYANI", "MISSILE"],
+    "keywords": [
+      "AELDARI",
+      "ASPECT WARRIOR",
+      "ASURYANI",
+      "MISSILE"
+    ],
     "source": "aeldari"
   },
   {
@@ -657,15 +1137,30 @@
     "type": "ranged",
     "category": "Melta",
     "description": "A compact version of the fusion gun, the Fusion Pistol sacrifices range for portability. Despite its small size, it retains the devastating armour-melting capabilities of its larger counterpart.",
-    "damage": {"base": 15, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 15,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 3,
     "ap": -3,
-    "range": {"short": 4, "medium": 7, "long": 10},
+    "range": {
+      "short": 4,
+      "medium": 7,
+      "long": 10
+    },
     "salvo": 1,
-    "traits": ["Brutal", "Pistol"],
+    "traits": [
+      "Brutal",
+      "Pistol"
+    ],
     "value": 6,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "ASURYANI", "MELTA"],
+    "keywords": [
+      "AELDARI",
+      "ASURYANI",
+      "MELTA"
+    ],
     "source": "aeldari"
   },
   {
@@ -674,15 +1169,30 @@
     "type": "ranged",
     "category": "Vortex",
     "description": "Wraithcannons open a brief rift into the warp, pulling the target's soul into the immaterium. Only Wraithguard constructs possess the psychic fortitude to wield these terrifying weapons.",
-    "damage": {"base": 20, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 20,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 3,
     "ap": -4,
-    "range": {"short": 9, "medium": 18, "long": 27},
+    "range": {
+      "short": 9,
+      "medium": 18,
+      "long": 27
+    },
     "salvo": 1,
-    "traits": ["Assault", "Warp Weapon"],
+    "traits": [
+      "Assault",
+      "Warp Weapon"
+    ],
     "value": 8,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "ASURYANI", "VORTEX"],
+    "keywords": [
+      "AELDARI",
+      "ASURYANI",
+      "VORTEX"
+    ],
     "source": "aeldari"
   },
   {
@@ -691,15 +1201,30 @@
     "type": "ranged",
     "category": "Splinter",
     "description": "The standard weapon of Drukhari Kabalite Warriors, Splinter Rifles fire crystalline shards coated in virulent toxins. Even a minor wound can prove fatal as the poison spreads through the victim's body.",
-    "damage": {"base": 7, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 7,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 12, "medium": 24, "long": 36},
+    "range": {
+      "short": 12,
+      "medium": 24,
+      "long": 36
+    },
     "salvo": 2,
-    "traits": ["Inflict (Poison 5)", "Rapid Fire (2)"],
+    "traits": [
+      "Inflict (Poison 5)",
+      "Rapid Fire (2)"
+    ],
     "value": 5,
     "rarity": "Uncommon",
-    "keywords": ["AELDARI", "DRUKHARI", "SPLINTER"],
+    "keywords": [
+      "AELDARI",
+      "DRUKHARI",
+      "SPLINTER"
+    ],
     "source": "aeldari"
   },
   {
@@ -708,15 +1233,30 @@
     "type": "ranged",
     "category": "Splinter",
     "description": "A compact sidearm favoured by Drukhari warriors, the Splinter Pistol delivers the same toxic payload as its larger counterparts. Perfect for delivering a paralysing or lethal dose at close range.",
-    "damage": {"base": 7, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 7,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 6, "medium": 12, "long": 18},
+    "range": {
+      "short": 6,
+      "medium": 12,
+      "long": 18
+    },
     "salvo": 1,
-    "traits": ["Inflict (Poison 5)", "Pistol"],
+    "traits": [
+      "Inflict (Poison 5)",
+      "Pistol"
+    ],
     "value": 4,
     "rarity": "Uncommon",
-    "keywords": ["AELDARI", "DRUKHARI", "SPLINTER"],
+    "keywords": [
+      "AELDARI",
+      "DRUKHARI",
+      "SPLINTER"
+    ],
     "source": "aeldari"
   },
   {
@@ -725,15 +1265,30 @@
     "type": "ranged",
     "category": "Splinter",
     "description": "An advanced variant of splinter weaponry, the Shardcarbine fires a rapid stream of toxic shards. Used by Scourges and other elite Drukhari units, it offers improved rate of fire without sacrificing lethality.",
-    "damage": {"base": 8, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 8,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 12, "medium": 24, "long": 36},
+    "range": {
+      "short": 12,
+      "medium": 24,
+      "long": 36
+    },
     "salvo": 2,
-    "traits": ["Inflict (Poisoned 6)", "Rapid Fire (2)"],
+    "traits": [
+      "Inflict (Poisoned 6)",
+      "Rapid Fire (2)"
+    ],
     "value": 5,
     "rarity": "Rare",
-    "keywords": ["AELDARI", "DRUKHARI", "SPLINTER"],
+    "keywords": [
+      "AELDARI",
+      "DRUKHARI",
+      "SPLINTER"
+    ],
     "source": "aeldari"
   },
   {
@@ -742,15 +1297,31 @@
     "type": "ranged",
     "category": "Aeldari",
     "description": "Used by Harlequin Death Jesters, the Shrieker Cannon fires bio-explosive shuriken that detonate within the victim's body, causing horrific damage and a terrifying death scream.",
-    "damage": {"base": 14, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 14,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -1,
-    "range": {"short": 15, "medium": 30, "long": 45},
+    "range": {
+      "short": 15,
+      "medium": 30,
+      "long": 45
+    },
     "salvo": 3,
-    "traits": ["Agonising", "Heavy (4)", "Rending (4)"],
+    "traits": [
+      "Agonising",
+      "Heavy (4)",
+      "Rending (4)"
+    ],
     "value": 8,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "HARLEQUIN", "SHURIKEN"],
+    "keywords": [
+      "AELDARI",
+      "HARLEQUIN",
+      "SHURIKEN"
+    ],
     "source": "aeldari"
   },
   {
@@ -759,15 +1330,30 @@
     "type": "ranged",
     "category": "Haemonculus",
     "description": "The Neuro Disruptor fires a beam that liquefies the victim's brain, leaving their body an empty husk. A favourite of Harlequin Shadowseers, it brings swift but agonising death.",
-    "damage": {"base": 10, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 10,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 6,
     "ap": -3,
-    "range": {"short": 6, "medium": 12, "long": 18},
+    "range": {
+      "short": 6,
+      "medium": 12,
+      "long": 18
+    },
     "salvo": 2,
-    "traits": ["Agonising", "Brutal", "Pistol"],
+    "traits": [
+      "Agonising",
+      "Brutal",
+      "Pistol"
+    ],
     "value": 10,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "HARLEQUIN"],
+    "keywords": [
+      "AELDARI",
+      "HARLEQUIN"
+    ],
     "source": "aeldari"
   },
   {
@@ -776,15 +1362,31 @@
     "type": "ranged",
     "category": "Haemonculus",
     "description": "A weapon of the Haemonculi covens, the Stinger Pistol fires crystalline splinters containing exotic venoms. These toxins cause excruciating pain while keeping the victim conscious — the better to savour their suffering.",
-    "damage": {"base": 10, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 10,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 2,
     "ap": 0,
-    "range": {"short": 6, "medium": 12, "long": 18},
+    "range": {
+      "short": 6,
+      "medium": 12,
+      "long": 18
+    },
     "salvo": 2,
-    "traits": ["Gruesome", "Inflict (Poisoned 3)", "Pistol"],
+    "traits": [
+      "Gruesome",
+      "Inflict (Poisoned 3)",
+      "Pistol"
+    ],
     "value": 5,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "DRUKHARI", "HAEMONCULUS"],
+    "keywords": [
+      "AELDARI",
+      "DRUKHARI",
+      "HAEMONCULUS"
+    ],
     "source": "aeldari"
   },
   {
@@ -793,15 +1395,30 @@
     "type": "ranged",
     "category": "Aeldari",
     "description": "Used by Harlequin Shadowseers, this weapon launches grenades that release psychotropic gases. Victims are overwhelmed by terrifying hallucinations, rendering them helpless with fear.",
-    "damage": {"base": 0, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 0,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 0,
     "ap": 0,
-    "range": {"short": 9, "medium": 18, "long": 27},
+    "range": {
+      "short": 9,
+      "medium": 18,
+      "long": 27
+    },
     "salvo": 1,
-    "traits": ["Blast (6)", "Inflict (Fear 4)"],
+    "traits": [
+      "Blast (6)",
+      "Inflict (Fear 4)"
+    ],
     "value": 8,
     "rarity": "Rare",
-    "keywords": ["AELDARI", "HARLEQUIN", "GRENADE"],
+    "keywords": [
+      "AELDARI",
+      "HARLEQUIN",
+      "GRENADE"
+    ],
     "source": "aeldari"
   },
   {
@@ -810,13 +1427,24 @@
     "type": "melee",
     "category": "Aeldari",
     "description": "The signature weapon of the Howling Banshees, these Power Swords are perfectly balanced for swift, deadly strikes. When combined with the Banshee's psychic scream, no armour can withstand their assault.",
-    "damage": {"base": 5, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 5,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 4,
     "ap": -4,
-    "traits": ["Parry"],
+    "traits": [
+      "Parry"
+    ],
     "value": 7,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "ASPECT WARRIOR", "ASURYANI", "POWER FIELD"],
+    "keywords": [
+      "AELDARI",
+      "ASPECT WARRIOR",
+      "ASURYANI",
+      "POWER FIELD"
+    ],
     "source": "aeldari"
   },
   {
@@ -825,13 +1453,25 @@
     "type": "melee",
     "category": "Aeldari",
     "description": "Wielded by Striking Scorpions, these chainswords are designed for close-quarters combat. The weapon's teeth are sharpened to a molecular edge, capable of shredding flesh and light armour alike.",
-    "damage": {"base": 7, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 7,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 4,
     "ap": 0,
-    "traits": ["Brutal", "Parry"],
+    "traits": [
+      "Brutal",
+      "Parry"
+    ],
     "value": 7,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "ASPECT WARRIOR", "ASURYANI", "CHAIN"],
+    "keywords": [
+      "AELDARI",
+      "ASPECT WARRIOR",
+      "ASURYANI",
+      "CHAIN"
+    ],
     "source": "aeldari"
   },
   {
@@ -840,13 +1480,24 @@
     "type": "melee",
     "category": "Aeldari",
     "description": "Standard close-combat weapons issued to Craftworld Guardians, these chainswords are lighter than their Imperial counterparts but no less deadly in skilled Aeldari hands.",
-    "damage": {"base": 5, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 5,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 4,
     "ap": 0,
-    "traits": ["Brutal", "Parry"],
+    "traits": [
+      "Brutal",
+      "Parry"
+    ],
     "value": 4,
     "rarity": "Common",
-    "keywords": ["AELDARI", "ASURYANI", "CHAIN"],
+    "keywords": [
+      "AELDARI",
+      "ASURYANI",
+      "CHAIN"
+    ],
     "source": "aeldari"
   },
   {
@@ -855,13 +1506,25 @@
     "type": "melee",
     "category": "Aeldari",
     "description": "A Singing Spear is a psychically-attuned weapon that can be hurled at the enemy and will return to its wielder's hand. The spear hums with psychic energy as it flies, hence its name.",
-    "damage": {"base": 6, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 6,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 5,
     "ap": -1,
-    "traits": ["Assault", "Force", "Warp Weapon"],
+    "traits": [
+      "Assault",
+      "Force",
+      "Warp Weapon"
+    ],
     "value": 12,
     "rarity": "Unique",
-    "keywords": ["AELDARI", "ASURYANI", "FORCE"],
+    "keywords": [
+      "AELDARI",
+      "ASURYANI",
+      "FORCE"
+    ],
     "source": "aeldari"
   },
   {
@@ -870,13 +1533,23 @@
     "type": "melee",
     "category": "Aeldari",
     "description": "Wielded by Wraithblades, Ghostswords are massive blades that channel the spirit stone's rage into devastating strikes. The weapons are sized for the towering Wraith constructs.",
-    "damage": {"base": 13, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 13,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 4,
     "ap": -3,
-    "traits": ["Parry"],
+    "traits": [
+      "Parry"
+    ],
     "value": 7,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "ASURYANI", "WRAITHGUARD"],
+    "keywords": [
+      "AELDARI",
+      "ASURYANI",
+      "WRAITHGUARD"
+    ],
     "source": "aeldari"
   },
   {
@@ -885,13 +1558,23 @@
     "type": "melee",
     "category": "Aeldari",
     "description": "The weapon of choice for Wyches of the Drukhari Wych Cults, Hekatarii Blades are designed for graceful combat in the arenas of Commorragh. Speed and precision are prized over brute force.",
-    "damage": {"base": 5, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 5,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 4,
     "ap": 0,
-    "traits": ["Parry"],
+    "traits": [
+      "Parry"
+    ],
     "value": 6,
     "rarity": "Uncommon",
-    "keywords": ["AELDARI", "DRUKHARI", "WYCH CULT"],
+    "keywords": [
+      "AELDARI",
+      "DRUKHARI",
+      "WYCH CULT"
+    ],
     "source": "aeldari"
   },
   {
@@ -900,13 +1583,21 @@
     "type": "melee",
     "category": "Aeldari",
     "description": "The signature weapon of Hellion gangs, the Hellglaive is a two-handed polearm designed for swooping attacks from skyboards. Its curved blade can decapitate a victim with a single pass.",
-    "damage": {"base": 7, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 7,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 6,
     "ap": 0,
     "traits": [],
     "value": 6,
     "rarity": "Rare",
-    "keywords": ["AELDARI", "DRUKHARI", "HELLION"],
+    "keywords": [
+      "AELDARI",
+      "DRUKHARI",
+      "HELLION"
+    ],
     "source": "aeldari"
   },
   {
@@ -915,13 +1606,24 @@
     "type": "melee",
     "category": "Aeldari",
     "description": "Agonisers are weapons designed to inflict maximum pain while keeping the victim conscious. Each strike delivers a concentrated dose of toxins that overwhelm the nervous system with agony.",
-    "damage": {"base": 3, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 3,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 4,
     "ap": -2,
-    "traits": ["Agonising", "Inflict (Poisoned 5)"],
+    "traits": [
+      "Agonising",
+      "Inflict (Poisoned 5)"
+    ],
     "value": 7,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "DRUKHARI", "WYCH CULT"],
+    "keywords": [
+      "AELDARI",
+      "DRUKHARI",
+      "WYCH CULT"
+    ],
     "source": "aeldari"
   },
   {
@@ -930,13 +1632,26 @@
     "type": "melee",
     "category": "Aeldari",
     "description": "The signature weapon of the Incubi, a Klaive is a two-handed power glaive of exceptional craftsmanship. Each is a masterwork, handed down through generations of these elite warriors.",
-    "damage": {"base": 8, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 8,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 4,
     "ap": -4,
-    "traits": ["Parry", "Reliable", "Rending (3)"],
+    "traits": [
+      "Parry",
+      "Reliable",
+      "Rending (3)"
+    ],
     "value": 11,
     "rarity": "Unique",
-    "keywords": ["AELDARI", "DRUKHARI", "INCUBUS", "POWER FIELD"],
+    "keywords": [
+      "AELDARI",
+      "DRUKHARI",
+      "INCUBUS",
+      "POWER FIELD"
+    ],
     "source": "aeldari"
   },
   {
@@ -945,13 +1660,23 @@
     "type": "melee",
     "category": "Aeldari",
     "description": "A Huskblade drains the life force of its victims, leaving behind only withered husks. These terrifying weapons are prized status symbols among Drukhari Archons and Succubi.",
-    "damage": {"base": 4, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 4,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 5,
     "ap": -3,
-    "traits": ["Brutal", "Parry"],
+    "traits": [
+      "Brutal",
+      "Parry"
+    ],
     "value": 12,
     "rarity": "Unique",
-    "keywords": ["AELDARI", "DRUKHARI"],
+    "keywords": [
+      "AELDARI",
+      "DRUKHARI"
+    ],
     "source": "aeldari"
   },
   {
@@ -960,13 +1685,23 @@
     "type": "melee",
     "category": "Aeldari",
     "description": "A massive polearm wielded by Succubi in the gladiatorial arenas of Commorragh. The Archite Glaive requires great strength to wield effectively, but its reach and power make it devastating.",
-    "damage": {"base": 6, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 6,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 4,
     "ap": -3,
-    "traits": ["Unwieldy (2)"],
+    "traits": [
+      "Unwieldy (2)"
+    ],
     "value": 8,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "DRUKHARI", "WYCH CULT"],
+    "keywords": [
+      "AELDARI",
+      "DRUKHARI",
+      "WYCH CULT"
+    ],
     "source": "aeldari"
   },
   {
@@ -975,13 +1710,23 @@
     "type": "melee",
     "category": "Aeldari",
     "description": "The Harlequin's Kiss is a tube containing a monofilament wire that, when activated, unspools into the victim's body at high velocity, liquefying their internal organs in an instant.",
-    "damage": {"base": 8, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 8,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 5,
     "ap": -2,
-    "traits": ["Rending (3)"],
+    "traits": [
+      "Rending (3)"
+    ],
     "value": 7,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "HARLEQUIN", "MONOFILAMENT"],
+    "keywords": [
+      "AELDARI",
+      "HARLEQUIN",
+      "MONOFILAMENT"
+    ],
     "source": "aeldari"
   },
   {
@@ -990,13 +1735,22 @@
     "type": "melee",
     "category": "Aeldari",
     "description": "The Harlequin's Caress generates a molecular disruption field that phases through armour, causing catastrophic damage to whatever lies beneath. A gentle touch can prove instantly fatal.",
-    "damage": {"base": 1, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 1,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 1,
     "ap": -3,
-    "traits": ["Rending (3)"],
+    "traits": [
+      "Rending (3)"
+    ],
     "value": 10,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "HARLEQUIN"],
+    "keywords": [
+      "AELDARI",
+      "HARLEQUIN"
+    ],
     "source": "aeldari"
   },
   {
@@ -1005,13 +1759,23 @@
     "type": "melee",
     "category": "Aeldari",
     "description": "The Harlequin's Embrace wraps around the victim in coils of monofilament wire, slicing them apart as the Harlequin dances away. It is as graceful as it is deadly.",
-    "damage": {"base": 5, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 5,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 1,
     "ap": -2,
-    "traits": ["Rending (2)"],
+    "traits": [
+      "Rending (2)"
+    ],
     "value": 8,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "HARLEQUIN", "MONOFILAMENT"],
+    "keywords": [
+      "AELDARI",
+      "HARLEQUIN",
+      "MONOFILAMENT"
+    ],
     "source": "aeldari"
   },
   {
@@ -1020,13 +1784,25 @@
     "type": "melee",
     "category": "Aeldari",
     "description": "The weapon of Harlequin Shadowseers, the Miststave channels psychic energy to cloud the minds of enemies. Those struck find their thoughts scattered and their reactions slowed.",
-    "damage": {"base": 8, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 8,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 5,
     "ap": 0,
-    "traits": ["Brutal", "Force", "Inflict (Hindered 1)"],
+    "traits": [
+      "Brutal",
+      "Force",
+      "Inflict (Hindered 1)"
+    ],
     "value": 10,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "HARLEQUIN", "FORCE"],
+    "keywords": [
+      "AELDARI",
+      "HARLEQUIN",
+      "FORCE"
+    ],
     "source": "aeldari"
   },
   {
@@ -1035,13 +1811,23 @@
     "type": "melee",
     "category": "Aeldari",
     "description": "Favoured by Corsair Princes and other Aeldari pirates, the Void Sabre is a masterfully crafted blade designed for elegant duelling. Each is unique, often passed down through noble bloodlines.",
-    "damage": {"base": 7, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 7,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 4,
     "ap": -3,
-    "traits": ["Brutal", "Parry"],
+    "traits": [
+      "Brutal",
+      "Parry"
+    ],
     "value": 12,
     "rarity": "Unique",
-    "keywords": ["AELDARI", "ANHRATHE"],
+    "keywords": [
+      "AELDARI",
+      "ANHRATHE"
+    ],
     "source": "aeldari"
   },
   {
@@ -1050,13 +1836,24 @@
     "type": "melee",
     "category": "Aeldari",
     "description": "Haemonculi often replace their hands with Scissorhands — bladed appendages dripping with virulent toxins. These surgical tools double as weapons of exquisite cruelty.",
-    "damage": {"base": 3, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 3,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -1,
-    "traits": ["Inflict (Poisoned 5)", "Rending (1)"],
+    "traits": [
+      "Inflict (Poisoned 5)",
+      "Rending (1)"
+    ],
     "value": 6,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "DRUKHARI", "HAEMONCULUS"],
+    "keywords": [
+      "AELDARI",
+      "DRUKHARI",
+      "HAEMONCULUS"
+    ],
     "source": "aeldari"
   },
   {
@@ -1065,13 +1862,23 @@
     "type": "melee",
     "category": "Aeldari",
     "description": "Wielded by Mandrakes, Glimmersteel Blades are forged in the shadow dimension from which these creatures emerge. The blades seem to drink the light around them.",
-    "damage": {"base": 3, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 3,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 3,
     "ap": -1,
-    "traits": ["Rending (1)"],
+    "traits": [
+      "Rending (1)"
+    ],
     "value": 5,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "DRUKHARI", "MANDRAKE"],
+    "keywords": [
+      "AELDARI",
+      "DRUKHARI",
+      "MANDRAKE"
+    ],
     "source": "aeldari"
   },
   {
@@ -1080,13 +1887,24 @@
     "type": "melee",
     "category": "Chain Weapons",
     "description": "Scaled up for the enhanced physiology of Space Marines, the Astartes Chainsword features a more powerful motor and larger teeth than its standard counterpart. The weapon's roar heralds death.",
-    "damage": {"base": 6, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 6,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 5,
     "ap": -1,
-    "traits": ["Brutal", "Parry"],
+    "traits": [
+      "Brutal",
+      "Parry"
+    ],
     "value": 6,
     "rarity": "Very Rare",
-    "keywords": ["CHAIN", "IMPERIUM", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "CHAIN",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1095,13 +1913,25 @@
     "type": "melee",
     "category": "Chain Weapons",
     "description": "A Chainfist combines the crushing grip of a Power Fist with the ripping teeth of a chainblade. Designed for breaching fortifications, it can tear through bulkheads and armoured vehicles alike.",
-    "damage": {"base": 7, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 7,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 6,
     "ap": -4,
-    "traits": ["Brutal", "Unwieldy (3)"],
+    "traits": [
+      "Brutal",
+      "Unwieldy (3)"
+    ],
     "value": 10,
     "rarity": "Very Rare",
-    "keywords": ["CHAIN", "POWER FIELD", "IMPERIUM", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "CHAIN",
+      "POWER FIELD",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1110,13 +1940,23 @@
     "type": "melee",
     "category": "Power Weapons",
     "description": "The weapon of a Chaplain is also their badge of office. This skull-headed power mace is a symbol of the Chaplain's authority to enforce spiritual discipline, and a tool for crushing the Emperor's enemies.",
-    "damage": {"base": 5, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 5,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 4,
     "ap": -2,
-    "traits": ["Brutal"],
+    "traits": [
+      "Brutal"
+    ],
     "value": 6,
     "rarity": "Rare",
-    "keywords": ["POWER FIELD", "IMPERIUM", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "POWER FIELD",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1125,13 +1965,25 @@
     "type": "melee",
     "category": "Chain Weapons",
     "description": "These massive two-handed chainswords are favoured by the Ecclesiarchy and zealous warriors seeking to cleave the enemies of the Emperor in twain. The Eviscerator's oversized teeth can carve through power armour.",
-    "damage": {"base": 6, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 6,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 6,
     "ap": -4,
-    "traits": ["Brutal", "Unwieldy (2)"],
+    "traits": [
+      "Brutal",
+      "Unwieldy (2)"
+    ],
     "value": 6,
     "rarity": "Rare",
-    "keywords": ["2-HANDED", "CHAIN", "IMPERIUM", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "2-HANDED",
+      "CHAIN",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1140,13 +1992,23 @@
     "type": "melee",
     "category": "Force Weapons",
     "description": "A Force Axe channels the psychic might of its Librarian wielder into every swing. The weapon's blade crackles with warp energy, cleaving through armour and soul alike.",
-    "damage": {"base": 5, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 5,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 5,
     "ap": -2,
-    "traits": ["Force"],
+    "traits": [
+      "Force"
+    ],
     "value": 6,
     "rarity": "Very Rare",
-    "keywords": ["FORCE", "IMPERIUM", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "FORCE",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1155,13 +2017,24 @@
     "type": "melee",
     "category": "Force Weapons",
     "description": "The blade of choice for many Librarians, the Force Sword allows its wielder to channel devastating psychic energy with precision. A single strike can sunder body and spirit.",
-    "damage": {"base": 5, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 5,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 4,
     "ap": -3,
-    "traits": ["Force", "Parry"],
+    "traits": [
+      "Force",
+      "Parry"
+    ],
     "value": 6,
     "rarity": "Rare",
-    "keywords": ["FORCE", "IMPERIUM", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "FORCE",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1170,13 +2043,25 @@
     "type": "melee",
     "category": "Power Weapons",
     "description": "An oversized variant of the already-devastating Thunder Hammer, this two-handed weapon releases a thunderclap of energy upon impact. Only the strongest warriors can wield such a weapon effectively.",
-    "damage": {"base": 10, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 10,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 8,
     "ap": -3,
-    "traits": ["Brutal", "Unwieldy (3)"],
+    "traits": [
+      "Brutal",
+      "Unwieldy (3)"
+    ],
     "value": 10,
     "rarity": "Unique",
-    "keywords": ["2-HANDED", "POWER FIELD", "IMPERIUM", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "2-HANDED",
+      "POWER FIELD",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1185,13 +2070,24 @@
     "type": "melee",
     "category": "Power Weapons",
     "description": "Lightning Claws are power weapons in the form of gauntlets fitted with long, razor-sharp talons. The disruption field that wraps each claw allows them to shred armour with every swipe.",
-    "damage": {"base": 5, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 5,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 5,
     "ap": -3,
-    "traits": ["Brutal", "Rending (2)"],
+    "traits": [
+      "Brutal",
+      "Rending (2)"
+    ],
     "value": 8,
     "rarity": "Rare",
-    "keywords": ["POWER FIELD", "IMPERIUM", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "POWER FIELD",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1200,13 +2096,24 @@
     "type": "melee",
     "category": "Power Weapons",
     "description": "A Power Fist is a massive armoured gauntlet surrounded by a disruptive power field. The weapon's crushing grip can pulp a man in an instant and punch through the thickest armour plate.",
-    "damage": {"base": 5, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 5,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 5,
     "ap": -3,
-    "traits": ["Brutal", "Unwieldy (2)"],
+    "traits": [
+      "Brutal",
+      "Unwieldy (2)"
+    ],
     "value": 8,
     "rarity": "Very Rare",
-    "keywords": ["POWER FIELD", "IMPERIUM", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "POWER FIELD",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1215,13 +2122,24 @@
     "type": "melee",
     "category": "Power Weapons",
     "description": "These ancient Power Swords have been crafted to exacting standards by master artificers. Each Relic Blade is a Chapter treasure, often with a history stretching back millennia.",
-    "damage": {"base": 6, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 6,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 5,
     "ap": -3,
-    "traits": ["Brutal", "Parry"],
+    "traits": [
+      "Brutal",
+      "Parry"
+    ],
     "value": 6,
     "rarity": "Very Rare",
-    "keywords": ["IMPERIUM", "POWER FIELD", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "IMPERIUM",
+      "POWER FIELD",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1230,13 +2148,25 @@
     "type": "melee",
     "category": "Power Weapons",
     "description": "Thunder Hammers release a tremendous blast of energy upon impact. The explosive concussion can reduce armour to scrap and send enemies flying through the air.",
-    "damage": {"base": 8, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 8,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 6,
     "ap": -3,
-    "traits": ["Brutal", "Unwieldy (2)"],
+    "traits": [
+      "Brutal",
+      "Unwieldy (2)"
+    ],
     "value": 9,
     "rarity": "Unique",
-    "keywords": ["2-HANDED", "POWER FIELD", "IMPERIUM", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "2-HANDED",
+      "POWER FIELD",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1245,15 +2175,31 @@
     "type": "ranged",
     "category": "Heavy Weapons",
     "description": "Mounted on Invictor Tactical Warsuits and other heavy platforms, the Accelerator Autocannon uses gravitic technology to fire high-calibre rounds at tremendous velocity.",
-    "damage": {"base": 16, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 16,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -1,
-    "range": {"short": 24, "medium": 48, "long": 72},
+    "range": {
+      "short": 24,
+      "medium": 48,
+      "long": 72
+    },
     "salvo": 3,
-    "traits": ["Brutal", "Heavy (8)"],
+    "traits": [
+      "Brutal",
+      "Heavy (8)"
+    ],
     "value": 8,
     "rarity": "Rare",
-    "keywords": ["PRIMARIS", "PROJECTILE", "IMPERIUM", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "PRIMARIS",
+      "PROJECTILE",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1262,15 +2208,32 @@
     "type": "ranged",
     "category": "Bolt Weapons",
     "description": "Designed for Inceptor squads, the Assault Bolter is a compact, rapid-fire bolt weapon optimized for close-range engagements. Its high rate of fire makes it devastating against infantry.",
-    "damage": {"base": 12, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 12,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -1,
-    "range": {"short": 9, "medium": 18, "long": 27},
+    "range": {
+      "short": 9,
+      "medium": 18,
+      "long": 27
+    },
     "salvo": 3,
-    "traits": ["Assault", "Brutal", "Rapid Fire (2)"],
+    "traits": [
+      "Assault",
+      "Brutal",
+      "Rapid Fire (2)"
+    ],
     "value": 8,
     "rarity": "Very Rare",
-    "keywords": ["PRIMARIS", "IMPERIUM", "BOLT", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "PRIMARIS",
+      "IMPERIUM",
+      "BOLT",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1279,15 +2242,31 @@
     "type": "ranged",
     "category": "Plasma Weapons",
     "description": "A lighter variant of the Plasma Incinerator designed for mobile warfare. While slightly less powerful, it allows Hellblasters to maintain fire while advancing.",
-    "damage": {"base": 12, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 12,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": -3,
-    "range": {"short": 12, "medium": 24, "long": 36},
+    "range": {
+      "short": 12,
+      "medium": 24,
+      "long": 36
+    },
     "salvo": 2,
-    "traits": ["Heavy (4)", "Supercharge"],
+    "traits": [
+      "Heavy (4)",
+      "Supercharge"
+    ],
     "value": 7,
     "rarity": "Very Rare",
-    "keywords": ["PRIMARIS", "PLASMA", "IMPERIUM", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "PRIMARIS",
+      "PLASMA",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1296,15 +2275,31 @@
     "type": "ranged",
     "category": "Solid Projectile Weapons",
     "description": "Used by Space Marine Scouts for close-quarters combat, the Astartes Shotgun fires devastating solid-slug ammunition capable of tearing through light armour.",
-    "damage": {"base": 10, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 10,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 6, "medium": 12, "long": 18},
+    "range": {
+      "short": 6,
+      "medium": 12,
+      "long": 18
+    },
     "salvo": 2,
-    "traits": ["Assault", "Spread", "Reliable"],
+    "traits": [
+      "Assault",
+      "Spread",
+      "Reliable"
+    ],
     "value": 6,
     "rarity": "Rare",
-    "keywords": ["IMPERIUM", "PROJECTILE", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "IMPERIUM",
+      "PROJECTILE",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1313,15 +2308,32 @@
     "type": "ranged",
     "category": "Bolt Weapons",
     "description": "An automatic variant of the Bolt Rifle favoured by aggressive Intercessors. The Auto Bolt Rifle trades accuracy for volume of fire, laying down a storm of explosive bolts.",
-    "damage": {"base": 12, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 12,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 2,
     "ap": 0,
-    "range": {"short": 12, "medium": 24, "long": 36},
+    "range": {
+      "short": 12,
+      "medium": 24,
+      "long": 36
+    },
     "salvo": 3,
-    "traits": ["Assault", "Brutal", "Rapid Fire (3)"],
+    "traits": [
+      "Assault",
+      "Brutal",
+      "Rapid Fire (3)"
+    ],
     "value": 8,
     "rarity": "Very Rare",
-    "keywords": ["PRIMARIS", "IMPERIUM", "BOLT", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "PRIMARIS",
+      "IMPERIUM",
+      "BOLT",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1330,15 +2342,32 @@
     "type": "ranged",
     "category": "Bolt Weapons",
     "description": "A compact bolt weapon designed for Reivers and other close-quarters specialists. The Bolt Carbine is optimised for assault operations, where manoeuvrability is paramount.",
-    "damage": {"base": 12, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 12,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 12, "medium": 24, "long": 36},
+    "range": {
+      "short": 12,
+      "medium": 24,
+      "long": 36
+    },
     "salvo": 2,
-    "traits": ["Assault", "Brutal", "Rapid Fire (2)"],
+    "traits": [
+      "Assault",
+      "Brutal",
+      "Rapid Fire (2)"
+    ],
     "value": 6,
     "rarity": "Rare",
-    "keywords": ["PRIMARIS", "BOLT", "IMPERIUM", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "PRIMARIS",
+      "BOLT",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1347,15 +2376,31 @@
     "type": "ranged",
     "category": "Bolt Weapons",
     "description": "Used by Eliminators, the Bolt Sniper Rifle fires specially-crafted hyperfrag, executioner, or mortis rounds. Each shot is precisely aimed, the rifle's silencer muffling the report.",
-    "damage": {"base": 10, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 10,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": -1,
-    "range": {"short": 18, "medium": 36, "long": 54},
+    "range": {
+      "short": 18,
+      "medium": 36,
+      "long": 54
+    },
     "salvo": 0,
-    "traits": ["Brutal", "Sniper (2)", "Silent"],
+    "traits": [
+      "Brutal",
+      "Sniper (2)",
+      "Silent"
+    ],
     "value": 6,
     "rarity": "Uncommon",
-    "keywords": ["PRIMARIS", "BOLT", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "PRIMARIS",
+      "BOLT",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1364,15 +2409,32 @@
     "type": "ranged",
     "category": "Bolt Weapons",
     "description": "A heavy variant of the Bolt Rifle that fires mass-reactive rounds with improved armour penetration. The weapon's extended range and hitting power make it ideal for eliminating priority targets.",
-    "damage": {"base": 12, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 12,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -2,
-    "range": {"short": 18, "medium": 36, "long": 54},
+    "range": {
+      "short": 18,
+      "medium": 36,
+      "long": 54
+    },
     "salvo": 2,
-    "traits": ["Brutal", "Rapid Fire (2)", "Heavy (3)"],
+    "traits": [
+      "Brutal",
+      "Rapid Fire (2)",
+      "Heavy (3)"
+    ],
     "value": 8,
     "rarity": "Very Rare",
-    "keywords": ["PRIMARIS", "IMPERIUM", "BOLT", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "PRIMARIS",
+      "IMPERIUM",
+      "BOLT",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1381,15 +2443,30 @@
     "type": "ranged",
     "category": "Bolt Weapons",
     "description": "The Godwyn Pattern is the standard issue boltgun for most Space Marine Chapters. This tried-and-true design has served the Adeptus Astartes for millennia.",
-    "damage": {"base": 10, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 10,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": -1,
-    "range": {"short": 12, "medium": 24, "long": 36},
+    "range": {
+      "short": 12,
+      "medium": 24,
+      "long": 36
+    },
     "salvo": 1,
-    "traits": ["Brutal", "Rapid Fire (2)"],
+    "traits": [
+      "Brutal",
+      "Rapid Fire (2)"
+    ],
     "value": 6,
     "rarity": "Rare",
-    "keywords": ["IMPERIUM", "BOLT", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "IMPERIUM",
+      "BOLT",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1398,15 +2475,28 @@
     "type": "ranged",
     "category": "Exotic Weapons",
     "description": "Primarily used by Reivers for rapid vertical movement, the Grapnel Launcher can also be used as an improvised weapon. The high-tension cable and hook can cause significant damage.",
-    "damage": {"base": 8, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 8,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 6, "medium": 12, "long": 18},
+    "range": {
+      "short": 6,
+      "medium": 12,
+      "long": 18
+    },
     "salvo": 0,
-    "traits": ["Assault"],
+    "traits": [
+      "Assault"
+    ],
     "value": 4,
     "rarity": "Uncommon",
-    "keywords": ["IMPERIUM", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1415,15 +2505,30 @@
     "type": "ranged",
     "category": "Grav Weapons",
     "description": "The Grav-Cannon uses gravitic technology to crush targets under their own mass. The more heavily armoured the target, the more devastating the effect.",
-    "damage": {"base": 10, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 10,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": -2,
-    "range": {"short": 15, "medium": 30, "long": 45},
+    "range": {
+      "short": 15,
+      "medium": 30,
+      "long": 45
+    },
     "salvo": 1,
-    "traits": ["Heavy (8)", "Rending (2)"],
+    "traits": [
+      "Heavy (8)",
+      "Rending (2)"
+    ],
     "value": 8,
     "rarity": "Very Rare",
-    "keywords": ["IMPERIUM", "GRAV", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "IMPERIUM",
+      "GRAV",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1432,15 +2537,30 @@
     "type": "ranged",
     "category": "Grav Weapons",
     "description": "A compact version of grav weaponry, the Grav-Pistol is favoured by officers and specialists. Despite its small size, it can crush armoured targets with focused gravitational force.",
-    "damage": {"base": 8, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 8,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": -2,
-    "range": {"short": 6, "medium": 12, "long": 18},
+    "range": {
+      "short": 6,
+      "medium": 12,
+      "long": 18
+    },
     "salvo": 1,
-    "traits": ["Pistol"],
+    "traits": [
+      "Pistol"
+    ],
     "value": 7,
     "rarity": "Very Rare",
-    "keywords": ["GRAV", "IMPERIUM", "ADEPTUS MECHANICUS", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "GRAV",
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1449,15 +2569,31 @@
     "type": "ranged",
     "category": "Bolt Weapons",
     "description": "The Heavy Bolter is a belt-fed weapon that spews a relentless stream of mass-reactive rounds. Its sustained fire can suppress infantry squads and tear through light vehicles.",
-    "damage": {"base": 12, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 12,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -1,
-    "range": {"short": 18, "medium": 36, "long": 54},
+    "range": {
+      "short": 18,
+      "medium": 36,
+      "long": 54
+    },
     "salvo": 3,
-    "traits": ["Brutal", "Heavy (4)", "Rapid Fire (4)"],
+    "traits": [
+      "Brutal",
+      "Heavy (4)",
+      "Rapid Fire (4)"
+    ],
     "value": 6,
     "rarity": "Uncommon",
-    "keywords": ["IMPERIUM", "BOLT", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "IMPERIUM",
+      "BOLT",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1466,15 +2602,31 @@
     "type": "ranged",
     "category": "Bolt Weapons",
     "description": "Used by Heavy Intercessors, this variant of the Bolt Rifle fires high-calibre rounds with extended range. The weapon's stopping power makes it ideal for taking down armoured targets.",
-    "damage": {"base": 12, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 12,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": -1,
-    "range": {"short": 15, "medium": 30, "long": 45},
+    "range": {
+      "short": 15,
+      "medium": 30,
+      "long": 45
+    },
     "salvo": 3,
-    "traits": ["Brutal", "Rapid Fire (3)"],
+    "traits": [
+      "Brutal",
+      "Rapid Fire (3)"
+    ],
     "value": 8,
     "rarity": "Very Rare",
-    "keywords": ["PRIMARIS", "IMPERIUM", "BOLT", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "PRIMARIS",
+      "IMPERIUM",
+      "BOLT",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1483,15 +2635,31 @@
     "type": "ranged",
     "category": "Melta Weapons",
     "description": "An extended-range melta weapon designed for Eradicator squads. The Heavy Melta Rifle can melt through bunker walls and vehicle armour with ease.",
-    "damage": {"base": 16, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 16,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 3,
     "ap": -4,
-    "range": {"short": 12, "medium": 24, "long": 36},
+    "range": {
+      "short": 12,
+      "medium": 24,
+      "long": 36
+    },
     "salvo": 1,
-    "traits": ["Heavy (4)", "Melta"],
+    "traits": [
+      "Heavy (4)",
+      "Melta"
+    ],
     "value": 7,
     "rarity": "Very Rare",
-    "keywords": ["PRIMARIS", "MELTA", "IMPERIUM", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "PRIMARIS",
+      "MELTA",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1500,15 +2668,32 @@
     "type": "ranged",
     "category": "Bolt Weapons",
     "description": "A variant Bolt Rifle designed for aggressive close-support fire. The Hellstorm pattern trades some accuracy for increased rate of fire and ease of use on the move.",
-    "damage": {"base": 10, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 10,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 2,
     "ap": 0,
-    "range": {"short": 15, "medium": 30, "long": 45},
+    "range": {
+      "short": 15,
+      "medium": 30,
+      "long": 45
+    },
     "salvo": 2,
-    "traits": ["Assault", "Brutal", "Rapid Fire (2)"],
+    "traits": [
+      "Assault",
+      "Brutal",
+      "Rapid Fire (2)"
+    ],
     "value": 6,
     "rarity": "Uncommon",
-    "keywords": ["PRIMARIS", "IMPERIUM", "BOLT", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "PRIMARIS",
+      "IMPERIUM",
+      "BOLT",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1517,15 +2702,31 @@
     "type": "ranged",
     "category": "Las Weapons",
     "description": "A precision las weapon used by Eliminators for silent kills. The Las Fusil fires a concentrated beam of energy that burns through targets with surgical precision.",
-    "damage": {"base": 12, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 12,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": -2,
-    "range": {"short": 12, "medium": 24, "long": 36},
+    "range": {
+      "short": 12,
+      "medium": 24,
+      "long": 36
+    },
     "salvo": 0,
-    "traits": ["Silent", "Rapid Fire (1)", "Reliable"],
+    "traits": [
+      "Silent",
+      "Rapid Fire (1)",
+      "Reliable"
+    ],
     "value": 5,
     "rarity": "Uncommon",
-    "keywords": ["IMPERIUM", "LAS", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "IMPERIUM",
+      "LAS",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1534,15 +2735,31 @@
     "type": "ranged",
     "category": "Melta Weapons",
     "description": "The standard melta weapon of Eradicator squads, the Melta Rifle fires a blast of superheated fusion energy. At close range, nothing can withstand its destructive power.",
-    "damage": {"base": 16, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 16,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -4,
-    "range": {"short": 12, "medium": 24, "long": 36},
+    "range": {
+      "short": 12,
+      "medium": 24,
+      "long": 36
+    },
     "salvo": 1,
-    "traits": ["Assault", "Melta"],
+    "traits": [
+      "Assault",
+      "Melta"
+    ],
     "value": 6,
     "rarity": "Very Rare",
-    "keywords": ["PRIMARIS", "IMPERIUM", "MELTA", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "PRIMARIS",
+      "IMPERIUM",
+      "MELTA",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1551,15 +2768,31 @@
     "type": "ranged",
     "category": "Bolt Weapons",
     "description": "Equipped with advanced targeting systems, the Occulus Bolt Carbine allows Infiltrators to engage targets with enhanced accuracy. The integrated optics feed directly into the Marine's helm display.",
-    "damage": {"base": 10, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 10,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": -1,
-    "range": {"short": 12, "medium": 24, "long": 36},
+    "range": {
+      "short": 12,
+      "medium": 24,
+      "long": 36
+    },
     "salvo": 1,
-    "traits": ["Brutal", "Rapid Fire (1)"],
+    "traits": [
+      "Brutal",
+      "Rapid Fire (1)"
+    ],
     "value": 6,
     "rarity": "Rare",
-    "keywords": ["PRIMARIS", "BOLT", "IMPERIUM", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "PRIMARIS",
+      "BOLT",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1568,15 +2801,29 @@
     "type": "ranged",
     "category": "Plasma Weapons",
     "description": "The Plasma Gun fires bolts of superheated plasma that can melt through the heaviest armour. Though powerful, the weapon risks catastrophic overheating if pushed beyond its limits.",
-    "damage": {"base": 15, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 15,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": -3,
-    "range": {"short": 12, "medium": 24, "long": 36},
+    "range": {
+      "short": 12,
+      "medium": 24,
+      "long": 36
+    },
     "salvo": 2,
-    "traits": ["Rapid Fire (1)", "Supercharge"],
+    "traits": [
+      "Rapid Fire (1)",
+      "Supercharge"
+    ],
     "value": 6,
     "rarity": "Rare",
-    "keywords": ["PLASMA", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "PLASMA",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1585,15 +2832,31 @@
     "type": "ranged",
     "category": "Plasma Weapons",
     "description": "The standard weapon of Hellblaster squads, the Plasma Incinerator delivers devastating volleys of plasma fire. Its improved heat dissipation makes it safer to operate than older designs.",
-    "damage": {"base": 12, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 12,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -3,
-    "range": {"short": 12, "medium": 24, "long": 36},
+    "range": {
+      "short": 12,
+      "medium": 24,
+      "long": 36
+    },
     "salvo": 2,
-    "traits": ["Assault", "Supercharge"],
+    "traits": [
+      "Assault",
+      "Supercharge"
+    ],
     "value": 7,
     "rarity": "Very Rare",
-    "keywords": ["PRIMARIS", "PLASMA", "IMPERIUM", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "PRIMARIS",
+      "PLASMA",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1602,15 +2865,31 @@
     "type": "ranged",
     "category": "Bolt Weapons",
     "description": "Essentially two boltguns fused together, the Storm Bolter delivers twice the firepower in a compact package. Favoured by Terminators, these weapons lay down punishing suppressive fire.",
-    "damage": {"base": 10, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 10,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 12, "medium": 24, "long": 36},
+    "range": {
+      "short": 12,
+      "medium": 24,
+      "long": 36
+    },
     "salvo": 4,
-    "traits": ["Brutal", "Heavy (3)", "Rapid Fire (3)"],
+    "traits": [
+      "Brutal",
+      "Heavy (3)",
+      "Rapid Fire (3)"
+    ],
     "value": 6,
     "rarity": "Rare",
-    "keywords": ["IMPERIUM", "BOLT", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "IMPERIUM",
+      "BOLT",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1619,14 +2898,22 @@
     "type": "melee",
     "category": "Exotic",
     "description": "Though rarely lethal, whips are prized for their ability to inflict pain and maintain control over prisoners or slaves. A skilled wielder can strike with unerring accuracy from a considerable distance.",
-    "damage": {"base": 1, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 1,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "traits": ["Agonising"],
+    "traits": [
+      "Agonising"
+    ],
     "reach": 4,
     "value": 2,
     "rarity": "Common",
-    "keywords": ["PRIMITIVE"],
+    "keywords": [
+      "PRIMITIVE"
+    ],
     "source": "core"
   },
   {
@@ -1635,14 +2922,23 @@
     "type": "melee",
     "category": "Exotic",
     "description": "Used by Sisters Repentia and other agents of the Ecclesiarchy, Neural Whips deliver agonising neural feedback with every strike. The lash overloads the nervous system, leaving victims writhing in pain.",
-    "damage": {"base": 3, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 3,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 2,
     "ap": -2,
-    "traits": ["Agonising"],
+    "traits": [
+      "Agonising"
+    ],
     "reach": 4,
     "value": 5,
     "rarity": "Rare",
-    "keywords": ["EXOTIC", "ADEPTA SORORITAS"],
+    "keywords": [
+      "EXOTIC",
+      "ADEPTA SORORITAS"
+    ],
     "source": "core"
   },
   {
@@ -1651,14 +2947,23 @@
     "type": "melee",
     "category": "Exotic",
     "description": "A Shock Whip incorporates power cells that discharge a powerful electric shock upon contact. The combination of kinetic force and electrical discharge makes this weapon exceptionally painful.",
-    "damage": {"base": 4, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 4,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 2,
     "ap": 0,
-    "traits": ["Agonising", "Rending (2)"],
+    "traits": [
+      "Agonising",
+      "Rending (2)"
+    ],
     "reach": 4,
     "value": 4,
     "rarity": "Very Rare",
-    "keywords": ["EXOTIC"],
+    "keywords": [
+      "EXOTIC"
+    ],
     "source": "core"
   },
   {
@@ -1667,13 +2972,23 @@
     "type": "melee",
     "category": "Exotic",
     "description": "The standard issue weapon of the Adeptus Arbites, the Shock Maul is designed to subdue rather than kill — though it is more than capable of lethal force. Each strike discharges a powerful electric shock.",
-    "damage": {"base": 4, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 4,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 4,
     "ap": -1,
-    "traits": ["Agonising", "Brutal"],
+    "traits": [
+      "Agonising",
+      "Brutal"
+    ],
     "value": 5,
     "rarity": "Uncommon",
-    "keywords": ["EXOTIC", "ADEPTUS ARBITES"],
+    "keywords": [
+      "EXOTIC",
+      "ADEPTUS ARBITES"
+    ],
     "source": "core"
   },
   {
@@ -1682,13 +2997,20 @@
     "type": "melee",
     "category": "Power",
     "description": "A Power Maul is a club or mace surrounded by a disruptive energy field. Popular among Adeptus Arbites and other law enforcement, these weapons can subdue or kill with equal ease.",
-    "damage": {"base": 5, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 5,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 3,
     "ap": -1,
     "traits": [],
     "value": 5,
     "rarity": "Rare",
-    "keywords": ["IMPERIUM", "POWER FIELD"],
+    "keywords": [
+      "IMPERIUM",
+      "POWER FIELD"
+    ],
     "source": "fspg"
   },
   {
@@ -1697,13 +3019,22 @@
     "type": "melee",
     "category": "Exotic",
     "description": "Carried by Sisters Dialogus, this staff incorporates a laud-hailer that can project the voice across a battlefield. It serves as both a symbol of office and a capable weapon in close combat.",
-    "damage": {"base": 4, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 4,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 2,
     "ap": 0,
-    "traits": ["Two-Handed"],
+    "traits": [
+      "Two-Handed"
+    ],
     "value": 4,
     "rarity": "Uncommon",
-    "keywords": ["IMPERIUM", "ADEPTA SORORITAS"],
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTA SORORITAS"
+    ],
     "source": "fspg",
     "notes": "Functions as a Symbol of Authority and includes a Laud-Hailer."
   },
@@ -1713,15 +3044,31 @@
     "type": "ranged",
     "category": "Solid Projectile",
     "description": "Designed for Ogryn auxilia, the Ripper Gun is a drum-fed weapon that can be used as a club in close combat. Its heavy rounds and automatic fire make it devastating at close range.",
-    "damage": {"base": 12, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 12,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 2,
     "ap": 0,
-    "range": {"short": 6, "medium": 12, "long": 18},
+    "range": {
+      "short": 6,
+      "medium": 12,
+      "long": 18
+    },
     "salvo": 3,
-    "traits": ["Assault", "Spread"],
+    "traits": [
+      "Assault",
+      "Spread"
+    ],
     "value": 4,
     "rarity": "Rare",
-    "keywords": ["IMPERIUM", "ASTRA MILITARUM", "MILITARUM AUXILLA", "PROJECTILE"],
+    "keywords": [
+      "IMPERIUM",
+      "ASTRA MILITARUM",
+      "MILITARUM AUXILLA",
+      "PROJECTILE"
+    ],
     "source": "fspg"
   },
   {
@@ -1730,15 +3077,30 @@
     "type": "ranged",
     "category": "Explosive",
     "description": "Oversized grenades designed for Ogryn, Frag Bombs are too heavy for normal humans to throw effectively. When they detonate, the blast scatters deadly shrapnel across a wide area.",
-    "damage": {"base": 10, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 10,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 4, "medium": 8, "long": 12},
+    "range": {
+      "short": 4,
+      "medium": 8,
+      "long": 12
+    },
     "salvo": 0,
-    "traits": ["Blast (Medium)"],
+    "traits": [
+      "Blast (Medium)"
+    ],
     "value": 3,
     "rarity": "Uncommon",
-    "keywords": ["IMPERIUM", "ASTRA MILITARUM", "MILITARUM AUXILLA", "GRENADE"],
+    "keywords": [
+      "IMPERIUM",
+      "ASTRA MILITARUM",
+      "MILITARUM AUXILLA",
+      "GRENADE"
+    ],
     "source": "fspg"
   },
   {
@@ -1747,15 +3109,29 @@
     "type": "ranged",
     "category": "Solid Projectile",
     "description": "A combination weapon used by Kroot Carnivores, the Kroot Rifle fires solid rounds and features blade attachments for close combat. It reflects the Kroot's practical approach to warfare.",
-    "damage": {"base": 10, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 10,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 12, "medium": 24, "long": 36},
+    "range": {
+      "short": 12,
+      "medium": 24,
+      "long": 36
+    },
     "salvo": 1,
-    "traits": ["Rapid Fire (1)"],
+    "traits": [
+      "Rapid Fire (1)"
+    ],
     "value": 4,
     "rarity": "Rare",
-    "keywords": ["KROOT", "T'AU", "PROJECTILE"],
+    "keywords": [
+      "KROOT",
+      "T'AU",
+      "PROJECTILE"
+    ],
     "source": "fspg",
     "notes": "Can also be used as a melee weapon (S+4, 2 ED, 0 AP, Brutal)."
   },
@@ -1765,13 +3141,24 @@
     "type": "melee",
     "category": "Power Weapons",
     "description": "A Power Sword of exceptional quality, forged by master artificers and blessed by Tech-Priests. These weapons are heirlooms passed down through generations of Space Marine heroes.",
-    "damage": {"base": 6, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 6,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 5,
     "ap": -3,
-    "traits": ["Parry", "Reliable"],
+    "traits": [
+      "Parry",
+      "Reliable"
+    ],
     "value": 8,
     "rarity": "Unique",
-    "keywords": ["POWER FIELD", "IMPERIUM", "ADEPTUS ASTARTES"],
+    "keywords": [
+      "POWER FIELD",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES"
+    ],
     "source": "voa"
   },
   {
@@ -1780,13 +3167,24 @@
     "type": "melee",
     "category": "Aeldari",
     "description": "The finest blades of the Aeldari Corsairs, these Master-Crafted Void Sabres are legendary weapons. Each is a unique work of art, often with names and histories spanning millennia.",
-    "damage": {"base": 8, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 8,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 5,
     "ap": -3,
-    "traits": ["Brutal", "Parry", "Reliable"],
+    "traits": [
+      "Brutal",
+      "Parry",
+      "Reliable"
+    ],
     "value": 14,
     "rarity": "Unique",
-    "keywords": ["AELDARI", "ANHRATHE"],
+    "keywords": [
+      "AELDARI",
+      "ANHRATHE"
+    ],
     "source": "aeldari"
   },
   {
@@ -1795,13 +3193,24 @@
     "type": "melee",
     "category": "Aeldari",
     "description": "A ceremonial weapon wielded by Autarchs and other Craftworld leaders, the Star Glaive is a symbol of authority as much as a weapon. Its blade gleams with captive starlight.",
-    "damage": {"base": 6, "attribute": "strength", "bonus": 0},
+    "damage": {
+      "base": 6,
+      "attribute": "strength",
+      "bonus": 0
+    },
     "ed": 4,
     "ap": -2,
-    "traits": ["Parry", "Two-Handed"],
+    "traits": [
+      "Parry",
+      "Two-Handed"
+    ],
     "value": 7,
     "rarity": "Very Rare",
-    "keywords": ["AELDARI", "ASURYANI", "AUTARCH"],
+    "keywords": [
+      "AELDARI",
+      "ASURYANI",
+      "AUTARCH"
+    ],
     "source": "aeldari"
   },
   {
@@ -1810,15 +3219,30 @@
     "type": "ranged",
     "category": "Splinter",
     "description": "Mounted on skyboards and jetbikes, Splinter Pods fire toxic shards while the pilot focuses on manoeuvring. They provide covering fire for high-speed Drukhari attacks.",
-    "damage": {"base": 7, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 7,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": 0,
-    "range": {"short": 10, "medium": 18, "long": 36},
+    "range": {
+      "short": 10,
+      "medium": 18,
+      "long": 36
+    },
     "salvo": 2,
-    "traits": ["Assault", "Inflict (Poison 5)"],
+    "traits": [
+      "Assault",
+      "Inflict (Poison 5)"
+    ],
     "value": 5,
     "rarity": "Uncommon",
-    "keywords": ["AELDARI", "DRUKHARI", "SPLINTER"],
+    "keywords": [
+      "AELDARI",
+      "DRUKHARI",
+      "SPLINTER"
+    ],
     "source": "aeldari",
     "notes": "Mounted on skyboards."
   },
@@ -1828,15 +3252,1452 @@
     "type": "ranged",
     "category": "Plasma Weapons",
     "description": "Small enough to be used at close quarters, but with all the destructive capability of a fully fledged Plasma Gun, these rare weapons are normally seen in the hands of officers and close combat specialists who are willing to risk loss of limb for decisive firepower.",
-    "damage": {"base": 14, "attribute": null, "bonus": 0},
+    "damage": {
+      "base": 14,
+      "attribute": null,
+      "bonus": 0
+    },
     "ed": 1,
     "ap": -3,
-    "range": {"short": 6, "medium": 12, "long": 24},
+    "range": {
+      "short": 6,
+      "medium": 12,
+      "long": 24
+    },
     "salvo": 1,
-    "traits": ["Pistol", "Supercharge"],
+    "traits": [
+      "Pistol",
+      "Supercharge"
+    ],
     "value": 5,
     "rarity": "Rare",
-    "keywords": ["IMPERIUM", "PLASMA"],
+    "keywords": [
+      "IMPERIUM",
+      "PLASMA"
+    ],
     "source": "core"
+  },
+  {
+    "id": "axe_aoa",
+    "name": "Axe (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Low-Tech",
+    "description": "A hafted melee weapon with a wedge- or crescent-shaped blade, intended to apply maximum cutting power to a small cross-section.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 3
+    },
+    "ed": 4,
+    "ap": 0,
+    "traits": [
+      "Rending (1)"
+    ],
+    "value": 3,
+    "rarity": "Common",
+    "keywords": [
+      "BLADE"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "flail_aoa",
+    "name": "Flail (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Low-Tech",
+    "description": "A hafted melee weapon, with one or more chains attached to weighted or spiked heads.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 3
+    },
+    "ed": 3,
+    "ap": 0,
+    "traits": [
+      "Brutal",
+      "Overwhelming"
+    ],
+    "value": 3,
+    "rarity": "Common",
+    "keywords": [],
+    "source": "apocrypha"
+  },
+  {
+    "id": "greataxe_aoa",
+    "name": "Greataxe (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Low-Tech",
+    "description": "Large, two-handed axes used both as heavy-duty cutting tools and as deadly weapons.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 4
+    },
+    "ed": 4,
+    "ap": 0,
+    "range": "2",
+    "traits": [
+      "Rending (1)",
+      "Unwieldy (1)"
+    ],
+    "value": 3,
+    "rarity": "Common",
+    "keywords": [
+      "BLADE",
+      "2-HANDED"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "greatsword_aoa",
+    "name": "Greatsword (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Low-Tech",
+    "description": "These long blades require two hands to wield effectively.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 4
+    },
+    "ed": 3,
+    "ap": -1,
+    "range": "2",
+    "traits": [
+      "Parry"
+    ],
+    "value": 3,
+    "rarity": "Common",
+    "keywords": [
+      "BLADE",
+      "2-HANDED"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "navis_hatchet_aoa",
+    "name": "Navis Hatchet (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Low-Tech",
+    "description": "Heavy, mono-edged hatchets favoured by the Imperial Navy's elite breacher teams.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 4
+    },
+    "ed": 4,
+    "ap": -1,
+    "traits": [
+      "Brutal",
+      "Rending (1)"
+    ],
+    "value": 3,
+    "rarity": "Common",
+    "keywords": [
+      "BLADE",
+      "IMPERIUM",
+      "NAVIS IMPERIALIS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "repression_baton_aoa",
+    "name": "Repression Baton (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Low-Tech",
+    "description": "Simple, sturdy plasteel batons used by Arbitrators.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 3
+    },
+    "ed": 2,
+    "ap": 0,
+    "traits": [
+      "Brutal"
+    ],
+    "value": 3,
+    "rarity": "Common",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS ARBITES"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "spear_aoa",
+    "name": "Spear (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Low-Tech",
+    "description": "The most common form of weapon ever devised.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 3
+    },
+    "ed": 3,
+    "ap": 0,
+    "range": "2",
+    "traits": [],
+    "value": 2,
+    "rarity": "Common",
+    "keywords": [],
+    "source": "apocrypha"
+  },
+  {
+    "id": "force_rod_aoa",
+    "name": "Force Rod (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Force",
+    "description": "Stout crystalline rods usable as weapons and to store psychic energy.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 3
+    },
+    "ed": 1,
+    "ap": -1,
+    "traits": [
+      "Force"
+    ],
+    "value": 4,
+    "rarity": "Rare",
+    "keywords": [
+      "FORCE",
+      "ADEPTUS ASTRA TELEPATHICA",
+      "INQUISITION",
+      "AELDARI"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "nemesis_falchion_aoa",
+    "name": "Nemesis Falchion (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Force",
+    "description": "Smaller variants of the Nemesis Force Sword, wielded in pairs.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 5
+    },
+    "ed": 4,
+    "ap": -2,
+    "traits": [
+      "Force",
+      "Nemesis",
+      "Paired",
+      "Parry"
+    ],
+    "value": 6,
+    "rarity": "Very Rare",
+    "keywords": [
+      "FORCE",
+      "GREY KNIGHTS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "nemesis_force_halberd_aoa",
+    "name": "Nemesis Force Halberd (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Force",
+    "description": "Two-handed weapon with a long adamantium haft and iron and silver blade.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 5
+    },
+    "ed": 5,
+    "ap": -2,
+    "range": "2",
+    "traits": [
+      "Force",
+      "Nemesis"
+    ],
+    "value": 6,
+    "rarity": "Very Rare",
+    "keywords": [
+      "FORCE",
+      "GREY KNIGHTS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "nemesis_force_sword_aoa",
+    "name": "Nemesis Force Sword (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Force",
+    "description": "The most common weapon wielded by Grey Knights.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 5
+    },
+    "ed": 4,
+    "ap": -3,
+    "traits": [
+      "Force",
+      "Nemesis",
+      "Parry"
+    ],
+    "value": 6,
+    "rarity": "Very Rare",
+    "keywords": [
+      "FORCE",
+      "GREY KNIGHTS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "nemesis_warding_stave_aoa",
+    "name": "Nemesis Warding Stave (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Force",
+    "description": "Defensive Nemesis weapon with refractor field capabilities.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 4
+    },
+    "ed": 2,
+    "ap": -1,
+    "range": "2",
+    "traits": [
+      "Brutal",
+      "Force",
+      "Nemesis"
+    ],
+    "value": 6,
+    "rarity": "Very Rare",
+    "keywords": [
+      "FORCE",
+      "GREY KNIGHTS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "anointed_halberd_aoa",
+    "name": "Anointed Halberd (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Power",
+    "description": "Blessed weapons of the Adepta Sororitas entrusted to elite Celestians.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 6
+    },
+    "ed": 4,
+    "ap": -3,
+    "range": "2",
+    "traits": [
+      "Blessed (2)"
+    ],
+    "value": 7,
+    "rarity": "Very Rare",
+    "keywords": [
+      "POWER FIELD",
+      "ADEPTA SORORITAS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "astartes_chainsword_aoa",
+    "name": "Astartes Chainsword (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Chain",
+    "description": "Larger, heavier chainsword constructed to withstand Astartes strength.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 5
+    },
+    "ed": 4,
+    "ap": -1,
+    "traits": [
+      "Brutal",
+      "Parry"
+    ],
+    "value": 5,
+    "rarity": "Uncommon",
+    "keywords": [
+      "CHAIN",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "chain_knife_aoa",
+    "name": "Chain Knife (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Chain",
+    "description": "Shorter forms of chainsword, commonly taking the forms of cleavers or machetes.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 4
+    },
+    "ed": 3,
+    "ap": 0,
+    "traits": [
+      "Brutal"
+    ],
+    "value": 4,
+    "rarity": "Uncommon",
+    "keywords": [
+      "CHAIN",
+      "SCUM",
+      "IMPERIUM",
+      "CHAOS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "crozius_arcanum_aoa",
+    "name": "Crozius Arcanum (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Power",
+    "description": "Power mace used by Space Marine Chaplains as weapon and badge of office.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 5
+    },
+    "ed": 5,
+    "ap": -1,
+    "traits": [
+      "Blessed (1)",
+      "Brutal"
+    ],
+    "value": 6,
+    "rarity": "Very Rare",
+    "keywords": [
+      "POWER FIELD",
+      "ADEPTUS ASTARTES"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "executioner_greatblade_aoa",
+    "name": "Executioner Greatblade (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Power",
+    "description": "Large two-handed power swords used by the Silent Sisterhood.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 6
+    },
+    "ed": 5,
+    "ap": -3,
+    "range": "2",
+    "traits": [
+      "Parry",
+      "Rending (2)"
+    ],
+    "value": 7,
+    "rarity": "Very Rare",
+    "keywords": [
+      "POWER FIELD",
+      "2-HANDED",
+      "ANATHEMA PSYKANA"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "frost_axe_aoa",
+    "name": "Frost Axe (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Chain",
+    "description": "Unique chain weapons from Fenris incorporating diamond-hard ice kraken fangs.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 5
+    },
+    "ed": 5,
+    "ap": -3,
+    "traits": [
+      "Brutal",
+      "Rending (2)"
+    ],
+    "value": 8,
+    "rarity": "Unique",
+    "keywords": [
+      "CHAIN",
+      "SPACE WOLVES"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "frost_blade_aoa",
+    "name": "Frost Blade (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Chain",
+    "description": "Exceptional chainsword variant from Fenris.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 5
+    },
+    "ed": 4,
+    "ap": -3,
+    "traits": [
+      "Brutal",
+      "Parry"
+    ],
+    "value": 8,
+    "rarity": "Unique",
+    "keywords": [
+      "CHAIN",
+      "SPACE WOLVES"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "guardian_spear_aoa",
+    "name": "Guardian Spear (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Power",
+    "description": "Signature weapon of Adeptus Custodes, incorporating power blade and integrated bolter.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 5
+    },
+    "ed": 5,
+    "ap": -3,
+    "range": "2",
+    "traits": [],
+    "value": 9,
+    "rarity": "Unique",
+    "keywords": [
+      "POWER FIELD",
+      "2-HANDED",
+      "ADEPTUS CUSTODES"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "hallowed_mace_aoa",
+    "name": "Hallowed Mace (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Power",
+    "description": "Sacred weapons entrusted to the most devout Celestian Sisters.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 5
+    },
+    "ed": 5,
+    "ap": -1,
+    "traits": [
+      "Blessed (2)",
+      "Brutal"
+    ],
+    "value": 7,
+    "rarity": "Very Rare",
+    "keywords": [
+      "POWER FIELD",
+      "ADEPTA SORORITAS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "lightning_claw_aoa",
+    "name": "Lightning Claw (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Power",
+    "description": "Power gauntlet with crackling blades.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 5
+    },
+    "ed": 4,
+    "ap": -2,
+    "traits": [
+      "Paired",
+      "Tearing"
+    ],
+    "value": 7,
+    "rarity": "Very Rare",
+    "keywords": [
+      "POWER FIELD",
+      "ADEPTUS ASTARTES"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "misericordia_aoa",
+    "name": "Misericordia (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Power",
+    "description": "Long dagger carried by Adeptus Custodes, symbolic of their role as executioners.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 5
+    },
+    "ed": 4,
+    "ap": -2,
+    "traits": [
+      "Brutal"
+    ],
+    "value": 8,
+    "rarity": "Very Rare",
+    "keywords": [
+      "POWER FIELD",
+      "ADEPTUS CUSTODES"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "power_lance_aoa",
+    "name": "Power Lance (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Power",
+    "description": "Power blade mounted on a long shaft.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 5
+    },
+    "ed": 4,
+    "ap": -1,
+    "range": "2",
+    "traits": [],
+    "value": 6,
+    "rarity": "Very Rare",
+    "keywords": [
+      "POWER FIELD",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "relic_blade_aoa",
+    "name": "Relic Blade (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Power",
+    "description": "Ancient and powerful two-handed melee weapon.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 6
+    },
+    "ed": 5,
+    "ap": -3,
+    "range": "2",
+    "traits": [],
+    "value": 8,
+    "rarity": "Very Rare",
+    "keywords": [
+      "POWER FIELD",
+      "2-HANDED",
+      "ADEPTUS ASTARTES"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "sentinel_blade_aoa",
+    "name": "Sentinel Blade (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Power",
+    "description": "Broadsword with integrated bolt caster, used by Adeptus Custodes.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 5
+    },
+    "ed": 4,
+    "ap": -3,
+    "traits": [
+      "Parry"
+    ],
+    "value": 9,
+    "rarity": "Unique",
+    "keywords": [
+      "POWER FIELD",
+      "ADEPTUS CUSTODES"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "spear_of_the_faithful_aoa",
+    "name": "Spear of the Faithful (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Power",
+    "description": "Weapons entrusted only to Celestian Sisters Superior.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 6
+    },
+    "ed": 5,
+    "ap": -3,
+    "range": "2",
+    "traits": [
+      "Blessed (3)"
+    ],
+    "value": 8,
+    "rarity": "Very Rare",
+    "keywords": [
+      "POWER FIELD",
+      "ADEPTA SORORITAS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "chordclaw_aoa",
+    "name": "Chordclaw (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Exotic",
+    "description": "Needle-fingered gauntlet with vibrating blades.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 4
+    },
+    "ed": 3,
+    "ap": 0,
+    "traits": [
+      "Careful",
+      "Mortal (2)"
+    ],
+    "value": 6,
+    "rarity": "Rare",
+    "keywords": [
+      "TRANSONIC",
+      "ADEPTUS MECHANICUS",
+      "SKITARII"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "electroleech_staff_aoa",
+    "name": "Electroleech Staff (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Exotic",
+    "description": "Staff used by Electro-Priests to drain electric force.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 6
+    },
+    "ed": 5,
+    "ap": -2,
+    "range": "2",
+    "traits": [
+      "Agonizing",
+      "Mortal (1)"
+    ],
+    "value": 6,
+    "rarity": "Rare",
+    "keywords": [
+      "LUMINEN",
+      "2-HANDED",
+      "ADEPTUS MECHANICUS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "electrostatic_gauntlets_aoa",
+    "name": "Electrostatic Gauntlets (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Exotic",
+    "description": "Gauntlets that unleash electrical discharges.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 6
+    },
+    "ed": 3,
+    "ap": 0,
+    "traits": [
+      "Tesla"
+    ],
+    "value": 6,
+    "rarity": "Rare",
+    "keywords": [
+      "LUMINEN",
+      "2-HANDED",
+      "ADEPTUS MECHANICUS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "excruciator_maul_aoa",
+    "name": "Excruciator Maul (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Exotic",
+    "description": "Agonizing weapon used by Adeptus Arbites.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 6
+    },
+    "ed": 4,
+    "ap": -2,
+    "traits": [
+      "Agonising",
+      "Brutal"
+    ],
+    "value": 6,
+    "rarity": "Uncommon",
+    "keywords": [
+      "EXOTIC",
+      "ADEPTUS ARBITES"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "honour_staff_aoa",
+    "name": "Honour Staff (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Exotic",
+    "description": "Staff carried by T'au Ethereals.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 5
+    },
+    "ed": 4,
+    "ap": -1,
+    "range": "2",
+    "traits": [],
+    "value": 7,
+    "rarity": "Very Rare",
+    "keywords": [
+      "T'AU EMPIRE",
+      "ETHEREAL CASTE"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "hookfang_aoa",
+    "name": "Hookfang (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Exotic",
+    "description": "Poisoned blade used by Venenum Assassins.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 4
+    },
+    "ed": 3,
+    "ap": -1,
+    "traits": [
+      "Fleshbane",
+      "Inflict (Poisoned 6)"
+    ],
+    "value": 9,
+    "rarity": "Unique",
+    "keywords": [
+      "BLADE",
+      "OFFICIO ASSASSINORUM",
+      "TEMPLUM VENENUM"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "nemesii_blade_aoa",
+    "name": "Nemesii Blade (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Exotic",
+    "description": "Blade used by Adamus Assassins.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 6
+    },
+    "ed": 5,
+    "ap": -3,
+    "traits": [
+      "Rending (3)",
+      "Parry"
+    ],
+    "value": 9,
+    "rarity": "Unique",
+    "keywords": [
+      "BLADE",
+      "OFFICIO ASSASSINORUM",
+      "TEMPLUM ADAMUS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "neuro_gauntlet_aoa",
+    "name": "Neuro-Gauntlet (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Exotic",
+    "description": "Poisoned gauntlet used by Eversor Assassins.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 6
+    },
+    "ed": 4,
+    "ap": -1,
+    "traits": [
+      "Inflict (Poisoned 5)"
+    ],
+    "value": 9,
+    "rarity": "Unique",
+    "keywords": [
+      "OFFICIO ASSASSINORUM",
+      "TEMPLUM EVERSOR"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "null_rod_aoa",
+    "name": "Null Rod (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Exotic",
+    "description": "Anti-psychic weapon blessed against the warp.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 4
+    },
+    "ed": 2,
+    "ap": -1,
+    "traits": [
+      "Blessed (3)",
+      "Brutal"
+    ],
+    "value": 8,
+    "rarity": "Very Rare",
+    "keywords": [
+      "POWER FIELD",
+      "INQUISITION",
+      "ADEPTA SORORITAS",
+      "ADEPTUS ASTRA TELEPATHICA"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "phase_sword_aoa",
+    "name": "Phase Sword (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Exotic",
+    "description": "Warp-phasing blade used by Callidus Assassins.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 5
+    },
+    "ed": 4,
+    "ap": -3,
+    "traits": [
+      "Warp Weapon"
+    ],
+    "value": 10,
+    "rarity": "Unique",
+    "keywords": [
+      "PHASE BLADE",
+      "OFFICIO ASSASSINORUM",
+      "TEMPLUM CALLIDUS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "poisoned_blades_aoa",
+    "name": "Poisoned Blades (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Exotic",
+    "description": "Deadly poisoned blades used by Callidus Assassins.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 3
+    },
+    "ed": 2,
+    "ap": -1,
+    "traits": [
+      "Inflict (Poisoned 5)",
+      "Mortal (d3)",
+      "Rending (3)"
+    ],
+    "value": 7,
+    "rarity": "Very Rare",
+    "keywords": [
+      "BLADE",
+      "OFFICIO ASSASSINORUM",
+      "TEMPLUM CALLIDUS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "sympatic_dataspikes_aoa",
+    "name": "Sympatic Dataspikes (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Exotic",
+    "description": "Arc weapons used by Vanus Assassins.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 4
+    },
+    "ed": 4,
+    "ap": -2,
+    "traits": [
+      "Arc (2)",
+      "Rending (3)",
+      "Haywire (6)",
+      "Paired"
+    ],
+    "value": 10,
+    "rarity": "Unique",
+    "keywords": [
+      "ARC",
+      "TEMPLUM VANUS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "taser_goad_aoa",
+    "name": "Taser Goad (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Exotic",
+    "description": "Electrical weapon used by Skitarii.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 7
+    },
+    "ed": 3,
+    "ap": 0,
+    "traits": [
+      "Agonizing",
+      "Tesla"
+    ],
+    "value": 5,
+    "rarity": "Rare",
+    "keywords": [
+      "TASER",
+      "ADEPTUS MECHANICUS",
+      "SKITARII"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "transonic_blade_aoa",
+    "name": "Transonic Blade (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Exotic",
+    "description": "Vibrating blade used by Skitarii.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 5
+    },
+    "ed": 3,
+    "ap": 0,
+    "traits": [
+      "Paired",
+      "Mortal (1)"
+    ],
+    "value": 6,
+    "rarity": "Rare",
+    "keywords": [
+      "TRANSONIC",
+      "ADEPTUS MECHANICUS",
+      "SKITARII"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "transonic_razor_aoa",
+    "name": "Transonic Razor (Abundance of Apocrypha)",
+    "type": "melee",
+    "category": "Exotic",
+    "description": "Smaller transonic weapon used by Skitarii.",
+    "damage": {
+      "base": 0,
+      "attribute": "strength",
+      "bonus": 4
+    },
+    "ed": 3,
+    "ap": 0,
+    "traits": [
+      "Mortal (1)"
+    ],
+    "value": 6,
+    "rarity": "Rare",
+    "keywords": [
+      "TRANSONIC",
+      "ADEPTUS MECHANICUS",
+      "SKITARII"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "absolvor_bolt_pistol_aoa",
+    "name": "Absolvor Bolt Pistol (Abundance of Apocrypha)",
+    "type": "ranged",
+    "category": "Bolt",
+    "description": "Primaris bolt pistol variant.",
+    "damage": {
+      "base": 12,
+      "attribute": null,
+      "bonus": 0
+    },
+    "ed": 2,
+    "ap": -1,
+    "range": {
+      "short": 8,
+      "medium": 16,
+      "long": 24
+    },
+    "salvo": 1,
+    "traits": [
+      "Brutal",
+      "Pistol"
+    ],
+    "value": 8,
+    "rarity": "Very Rare",
+    "keywords": [
+      "BOLT",
+      "ADEPTUS ASTARTES",
+      "PRIMARIS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "auto_bolt_rifle_aoa",
+    "name": "Auto Bolt Rifle (Abundance of Apocrypha)",
+    "type": "ranged",
+    "category": "Bolt",
+    "description": "Automatic bolt rifle for Primaris Marines.",
+    "damage": {
+      "base": 10,
+      "attribute": null,
+      "bonus": 0
+    },
+    "ed": 1,
+    "ap": 0,
+    "range": {
+      "short": 12,
+      "medium": 24,
+      "long": 36
+    },
+    "salvo": 3,
+    "traits": [
+      "Assault",
+      "Brutal",
+      "Rapid Fire (3)"
+    ],
+    "value": 7,
+    "rarity": "Very Rare",
+    "keywords": [
+      "BOLT",
+      "ADEPTUS ASTARTES",
+      "PRIMARIS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "auto_boltstorm_gauntlet_aoa",
+    "name": "Auto-Boltstorm Gauntlet (Abundance of Apocrypha)",
+    "type": "ranged",
+    "category": "Bolt",
+    "description": "Automatic boltstorm gauntlet with power fist.",
+    "damage": {
+      "base": 10,
+      "attribute": null,
+      "bonus": 0
+    },
+    "ed": 1,
+    "ap": 0,
+    "range": {
+      "short": 9,
+      "medium": 18,
+      "long": 27
+    },
+    "salvo": 3,
+    "traits": [
+      "Assault",
+      "Brutal",
+      "Paired",
+      "Rapid Fire (3)"
+    ],
+    "value": 8,
+    "rarity": "Very Rare",
+    "keywords": [
+      "BOLT",
+      "POWER FIELD",
+      "ADEPTUS ASTARTES",
+      "PRIMARIS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "bolt_carbine_aoa",
+    "name": "Bolt Carbine (Abundance of Apocrypha)",
+    "type": "ranged",
+    "category": "Bolt",
+    "description": "Compact bolt weapon for Primaris Marines.",
+    "damage": {
+      "base": 10,
+      "attribute": null,
+      "bonus": 0
+    },
+    "ed": 1,
+    "ap": 0,
+    "range": {
+      "short": 12,
+      "medium": 24,
+      "long": 36
+    },
+    "salvo": 2,
+    "traits": [
+      "Assault",
+      "Brutal",
+      "Reliable",
+      "Rapid Fire (1)"
+    ],
+    "value": 6,
+    "rarity": "Rare",
+    "keywords": [
+      "BOLT",
+      "ADEPTUS ASTARTES",
+      "PRIMARIS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "bolt_sniper_rifle_aoa",
+    "name": "Bolt Sniper Rifle (Abundance of Apocrypha)",
+    "type": "ranged",
+    "category": "Bolt",
+    "description": "Long-range precision bolt weapon.",
+    "damage": {
+      "base": 12,
+      "attribute": null,
+      "bonus": 0
+    },
+    "ed": 1,
+    "ap": 0,
+    "range": {
+      "short": 18,
+      "medium": 36,
+      "long": 54
+    },
+    "salvo": 1,
+    "traits": [
+      "Brutal",
+      "Heavy (6)",
+      "Sniper (2)"
+    ],
+    "value": 8,
+    "rarity": "Very Rare",
+    "keywords": [
+      "BOLT",
+      "ADEPTUS ASTARTES",
+      "PRIMARIS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "boltstorm_gauntlet_aoa",
+    "name": "Boltstorm Gauntlet (Abundance of Apocrypha)",
+    "type": "ranged",
+    "category": "Bolt",
+    "description": "Power fist with integrated bolt weapon.",
+    "damage": {
+      "base": 10,
+      "attribute": null,
+      "bonus": 0
+    },
+    "ed": 1,
+    "ap": 0,
+    "range": {
+      "short": 6,
+      "medium": 12,
+      "long": 18
+    },
+    "salvo": 3,
+    "traits": [
+      "Brutal",
+      "Pistol"
+    ],
+    "value": 8,
+    "rarity": "Very Rare",
+    "keywords": [
+      "BOLT",
+      "POWER FIELD",
+      "ADEPTUS ASTARTES",
+      "PRIMARIS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "executor_bolt_rifle_aoa",
+    "name": "Executor Bolt Rifle (Abundance of Apocrypha)",
+    "type": "ranged",
+    "category": "Bolt",
+    "description": "Heavy bolt rifle for long-range engagements.",
+    "damage": {
+      "base": 12,
+      "attribute": null,
+      "bonus": 0
+    },
+    "ed": 2,
+    "ap": -2,
+    "range": {
+      "short": 21,
+      "medium": 42,
+      "long": 63
+    },
+    "salvo": 1,
+    "traits": [
+      "Brutal",
+      "Heavy (4)",
+      "Sniper (1)"
+    ],
+    "value": 7,
+    "rarity": "Very Rare",
+    "keywords": [
+      "BOLT",
+      "ADEPTUS ASTARTES",
+      "PRIMARIS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "executor_heavy_bolter_aoa",
+    "name": "Executor Heavy Bolter (Abundance of Apocrypha)",
+    "type": "ranged",
+    "category": "Bolt",
+    "description": "Heavy bolter variant with armor-piercing rounds.",
+    "damage": {
+      "base": 12,
+      "attribute": null,
+      "bonus": 0
+    },
+    "ed": 3,
+    "ap": -2,
+    "range": {
+      "short": 21,
+      "medium": 42,
+      "long": 63
+    },
+    "salvo": 2,
+    "traits": [
+      "Brutal",
+      "Heavy (4)",
+      "Rapid Fire (2)"
+    ],
+    "value": 7,
+    "rarity": "Very Rare",
+    "keywords": [
+      "BOLT",
+      "ADEPTUS ASTARTES",
+      "PRIMARIS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "hellstorm_bolt_rifle_aoa",
+    "name": "Hellstorm Bolt Rifle (Abundance of Apocrypha)",
+    "type": "ranged",
+    "category": "Bolt",
+    "description": "High-volume bolt rifle.",
+    "damage": {
+      "base": 12,
+      "attribute": null,
+      "bonus": 0
+    },
+    "ed": 1,
+    "ap": 0,
+    "range": {
+      "short": 15,
+      "medium": 30,
+      "long": 45
+    },
+    "salvo": 3,
+    "traits": [
+      "Assault",
+      "Brutal",
+      "Heavy (4)",
+      "Rapid Fire (3)"
+    ],
+    "value": 7,
+    "rarity": "Very Rare",
+    "keywords": [
+      "BOLT",
+      "ADEPTUS ASTARTES",
+      "PRIMARIS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "hellstorm_heavy_bolter_aoa",
+    "name": "Hellstorm Heavy Bolter (Abundance of Apocrypha)",
+    "type": "ranged",
+    "category": "Bolt",
+    "description": "Heavy bolter with high rate of fire.",
+    "damage": {
+      "base": 12,
+      "attribute": null,
+      "bonus": 0
+    },
+    "ed": 2,
+    "ap": 0,
+    "range": {
+      "short": 15,
+      "medium": 30,
+      "long": 45
+    },
+    "salvo": 4,
+    "traits": [
+      "Brutal",
+      "Heavy (4)",
+      "Rapid Fire (4)"
+    ],
+    "value": 7,
+    "rarity": "Very Rare",
+    "keywords": [
+      "BOLT",
+      "ADEPTUS ASTARTES",
+      "PRIMARIS"
+    ],
+    "source": "apocrypha"
+  },
+  {
+    "id": "heavy_bolt_rifle_aoa",
+    "name": "Heavy Bolt Rifle (Abundance of Apocrypha)",
+    "type": "ranged",
+    "category": "Bolt",
+    "description": "Heavy variant of the bolt rifle.",
+    "damage": {
+      "base": 12,
+      "attribute": null,
+      "bonus": 0
+    },
+    "ed": 1,
+    "ap": -1,
+    "range": {
+      "short": 18,
+      "medium": 36,
+      "long": 54
+    },
+    "salvo": 2,
+    "traits": [
+      "Brutal",
+      "Heavy (4)",
+      "Rapid Fire (2)"
+    ],
+    "value": 7,
+    "rarity": "Very Rare",
+    "keywords": [
+      "BOLT",
+      "ADEPTUS ASTARTES",
+      "PRIMARIS"
+    ],
+    "source": "apocrypha"
   }
 ]

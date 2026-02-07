@@ -8,7 +8,7 @@ const State = {
     gameData: null,
 
     // Enabled source books
-    enabledSources: ['core', 'fspg', 'redacted1', 'redacted2', 'church', 'vow', 'aeldari'],
+    enabledSources: ['core', 'fspg', 'redacted1', 'redacted2', 'church', 'vow', 'aeldari', 'apocrypha'],
 
     // Event listeners for state changes
     listeners: [],

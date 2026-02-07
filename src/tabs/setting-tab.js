@@ -39,7 +39,8 @@ const SettingTab = {
             'source-redacted2': 'redacted2',
             'source-church': 'church',
             'source-vow': 'vow',
-            'source-aeldari': 'aeldari'
+            'source-aeldari': 'aeldari',
+            'source-apocrypha': 'apocrypha'
         };
 
         for (const [elementId, sourceId] of Object.entries(sourceMap)) {
@@ -61,7 +62,8 @@ const SettingTab = {
             'source-redacted2': 'redacted2',
             'source-church': 'church',
             'source-vow': 'vow',
-            'source-aeldari': 'aeldari'
+            'source-aeldari': 'aeldari',
+            'source-apocrypha': 'apocrypha'
         };
 
         for (const [elementId, sourceId] of Object.entries(sourceMap)) {
@@ -92,7 +94,8 @@ const SettingTab = {
             'source-redacted2': 'redacted2',
             'source-church': 'church',
             'source-vow': 'vow',
-            'source-aeldari': 'aeldari'
+            'source-aeldari': 'aeldari',
+            'source-apocrypha': 'apocrypha'
         };
 
         for (const [elementId, sourceId] of Object.entries(sourceMap)) {

@@ -102,70 +102,147 @@ const DerivedStats = {
         return this.SKILL_ATTRIBUTES[skillName] || null;
     },
 
-    // Calculate Defence (Initiative - 1)
-    calculateDefence(character) {
-        return Math.max(0, (character.attributes?.initiative || 1) - 1);
+    // Helper to check if character has a talent
+    hasTalent(character, talentId) {
+        return (character.talents || []).some(t =>
+            (typeof t === 'string' ? t : t.id) === talentId
+        );
     },
 
-    // Calculate Resilience (Toughness + 1 + Armor Rating + Species Sub-Option Bonus)
+    // Helper to get talent entry with choice
+    getTalentEntry(character, talentId) {
+        const entry = (character.talents || []).find(t =>
+            (typeof t === 'string' ? t : t.id) === talentId
+        );
+        if (!entry) return null;
+        return typeof entry === 'string' ? { id: entry } : entry;
+    },
+
+    // Get talent bonus for a specific trait (handles Uncanny talent)
+    getTalentTraitBonus(character, traitName) {
+        const rank = character.rank || 1;
+        let bonus = 0;
+
+        // Uncanny [Trait]: Increase one trait by +Rank
+        const uncannyEntry = this.getTalentEntry(character, 'uncanny');
+        if (uncannyEntry && uncannyEntry.choice === traitName) {
+            bonus += rank;
+        }
+
+        return bonus;
+    },
+
+    // Calculate Defence (Initiative - 1 + Talent Bonuses)
+    calculateDefence(character) {
+        const base = Math.max(0, (character.attributes?.initiative || 1) - 1);
+        const talentBonus = this.getTalentTraitBonus(character, 'Defence');
+        return base + talentBonus;
+    },
+
+    // Calculate Resilience (Toughness + 1 + Armor Rating + Species Sub-Option Bonus + Talent Bonuses)
     calculateResilience(character, armorRating = 0) {
         const base = (character.attributes?.toughness || 1) + 1 + armorRating;
         const subOptionBonus = this.getSpeciesSubOptionBonus(character, 'resilience');
-        return base + subOptionBonus;
+        const talentBonus = this.getTalentTraitBonus(character, 'Resilience');
+        return base + subOptionBonus + talentBonus;
     },
 
-    // Calculate Determination (equal to Toughness + background bonus)
+    // Calculate Determination (equal to Toughness + background bonus + Talent Bonuses)
     calculateDetermination(character) {
         const base = character.attributes?.toughness || 1;
         const backgroundBonus = this.getBackgroundBonus(character, 'determination');
-        return base + backgroundBonus;
+        const talentBonus = this.getTalentTraitBonus(character, 'Determination');
+        return base + backgroundBonus + talentBonus;
     },
 
-    // Calculate Max Wounds (Tier x 2 + Toughness + Species Bonus + Background Bonus)
+    // Calculate Max Wounds (Tier x 2 + Toughness + Species Bonus + Background Bonus + Talent Bonuses)
     calculateMaxWounds(character) {
         const tier = character.tier || 1;
+        const rank = character.rank || 1;
         const toughness = character.attributes?.toughness || 1;
         const species = DataLoader.getSpecies(character.species?.id);
         const speciesBonus = species?.woundBonus || 0;
         const backgroundBonus = this.getBackgroundBonus(character, 'maxWounds');
 
-        return (tier * 2) + toughness + speciesBonus + backgroundBonus;
+        // Talent bonuses
+        let talentBonus = this.getTalentTraitBonus(character, 'Wounds');
+
+        // Feel No Pain: +Rank to Wounds
+        if (this.hasTalent(character, 'feel_no_pain')) {
+            talentBonus += rank;
+        }
+
+        return (tier * 2) + toughness + speciesBonus + backgroundBonus + talentBonus;
     },
 
-    // Calculate Max Shock (Willpower + Tier + Background Bonus + Species Sub-Option Bonus)
+    // Calculate Max Shock (Willpower + Tier + Background Bonus + Species Sub-Option Bonus + Talent Bonuses)
     calculateMaxShock(character) {
-        const tier = character.tier || 1;
+        let tier = character.tier || 1;
         const willpower = character.attributes?.willpower || 1;
         const backgroundBonus = this.getBackgroundBonus(character, 'maxShock');
         const subOptionBonus = this.getSpeciesSubOptionBonus(character, 'maxShock');
-        return willpower + tier + backgroundBonus + subOptionBonus;
+        const talentBonus = this.getTalentTraitBonus(character, 'Shock');
+
+        // Lobotomised Efficiency: No longer add Tier to Max Shock
+        if (this.hasTalent(character, 'lobotomised_efficiency')) {
+            tier = 0;
+        }
+
+        return willpower + tier + backgroundBonus + subOptionBonus + talentBonus;
     },
 
-    // Get Speed from species
+    // Get Speed from species + Talent Bonuses
     calculateSpeed(character) {
         const species = DataLoader.getSpecies(character.species?.id);
-        return species?.speed || 6;
+        const base = species?.speed || 6;
+        const talentBonus = this.getTalentTraitBonus(character, 'Speed');
+        return base + talentBonus;
     },
 
-    // Calculate Conviction (equal to Willpower + Background Bonus)
+    // Calculate Conviction (equal to Willpower + Background Bonus + Talent Bonuses)
     calculateConviction(character) {
+        const rank = character.rank || 1;
         const base = character.attributes?.willpower || 1;
         const backgroundBonus = this.getBackgroundBonus(character, 'conviction');
-        return base + backgroundBonus;
+        let talentBonus = this.getTalentTraitBonus(character, 'Conviction');
+
+        // Lobotomised Efficiency: +Double Rank to Conviction
+        if (this.hasTalent(character, 'lobotomised_efficiency')) {
+            talentBonus += rank * 2;
+        }
+
+        return base + backgroundBonus + talentBonus;
     },
 
-    // Calculate Resolve (Willpower - 1 + Background Bonus)
+    // Calculate Resolve (Willpower - 1 + Background Bonus + Talent Bonuses)
     calculateResolve(character) {
+        const rank = character.rank || 1;
         const base = Math.max(0, (character.attributes?.willpower || 1) - 1);
         const backgroundBonus = this.getBackgroundBonus(character, 'resolve');
-        return base + backgroundBonus;
+        let talentBonus = this.getTalentTraitBonus(character, 'Resolve');
+
+        // Lobotomised Efficiency: +Double Rank to Resolve
+        if (this.hasTalent(character, 'lobotomised_efficiency')) {
+            talentBonus += rank * 2;
+        }
+
+        return base + backgroundBonus + talentBonus;
     },
 
-    // Calculate Passive Awareness (ceiling of (Intellect + Awareness) / 2)
+    // Calculate Passive Awareness (ceiling of (Intellect + Awareness) / 2 + Talent Bonuses)
     calculatePassiveAwareness(character) {
+        const rank = character.rank || 1;
         const intellect = character.attributes?.intellect || 1;
         const awareness = character.skills?.awareness || 0;
-        return Math.ceil((intellect + awareness) / 2);
+        const base = Math.ceil((intellect + awareness) / 2);
+        let talentBonus = 0;
+
+        // Ever Vigilant: +Double Rank to Passive Awareness
+        if (this.hasTalent(character, 'ever_vigilant')) {
+            talentBonus += rank * 2;
+        }
+
+        return base + talentBonus;
     },
 
     // Calculate Influence (Fellowship - 1 + Archetype Bonus + Background Bonus)
