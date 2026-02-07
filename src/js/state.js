@@ -39,6 +39,13 @@ const State = {
                 xpCost: 0
             },
 
+            customArchetype: {
+                name: '',
+                abilityArchetypeId: null,
+                keywords: [],
+                wargear: []
+            },
+
             ascensionPackages: [],
 
             attributes: {
@@ -315,7 +322,129 @@ const State = {
     // Clear archetype selection
     clearArchetype() {
         this.character.archetype = { id: null, xpCost: 0 };
+        this.character.customArchetype = { name: '', abilityArchetypeId: null, keywords: [], wargear: [] };
         this.resetStats();
+    },
+
+    // Check if character is using custom archetype
+    isCustomArchetype() {
+        return this.character.archetype?.id === 'custom';
+    },
+
+    // Wargear budget by tier for custom archetype
+    WARGEAR_BUDGET: {
+        1: { totalValue: 15, maxValue: 7, maxRarity: 'Uncommon' },
+        2: { totalValue: 20, maxValue: 9, maxRarity: 'Rare' },
+        3: { totalValue: 25, maxValue: 10, maxRarity: 'Very Rare' },
+        4: { totalValue: 30, maxValue: null, maxRarity: 'Very Rare' },
+        5: { totalValue: 35, maxValue: null, maxRarity: null }
+    },
+
+    RARITY_ORDER: ['Common', 'Uncommon', 'Rare', 'Very Rare', 'Unique'],
+
+    // Set custom archetype mode
+    setCustomArchetype() {
+        this.character.archetype = { id: 'custom', xpCost: 0 };
+        this.character.customArchetype = { name: '', abilityArchetypeId: null, keywords: [], wargear: [] };
+        this.character.wargear = [];
+        this.resetStats();
+        this.notifyListeners('archetype');
+    },
+
+    // Set custom archetype name
+    setCustomArchetypeName(name) {
+        this.character.customArchetype.name = name;
+        this.notifyListeners('customArchetype');
+    },
+
+    // Set custom archetype ability (archetypeId whose ability is purchased, or null)
+    setCustomArchetypeAbility(archetypeId) {
+        this.character.customArchetype.abilityArchetypeId = archetypeId || null;
+        this.notifyListeners('customArchetype');
+    },
+
+    // Add a custom keyword
+    addCustomKeyword(keyword) {
+        const upper = keyword.toUpperCase().trim();
+        if (upper && !this.character.customArchetype.keywords.includes(upper)) {
+            this.character.customArchetype.keywords.push(upper);
+            this.notifyListeners('customArchetype');
+        }
+    },
+
+    // Remove a custom keyword
+    removeCustomKeyword(keyword) {
+        const index = this.character.customArchetype.keywords.indexOf(keyword);
+        if (index !== -1) {
+            this.character.customArchetype.keywords.splice(index, 1);
+            this.notifyListeners('customArchetype');
+        }
+    },
+
+    // Get wargear budget for current tier
+    getWargearBudget() {
+        return this.WARGEAR_BUDGET[this.character.tier] || this.WARGEAR_BUDGET[1];
+    },
+
+    // Get total value of custom starting wargear
+    getWargearBudgetUsed() {
+        let total = 0;
+        for (const itemId of this.character.customArchetype.wargear) {
+            const item = DataLoader.getWargearItem(itemId);
+            if (item) total += item.value || 0;
+        }
+        return total;
+    },
+
+    // Check if a wargear item is within budget constraints
+    canAddCustomWargear(itemId) {
+        const item = DataLoader.getWargearItem(itemId);
+        if (!item) return false;
+
+        const budget = this.getWargearBudget();
+        const used = this.getWargearBudgetUsed();
+        const itemValue = item.value || 0;
+
+        // Check total value
+        if (used + itemValue > budget.totalValue) return false;
+
+        // Check max value per item
+        if (budget.maxValue !== null && itemValue > budget.maxValue) return false;
+
+        // Check rarity
+        if (budget.maxRarity !== null) {
+            const itemRarityIndex = this.RARITY_ORDER.indexOf(item.rarity || 'Common');
+            const maxRarityIndex = this.RARITY_ORDER.indexOf(budget.maxRarity);
+            if (itemRarityIndex > maxRarityIndex) return false;
+        }
+
+        return true;
+    },
+
+    // Add custom starting wargear
+    addCustomStartingWargear(itemId) {
+        if (this.canAddCustomWargear(itemId)) {
+            this.character.customArchetype.wargear.push(itemId);
+            // Also add to main wargear list as starting gear
+            this.character.wargear.push({ id: itemId, isStarting: true });
+            this.notifyListeners('customArchetype');
+            this.notifyListeners('wargear', itemId);
+        }
+    },
+
+    // Remove custom starting wargear
+    removeCustomStartingWargear(index) {
+        if (index >= 0 && index < this.character.customArchetype.wargear.length) {
+            const itemId = this.character.customArchetype.wargear[index];
+            this.character.customArchetype.wargear.splice(index, 1);
+            // Also remove from main wargear list (find the matching starting item)
+            const wargearIndex = this.character.wargear.findIndex(w => w.id === itemId && w.isStarting);
+            if (wargearIndex !== -1) {
+                this.character.wargear.splice(wargearIndex, 1);
+            }
+            this.notifyListeners('customArchetype');
+            this.notifyListeners('wargear', itemId);
+        }
     },
 
     // Reset attributes and skills to species baseline

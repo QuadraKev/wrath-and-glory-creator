@@ -40,8 +40,15 @@ const XPCalculator = {
     },
 
     // Calculate total available XP
-    getTotalXP(tier, additionalXP = 0) {
-        return (this.TIER_STARTING_XP[tier] || 100) + additionalXP;
+    getTotalXP(tier, additionalXP = 0, character = null) {
+        let total = (this.TIER_STARTING_XP[tier] || 100) + additionalXP;
+
+        // Custom archetype bonus XP: Tier x 10
+        if (character?.archetype?.id === 'custom') {
+            total += (character.tier || 1) * 10;
+        }
+
+        return total;
     },
 
     // Get cost to increase attribute from current to target
@@ -148,6 +155,14 @@ const XPCalculator = {
             spent += archetype.cost || 0;
         }
 
+        // Custom archetype ability cost
+        if (character.archetype?.id === 'custom' && character.customArchetype?.abilityArchetypeId) {
+            const abilityArchetype = DataLoader.getArchetype(character.customArchetype.abilityArchetypeId);
+            if (abilityArchetype) {
+                spent += (abilityArchetype.tier || 1) * 10;
+            }
+        }
+
         // Ascension packages
         for (const packageId of character.ascensionPackages || []) {
             const pkg = DataLoader.getAscensionPackages().find(p => p.id === packageId);
@@ -173,7 +188,7 @@ const XPCalculator = {
 
     // Calculate remaining XP
     calculateRemainingXP(character) {
-        const total = this.getTotalXP(character.tier, character.additionalXp);
+        const total = this.getTotalXP(character.tier, character.additionalXp, character);
         const spent = this.calculateSpentXP(character);
         return total - spent;
     },
@@ -183,9 +198,18 @@ const XPCalculator = {
         const species = DataLoader.getSpecies(character.species?.id);
         const archetype = DataLoader.getArchetype(character.archetype?.id);
 
+        // Custom archetype ability cost
+        let customAbilityCost = 0;
+        if (character.archetype?.id === 'custom' && character.customArchetype?.abilityArchetypeId) {
+            const abilityArchetype = DataLoader.getArchetype(character.customArchetype.abilityArchetypeId);
+            if (abilityArchetype) {
+                customAbilityCost = (abilityArchetype.tier || 1) * 10;
+            }
+        }
+
         return {
             species: species?.cost || 0,
-            archetype: archetype?.cost || 0,
+            archetype: (archetype?.cost || 0) + customAbilityCost,
             ascension: (character.ascensionPackages || []).reduce((sum, id) => {
                 const pkg = DataLoader.getAscensionPackages().find(p => p.id === id);
                 return sum + (pkg?.cost || 0);

@@ -123,7 +123,7 @@ const CharacterIO = {
             archetype: archetype?.name || '-',
             tier: character.tier || 1,
             rank: character.rank || 1,
-            totalXP: XPCalculator.getTotalXP(character.tier, character.additionalXp),
+            totalXP: XPCalculator.getTotalXP(character.tier, character.additionalXp, character),
             spentXP: XPCalculator.calculateSpentXP(character)
         };
     },

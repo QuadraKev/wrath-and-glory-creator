@@ -193,7 +193,9 @@ const CharacterSheetTab = {
             }
         }
 
-        const archetypeName = archetype?.name || '-';
+        const archetypeName = character.archetype?.id === 'custom'
+            ? (character.customArchetype?.name || 'Custom Archetype')
+            : (archetype?.name || '-');
         const tier = character.tier || 1;
         const rank = character.rank || 1;
 
@@ -846,11 +848,27 @@ const CharacterSheetTab = {
 
     // Render archetype abilities
     renderArchetypeAbilities(archetype) {
-        if (!archetype?.abilities || archetype.abilities.length === 0) {
+        const character = State.getCharacter();
+
+        // For custom archetype, look up the purchased ability
+        let abilitiesToRender = [];
+        let sectionTitle = 'Archetype Abilities';
+
+        if (character.archetype?.id === 'custom' && character.customArchetype?.abilityArchetypeId) {
+            const abilityArchetype = DataLoader.getArchetype(character.customArchetype.abilityArchetypeId);
+            if (abilityArchetype?.abilities) {
+                abilitiesToRender = abilityArchetype.abilities;
+                sectionTitle = `Archetype Ability (from ${abilityArchetype.name})`;
+            }
+        } else if (archetype?.abilities) {
+            abilitiesToRender = archetype.abilities;
+        }
+
+        if (abilitiesToRender.length === 0) {
             return '';
         }
 
-        const abilities = archetype.abilities.map(ability => {
+        const abilities = abilitiesToRender.map(ability => {
             // Support both old 'description' format and new 'flavor'+'effect' format
             const flavor = ability.flavor || null;
             const effect = ability.effect || ability.description;
@@ -875,7 +893,7 @@ const CharacterSheetTab = {
 
         return `
             <div class="sheet-section">
-                <h2 class="sheet-section-title">Archetype Abilities</h2>
+                <h2 class="sheet-section-title">${sectionTitle}</h2>
                 ${abilities}
             </div>
         `;

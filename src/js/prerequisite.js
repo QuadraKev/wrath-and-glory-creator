@@ -192,6 +192,11 @@ const PrerequisiteChecker = {
             character.customKeywords.forEach(k => keywords.add(k));
         }
 
+        // Custom archetype keywords
+        if (character.customArchetype?.keywords) {
+            character.customArchetype.keywords.forEach(k => keywords.add(k));
+        }
+
         // Remove placeholder keywords if their actual value exists
         // [CHAPTER] is replaced by the actual chapter name
         if (hasChapterKeyword) {

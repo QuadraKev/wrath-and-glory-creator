@@ -217,7 +217,7 @@ const App = {
     // Update XP display
     updateXPDisplay() {
         const character = State.getCharacter();
-        const total = XPCalculator.getTotalXP(character.tier, character.additionalXp);
+        const total = XPCalculator.getTotalXP(character.tier, character.additionalXp, character);
         const spent = XPCalculator.calculateSpentXP(character);
         const remaining = total - spent;
 
@@ -268,7 +268,11 @@ const App = {
 
         // Archetype
         const archetype = DataLoader.getArchetype(character.archetype?.id);
-        document.getElementById('sidebar-archetype-name').textContent = archetype?.name || '-';
+        let archetypeName = archetype?.name || '-';
+        if (character.archetype?.id === 'custom') {
+            archetypeName = character.customArchetype?.name || 'Custom Archetype';
+        }
+        document.getElementById('sidebar-archetype-name').textContent = archetypeName;
         document.getElementById('sidebar-archetype-xp').textContent = `${breakdown.archetype} XP`;
 
         // Ascension
@@ -289,7 +293,8 @@ const App = {
         document.getElementById('sidebar-powers-xp').textContent = `${breakdown.powers} XP`;
 
         // Faction
-        document.getElementById('sidebar-faction').textContent = archetype?.faction || '-';
+        const factionName = character.archetype?.id === 'custom' ? 'Custom' : (archetype?.faction || '-');
+        document.getElementById('sidebar-faction').textContent = factionName;
     },
 
     // Update keywords display
