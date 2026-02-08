@@ -38,9 +38,11 @@ const SettingTab = {
             'source-redacted1': 'redacted1',
             'source-redacted2': 'redacted2',
             'source-church': 'church',
-            'source-vow': 'vow',
+            'source-vow': 'voa',
             'source-aeldari': 'aeldari',
-            'source-apocrypha': 'apocrypha'
+            'source-apocrypha': 'apocrypha',
+            'source-dh': 'dh',
+            'source-shotguns': 'shotguns'
         };
 
         for (const [elementId, sourceId] of Object.entries(sourceMap)) {
@@ -61,9 +63,11 @@ const SettingTab = {
             'source-redacted1': 'redacted1',
             'source-redacted2': 'redacted2',
             'source-church': 'church',
-            'source-vow': 'vow',
+            'source-vow': 'voa',
             'source-aeldari': 'aeldari',
-            'source-apocrypha': 'apocrypha'
+            'source-apocrypha': 'apocrypha',
+            'source-dh': 'dh',
+            'source-shotguns': 'shotguns'
         };
 
         for (const [elementId, sourceId] of Object.entries(sourceMap)) {
@@ -93,9 +97,11 @@ const SettingTab = {
             'source-redacted1': 'redacted1',
             'source-redacted2': 'redacted2',
             'source-church': 'church',
-            'source-vow': 'vow',
+            'source-vow': 'voa',
             'source-aeldari': 'aeldari',
-            'source-apocrypha': 'apocrypha'
+            'source-apocrypha': 'apocrypha',
+            'source-dh': 'dh',
+            'source-shotguns': 'shotguns'
         };
 
         for (const [elementId, sourceId] of Object.entries(sourceMap)) {
