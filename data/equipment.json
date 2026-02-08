@@ -2641,5 +2641,1582 @@
       "DRUKHARI"
     ],
     "source": "apocrypha"
+  },
+  {
+    "id": "cos_armoured_cockpit",
+    "name": "Armoured Cockpit",
+    "category": "vehicle wargear",
+    "description": "Extra protection for the Pilot to ensure they deliver destruction and passengers safely.",
+    "effect": "Grants crew inside the vehicle's cockpit an AR of 4 against any attack originating from outside the vehicle.",
+    "value": 5,
+    "rarity": "Common",
+    "keywords": [
+      "FLYER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_bomb_rack",
+    "name": "Bomb Rack",
+    "category": "vehicle wargear",
+    "description": "Designed for the Archaeopter Fusilave, this system drops masses of tectomagnic munitions.",
+    "effect": "After completing Movement, as a standard Action, a flying vehicle may drop up to 3 bombs at any points beneath its flight path. Treat as Frag Missiles at short range. Loaded with 12 Bombs, not reloadable during flight.",
+    "value": 7,
+    "rarity": "Rare",
+    "keywords": [
+      "FLYER",
+      "ADEPTUS MECHANICUS"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_broad_spectrum_data_tether",
+    "name": "Broad Spectrum Data-Tether",
+    "category": "vehicle wargear",
+    "description": "An arcane device that projects a Tech-Priest's commands to Skitarii units at distance.",
+    "effect": "Functions as a Vox Caster. Any ADEPTUS MECHANICUS character with access gains +1 bonus die to Conviction, Resolve, and Determination Tests.",
+    "value": 4,
+    "rarity": "Rare",
+    "keywords": [
+      "FLYER",
+      "TANK",
+      "TRANSPORT",
+      "RAIDER",
+      "ADEPTUS MECHANICUS"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_chaff_launcher",
+    "name": "Chaff Launcher",
+    "category": "vehicle wargear",
+    "description": "Similar to a Smoke Launcher, disperses material to protect the vehicle from targeting.",
+    "effect": "Pilot can use Reflexive Action when targeted to increase vehicle's Defence by 4. Must be Reloaded out of combat (Value 3, Common).",
+    "value": 6,
+    "rarity": "Uncommon",
+    "keywords": [
+      "IMPERIUM",
+      "FLYER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_dozer_blade",
+    "name": "Dozer Blade",
+    "category": "vehicle wargear",
+    "description": "A large, reinforced plate mounted to the front of a vehicle to demolish objects in its path.",
+    "effect": "When Ramming, adds +2 ED to damage. Add +2 bonus dice to Pilot (A) Tests to push through obstructing terrain. Large or larger vehicle only.",
+    "value": 5,
+    "rarity": "Common",
+    "keywords": [
+      "TANK",
+      "TRANSPORT",
+      "RAIDER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_dozer_ram",
+    "name": "Dozer Ram",
+    "category": "vehicle wargear",
+    "description": "An upgraded variant of the Dozer Blade designed for suppressing crowds.",
+    "effect": "When Ramming, adds +4 ED to damage and reduces self-damage by 2 ED. Add +4 bonus dice to Pilot (A) Tests to push through terrain. Large or larger vehicle only.",
+    "value": 7,
+    "rarity": "Uncommon",
+    "keywords": [
+      "TRANSPORT",
+      "TANK",
+      "RAIDER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_drilldozer_blade",
+    "name": "Drilldozer Blade",
+    "category": "vehicle wargear",
+    "description": "An industrialised variant with revolving spiked plows that chew through rock.",
+    "effect": "When Ramming, adds +6 ED to damage. Add +6 bonus dice to Pilot (A) Tests to push through terrain. Halves vehicle Manoeuvrability. Large or larger vehicle only.",
+    "value": 6,
+    "rarity": "Common",
+    "keywords": [
+      "TANK",
+      "TRANSPORT",
+      "RAIDER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_emanatus_force_field",
+    "name": "Emanatus Force Field",
+    "category": "vehicle wargear",
+    "description": "Mechanicum protective device using layers of energy akin to personal Refractor Fields.",
+    "effect": "The AP of any attack made on the vehicle is reduced to 0.",
+    "value": 8,
+    "rarity": "Rare",
+    "keywords": [
+      "ADEPTUS MECHANICUS",
+      "FORCE FIELD",
+      "TANK",
+      "TRANSPORT",
+      "RAIDER",
+      "FLYER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_flare_launcher",
+    "name": "Flare Launcher",
+    "category": "vehicle wargear",
+    "description": "An inexpensive signalling device that also hampers enemy targeting with obscuring smoke.",
+    "effect": "Loaded with 6 Flares. Fire as Simple Action: +2 Defence against shooting until end of following Round. Allies on bikes within 12m treat Speed as 6 higher.",
+    "value": 4,
+    "rarity": "Common",
+    "keywords": [
+      "IMPERIUM"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_gunnery_servitor",
+    "name": "Gunnery Servitor",
+    "category": "vehicle wargear",
+    "description": "A lobotomised Servitor augmented to accurately fire a single weapon.",
+    "effect": "Built into a weapon, permanently occupying a crew slot. Fires the weapon using a Ballistic Skill (A) pool of 5 dice.",
+    "value": 5,
+    "rarity": "Uncommon",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS",
+      "SERVITOR"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_smoke_launcher",
+    "name": "Smoke Launcher",
+    "category": "vehicle wargear",
+    "description": "Fires a dense cloud that obscures a vehicle from enemy view.",
+    "effect": "Loaded with 6 Smoke Grenades. Fire as Simple Action: Medium Blast (9m radius) smoke. Targets in smoke gain +3 Defence vs shooting, +2 vs melee. Visibility reduced to 2m.",
+    "value": 5,
+    "rarity": "Common",
+    "keywords": [
+      "FLYER",
+      "TANK",
+      "TRANSPORT",
+      "RAIDER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_auspex_array",
+    "name": "Auspex Array",
+    "category": "vehicle wargear",
+    "description": "A collection of smaller Auspexes empowered by linked communications.",
+    "effect": "Can be activated as a Combat Action to detect energy, motion, and other life signs within 1 kilometre.",
+    "value": 7,
+    "rarity": "Rare",
+    "keywords": [
+      "FLYER",
+      "TANK",
+      "TRANSPORT",
+      "RAIDER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_auto_launcher",
+    "name": "Auto Launcher",
+    "category": "vehicle wargear",
+    "description": "Six barrels capable of launching a salvo of grenades with simple operation.",
+    "effect": "Fire 3 grenades at any point within 100m as a Simple Action. Magazine of 6 grenades (Frag, Krak, or Smoke). Smoke fills Medium Blast (9m radius).",
+    "value": 7,
+    "rarity": "Rare",
+    "keywords": [
+      "FLYER",
+      "TANK",
+      "TRANSPORT",
+      "RAIDER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_awakened_machine_spirit",
+    "name": "Awakened Machine Spirit",
+    "category": "vehicle wargear",
+    "description": "Ancient manifestations of the Omnissiah found in venerable Astartes vehicles.",
+    "effect": "Vehicle requires 1 fewer Crew. If all occupants killed/unable to act, operates on its own for 1d6 Turns (Skill 6 for any vehicle operation).",
+    "value": 5,
+    "rarity": "Unique",
+    "keywords": [
+      "IMPERIUM",
+      "FLYER",
+      "TRANSPORT",
+      "TANK",
+      "ADEPTUS ASTARTES",
+      "ADEPTUS MECHANICUS"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_combi_flamer",
+    "name": "Combi-Flamer (Vehicle)",
+    "category": "vehicle wargear",
+    "description": "A vehicle-mounted Combi-Weapon combining a Boltgun and Flamer.",
+    "effect": "May fire as either or both component weapons each round. Firing both is a Multi-Attack.",
+    "value": 12,
+    "rarity": "Rare",
+    "keywords": [
+      "BOLT",
+      "FLAME",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES",
+      "CHAOS"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_combi_grenade_launcher",
+    "name": "Combi-Grenade Launcher (Vehicle)",
+    "category": "vehicle wargear",
+    "description": "A vehicle-mounted Combi-Weapon combining a Boltgun and Grenade Launcher.",
+    "effect": "May fire as either or both component weapons each round. Firing both is a Multi-Attack.",
+    "value": 12,
+    "rarity": "Rare",
+    "keywords": [
+      "BOLT",
+      "EXPLOSIVE",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES",
+      "CHAOS"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_combi_melta",
+    "name": "Combi-Melta (Vehicle)",
+    "category": "vehicle wargear",
+    "description": "A vehicle-mounted Combi-Weapon combining a Boltgun and Meltagun.",
+    "effect": "May fire as either or both component weapons each round. Firing both is a Multi-Attack.",
+    "value": 14,
+    "rarity": "Very Rare",
+    "keywords": [
+      "BOLT",
+      "MELTA",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES",
+      "CHAOS"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_combi_plasma",
+    "name": "Combi-Plasma (Vehicle)",
+    "category": "vehicle wargear",
+    "description": "A vehicle-mounted Combi-Weapon combining a Boltgun and Plasma Gun.",
+    "effect": "May fire as either or both component weapons each round. Firing both is a Multi-Attack.",
+    "value": 14,
+    "rarity": "Very Rare",
+    "keywords": [
+      "BOLT",
+      "PLASMA",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES",
+      "CHAOS"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_combi_grav",
+    "name": "Combi-Grav (Vehicle)",
+    "category": "vehicle wargear",
+    "description": "A vehicle-mounted Combi-Weapon combining a Boltgun and Grav-gun.",
+    "effect": "May fire as either or both component weapons each round. Firing both is a Multi-Attack.",
+    "value": 16,
+    "rarity": "Unique",
+    "keywords": [
+      "BOLT",
+      "GRAV",
+      "IMPERIUM",
+      "ADEPTUS ASTARTES",
+      "CHAOS"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_infernum_halo_launcher",
+    "name": "Infernum Halo Launcher",
+    "category": "vehicle wargear",
+    "description": "Fires a fusillade of Flares as a defensive countermeasure, creating a ring of holy light.",
+    "effect": "Activate as Reflexive Action when targeted. Vehicle's Defence increased by +4 until start of next Round.",
+    "value": 9,
+    "rarity": "Rare",
+    "keywords": [
+      "IMPERIUM",
+      "FLYER",
+      "ADEPTUS ASTARTES"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_orbital_comms_array",
+    "name": "Orbital Comms Array",
+    "category": "vehicle wargear",
+    "description": "Advanced communications technology to call down firepower from Imperial Cruisers in the void.",
+    "effect": "Vehicle is treated as having the Bombardment Talent, usable once per session by anyone aboard.",
+    "value": 6,
+    "rarity": "Very Rare",
+    "keywords": [
+      "IMPERIUM"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_repulsor_field",
+    "name": "Repulsor Field",
+    "category": "vehicle wargear",
+    "description": "A relic of ancient technologies providing a gravitic field for hovering above ground.",
+    "effect": "Ignore any terrain penalties to Movement including impassable terrain. At start of Pilot's Turn, can make all terrain within 12m Difficult until next Turn.",
+    "value": 11,
+    "rarity": "Rare",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS ASTARTES",
+      "PRIMARIS",
+      "TANK",
+      "TRANSPORT"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_shield_dome",
+    "name": "Shield Dome",
+    "category": "vehicle wargear",
+    "description": "A large Refractor Field designed to cloak an entire vehicle with protective energies.",
+    "effect": "Huge or larger vehicle only. Vehicle gains +3* Resilience.",
+    "value": 7,
+    "rarity": "Very Rare",
+    "keywords": [
+      "ADEPTUS ASTARTES",
+      "PRIMARIS",
+      "TANK",
+      "TRANSPORT",
+      "RAIDER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_siege_shield",
+    "name": "Siege Shield",
+    "category": "vehicle wargear",
+    "description": "Thick ceramite plating for safety during sieges and plowing through enemy defences.",
+    "effect": "Functions as Dozer Blade (+2 ED ramming, +2 dice terrain). Also increases Resilience by +3. Large or larger vehicle only.",
+    "value": 7,
+    "rarity": "Uncommon",
+    "keywords": [
+      "TRANSPORT",
+      "TANK",
+      "CHAOS",
+      "IMPERIUM",
+      "ADEPTA SORORITAS",
+      "ADEPTUS ASTARTES"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_holo_field",
+    "name": "Holo-Field",
+    "category": "vehicle wargear",
+    "description": "An advanced Aeldari stealth device that disrupts enemy targeting.",
+    "effect": "Attacks against the vehicle suffer +3 DN. Large or larger vehicle only.",
+    "value": 10,
+    "rarity": "Very Rare",
+    "keywords": [
+      "AELDARI",
+      "FLYER",
+      "TANK",
+      "RAIDER",
+      "TRANSPORT"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_mindshock_pod",
+    "name": "Mindshock Pod",
+    "category": "vehicle wargear",
+    "description": "A psychic weapon that assaults the minds of nearby enemies.",
+    "effect": "Simple Action (requires PSYKER or ASURYANI keyword). All enemies within 24m must pass DN 3 Resolve Test or suffer a Mortal Wound.",
+    "value": 12,
+    "rarity": "Very Rare",
+    "keywords": [
+      "ASURYANI",
+      "FLYER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_power_field",
+    "name": "Power Field (Vehicle)",
+    "category": "vehicle wargear",
+    "description": "A powerful protective energy field around an Aeldari vehicle.",
+    "effect": "Vehicle gains +6 Resilience.",
+    "value": 12,
+    "rarity": "Unique",
+    "keywords": [
+      "AELDARI",
+      "TANK"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_vehicular_spirit_stone",
+    "name": "Vehicular Spirit Stone",
+    "category": "vehicle wargear",
+    "description": "An Aeldari spirit stone bonded to a vehicle, guiding its crew.",
+    "effect": "+1 bonus die to all Actions involving the vehicle. No Actions suffer penalty greater than +3 DN. If occupants killed, operates vehicle for 1d6 Turns (Skill 6).",
+    "value": 10,
+    "rarity": "Unique",
+    "keywords": [
+      "AELDARI",
+      "FLYER",
+      "TANK",
+      "RAIDER",
+      "TRANSPORT"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_daemonic_machine_spirit",
+    "name": "Daemonic Machine Spirit",
+    "category": "vehicle wargear",
+    "description": "A corrupted machine spirit that aids but punishes the unworthy.",
+    "effect": "+1 bonus die to operate the vehicle in combat. On Complication, +1 DN penalty until occupant redeems self.",
+    "value": 8,
+    "rarity": "Unique",
+    "keywords": [
+      "CHAOS",
+      "FLYER",
+      "TANK",
+      "TRANSPORT",
+      "RAIDER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_bladevanes_wargear",
+    "name": "Bladevanes (Wargear)",
+    "category": "vehicle wargear",
+    "description": "Razor-sharp blades mounted on Drukhari vehicles that slash enemies during movement.",
+    "effect": "Automatically deal Dmg 8, ED 4, AP 1 to enemies within 2m during movement.",
+    "value": 4,
+    "rarity": "Uncommon",
+    "keywords": [
+      "DRUKHARI",
+      "FLYER",
+      "TANK",
+      "RAIDER",
+      "TRANSPORT"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_chain_snare",
+    "name": "Chain Snare",
+    "category": "vehicle wargear",
+    "description": "A chain weapon that can grab and drag unfortunate victims along the ground.",
+    "effect": "+2 dice ramming infantry. Hit target must DN 3 Athletics or Restrained (DN 5 Athletics to free). Dragged target takes Dmg 7 per Turn.",
+    "value": 4,
+    "rarity": "Common",
+    "keywords": [
+      "DRUKHARI",
+      "FLYER",
+      "TANK",
+      "RAIDER",
+      "TRANSPORT"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_cluster_caltrops",
+    "name": "Cluster Caltrops",
+    "category": "vehicle wargear",
+    "description": "Deployable caltrops that injure pursuers.",
+    "effect": "Deploy as Free Action: 10m diameter or 4m x 20m line. Entering targets must DN 3 Athletics or take 1 Wound per metre moved.",
+    "value": 4,
+    "rarity": "Common",
+    "keywords": [
+      "DRUKHARI"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_grav_talon_wargear",
+    "name": "Grav-Talon (Wargear)",
+    "category": "vehicle wargear",
+    "description": "Gravity-powered talons that automatically damage enemies during movement.",
+    "effect": "Automatically deal Dmg 10, ED 5, AP 1 to enemies within 3m during movement.",
+    "value": 8,
+    "rarity": "Rare",
+    "keywords": [
+      "DRUKHARI",
+      "FLYER",
+      "TANK",
+      "RAIDER",
+      "TRANSPORT"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_grisly_trophies",
+    "name": "Grisly Trophies",
+    "category": "vehicle wargear",
+    "description": "Gruesome trophies displayed to terrify specific enemies.",
+    "effect": "Choose a Keyword. Targets sharing that Keyword within 100m must pass DN 4 Willpower or gain Fear. +2 DN to Resolve Tests.",
+    "value": 3,
+    "rarity": "Common",
+    "keywords": [
+      "DRUKHARI",
+      "FLYER",
+      "TANK",
+      "RAIDER",
+      "TRANSPORT"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_night_shield",
+    "name": "Night Shield",
+    "category": "vehicle wargear",
+    "description": "A Drukhari device that shrouds the vehicle in supernatural darkness.",
+    "effect": "Vehicle always counts as in total darkness: +4 DN to BS/Awareness attacks, +3 DN to melee attacks against it.",
+    "value": 8,
+    "rarity": "Rare",
+    "keywords": [
+      "DRUKHARI",
+      "FLYER",
+      "TANK",
+      "RAIDER",
+      "TRANSPORT"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_shock_prow",
+    "name": "Shock Prow",
+    "category": "vehicle wargear",
+    "description": "An electrified ramming prow that stuns victims on impact.",
+    "effect": "When Ramming, adds +4 ED with Agonising trait. Add +2 bonus dice to Pilot (A) Tests to push through terrain.",
+    "value": 6,
+    "rarity": "Uncommon",
+    "keywords": [
+      "DRUKHARI",
+      "FLYER",
+      "TANK",
+      "RAIDER",
+      "TRANSPORT"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_splinter_racks",
+    "name": "Splinter Racks",
+    "category": "vehicle wargear",
+    "description": "Racks of additional splinter ammunition that increase the lethality of rapid-fire weapons.",
+    "effect": "Rapid Fire weapons gain ED equal to their Rapid Fire rating at Short and Medium range.",
+    "value": 4,
+    "rarity": "Uncommon",
+    "keywords": [
+      "DRUKHARI",
+      "FLYER",
+      "TANK",
+      "RAIDER",
+      "TRANSPORT"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_living_metal",
+    "name": "Living Metal",
+    "category": "vehicle wargear",
+    "description": "Necron vehicles are composed of self-repairing living metal.",
+    "effect": "Remove 1 Wound per Round.",
+    "value": 3,
+    "rarity": "Uncommon",
+    "keywords": [
+      "NECRON",
+      "FLYER",
+      "TRANSPORT",
+      "RAIDER",
+      "TANK",
+      "AIRCRAFT"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_nebuloscope",
+    "name": "Nebuloscope",
+    "category": "vehicle wargear",
+    "description": "An advanced Necron targeting device. Tomb Blade only.",
+    "effect": "Ignore target Defence bonuses from cover and environment.",
+    "value": 6,
+    "rarity": "Rare",
+    "keywords": [
+      "NECRON",
+      "RAIDER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_quantum_shielding",
+    "name": "Quantum Shielding",
+    "category": "vehicle wargear",
+    "description": "Advanced Necron protective shielding that phases in and out of existence.",
+    "effect": "+3 Defence. Lost when the vehicle takes damage until 1 hour rest.",
+    "value": 6,
+    "rarity": "Rare",
+    "keywords": [
+      "NECRON",
+      "FLYER",
+      "TANK",
+      "TRANSPORT",
+      "RAIDER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_shadowloom",
+    "name": "Shadowloom",
+    "category": "vehicle wargear",
+    "description": "A Necron stealth device that cloaks the vehicle. Tomb Blade only.",
+    "effect": "+3 Defence.",
+    "value": 6,
+    "rarity": "Very Rare",
+    "keywords": [
+      "NECRON",
+      "RAIDER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_shield_vanes",
+    "name": "Shield Vanes",
+    "category": "vehicle wargear",
+    "description": "Protective vanes that increase vehicle resilience. Tomb Blade only.",
+    "effect": "+4 Resilience.",
+    "value": 4,
+    "rarity": "Very Rare",
+    "keywords": [
+      "NECRON",
+      "RAIDER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_ard_case",
+    "name": "'Ard Case",
+    "category": "vehicle wargear",
+    "description": "Extra armour plating bolted on by Ork Meks to protect the vehicle.",
+    "effect": "+2 Resilience. Replaces Open Topped trait with Sealed.",
+    "value": 4,
+    "rarity": "Common",
+    "keywords": [
+      "ORK",
+      "FLYER",
+      "TRANSPORT",
+      "RAIDER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_blastajet_force_field",
+    "name": "Blastajet Force Field",
+    "category": "vehicle wargear",
+    "description": "A force field projector mounted on Ork aircraft. ORK AIRCRAFT only.",
+    "effect": "All ORK AIRCRAFT within 10m gain +3* Resilience.",
+    "value": 7,
+    "rarity": "Very Rare",
+    "keywords": [
+      "FORCE FIELD",
+      "ORK",
+      "FLYER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_deff_rolla",
+    "name": "Deff Rolla",
+    "category": "vehicle wargear",
+    "description": "A massive roller mounted on the front of Ork vehicles for crushing enemies.",
+    "effect": "When Ramming, adds +4 ED. Add +4 bonus dice to Pilot (A) Tests to push through terrain.",
+    "value": 7,
+    "rarity": "Uncommon",
+    "keywords": [
+      "ORK",
+      "TRANSPORT",
+      "TANK"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_fuel_mixa_grot",
+    "name": "Fuel-Mixa Grot",
+    "category": "vehicle wargear",
+    "description": "A Grot dedicated to mixing volatile fuel to boost vehicle speed.",
+    "effect": "Vehicle gains Turbo Boost (2) or adds +2 to existing Turbo Boost (X). Does not occupy a Crew/Passenger slot.",
+    "value": 4,
+    "rarity": "Uncommon",
+    "keywords": [
+      "ORK",
+      "FLYER",
+      "TRANSPORT",
+      "RAIDER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_grot_gunner",
+    "name": "Grot Gunner",
+    "category": "vehicle wargear",
+    "description": "A Grot assigned to one weapon for additional firing accuracy.",
+    "effect": "Assigned to one weapon. Reroll any result of 1 when firing that weapon. Does not occupy a Crew/Passenger slot.",
+    "value": 4,
+    "rarity": "Uncommon",
+    "keywords": [
+      "ORK",
+      "FLYER",
+      "TRANSPORT",
+      "RAIDER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_grot_riggers",
+    "name": "Grot Riggers",
+    "category": "vehicle wargear",
+    "description": "A team of Grots that scurry about repairing damage during combat.",
+    "effect": "Occupy 1 Crew/Passenger slot. Can attempt Emergency Repair once per Turn with dice pool 4. On failure, can be 'encouraged' (auto-success but reduces pool by 1). Pool resets at Ork settlement.",
+    "value": 4,
+    "rarity": "Common",
+    "keywords": [
+      "ORK",
+      "FLYER",
+      "TRANSPORT",
+      "RAIDER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_nose_drill",
+    "name": "Nose Drill",
+    "category": "vehicle wargear",
+    "description": "A massive drill mounted on the nose of Ork vehicles for devastating rams.",
+    "effect": "When Ramming, adds +6 ED with AP -2. Add +6 bonus dice to Pilot (A) Tests to push through terrain.",
+    "value": 7,
+    "rarity": "Rare",
+    "keywords": [
+      "ORK",
+      "FLYER",
+      "TRANSPORT",
+      "RAIDER"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "cos_squig_mine",
+    "name": "Squig Mine",
+    "category": "vehicle wargear",
+    "description": "An explosive squig set as a mine that detonates when triggered.",
+    "effect": "Set as Combat Action. When triggered, explodes: Dmg 8, ED 8, AP -2, Blast 10, Inflict (Poisoned).",
+    "value": 5,
+    "rarity": "Uncommon",
+    "keywords": [
+      "SQUIG",
+      "ORK",
+      "EXPLOSIVE"
+    ],
+    "source": "church"
+  },
+  {
+    "id": "endless_grimoire_dh",
+    "name": "The Endless Grimoire",
+    "category": "relic",
+    "description": "Within the pages of this magical tome lie the secrets of every cantrip, incantation and spell ever conceived. Though the bearer has access to the infinite knowledge bound within, they must battle the temptation simply to fall into the flickering pages of the tome and drink in endless reams of knowledge until they lose all grasp or influence upon the events transpiring around them.",
+    "effect": "The wielder must be a Psyker. With an action, they can use it to make a Scholar (Int) Test, to look for information about a psychic power they do not possess. On success, they may immediately use that power as a Free Action, acting as though they possessed the power and associated psychic discipline. They must reattempt this Scholar Test each time they want to use a psychic power they do not possess.",
+    "value": 10,
+    "rarity": "Unique",
+    "keywords": [
+      "TZEENTCH"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "impossible_robe_dh",
+    "name": "The Impossible Robe",
+    "category": "relic",
+    "description": "The wearer of this robe exists between several realities at once, making it hard for foes to truly harm them. However, the robe is capricious, and has been known to rip its wearer out of reality altogether should they lose control of its powers.",
+    "effect": "This relic may only be worn by someone with the Mark of Tzeentch. It is armour with AR 5 and the Power Field trait. If the wielder rolls a Complication in a combat where the wielder has been attacked, at the GM's discretion the Impossible Robe may be the subject of the Complication. This can result in the wearer being transported into the immaterium or a rent in the immaterium opening.",
+    "value": 12,
+    "rarity": "Unique",
+    "keywords": [
+      "TZEENTCH",
+      "FORCE FIELD"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "everstave_dh",
+    "name": "The Everstave",
+    "category": "relic",
+    "description": "This staff blazes with vibrant warpflame. As soon as its master takes up the eldritch weapon, they too are wreathed in the same daemonic fire.",
+    "effect": "The wielder must be a Psyker with the Mark of Tzeentch. It can be used as a weapon with the following profile: (S)+4 +2 ED / AP -1 / Brutal, Force. In addition, when using a psychic power, the wielder may shift 2 Icons to make any Deny the Witch attempts automatically fail.",
+    "value": 8,
+    "rarity": "Unique",
+    "keywords": [
+      "TZEENTCH"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "warpfire_blade_dh",
+    "name": "Warpfire Blade",
+    "category": "relic",
+    "description": "Existing in nine times nine dimensions, the Warpfire Blade flickers with its bearer's sorcerous power. Every iteration of the blade strikes in differing forms and at varying angles.",
+    "effect": "The wielder must be a Psyker with the Mark of Tzeentch. It can be used as a weapon with the following profile: (S)+7 +4 ED / AP -3 / Force, Parry. In addition, any roll of a 6 on an ED inflicts a Mortal Wound in addition to increasing damage as an Exalted Icon.",
+    "value": 8,
+    "rarity": "Unique",
+    "keywords": [
+      "TZEENTCH"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "soulbane_dh",
+    "name": "Soulbane",
+    "category": "relic",
+    "description": "This incorporeal blade inflicts no harm upon its victim's physical body, instead carving its way through the stuff of their very soul.",
+    "effect": "The wielder must be a Psyker with the Mark of Tzeentch. It can be used as a weapon with the following profile: (S)+4 +2 ED / AP -1 / Brutal, Force. In addition, when the wielder inflicts one or more Wounds with a psychic power, they may spend 1 Glory (or Ruin as appropriate) to immediately recover Wounds equal to the number inflicted.",
+    "value": 10,
+    "rarity": "Unique",
+    "keywords": [
+      "TZEENTCH"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "soul_eater_stave_dh",
+    "name": "Soul-Eater Stave",
+    "category": "relic",
+    "description": "Invisible to those without witch-sight, ethereal pseudopods, grasping talons and maws of non-matter surround this twisted staff, ever alert to the cry of a soul newly torn from its body.",
+    "effect": "The wielder must be a Psyker with the Mark of Tzeentch. It can be used as a weapon with the following profiles: (S)+5 +4 ED / AP -3 / Force, Brutal OR 12 +2 ED / AP -1 / 6 - 12 - 18 / Brutal, Spread, Pistol.",
+    "value": 8,
+    "rarity": "Unique",
+    "keywords": [
+      "TZEENTCH"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "horn_of_nurgles_rot_dh",
+    "name": "Horn of Nurgle's Rot",
+    "category": "relic",
+    "description": "A daemon crowned with this repulsive horn can, with but a single touch, infect mortal victims with Nurgle's Rot.",
+    "effect": "The wielder must have the Mark of Nurgle keyword. This relic may be used as a weapon with the following profile: (S)+2 +2 ED / Inflict (Poisoned 5). In addition, each turn when the victim checks to remove the Poisoned condition, they suffer another (S)+2 +2 ED damage. If the victim dies while under the effects of the Poisoned condition from the relic, they transform into a Plaguebearer of Nurgle. The transformation is permanent and may not be reversed.",
+    "value": 8,
+    "rarity": "Unique",
+    "keywords": [
+      "NURGLE"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "tome_of_a_thousand_poxes_dh",
+    "name": "Tome of a Thousand Poxes",
+    "category": "relic",
+    "description": "Within its foetid daemon-hide pages are the secrets of many of Ku'gath's most ruinous plagues.",
+    "effect": "The wielder must be a Psyker with the Mark of Nurgle keyword. Any time the wielder uses a psychic power that deals damage, that power gains the Inflict (Poisoned 3) characteristic. If the power already inflicts the Poisoned condition, the effect value of the condition is increased by +1.",
+    "value": 10,
+    "rarity": "Unique",
+    "keywords": [
+      "NURGLE"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "entropic_knell_dh",
+    "name": "The Entropic Knell",
+    "category": "relic",
+    "description": "To hear the grim tolling of this great bell upon the winds is a death sentence, for its sound heralds the arrival of the Plague Legions.",
+    "effect": "The wielder must have the Mark of Nurgle keyword. As an action, the wielder may choose to ring the bell. All who hear it must make a DN 5 Fear Test.",
+    "value": 8,
+    "rarity": "Unique",
+    "keywords": [
+      "NURGLE"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "corruption_dh",
+    "name": "Corruption",
+    "category": "relic",
+    "description": "This fabled weapon is the physical manifestation of corruption. Constantly dripping with foul ooze, the merest scratch from its edge is enough to lay low the hardiest foe, and its toxins can effortlessly overcome even the resilience of a Space Marine.",
+    "effect": "The wielder must have the Mark of Nurgle. This relic may be used as a weapon with the following profile: (S) +6 +5 ED / AP -2 / Brutal, Parry, Inflict (Poisoned 4), Inflict (Bleeding).",
+    "value": 10,
+    "rarity": "Unique",
+    "keywords": [
+      "NURGLE"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "endless_gift_dh",
+    "name": "The Endless Gift",
+    "category": "relic",
+    "description": "Only the most accomplished of Nurgle's followers are granted the Endless Gift. A disease of unutterable malignancy and repulsive beneficence, it changes form constantly from plague to infestation to malaise.",
+    "effect": "The wielder must have the Mark of Nurgle keyword. At the start of their turn, the wielder heals 1 Wound. If they are at maximum Wounds, they heal up to their Corruption Level in Shock per round. Any time they heal in this way, a portion of their body undergoes a physical change, reflective of the transformative disease progression. Viewers must make a DN 4 Fear Test.",
+    "value": 12,
+    "rarity": "Unique",
+    "keywords": [
+      "NURGLE"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "effluvior_dh",
+    "name": "Effluvior",
+    "category": "relic",
+    "description": "Within the hanging skulls of this accursed flail, there is a rancid rot-hole burrowing through reality itself. Down these vile channels rush torrents of liquid warp-filth, the raw and seething slops of the Garden of Nurgle.",
+    "effect": "The wielder must have the Mark of Nurgle keyword. This relic may be used as a weapon with the following profile: (S) +2 +3 ED / AP -2 / Range 3 - 6 - 9 / Inflict (Poisoned 3), Spread, Warp Weapon.",
+    "value": 8,
+    "rarity": "Unique",
+    "keywords": [
+      "NURGLE"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "rune_of_brass_dh",
+    "name": "Rune of Brass",
+    "category": "relic",
+    "description": "Khorne despises sorcerers above all, and his favoured disciples may earn the Rune of Brass in order to shield them from the cowardly powers of witches.",
+    "effect": "Any Psyker attempting to use a psychic power within 15 metres of the Rune must add an additional +2 DN to their Psychic Mastery (Wil) Test. In addition, if a Psyker must roll on the Perils of the Warp Table while within 15 metres of the Rune, they roll twice and must pick the worse result.",
+    "value": 8,
+    "rarity": "Unique",
+    "keywords": [
+      "KHORNE"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "armour_of_scorn_dh",
+    "name": "Armour of Scorn",
+    "category": "relic",
+    "description": "Forged aeons ago in the Brass Citadel of Khorne itself, this hellish armour is saturated with the Blood God's contempt for weakness, unworthy foes, and sorcerers.",
+    "effect": "Only Greater Daemons and Daemon Princes of Khorne may don the Armour of Scorn. It has an AR of 7, and counts as Invulnerable (Wrath & Glory, p. 232) against any weapon that deals less than 14 base Damage. In addition, whenever a psychic power would cause the wearer to suffer Wounds, roll 1d6; on a 5+, the number of Wounds taken is halved, rounding up.",
+    "value": 8,
+    "rarity": "Unique",
+    "keywords": [
+      "KHORNE"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "blood_drinker_talisman_dh",
+    "name": "Blood-Drinker Talisman",
+    "category": "relic",
+    "description": "Upon manifesting in realspace, a daemon of Khorne may find this relic bound within their body as a sign of their god's favour. This gemstone shines with a malevolent, murderous sentience.",
+    "effect": "Every time a Threat with the Blood-Drinker Talisman kills one or more enemies (or indeed allies), roll 1d6; on a 5+, they regain d6 lost Wounds. The bearer cannot recover more than their Toughness in Wounds in a single Round.",
+    "value": 8,
+    "rarity": "Unique",
+    "keywords": [
+      "KHORNE"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "crimson_crown_dh",
+    "name": "The Crimson Crown",
+    "category": "relic",
+    "description": "It is said that this crown was created from a single drop of Khorne's blood. A measure of the Blood God's endless wrath is bound within the crown.",
+    "effect": "A Threat wearing the Crimson Crown generates 1 extra Ruin each Turn. If the Threat cannot use Ruin Actions, it gains the Champion bonus, gaining 1 personal Ruin, allowing it to use Ruin Actions and generating 1 Ruin per Turn.",
+    "value": 10,
+    "rarity": "Unique",
+    "keywords": [
+      "KHORNE"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "argath_king_of_blades_dh",
+    "name": "A'rgath, the King of Blades",
+    "category": "relic",
+    "description": "Once a mortal champion of Khorne, A'rgath was granted daemonhood but chose to take the form of a mighty blade, that he might forever spill the blood of Khorne's enemies.",
+    "effect": "A'rgath can take the form of any bladed melee weapon, to suit the proficiencies of any disciple or daemon of Khorne. It gains the statistics of that weapon, and a +4 bonus to its base Damage and ED. It ignores the Invulnerable armour Trait (Wrath & Glory, p. 232), causes Mortal Wounds, and always inflicts 1 Mortal Wound that cannot be averted by any means on a successful strike.",
+    "value": 12,
+    "rarity": "Unique",
+    "keywords": [
+      "KHORNE"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "skullreaver_dh",
+    "name": "Skullreaver",
+    "category": "relic",
+    "description": "The terrible rage of the trapped Bloodthirster causes the runes inscribed on the blade to blaze with the fury of a captured sun.",
+    "effect": "Only a Bloodthirster may wield Skullreaver. It replaces its Axe of Khorne with the following values: 20 +6 ED / AP -5 / Range 2 / Brutal.",
+    "value": 12,
+    "rarity": "Unique",
+    "keywords": [
+      "KHORNE"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "forbidden_gem_dh",
+    "name": "The Forbidden Gem",
+    "category": "relic",
+    "description": "Aeldari legend claims this gem was the largest, purest diamond in all their empire before the Fall. Its keeper, a noble named Ydrisyll, was obsessively proud of his beautiful possession.",
+    "effect": "Once per turn, the holder of the Forbidden Gem may target any Agent; That Agent becomes Hindered and may not use their Archetype Ability on their next turn.",
+    "value": 8,
+    "rarity": "Unique",
+    "keywords": [
+      "SLAANESH"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "mark_of_excess_dh",
+    "name": "The Mark of Excess",
+    "category": "relic",
+    "description": "Pleasure and addiction go hand in hand in the court of Slaanesh, and his mark is equal parts blessing and curse.",
+    "effect": "Daemons carrying the Mark of Excess get +1 bonus die to all Weapon Skill (I) Tests. Each combat, whenever an attack of theirs downs an enemy, disables a vehicle, or causes a Critical Hit, they gain another cumulative +1 bonus die to Attack rolls.",
+    "value": 9,
+    "rarity": "Unique",
+    "keywords": [
+      "SLAANESH"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "soulstealer_dh",
+    "name": "Soulstealer",
+    "category": "relic",
+    "description": "A Keeper of Secrets lies bound within this master-crafted blade. Infernal lore relates that this greater daemon once sought to consume enough Aeldari souls to rival Slaanesh Herself.",
+    "effect": "Soulstealer may only be wielded by a Keeper of Secrets or a Daemon Prince. Whenever Soulstealer kills an enemy, it heals the wielder 2d6 Wounds. Soulstealer gains the Brutal Trait when attacking anyone with the AELDARI Keyword. Profile: (S) +6 +6 ED / AP -3 / Range 2 / Agonising, Parry.",
+    "value": 8,
+    "rarity": "Unique",
+    "keywords": [
+      "SLAANESH"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "silverstrike_dh",
+    "name": "Silverstrike",
+    "category": "relic",
+    "description": "This daemonic blade strikes so swiftly it appears to simply bypass the space between its wielder and its target.",
+    "effect": "Silverstrike replaces a Keeper of Secrets' Witstealer Sword. When Silverstrike wounds an enemy, that enemy suffers a -1 dice penalty to attack rolls, and -1 to melee weapon damage for the duration of the combat. This effect may be applied a number of times equal to the wielder's Conviction. Profile: (S) +8 +6 ED / AP -3 / Range 2 / Agonising, Parry.",
+    "value": 10,
+    "rarity": "Unique",
+    "keywords": [
+      "SLAANESH"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "slothful_claws_dh",
+    "name": "Slothful Claws",
+    "category": "relic",
+    "description": "These weapons have worn many faces and adorned many daemons through the ages. Forged from the essence of a Keeper of Secrets, the slightest scratch infects victims with a blissful lethargy.",
+    "effect": "A Daemonette with Ravaging Claws or Snapping Claws may upgrade to Slothful Claws. Their attacks gain +2 ED, and anyone who takes Wounds from Slothful Claws may not use or benefit from any Archetype Abilities until the Daemonette's next Turn.",
+    "value": 9,
+    "rarity": "Unique",
+    "keywords": [
+      "SLAANESH"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "whip_of_agony_dh",
+    "name": "Whip of Agony",
+    "category": "relic",
+    "description": "This living weapon coils like a serpent around its owner's limbs, hiding in plain sight until willed to strike. The Whip of Agony secretes a psychic poison that links its sentience with the nervous system of whoever it touches.",
+    "effect": "A Herald or Keeper of Secrets may upgrade their Lashes of Torment/Living Whip to a Whip of Agony. Any attacks with a Whip of Agony that score a Wrath Critical allow the wielder to make another attack as a Free Action. In addition, an attack that hits but does not Wound still inflicts 1 Shock.",
+    "value": 10,
+    "rarity": "Unique",
+    "keywords": [
+      "SLAANESH"
+    ],
+    "source": "dh"
+  },
+  {
+    "id": "brazier_of_holy_fire",
+    "name": "Brazier of Holy Fire",
+    "category": "misc",
+    "description": "The blazing zeal of the Ecclesiarchy rendered real in sacred flame, ensconced in iron wrought with the aches of priests, a Brazier of Holy Fire can only be lit by a true devotee of the Emperor, and its light bears a modicum of His magnificent power.",
+    "effect": "Anyone can attempt to light a Brazier of Holy Fire as a Combat Action. When lit, the Brazier sheds bright light for 6 metres. If a character with at least one Faith point wields the Brazier of Holy Fire, any character with the DAEMON Keyword touched by its light is Hindered. A character wielding a Brazier of Holy Fire can spend 1 Faith point to unleash the holy flames as a Reflexive Action. This attack functions in the same way as a Hand Flamer (Wrath & Glory Rulebook, p.219) but has +3 ED. If the target of this attack has the DAEMON Keyword, the attack has +6 ED instead.",
+    "value": 5,
+    "rarity": "Very Rare",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MINISTORUM",
+      "ADEPTA SORORITAS"
+    ],
+    "source": "fspg"
+  },
+  {
+    "id": "grapnel_launcher",
+    "name": "Grapnel Launcher",
+    "category": "tool",
+    "description": "A simple tool utilised by deep-striking Primaris forces, a grapnel launcher can quietly pull the full weight of a Primaris Astartes to an advantageous vertical position in seconds.",
+    "effect": "The grapnel launcher has a medium range of 30 metres, and can be fired as a Combat Action like a normal Ranged Weapon into any surface with a default DN of 3. If successfully fired into a surface, the grapnel latches on, and can be retracted to pull you up to that surface as a Free Action.",
+    "value": 4,
+    "rarity": "Common",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS ASTARTES",
+      "PRIMARIS"
+    ],
+    "source": "fspg"
+  },
+  {
+    "id": "infravisor",
+    "name": "Infravisor",
+    "category": "tool",
+    "description": "An advanced technological visor often installed into the augers and augmetic eyes of the Adeptus Mechanicus, the Infravisor allows its user to see into a wide range of spectra simultaneously, including several the Mechanicus do not truly understand.",
+    "effect": "An Infravisor functions as Preysense Goggles (Wrath & Glory Rulebook, p.239), and also allows you to detect high levels of radiation in your immediate environment.",
+    "value": 5,
+    "rarity": "Rare",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS"
+    ],
+    "source": "fspg"
+  },
+  {
+    "id": "abeyant",
+    "name": "Abeyant",
+    "category": "augmetic",
+    "description": "Taking the form of an ornate throne, pulpit, or lectern, an Abeyant is directly integrated into its owner's augmetics and uses anti-gravitic levitation technology to convey them over battlefields to survey the troops they command. Merging machine and body in such an extensive way is a sign of status as much as a representative of dedication to the Machine Cult.",
+    "effect": "Allows you to hover up to 3 metres off the ground and move at your Speed. If you are falling, the Abeyant slows your fall so that you land safely. Requirements: Four other Augmetics.",
+    "value": 8,
+    "rarity": "Very Rare",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS"
+    ],
+    "source": "fspg"
+  },
+  {
+    "id": "b_o_n_e",
+    "name": "B.O.N.E",
+    "category": "augmetic",
+    "description": "Though Ogryns are undeniably unintelligent as a Species, some are smarter than others. These few bright sparks that can count above three, display consistent object permanence, or can even handle basic problem solving, are marked out as suitable for the Biochemical Ogryn Neural Enhancement procedure, further improving their intelligence. These Ogryns are known as Bone'eads, utilising the boosted intelligence afforded by their cerebral implants to lead others in battle.",
+    "effect": "Raises your Maximum Intellect to 3 and increases your Intellect by 1. Requirements: Ogryn Species, Leadership 1, Rank 3.",
+    "value": 4,
+    "rarity": "Common",
+    "keywords": [
+      "IMPERIUM",
+      "MILITARUM AUXILLA"
+    ],
+    "source": "fspg"
+  },
+  {
+    "id": "chordclaw",
+    "name": "Chordclaw",
+    "category": "augmetic",
+    "description": "The scalpel fingers of a Chordclaw are known to disassemble a body with the soulless efficiency typical to the Adeptus Mechanicus. The three needle-sharp digits of a Chordclaw move with unnerving speed, quickened further by the stomach-turning sonic resonance of all transonic weapons.",
+    "effect": "Your hand is replaced by a Chordclaw. Your Chordclaw hand functions as a normal hand, but also replaces your Unarmed Strike with the Chordclaw weapon profile: Damage (S)+3, ED 3, AP 0, Traits: Agonising, Rending (6). Keywords: BLADE, TRANSONIC, ADEPTUS MECHANICUS.",
+    "value": 5,
+    "rarity": "Rare",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS"
+    ],
+    "source": "fspg"
+  },
+  {
+    "id": "enhanced_ballistic_mechadendrite",
+    "name": "Enhanced Ballistic Mechadendrite",
+    "category": "augmetic",
+    "description": "Tech-Priests that serve the Omnissiah through glorious combat against ignorant enemies often incorporate advanced weaponry into their mechadendrites, allowing them to simultaneously lead their forces, perform righteous rites of repair, and blast their enemies with arcane technology.",
+    "effect": "When you fire your Enhanced Ballistic Mechadendrite as part of a Multi-Action or Multi-Attack, the DN penalty is decreased by 2. The weapon never needs to be reloaded, but when you use a Salvo Option with your Enhanced Ballistic Mechadendrite you suffer Shock equal to the weapon's Salvo rating. Requirements: The weapon you want to integrate into the Enhanced Ballistic Mechadendrite.",
+    "value": 5,
+    "rarity": "Rare",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS"
+    ],
+    "source": "fspg"
+  },
+  {
+    "id": "9_70_entrenching_tool",
+    "name": "9-70 Entrenching Tool",
+    "category": "tool",
+    "description": "More than a simple trowel, the composite edge of this tool can break up even the hardest packed earth.",
+    "effect": "Halves the time needed to dig trenches, foxholes, and other earthen fortifications. It also makes for a sturdy improvised weapon.",
+    "value": 2,
+    "rarity": "Common",
+    "keywords": [
+      "IMPERIUM",
+      "ASTRA MILITARUM"
+    ],
+    "source": "core"
+  },
+  {
+    "id": "diagnostor",
+    "name": "Diagnostor",
+    "category": "tool",
+    "description": "This sensitive medical cogitator monitors a patient's health and biorhythms and aids in the diagnosis of virtually any physical ailment.",
+    "effect": "+1 bonus die to Medicae (Int) Tests to detect and diagnose diseases, injuries, and ailments, and to determine cause of death.",
+    "value": 5,
+    "rarity": "Very Rare",
+    "keywords": [],
+    "source": "core"
+  },
+  {
+    "id": "mag_boots",
+    "name": "Mag-Boots",
+    "category": "tool",
+    "description": "Built into the feet of most Void Suits and the armour of elite Imperial troops, these bulky boots can be highly magnetized at the wearer's whim to secure them to a metallic surface.",
+    "effect": "When activated with a Simple Action, the wearer's feet are fully secured to any metallic surface. The wearer's feet cannot be removed from the metallic surface by any means, other than their own volition. The wearer can walk and move on the metallic surface whilst the boots are on, but their Speed is reduced by 3.",
+    "value": 4,
+    "rarity": "Uncommon",
+    "keywords": [
+      "NAVIS IMPERIALIS"
+    ],
+    "source": "core"
+  },
+  {
+    "id": "martyrs_gift_medikit",
+    "name": "Martyr's Gift Medikit",
+    "category": "tool",
+    "description": "This upgraded kit is a superior version of the standard Astra Militarum Medikit. Loaded with combat stimms, auto-cauterising thermic gel, and single-use disposable bionics, this medikit ensures that wounded Tempestus Scions rapidly and efficiently get back into the fight.",
+    "effect": "Functions as a Medikit. Includes a standard augmetic replacement for any lost limb or eye; the augmetic is temporary, and becomes useless after 24 hours. The subcutaneous frag charge has the same damage profile as a Frag Missile.",
+    "value": 6,
+    "rarity": "Rare",
+    "keywords": [
+      "IMPERIUM",
+      "ASTRA MILITARUM"
+    ],
+    "source": "core"
+  },
+  {
+    "id": "monoscope",
+    "name": "Monoscope",
+    "category": "tool",
+    "description": "Though it can be used to project a beam of light, a monoscope's primary purpose is to record and upload visual data. If authorised and in possession of the correct command runes, an individual can connect their data-slate to the monoscope and see through the device's lens.",
+    "effect": "Can act as a light source and show live footage if connected wirelessly to a data-slate.",
+    "value": 4,
+    "rarity": "Rare",
+    "keywords": [
+      "IMPERIUM",
+      "MILITARUM TEMPESTUS"
+    ],
+    "source": "core"
+  },
+  {
+    "id": "periculum_kit",
+    "name": "Periculum Kit",
+    "category": "tool",
+    "description": "Assembled for agents of the Varonius Flotilla, these sturdy grox-hide satchels contain what supplies they can spare for those capable few able and willing to assist in the defence of the Gilead System.",
+    "effect": "Contains: Chrono, Data-Slate, Magnocular Scope, Respirator, Vox-bead, and 2 Ration Packs.",
+    "value": 5,
+    "rarity": "Rare",
+    "keywords": [
+      "IMPERIUM"
+    ],
+    "source": "core"
+  },
+  {
+    "id": "slate_monitron",
+    "name": "Slate Monitron",
+    "category": "tool",
+    "description": "This Data-Slate is typically incorporated into an armoured forearm bracer or gauntlet. It monitors the wearer's vital signs, showing the pulse rate and health matrix of the wearer.",
+    "effect": "+2 bonus dice to Medicae (Int) Tests made to heal your Wounds.",
+    "value": 5,
+    "rarity": "Rare",
+    "keywords": [
+      "IMPERIUM",
+      "ASTRA MILITARUM"
+    ],
+    "source": "core"
+  },
+  {
+    "id": "webway_keystone",
+    "name": "Webway Keystone",
+    "category": "tool",
+    "description": "This triangular wraithbone amulet is all too easily mistaken for jewellery by lesser Species. The psychic micro circuitry woven into its core allows the wearer to interface with Webway portals.",
+    "effect": "You can make a DN 5 Tech (Int) Test to activate either of the following effects: Detect the distance and orientation of the nearest Webway portal. Open or close a Webway portal within 30 metres. Large or complex gates have higher DNs.",
+    "value": 7,
+    "rarity": "Unique",
+    "keywords": [
+      "AELDARI"
+    ],
+    "source": "core"
+  },
+  {
+    "id": "doks_toolz",
+    "name": "Dok's Toolz",
+    "category": "tool",
+    "description": "Little more than a bloodstained satchel stuffed with sharp implements and homebrewed painkillers, a Dok Bag contains everything a Painboy needs to keep his Boyz in the fight and dabble in some elective surgery on the side.",
+    "effect": "Functions as a Medikit for Ork biology. Whenever you roll a Complication whilst using Dok's Toolz, the target suffers either 1 Wound or 1 Shock, whichever is funnier.",
+    "value": 2,
+    "rarity": "Very Rare",
+    "keywords": [
+      "ORK"
+    ],
+    "source": "core"
+  },
+  {
+    "id": "mek_toolz",
+    "name": "Mek Toolz",
+    "category": "tool",
+    "description": "Steered by the mad inspiration of Ork Mekboyz, these collections of oversized hammers and spanners can bend or break existing technology to make it 'Orky'.",
+    "effect": "Functions as a Combi-Tool for Ork technology. Mek Toolz can be used to dismantle technology and reassemble it into Ork Wargear of an equal or lesser Value and Rarity. This re-assembly requires a Tech (Int) Test with a DN equal to the Value of the Ork Wargear you are creating, and takes a number of hours equal to the Value of the Wargear you are creating.",
+    "value": 5,
+    "rarity": "Uncommon",
+    "keywords": [
+      "ORK"
+    ],
+    "source": "core"
+  },
+  {
+    "id": "ammo_backpack",
+    "name": "Ammo Backpack",
+    "category": "misc",
+    "description": "A large backpack designed to carry significant quantities of ammunition, favoured by those who expect prolonged engagements.",
+    "effect": "You can carry 10 additional Ammo. Comes stocked with 3 available Ammo.",
+    "value": 5,
+    "rarity": "Uncommon",
+    "keywords": [],
+    "source": "core"
+  },
+  {
+    "id": "bandolier",
+    "name": "Bandolier",
+    "category": "misc",
+    "description": "A simple belt or strap worn across the body, fitted with loops or pouches for carrying extra ammunition.",
+    "effect": "You can carry 2 additional Ammo. Comes stocked with 3 available Ammo.",
+    "value": 2,
+    "rarity": "Common",
+    "keywords": [],
+    "source": "core"
+  },
+  {
+    "id": "ammo_runt",
+    "name": "Ammo Runt",
+    "category": "misc",
+    "description": "An Orkoid lackey that crafts and manages the ammunition of its designated master with a snivelling fastidiousness.",
+    "effect": "The Ammo Runt has the profile of a Grot and follows all the owner's commands more or less loyally. You ignore all Complications related to your ranged weapons and gain +2 Ammo, which the Ammo Runt carries.",
+    "value": 5,
+    "rarity": "Uncommon",
+    "keywords": [
+      "ORK"
+    ],
+    "source": "core"
+  },
+  {
+    "id": "auger_array",
+    "name": "Auger Array",
+    "category": "augmetic",
+    "description": "A collection of sub-dermal micro-cogitators and protruding sensory clusters wired directly into the recipient's visual cortex grant a sixth sense.",
+    "effect": "You have either an Auspex or a Diagnostor permanently implanted in your brain. You can take this implant twice, choosing the Auspex or Diagnostor each time.",
+    "value": 4,
+    "rarity": "Rare",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS"
+    ],
+    "source": "core"
+  },
+  {
+    "id": "augmetic_respirator",
+    "name": "Augmetic Respirator",
+    "category": "augmetic",
+    "description": "Oxygen pumps, molecular gas filters, and rebreathing ducts replace the fleshy bellows of your lungs.",
+    "effect": "You gain +1 bonus die to Toughness Tests to resist toxic gasses and airborne poisons or diseases. You can hold your breath for twice as long, which doubles how long the air in a Void Suit or similar equipment lasts.",
+    "value": 5,
+    "rarity": "Rare",
+    "keywords": [],
+    "source": "core"
+  },
+  {
+    "id": "augmetic_viscera",
+    "name": "Augmetic Viscera",
+    "category": "augmetic",
+    "description": "Colloquially known as a 'gut-job', this augmetic reroutes blood vessels, bypasses lymph ducts, and replaces tissues with superior vat-grown or mechanical substitutes.",
+    "effect": "You gain +1 Toughness.",
+    "value": 5,
+    "rarity": "Very Rare",
+    "keywords": [],
+    "source": "core"
+  },
+  {
+    "id": "autodogmatic_cortex",
+    "name": "Autodogmatic Cortex",
+    "category": "augmetic",
+    "description": "A small cogitator mounted on the inside of the skull feeds a constant stream of hymns, prayers, and catechisms directly into the brain to bolster faith and resolve.",
+    "effect": "You gain +1 Willpower.",
+    "value": 6,
+    "rarity": "Very Rare",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS MECHANICUS",
+      "ADEPTUS MINISTORUM"
+    ],
+    "source": "core"
+  },
+  {
+    "id": "cardioproxy",
+    "name": "Cardioproxy",
+    "category": "augmetic",
+    "description": "A biorhythmic pump and metres of sanguinary tubing replaces most of the circulatory system.",
+    "effect": "You gain +1 Toughness.",
+    "value": 6,
+    "rarity": "Unique",
+    "keywords": [],
+    "source": "core"
+  },
+  {
+    "id": "cortex_implant",
+    "name": "Cortex Implant",
+    "category": "augmetic",
+    "description": "A network of micro-cogitators and neural catalysts replaces a portion of the brain, correcting damage and refining thought processes.",
+    "effect": "You gain +1 Intellect.",
+    "value": 7,
+    "rarity": "Very Rare",
+    "keywords": [],
+    "source": "core"
+  },
+  {
+    "id": "mind_impulse_unit",
+    "name": "Mind Impulse Unit",
+    "category": "augmetic",
+    "description": "Used for divine communion by adherents of the Machine Cult and to implement sabotage by sordid criminals, this augmetic allows a mortal mind to directly interface with a machine spirit.",
+    "effect": "You can converse with a machine spirit as an Action; this may require a Tech (Int) Test for unruly spirits. If you succeed, you gain +Double Rank bonus dice to all Tests to operate the machine.",
+    "value": 6,
+    "rarity": "Rare",
+    "keywords": [],
+    "source": "core"
+  },
+  {
+    "id": "neuroplastic_psychosectemy",
+    "name": "Neuroplastic Psychosectemy",
+    "category": "augmetic",
+    "description": "Equal parts surgery and sacred ritual, the emotional and illogical parts of the patient's brain are excised, replaced by cogitators hardwired to the cerebral cortex.",
+    "effect": "You gain +1 Intellect and +1 Willpower but suffer -2 Fellowship.",
+    "value": 7,
+    "rarity": "Unique",
+    "keywords": [],
+    "source": "core"
+  },
+  {
+    "id": "reflex_catalyst",
+    "name": "Reflex Catalyst",
+    "category": "augmetic",
+    "description": "Conductive cabling and synaptic triggers enhance the speed of the autonomic nervous system.",
+    "effect": "You gain +1 Initiative.",
+    "value": 6,
+    "rarity": "Very Rare",
+    "keywords": [],
+    "source": "core"
+  },
+  {
+    "id": "sinew_armature",
+    "name": "Sinew Armature",
+    "category": "augmetic",
+    "description": "Joints and major muscles are replaced with actuators, tensor cables, and vat-grown tissue.",
+    "effect": "You gain +1 Strength.",
+    "value": 6,
+    "rarity": "Very Rare",
+    "keywords": [],
+    "source": "core"
+  },
+  {
+    "id": "subdermal_armour",
+    "name": "Subdermal Armour",
+    "category": "augmetic",
+    "description": "Rigid metal plates and resistant fibre weaves distort and harden skin.",
+    "effect": "You gain +1 Base Resilience.",
+    "value": 4,
+    "rarity": "Rare",
+    "keywords": [],
+    "source": "core"
+  },
+  {
+    "id": "weapon_implant",
+    "name": "Weapon Implant",
+    "category": "augmetic",
+    "description": "Some weapons can be incorporated into augmetic replacements. You may implant a weapon with the Pistol Trait into an augmetic arm, or choose to implant a knife or a melee weapon of a similar size.",
+    "effect": "You can extract or retract the implanted weapon as an Action. Your limb functions normally until you extract it. The limb can only be used as a weapon while the weapon is extracted. You can't drop an implanted weapon and you can't be disarmed without amputating the limb.",
+    "value": 3,
+    "rarity": "Rare",
+    "keywords": [],
+    "source": "core"
+  },
+  {
+    "id": "eyes_of_the_crone",
+    "name": "Eyes Of The Crone",
+    "category": "augmetic",
+    "description": "These complex augmetic eyes grant Aeldari precise perception beyond the material realm, allowing them to peer through the skein of fate.",
+    "effect": "A single Eye of the Crone can have two different Augmetic Eye effects.",
+    "value": 5,
+    "rarity": "Very Rare",
+    "keywords": [
+      "AELDARI"
+    ],
+    "source": "core"
+  },
+  {
+    "id": "heart_of_vaul",
+    "name": "Heart of Vaul",
+    "category": "augmetic",
+    "description": "Implanted just above the heart, this augmetic projects a nearly invisible refractive force field perfectly contoured to the body.",
+    "effect": "You gain +1 to Defence and Armour in addition to any armour or shield you have.",
+    "value": 7,
+    "rarity": "Unique",
+    "keywords": [
+      "AELDARI"
+    ],
+    "source": "core"
+  },
+  {
+    "id": "iron_gob",
+    "name": "Iron Gob",
+    "category": "augmetic",
+    "description": "Curved slabs of jagged ceramite are crudely bolted to an Ork's jaw, providing additional protection and an intimidating profile to an already fearsome face.",
+    "effect": "You gain +1 Armour (this stacks with worn Armour) and +1 bonus die to Intimidation (Wil) Tests. You can make a melee bite attack with a Damage of 6 +2 ED.",
+    "value": 3,
+    "rarity": "Rare",
+    "keywords": [
+      "ORK"
+    ],
+    "source": "core"
+  },
+  {
+    "id": "iron_gutz",
+    "name": "Iron Gutz",
+    "category": "augmetic",
+    "description": "Some Orks have appetites best described as suicidal. This implant replaces the recipient's digestive system with industrial tubing and linked chemical reaction chambers that allow the recipient to eat even the corrupted flesh of daemons.",
+    "effect": "You gain +2 bonus dice to Tests to resist ingested poisons. You can automatically find food to subsist you in any environment.",
+    "value": 5,
+    "rarity": "Very Rare",
+    "keywords": [
+      "ORK"
+    ],
+    "source": "core"
+  },
+  {
+    "id": "rebuilt_cranium",
+    "name": "Rebuilt Cranium",
+    "category": "augmetic",
+    "description": "The effects of a rebuilt cranium are impossible to predict, as the Ork's skull and brain is replaced with adamantine plates and assorted scrap circuitry or xenos tech.",
+    "effect": "Roll 1d3 at the start of each session. Your Intellect Attribute increases by the result. You may spend a point of Wrath to reroll the 1d3 at any time. The GM may force a reroll of the 1d3 under circumstances that could cause the bionik to malfunction.",
+    "value": 6,
+    "rarity": "Very Rare",
+    "keywords": [
+      "ORK"
+    ],
+    "source": "core"
   }
 ]

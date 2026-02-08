@@ -474,6 +474,10 @@
       "name": "Assault",
       "description": "This weapon can be fired while moving. You do not suffer the normal penalty for firing after Running."
     },
+    "blessed": {
+      "name": "Blessed",
+      "description": "Anointed in the holiest of oils and prayers by the priests of the Ecclesiarchy to bring righteous fury to creatures both spawned or tainted by the Immaterium. Weapons that are blessed gain +ED equal to their rating against targets with the PSYKER or DAEMON Keyword."
+    },
     "blast": {
       "name": "Blast",
       "description": "Explosive weapons can devastate multiple enemies with a single attack. When you fire or throw a Blast weapon, choose any point in range (including another character!), then make a DN 3 Ballistic Skill (A) Test. Apply Range effects as normal unless you are using a thrown weapon like a grenade. If you fail the Test, the attack misses and Scatters. If you succeed, the explosion is centered on your target. If you are measuring distance, the Blast rating determines the radius of the explosion in metres. Anyone inside this radius is hit by the attack. If you are targeting a Mob or using a simplified theater of the mind approach, the number of nearby individuals hit by the explosive is equal to half the Blast rating. You cannot Shift to increase the damage of a Blast weapon. If you inflict a Critical Hit with a Blast weapon, the effects apply to all targets hit by the attack."
@@ -490,6 +494,10 @@
       "name": "Force",
       "description": "Psykers can channel the power of the Warp through the etheric circuit patterns and psycho-reactive materials of these weapons. If you have the PSYKER Keyword, you may add half of your Willpower Rating to a Force weapon's Damage Value. If you don't have the PSYKER Keyword, a Force weapon's damage is decreased by 2."
     },
+    "gruesome": {
+      "name": "Gruesome",
+      "description": "Drukhari weapons, especially Haemonculus weapons, don't merely kill, they torture the target and terrify onlookers to feed the Drukhari soul debt. Weapons with the Gruesome Trait cause a DN 3 Fear Test for the target and allies within 10m on a Wrath Critical."
+    },
     "heavy": {
       "name": "Heavy",
       "description": "Large and cumbersome weapons are difficult to wield accurately and effectively. You must have a Strength equal to the Heavy weapon's rating to fire it normally. All attacks with a Heavy weapon are made with a +2 DN penalty if you do not meet the minimum Strength, and rolling a Complication as part of an attack knocks you Prone in addition to any other effects. Taking the Brace Action or securing a Heavy weapon to something like a tripod negates the Heavy Trait."
@@ -501,6 +509,10 @@
     "kustom": {
       "name": "Kustom",
       "description": "You can replace this weapon Trait with any other Weapon Trait of your choice when you acquire a weapon with this Trait. If the Trait you select has a Rating (X), roll 1d3 to determine the Rating."
+    },
+    "lance": {
+      "name": "Lance",
+      "description": "Lance weapons strike targets with beams of concentrated energy, and the vaporising blast bores through the thickest armour. Weapons with the Lance Trait ignore the Invulnerable Armour Trait. Lance weapons cause Mortal Wounds, and they always inflict 1 Mortal Wound even if the attack does not damage its target."
     },
     "melta": {
       "name": "Melta",
@@ -537,6 +549,10 @@
     "sniper": {
       "name": "Sniper",
       "description": "Weapons optimised for high accuracy over long range. When you Aim with a Sniper weapon you gain an additional +1 bonus die to the attack, and gain +ED equal to the weapon's Sniper rating."
+    },
+    "sonic_weapon": {
+      "name": "Sonic Weapon",
+      "description": "These weapons use focused soundwaves to shatter and pulverise. They lose power over distance but affect a wider area as the wave expands. A Sonic Weapon gains +2 ED at Short range, and Spread at Medium or Long range."
     },
     "spread": {
       "name": "Spread",

@@ -2150,5 +2150,78 @@
       "FIRE CASTE"
     ],
     "source": "apocrypha"
+  },
+  {
+    "id": "mk_x_phobos_power_armour",
+    "name": "Mk X Phobos Power Armour",
+    "type": "heavy",
+    "description": "A variant of Mark 10 Tacticus Power Armour optimised for stealth and mobility, Phobos Armour features reengineered servo-motors to ensure silent movement. Through use of smaller ceramite plates, Phobos Armour maximises the wearer's mobility but sacrifices a small amount of protection.",
+    "ar": 4,
+    "traits": [
+      "Powered (3)"
+    ],
+    "value": 9,
+    "rarity": "Rare",
+    "keywords": [
+      "IMPERIUM",
+      "ADEPTUS ASTARTES",
+      "PRIMARIS"
+    ],
+    "source": "fspg"
+  },
+  {
+    "id": "brute_shield",
+    "name": "Brute Shield",
+    "type": "shield",
+    "description": "Bullgryns most suited to close combat are equipped with Brute Shields, thick slabs of plasteel incorporating a refractor field to ensure they reach the frontlines even under heavy artillery fire.",
+    "ar": 3,
+    "traits": [
+      "Shield"
+    ],
+    "value": 5,
+    "rarity": "Uncommon",
+    "keywords": [
+      "IMPERIUM",
+      "ASTRA MILITARUM",
+      "MILITARUM AUXILLA"
+    ],
+    "invulnerable": true,
+    "source": "fspg"
+  },
+  {
+    "id": "slabshield",
+    "name": "Slabshield",
+    "type": "shield",
+    "description": "These thick slabs of reinforced plasteel require the strength of an Ogryn to lift, and are used by Bullgryns to form impassible shield walls. The bottom is spiked to be planted in the ground, and the sides are notched so that they can slot together. The viewport at the front is a design necessity, as most Ogryns lack the coordination required to walk forward whilst blocking their own vision.",
+    "ar": 4,
+    "traits": [
+      "Cumbersome",
+      "Shield"
+    ],
+    "value": 5,
+    "rarity": "Uncommon",
+    "keywords": [
+      "IMPERIUM",
+      "ASTRA MILITARUM",
+      "MILITARUM AUXILLA"
+    ],
+    "source": "fspg"
+  },
+  {
+    "id": "voidplate_harness",
+    "name": "Voidplate Harness",
+    "type": "medium",
+    "description": "This enhanced suit of mesh features reinforced plating across vulnerable areas, a system of energy fields to screen against harmful radiation and extreme temperatures, and a gravity distortion matrix allowing the wearer to operate efficiently in zero gravity.",
+    "ar": 5,
+    "traits": [
+      "Bulk (1)"
+    ],
+    "value": 7,
+    "rarity": "Rare",
+    "keywords": [
+      "AELDARI",
+      "ANHRATHE"
+    ],
+    "source": "core"
   }
 ]

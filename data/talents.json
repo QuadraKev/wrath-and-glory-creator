@@ -5892,8 +5892,105 @@
       ],
       "other": "Invocations of the Ethereals"
     },
-    "effect": "If this Prayer is successful, then while the Prayer remains in effect, a single group of allied T’au numbering no more than your Willpower score, may add +Rank to their Defence so long as they moved in their previous turn.",
-    "flavor": "As a breath of air slips unseen and unheard through blades of grass in a night-time forest, so do the T’au filter swift and silent across the battlefield.",
+    "effect": "If this Prayer is successful, then while the Prayer remains in effect, a single group of allied T'au numbering no more than your Willpower score, may add +Rank to their Defence so long as they moved in their previous turn.",
+    "flavor": "As a breath of air slips unseen and unheard through blades of grass in a night-time forest, so do the T'au filter swift and silent across the battlefield.",
     "source": "apocrypha"
+  },
+  {
+    "id": "benediction_of_darkness_dh",
+    "name": "Benediction of Darkness",
+    "cost": 20,
+    "prerequisites": {
+      "keywords": [
+        "CHAOS"
+      ]
+    },
+    "effect": "Activate this Prayer as a Simple Action to blanket you and all allies within 10m in darkness. Until the end of the Round, tests against those affected suffer vision penalties, increasing the level of darkness two steps (to a maximum of total darkness), or imposing the effects of very dim light in otherwise well-lit conditions. Favoured Effect: From the darkness you conjure shadowy doppelgangers of your allies. Any attack tests against affected targets until the end of the Round automatically fail, unless the attacker scores at least one Icon on a Wrath Die. Gain +1 Corruption.",
+    "flavor": "Nightmares lurk beyond the rays of sunlight; becoming one with the dark is the true path to glory. This is a Prayer to the Dark Gods, activated using Ruin.",
+    "isPrayer": true,
+    "source": "dh"
+  },
+  {
+    "id": "daemonic_summoning_dh",
+    "name": "Daemonic Summoning",
+    "cost": 30,
+    "prerequisites": {
+      "keywords": [
+        "CHAOS"
+      ]
+    },
+    "effect": "Activate this Prayer with a Full-Round Action to summon a Threat with the DAEMON and CHAOS Keywords within 25m of you. The summoned Threat must be an Elite-level Threat at your Tier, or a Mob of Double Rank +2 Troops. The Daemons' actions once it enters reality are left entirely to the GM's discretion. They disappear after 3 Rounds, if not destroyed before then. Favoured Effect: Instead of summoning a Daemon, you may force it to possess a willing or unconscious host. The character gains access to the Threat's Bonuses and Abilities (including Daemonic Determination). They cannot use effects that require them to spend Ruin, or use equipment they do not have, and use their own stats for any Tests required to activate the Daemon's powers. After 3 Rounds, the host makes a Conviction Test, with a DN equal to the possessing Daemon's Willpower. If they fail, the Daemon makes a permanent home in the host's body, per the Dark Passenger Perils of the Warp effect. Gain +1 Corruption.",
+    "flavor": "The legions of the warp will answer the call of those who facilitate their perversion of reality. This is a Prayer to the Dark Gods, activated using Ruin.",
+    "isPrayer": true,
+    "source": "dh"
+  },
+  {
+    "id": "dark_zeal_dh",
+    "name": "Dark Zeal",
+    "cost": 30,
+    "prerequisites": {
+      "keywords": [
+        "CHAOS"
+      ],
+      "attributes": {
+        "willpower": 3
+      }
+    },
+    "effect": "Activate this Prayer as a Simple Action to give you and all allies within 10m +Double Rank bonus dice on all Weapon Skill (I) Tests made until the end of the Round. Favoured Effect: The effects of this Prayer last until the end of the current combat. Gain +1 Corruption.",
+    "flavor": "There is purity in your hatred of unbelievers who blaspheme against the Ruinous Powers. This is a Prayer to the Dark Gods, activated using Ruin.",
+    "isPrayer": true,
+    "source": "dh"
+  },
+  {
+    "id": "embrace_the_gods_dh",
+    "name": "Embrace the God(s)",
+    "cost": 20,
+    "prerequisites": {
+      "keywords": [
+        "CHAOS"
+      ],
+      "attributes": {
+        "willpower": 3
+      },
+      "other": "KHORNE, NURGLE, SLAANESH, or TZEENTCH Keyword"
+    },
+    "effect": "Activate this Prayer as a Simple Action to give you and all allies within 10m who share your [MARK OF CHAOS] Keyword the listed benefit until the end of the Round: KHORNE: You gain +2 bonus dice when making an All-Out Attack. NURGLE: You gain +1 Toughness (which therefore provides +1 Resilience, Wounds, and Determination as well). SLAANESH: You gain +2 bonus dice on Awareness (Int) and Persuasion (Fel) Tests. TZEENTCH: You gain the PSYKER Keyword and the Invoke Luck psychic power. Favoured Effect: The effects of this Prayer last until the end of the current scene or combat. Gain +1 Corruption.",
+    "flavor": "All burdened with attentions from the infernal pantheon shall be recognised by their Mark. This is a Prayer to the Dark Gods, activated using Ruin.",
+    "isPrayer": true,
+    "source": "dh"
+  },
+  {
+    "id": "litany_of_despair_dh",
+    "name": "Litany of Despair",
+    "cost": 20,
+    "prerequisites": {
+      "keywords": [
+        "CHAOS"
+      ],
+      "attributes": {
+        "willpower": 3
+      }
+    },
+    "effect": "Activate this Prayer with a Combat Action to inflict the Hindered Condition on all enemies within 10m. Favoured Effect: All enemies within 10m must make a DN 5 Corruption Test. Gain +1 Corruption.",
+    "flavor": "Even unbelievers cannot deny the truth of Chaos once it takes root in their soul. This is a Prayer to the Dark Gods, activated using Ruin.",
+    "isPrayer": true,
+    "source": "dh"
+  },
+  {
+    "id": "forge_the_sword_dh",
+    "name": "Forge the Sword",
+    "cost": 20,
+    "prerequisites": {
+      "keywords": [
+        "CHAOS"
+      ],
+      "attributes": {
+        "tech": 1
+      }
+    },
+    "effect": "Activate this Prayer with a 30 minute ritual to transform a weapon with the BLADE Keyword into a Daemon Weapon. The weapon gains the Warp Weapon Trait; depending on the allegiance of the Daemon it also gains: KHORNE - Inflict (Bleeding), NURGLE - Inflict (Poisoned 4), SLAANESH - Agonising, TZEENTCH - Force. In addition, any attacks with the daemon weapon convert an extra die into a Wrath Die. The attack triggers a Wrath Critical if any Wrath Dice score an Exalted Icon. However, any Complications rolled trigger a Perils of the Warp effect. You may also activate this Prayer with a 30 minute ritual to bind a Daemon to a vehicle, transforming it into a Daemon Engine. Drivers of the vehicle convert an extra die into a Wrath Die when making Pilot (A) Tests to operate it (following the rules for extra Wrath Dice above), and all weapons aboard the vehicle gain the Warp Weapon Trait and the Cognis Trait. After one day, or when the wielder/driver of the device is Dying, the Daemon breaks its bonds and escapes to the Warp, ending the effects of this Prayer. Favoured Effect: The Daemon's bonds are permanent. If the wielder/driver uses the device whilst Dying, they only trigger Wrath Criticals if all Wrath Dice rolled score Exalted Icons, but suffer Traumatic Injuries and Perils of the Warp effects from Complications as normal. Gain +1 Corruption.",
+    "flavor": "Those schooled in malevolent artifice shall wield the tools of the Arkifane as their own. This is a Prayer to the Dark Gods, activated using Ruin.",
+    "isPrayer": true,
+    "source": "dh"
   }
 ]
