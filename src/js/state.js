@@ -13,6 +13,9 @@ const State = {
     // Event listeners for state changes
     listeners: [],
 
+    // Dirty state tracking - true when character has unsaved changes
+    isDirty: false,
+
     // Initialize state with default character
     init(gameData) {
         this.gameData = gameData;
@@ -103,10 +106,16 @@ const State = {
         };
     },
 
+    // Mark state as clean (no unsaved changes)
+    markClean() {
+        this.isDirty = false;
+    },
+
     // Reset character to new
     newCharacter() {
         this.character = this.createNewCharacter();
         this.notifyListeners('reset');
+        this.isDirty = false;
     },
 
     // Load a character from data
@@ -120,6 +129,7 @@ const State = {
         }
 
         this.notifyListeners('load');
+        this.isDirty = false;
     },
 
     // Get current character
@@ -971,6 +981,9 @@ const State = {
 
     // Notify all listeners of a change
     notifyListeners(changeType, data = null) {
+        if (changeType !== 'reset' && changeType !== 'load') {
+            this.isDirty = true;
+        }
         for (const listener of this.listeners) {
             listener(changeType, data, this.character);
         }

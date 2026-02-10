@@ -3,6 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 let mainWindow;
+let forceClose = false;
 
 // Get the characters directory path (works both in dev and packaged app)
 function getCharactersPath() {
@@ -50,6 +51,13 @@ function createWindow() {
     // Show window when ready to prevent visual flash
     mainWindow.once('ready-to-show', () => {
         mainWindow.show();
+    });
+
+    // Intercept window close to check for unsaved changes
+    mainWindow.on('close', (e) => {
+        if (forceClose) return;
+        e.preventDefault();
+        mainWindow.webContents.send('request-close');
     });
 
     // Remove menu bar for cleaner look
@@ -237,6 +245,32 @@ ipcMain.handle('export-character', async (event, character, filePath) => {
         console.error('Error exporting character:', error);
         return { success: false, error: error.message };
     }
+});
+
+// Renderer confirms it's OK to close (after checking dirty state / user dialog)
+ipcMain.on('confirm-close', () => {
+    forceClose = true;
+    if (mainWindow) {
+        mainWindow.close();
+    }
+});
+
+// Show unsaved-changes dialog with Save / Don't Save / Cancel
+ipcMain.handle('show-unsaved-changes-dialog', async () => {
+    const result = await dialog.showMessageBox(mainWindow, {
+        type: 'warning',
+        buttons: ['Save', "Don't Save", 'Cancel'],
+        defaultId: 0,
+        cancelId: 2,
+        title: 'Unsaved Changes',
+        message: 'You have unsaved changes. What would you like to do?'
+    });
+    // Refocus the main window after dialog closes
+    if (mainWindow) {
+        mainWindow.focus();
+        mainWindow.webContents.focus();
+    }
+    return result.response; // 0 = Save, 1 = Don't Save, 2 = Cancel
 });
 
 // Import character from specific path

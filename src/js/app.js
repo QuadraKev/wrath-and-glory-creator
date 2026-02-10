@@ -45,6 +45,28 @@ const App = {
         CharacterSheetTab.init();
         GlossaryTab.init();
 
+        // Register close request handler for unsaved changes prompt
+        window.api.onRequestClose(async () => {
+            if (!State.isDirty) {
+                window.api.confirmClose();
+                return;
+            }
+
+            const response = await window.api.showUnsavedDialog();
+            if (response === 0) {
+                // Save
+                const result = await CharacterIO.save();
+                if (result.success) {
+                    window.api.confirmClose();
+                }
+                // If save failed or was cancelled, stay open
+            } else if (response === 1) {
+                // Don't Save
+                window.api.confirmClose();
+            }
+            // response === 2 (Cancel) - do nothing, window stays open
+        });
+
         // Update initial display
         this.updateXPDisplay();
         this.updateSidebar();

@@ -22,5 +22,10 @@ contextBridge.exposeInMainWorld('api', {
 
     // Native dialogs (better focus handling than browser confirm/alert)
     showConfirm: (message, title) => ipcRenderer.invoke('show-confirm-dialog', message, title),
-    showMessage: (message, title, type) => ipcRenderer.invoke('show-message-dialog', message, title, type)
+    showMessage: (message, title, type) => ipcRenderer.invoke('show-message-dialog', message, title, type),
+
+    // Window close handling
+    onRequestClose: (callback) => ipcRenderer.on('request-close', callback),
+    confirmClose: () => ipcRenderer.send('confirm-close'),
+    showUnsavedDialog: () => ipcRenderer.invoke('show-unsaved-changes-dialog')
 });

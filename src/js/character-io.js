@@ -21,6 +21,7 @@ const CharacterIO = {
                 const result = await window.api.exportCharacter(character, dialogResult.filePath);
                 if (result.success) {
                     this.lastSavedPath = dialogResult.filePath;
+                    State.markClean();
                     console.log(`Character saved to: ${dialogResult.filePath}`);
                 }
                 return result;
@@ -73,6 +74,7 @@ const CharacterIO = {
         try {
             const result = await window.api.exportCharacter(character, this.lastSavedPath);
             if (result.success) {
+                State.markClean();
                 console.log(`Character quick-saved to: ${this.lastSavedPath}`);
             }
             return result;
