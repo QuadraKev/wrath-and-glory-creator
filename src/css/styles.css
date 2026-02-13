@@ -2732,9 +2732,13 @@ textarea {
 
 .sheet-weapons-table .sheet-weapon-ap {
     text-align: center;
-    font-size: 11px;
+    font-size: 12px;
     color: var(--text-secondary);
-    margin-top: 2px;
+}
+
+.sheet-weapons-table .sheet-weapon-sub-row td {
+    border-top: none;
+    padding-top: 0;
 }
 
 .sheet-weapons-table .sheet-weapon-range {
@@ -2763,8 +2767,8 @@ textarea {
 
 .sheet-weapons-table .sheet-weapon-ap[title] {
     cursor: help;
-    text-decoration: underline dotted var(--text-muted);
-    text-underline-offset: 2px;
+    border-bottom: 1px dotted var(--text-muted);
+    font-weight: 500;
     color: var(--accent-gold);
 }
 
