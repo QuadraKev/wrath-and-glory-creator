@@ -3232,14 +3232,6 @@ textarea {
     max-width: 320px;
 }
 
-/* ===== Equipment Bonus Indicator ===== */
-.sheet-equip-bonus {
-    font-size: 10px;
-    color: var(--accent-green);
-    margin-left: 3px;
-    vertical-align: super;
-}
-
 /* ===== Print Styles ===== */
 @media print {
     /* Hide app chrome */
