@@ -3205,6 +3205,41 @@ textarea {
     margin: 12px 0 0 0;
 }
 
+/* ===== Tappable Trait Tooltips ===== */
+.sheet-trait-tappable {
+    cursor: pointer;
+    border-bottom-style: dotted;
+    border-bottom-color: var(--text-muted);
+}
+
+.sheet-trait-tappable:hover {
+    background: var(--bg-hover);
+}
+
+.stat-tooltip-popup {
+    position: fixed;
+    background: var(--bg-secondary);
+    border: 1px solid var(--accent-gold);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    padding: 10px 14px;
+    z-index: 10000;
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--text-primary);
+    white-space: pre-line;
+    min-width: 180px;
+    max-width: 320px;
+}
+
+/* ===== Equipment Bonus Indicator ===== */
+.sheet-equip-bonus {
+    font-size: 10px;
+    color: var(--accent-green);
+    margin-left: 3px;
+    vertical-align: super;
+}
+
 /* ===== Print Styles ===== */
 @media print {
     /* Hide app chrome */

@@ -29,8 +29,10 @@ const CharacterSheetTab = {
         const species = DataLoader.getSpecies(character.species?.id);
         const archetype = DataLoader.getArchetype(character.archetype?.id);
         const keywords = State.getKeywords();
-        const armorRating = DerivedStats.getTotalArmorRating(character);
-        const derivedStats = DerivedStats.getAllDerivedStats(character, armorRating);
+        const armorBreakdown = DerivedStats.getArmorBreakdown(character);
+        const derivedStats = DerivedStats.getAllDerivedStats(character, armorBreakdown);
+        const resilienceBreakdown = DerivedStats.getResilienceBreakdown(character);
+        const defenceBreakdown = DerivedStats.getDefenceBreakdown(character);
 
         const container = document.getElementById('character-sheet-content');
 
@@ -39,7 +41,7 @@ const CharacterSheetTab = {
             <div class="sheet-columns">
                 <div class="sheet-column">
                     ${this.renderAttributes(character)}
-                    ${this.renderTraits(derivedStats)}
+                    ${this.renderTraits(derivedStats, { resilience: resilienceBreakdown, defence: defenceBreakdown })}
                 </div>
                 <div class="sheet-column">
                     ${this.renderSkills(character)}
@@ -64,6 +66,9 @@ const CharacterSheetTab = {
 
         // Bind session tracking controls
         this.bindSessionTrackingControls(container);
+
+        // Bind tappable trait tooltips
+        this.bindTraitTooltips(container);
     },
 
     // Bind event handlers for session tracking (boxes and +/- buttons)
@@ -111,6 +116,40 @@ const CharacterSheetTab = {
                 }
 
                 this.render();
+            });
+        });
+    },
+
+    // Bind click-to-popup for tappable trait items
+    bindTraitTooltips(container) {
+        container.querySelectorAll('.sheet-trait-tappable[title]').forEach(el => {
+            el.addEventListener('click', (e) => {
+                // Remove any existing popup
+                const existing = document.querySelector('.stat-tooltip-popup');
+                if (existing) existing.remove();
+
+                const titleText = el.getAttribute('title');
+                if (!titleText) return;
+
+                const popup = document.createElement('div');
+                popup.className = 'stat-tooltip-popup';
+                popup.textContent = titleText;
+
+                document.body.appendChild(popup);
+
+                // Position near clicked element
+                const rect = el.getBoundingClientRect();
+                popup.style.left = `${rect.left}px`;
+                popup.style.top = `${rect.bottom + 4}px`;
+
+                // Close on click outside
+                const closeHandler = (ev) => {
+                    if (!popup.contains(ev.target) && ev.target !== el) {
+                        popup.remove();
+                        document.removeEventListener('click', closeHandler, true);
+                    }
+                };
+                setTimeout(() => document.addEventListener('click', closeHandler, true), 0);
             });
         });
     },
@@ -217,16 +256,27 @@ const CharacterSheetTab = {
     },
 
     // Render traits (formerly derived stats) in compact 2-column grid
-    renderTraits(stats) {
+    renderTraits(stats, breakdowns = {}) {
         // Get current session values (wounds/shock count UP from 0)
         const currentWounds = State.getCurrentWounds();
         const currentShock = State.getCurrentShock();
         const currentWealth = State.getCurrentWealth();
 
+        // Build tooltip text from breakdown
+        const buildTooltip = (breakdown) => {
+            if (!breakdown || !breakdown.breakdown) return '';
+            const lines = breakdown.breakdown.map(p => {
+                const sign = p.value >= 0 ? '' : '';
+                return `${p.label}: ${sign}${p.value}`;
+            });
+            lines.push(`Total: ${breakdown.value}`);
+            return lines.join('\n');
+        };
+
         // Static traits (non-editable)
         const staticTraits = [
-            { name: 'Defence', value: stats.defence },
-            { name: 'Resilience', value: stats.resilience },
+            { name: 'Defence', value: stats.defence, key: 'defence' },
+            { name: 'Resilience', value: stats.resilience, key: 'resilience' },
             { name: 'Determination', value: stats.determination },
             { name: 'Speed', value: stats.speed },
             { name: 'Conviction', value: stats.conviction },
@@ -235,12 +285,19 @@ const CharacterSheetTab = {
             { name: 'Influence', value: stats.influence }
         ];
 
-        const staticItems = staticTraits.map(stat => `
-            <div class="sheet-compact-item">
-                <span class="sheet-compact-name">${stat.name}</span>
-                <span class="sheet-compact-value">${stat.value}</span>
-            </div>
-        `).join('');
+        const staticItems = staticTraits.map(stat => {
+            const breakdown = stat.key ? breakdowns[stat.key] : null;
+            const hasTip = breakdown && breakdown.breakdown && breakdown.breakdown.length > 1;
+            const tooltipAttr = hasTip ? ` title="${this.escapeHtml(buildTooltip(breakdown))}"` : '';
+            const tappableClass = hasTip ? ' sheet-trait-tappable' : '';
+
+            return `
+                <div class="sheet-compact-item${tappableClass}"${tooltipAttr}>
+                    <span class="sheet-compact-name">${stat.name}</span>
+                    <span class="sheet-compact-value">${stat.value}</span>
+                </div>
+            `;
+        }).join('');
 
         // Generate wound boxes
         const woundBoxes = this.renderTrackingBoxes('wounds', currentWounds, stats.maxWounds);
@@ -326,6 +383,8 @@ const CharacterSheetTab = {
 
     // Render attributes in compact 2-column grid
     renderAttributes(character) {
+        const equipBonuses = DerivedStats.getEquipmentBonuses(character);
+
         const attributes = [
             { key: 'strength', name: 'Strength', abbrev: 'STR' },
             { key: 'toughness', name: 'Toughness', abbrev: 'TOU' },
@@ -337,11 +396,18 @@ const CharacterSheetTab = {
         ];
 
         const items = attributes.map(attr => {
-            const value = character.attributes?.[attr.key] || 1;
+            const baseValue = character.attributes?.[attr.key] || 1;
+            const attrBonuses = equipBonuses[attr.key] || [];
+            const equipTotal = attrBonuses.reduce((sum, b) => sum + b.value, 0);
+            const displayValue = baseValue + equipTotal;
+            const bonusIndicator = equipTotal !== 0
+                ? `<span class="sheet-equip-bonus" title="${attrBonuses.map(b => `${b.value > 0 ? '+' : ''}${b.value} ${b.source}`).join(', ')}">${equipTotal > 0 ? '+' : ''}${equipTotal}</span>`
+                : '';
+
             return `
                 <div class="sheet-compact-item">
                     <span class="sheet-compact-name">${attr.name}</span>
-                    <span class="sheet-compact-value">${value}</span>
+                    <span class="sheet-compact-value">${displayValue}${bonusIndicator}</span>
                     <span class="sheet-compact-abbrev">[${attr.abbrev}]</span>
                 </div>
             `;
