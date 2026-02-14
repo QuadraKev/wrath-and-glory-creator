@@ -206,7 +206,7 @@ ipcMain.handle('show-save-dialog', async (event, defaultName) => {
         title: 'Export Character',
         defaultPath: defaultName,
         filters: [
-            { name: 'JSON Files', extensions: ['json'] },
+            { name: 'Character Files', extensions: ['character'] },
             { name: 'All Files', extensions: ['*'] }
         ]
     });
@@ -223,7 +223,7 @@ ipcMain.handle('show-open-dialog', async () => {
     const result = await dialog.showOpenDialog(mainWindow, {
         title: 'Import Character',
         filters: [
-            { name: 'JSON Files', extensions: ['json'] },
+            { name: 'Character Files', extensions: ['character'] },
             { name: 'All Files', extensions: ['*'] }
         ],
         properties: ['openFile']
