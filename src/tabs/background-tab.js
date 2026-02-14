@@ -147,6 +147,14 @@ const BackgroundTab = {
             goalDetail.innerHTML = '';
         }
 
+        // Enhance descriptions with glossary tooltips
+        if (typeof Glossary !== 'undefined' && Glossary.enhanceElement) {
+            [originDetail, accomplishmentDetail, goalDetail].forEach(el => {
+                const desc = el.querySelector('p');
+                if (desc) Glossary.enhanceElement(desc);
+            });
+        }
+
         // Attach event listeners for bonus buttons
         document.querySelectorAll('.btn-use-bonus').forEach(btn => {
             btn.addEventListener('click', () => {
@@ -219,7 +227,7 @@ const BackgroundTab = {
                 chip.textContent = 'Low Gothic';
             } else {
                 chip.innerHTML = `
-                    ${language}
+                    ${language} <span class="language-xp-cost">(1 XP)</span>
                     <span class="language-remove" data-lang="${language}" style="cursor: pointer; margin-left: 5px;">&times;</span>
                 `;
 

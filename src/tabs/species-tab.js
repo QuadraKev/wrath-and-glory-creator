@@ -91,6 +91,9 @@ const SpeciesTab = {
                             return option?.name || sel.optionId;
                         });
                         subOptionDisplay += `<div class="card-suboption"><strong>${config.label}:</strong> ${names.join(', ')}</div>`;
+                    } else if (config.required === false) {
+                        hasSubOptionsToShow = true;
+                        subOptionDisplay += `<div class="card-suboption"><strong>${config.label}:</strong> None</div>`;
                     }
                 }
 
@@ -169,7 +172,8 @@ const SpeciesTab = {
             description.textContent = `Choose ${count} ${config.label.toLowerCase()}(s) based on your Tier.`;
         } else {
             title.textContent = `Select ${config.label}`;
-            description.textContent = config.description || `Choose your ${config.label.toLowerCase()}.`;
+            const optionalNote = config.required === false ? ' (optional)' : '';
+            description.textContent = (config.description || `Choose your ${config.label.toLowerCase()}.`) + optionalNote;
         }
 
         // Render options
@@ -225,13 +229,24 @@ const SpeciesTab = {
                     }
                     this.renderCurrentSubOption();
                 } else {
-                    // Single-select
-                    optionsContainer.querySelectorAll('.choice-option-btn').forEach(b => b.classList.remove('selected'));
-                    btn.classList.add('selected');
+                    // Single-select — allow deselect if not required
+                    if (btn.classList.contains('selected') && config.required === false) {
+                        btn.classList.remove('selected');
+                    } else {
+                        optionsContainer.querySelectorAll('.choice-option-btn').forEach(b => b.classList.remove('selected'));
+                        btn.classList.add('selected');
+                    }
                 }
             });
 
             optionsContainer.appendChild(btn);
+        }
+
+        // Enhance ability/effect text with glossary tooltips
+        if (typeof Glossary !== 'undefined' && Glossary.enhanceElement) {
+            optionsContainer.querySelectorAll('.choice-ability-effect, .choice-option-desc').forEach(el => {
+                Glossary.enhanceElement(el);
+            });
         }
 
         // Show selected items for multi-select
@@ -288,11 +303,19 @@ const SpeciesTab = {
             // For single-select, check if something is selected
             const selectedBtn = document.querySelector('#suboption-modal-options .choice-option-btn.selected');
             if (!selectedBtn) {
-                alert(`Please select a ${config.label.toLowerCase()}.`);
-                return;
+                if (config.required !== false) {
+                    alert(`Please select a ${config.label.toLowerCase()}.`);
+                    return;
+                }
+                // Optional sub-option — clear any existing selection
+                const existing = State.getSpeciesSubOptionsByType(config.type);
+                for (const sel of existing) {
+                    State.removeSpeciesSubOption(config.type, sel.optionId);
+                }
+            } else {
+                // Save the selection
+                State.setSpeciesSubOption(config.type, selectedBtn.dataset.optionId);
             }
-            // Save the selection
-            State.setSpeciesSubOption(config.type, selectedBtn.dataset.optionId);
         }
 
         // Move to next sub-option or finish
